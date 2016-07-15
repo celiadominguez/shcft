@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="40faf0a1-8be3-49a3-b7f3-d5dd788630d5" last-modified="2016-07-10T09:29:26">
+  <short_description>ELISE: Security Through Obesity</short_description>
+  <description>ELISE: Security Through Obesity</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:26</authored_date>
+  <links>
+    <link rel="http://ht.ly/Wg3GY">http://ht.ly/Wg3GY</link>
+    <link rel="https://otx.alienvault.com/pulse/567a83d067db8c417529da1c">https://otx.alienvault.com/pulse/567a83d067db8c417529da1c</link>
+  </links>
+  <definition>
+    <Indicator id="1ab566d4-97b4-4b01-a757-53da1ae80e20" operator="OR">
+      <IndicatorItem id="4ed8b1dd-6485-41c6-8f01-afdfaa31902d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dnt5b.myfw.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b11c646-ebee-40f9-bbc2-3f02857b158d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ustar5.passas.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9ad3632a-d9b9-4e52-9995-8a5ed2132d5d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">353fc24939bb5db003097a8dd3c0ee7b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce6c9725-5dee-4fa7-9712-de6a2e32b2c3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3940a839c8f933cbdc17a50d164186fa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="400aa18b-add8-4ce7-9554-f086920f8c2e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bc179ebf3ca089dc9f3596beea38ab27</Content>
+      </IndicatorItem>
+      <IndicatorItem id="32bdc8a3-746d-41a4-b388-d5cfecff8305" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6fcdc554b71db3f0b46c7722c2a08285</Content>
+      </IndicatorItem>
+      <IndicatorItem id="66d12e26-7b79-4180-b1d6-96da42f2cda2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c205fc5ab1c722bbe66a4cb6aff41190</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42948ad6-b089-4892-9200-9aa1a4f01065" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.193.150.33</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42406d08-03a1-4cdd-b4ea-0911f171899e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">203.124.14.241</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

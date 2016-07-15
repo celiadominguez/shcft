@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c9bd548c-ee71-40a0-9204-352fa8df4976" last-modified="2016-07-10T09:27:24">
+  <short_description>TeslaCrypt 4.1A and the Malware Attack Chain</short_description>
+  <description>TeslaCrypt 4.1A and the Malware Attack Chain</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:24</authored_date>
+  <links>
+    <link rel="https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslacrypt-41a-and-malware-attack-chain">https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslacrypt-41a-and-malware-attack-chain</link>
+    <link rel="https://otx.alienvault.com/pulse/5718f302271307015c192371">https://otx.alienvault.com/pulse/5718f302271307015c192371</link>
+  </links>
+  <definition>
+    <Indicator id="c0e29296-52ff-4877-9e80-8f76ded34d0a" operator="OR">
+      <IndicatorItem id="178c5232-50c8-474a-bcbe-97260a515833" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8184432307b0f546d168e3e386a20999f5b0de0bd4085753bb2b09cfc7fec071</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c295fb90-e0dd-4673-a88f-0382e7b0dda9" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6bfa1c01c3af6206a189b975178965fe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="823f4962-d463-411e-8cdd-59b381b8cc6d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0eec3406dfb374a7df4c2bb856db1625</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

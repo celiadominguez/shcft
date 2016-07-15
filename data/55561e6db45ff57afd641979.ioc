@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="2f8d1cd2-7a61-467a-a1ff-9ba3249a0851" last-modified="2016-07-10T09:34:44">
+  <short_description>Nuclear EK DELIVERS RANSOMWARE</short_description>
+  <description>Nuclear EK DELIVERS RANSOMWARE</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:44</authored_date>
+  <links>
+    <link rel="http://www.malware-traffic-analysis.net/2015/05/14/index2.html">http://www.malware-traffic-analysis.net/2015/05/14/index2.html</link>
+    <link rel="https://otx.alienvault.com/pulse/55561e6db45ff57afd641979">https://otx.alienvault.com/pulse/55561e6db45ff57afd641979</link>
+  </links>
+  <definition>
+    <Indicator id="1844bf11-fa62-40f4-9c0e-30cf67c8ab47" operator="OR">
+      <IndicatorItem id="0ee815a2-cb0d-4cbf-8de2-219204a288be" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">aeec9303bb0f3ba9b8d05259efc0d61e5ac0ce45555a8f468ad1ce597d3debe5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e325df0-8c26-4230-831c-72200930c374" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8ce346a46314e8d741b20bb8a716590d5c8bc49febe7d91d3bf0e5289e43cdc4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4e47e13b-e110-4f74-bc44-6530fd8676c4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">24u4jf7s4regu6hn.sm4i8smr3f43.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0c9e627f-34d9-4c5a-9853-a8869d07610a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">24u4jf7s4regu6hn.fenaow48fn42.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="949e5d5d-2f3e-4d5f-bb11-d8591df480ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">irwozpmg.myftp.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e636178a-02d6-4ef7-b2b0-dc9b8c69c0c3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">iq3ahijcfeont3xx.tor2web.blutmagie.de</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1257b37b-54eb-477f-90f3-b4327e2a8cd2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">94e60bcae544717cd530b20c644a9d56</Content>
+      </IndicatorItem>
+      <IndicatorItem id="108d971c-2f16-4f89-b14d-aa1ba6637aaa" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">58e1e0b122490dd5bf4a81776772b33c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="012bb214-9c55-4a90-8a2b-cdfb9196ec88" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">5.101.118.148</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

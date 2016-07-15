@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="4bb9493c-c437-4328-bafb-125ee4d35e47" last-modified="2016-07-10T09:32:40">
+  <short_description>UPS: Observations on CVE-2015-3113</short_description>
+  <description>UPS: Observations on CVE-2015-3113</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:40</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/07/ups-observations-on-cve-2015-3113-prior-zero-days-and-the-pirpi-payload/">http://researchcenter.paloaltonetworks.com/2015/07/ups-observations-on-cve-2015-3113-prior-zero-days-and-the-pirpi-payload/</link>
+    <link rel="https://otx.alienvault.com/pulse/55b7829a4637f26f0cd78d15">https://otx.alienvault.com/pulse/55b7829a4637f26f0cd78d15</link>
+  </links>
+  <definition>
+    <Indicator id="24b09b01-7988-47df-a3a3-d99536c73e43" operator="OR">
+      <IndicatorItem id="29c651e0-005f-4441-94e0-4384a05a1d11" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ce7acae4cdb53c2fb526624855fc8e008608343b177df348657295578312eb49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2652d996-4b38-4c64-857f-d7e6948f0240" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">854c6ba97b4bd01246ac6ef9258135d2337e6938676421131b6793abf339fa94</Content>
+      </IndicatorItem>
+      <IndicatorItem id="997322af-822c-4352-9f37-4199bee0da35" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8c64d673cb84f76124fdbdc76941396647ff03725bddd1d59d0cd32d8ebad81f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86a9d4b7-25e4-4c66-b988-ca2e93f0e424" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">12ae4a7072c95eae0e433570b1d563c3d39fe3239816c04426c8e64a49bbe7d7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e52f973-5620-4201-b5b4-ae9536e0c5bb" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0649a3dd632cde57bc2e97b814be81a7f45454fed2a73800de476aa75cdbe8cd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ed4ace52-6369-4891-a39a-79a463fde93c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">81bd203ef3924bf497e8824ed5f224561487258ff3d8ee55f1e0907155fd5333</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0218b5fa-76f8-4658-b25a-b5cd8ff2b074" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">4f677060d25a5e448be986759fed5a325cd83f64d9fef13fb51b18d1d0eb0f52</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd263236-26cb-4dc5-b0ea-8e91747bae4a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1a4b710621ef2e69b1f7790ae9b7a288</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a167563a-3d7c-4670-a33d-4b48d7856b67" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f4884c0458176aac848a911683d3def5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf931be5-d5ef-4ea2-b239-f8794f4e6123" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">fa3578c2abe3f37ddda76ee40c5a1608</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5dbb8dbb-8f2a-4695-880c-081a8bf58f70" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1b0e6ba299a522a3b3b02015a3536f6f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4125d673-7193-485f-80d6-4a507f3f8c35" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b48e578f030a7b5bb93a3e9d6d1e2a83</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5c5280d6-c240-449e-b661-63f909912d3d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8849538ef1c3471640230605c2623c67</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3f3048c-fcd8-43b7-b17c-e19c33008bd0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4ca97ff9d72b422589266aa7b532d6e6</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

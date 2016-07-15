@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="e9e368c5-5c76-4321-8094-28b82a0aadbd" last-modified="2016-07-10T09:29:52">
+  <short_description>Campaign on the Government of Thailand Delivers Bookworm Trojan</short_description>
+  <description>Campaign on the Government of Thailand Delivers Bookworm Trojan</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:52</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/11/attack-campaign-on-the-government-of-thailand-delivers-bookworm-trojan/">http://researchcenter.paloaltonetworks.com/2015/11/attack-campaign-on-the-government-of-thailand-delivers-bookworm-trojan/</link>
+    <link rel="https://otx.alienvault.com/pulse/565622074637f2388baf343c">https://otx.alienvault.com/pulse/565622074637f2388baf343c</link>
+  </links>
+  <definition>
+    <Indicator id="4c09f8bc-d461-42f1-81c9-37996d22b79d" operator="OR">
+      <IndicatorItem id="5738e714-fe6a-4e24-93bc-dc88c4686f09" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">windowsupdating.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f36c60d-7850-4199-a6a4-9c9525a3d4b3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">googleupdating.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c08e26d1-9c45-4089-afbd-bbd435df444a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns1.vancouversun.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="66feb3c0-2ee7-43d1-9006-37ae75ff96a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">welcome.dnsd.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf2c6cd6-9a49-4e10-ad66-9b622299fcb0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3389.homeunix.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be93056f-9b9e-4c84-b70c-87adc50db6fc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tree.crabdance.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="68239268-8f0b-44b3-8ef2-ad47cf3beb70" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kcase.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a27c1728-3ac8-46f6-9703-dabc9c12f295" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">app.rooter.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d5c00e5-baa2-42f9-9fa8-221a63139490" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sswmail.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a03b0677-4fdf-4bc7-86d4-61858cd05f28" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wuzhiting.3322.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6618c776-e9a4-44a5-8726-92539b2907e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns3.yomiuri.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b340219-ed5d-4dc2-ab35-958d3cf850f6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news.nhknews.hk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be87781b-0480-4c1d-b81c-c170c3595fd1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.tibetonline.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e63ead9b-703a-4a1c-9a3e-b38a1599f69c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zz.alltosec.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4dc2cf65-7077-426c-b0bf-5fa10be1fc8f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">succ.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="73763ea2-8647-46f4-b020-2513442b54cb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bugatti.from-wa.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ec88e74-a7b3-483c-8246-e05ec1a2154b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hkemail.f3322.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19a11faf-3299-48d5-9855-4944832965b0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3389temp.dyndns.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4b9fdd34-232f-4792-8c68-cb04f57d1b02" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xcase.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01b37791-69c8-4a24-812b-81315caeadea" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">weather.webhop.me</Content>
+      </IndicatorItem>
+      <IndicatorItem id="827c9452-3336-46cf-95b6-073754d12b0b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pcal2.dwy.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f88666f-b887-4736-be27-d25c8326f05d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xxcase.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="05518f1d-a7e3-4077-949e-a89e0f317579" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">server.organiccrap.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="715b3a4f-0b18-4c0e-a011-1133d2c2685b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sysnc.sytes.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4a171967-cc19-4e43-a6f0-7974c94c4aff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pricetag.deaftone.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36d257e9-4d15-4d2b-8826-65df477e4163" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kr-update.homelinux.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="73daf842-8b0e-46b4-ab75-1dbdc746efca" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hope.jumpingcrab.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d7e857b-7940-4adb-be8c-28a4a1cc4da6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">imail.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff6d599e-8c20-40e0-9380-efb819967fa8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">education.suroot.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb9a3683-2133-48cb-b4ec-3d005f555458" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ubuntudns.sytes.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ed701572-fb8f-4257-a830-ffca6438c586" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webupdate.strangled.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e174c11b-d0c1-419e-a9fe-ef7997fa657e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">back.rooter.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f796f594-1b5a-40b5-8aa2-8404dd45e4f6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">linuxdns.sytes.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ce4314f-4b95-4ad0-b196-cf55e8e32063" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">williamsblog.dtdns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="637a5d32-5513-4d9b-8e19-90d825200c48" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">n5579a.voanews.hk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a2059e8-fd6b-4384-a02f-31bb2a824594" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pcal2.yahoolive.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="65ae47e5-cd47-4e16-974a-632021dba1bc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blog.nhknews.hk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad1ab816-e210-42fe-9fad-f8a238fd9a18" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.chinabztech.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35a3f3a7-3a6e-429d-95f3-868d6f3793db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wmail.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4e6930c9-ca04-40ea-82c0-d51371ae25f8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news.nowpublic.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="60b7fee2-8304-478f-b98a-79ce6d897bf1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">flashgame.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="95adcc1b-8b76-4c7c-9b8c-cec9f35acf13" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">welcometohome.strangled.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="818de3d0-6dc2-488a-b9f1-226171da1f10" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">supercat.strangled.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f6b2c9f6-f66d-4aeb-89d3-246766c872b6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">flashcard.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="47c04be6-e309-4c6b-8986-322f8b85f6f8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">debain.servehttp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b66b48a-2f71-4ea8-8eef-e45d03074bb6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news.voanews.hk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf64526c-7e97-4940-a5f8-629e18630300" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">breaknews.mefound.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="134990ce-812c-43ef-b2b4-1ee5045726d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3h01.dwy.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="83981b0e-adf2-4e7f-a996-e868f8fdc618" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahcase.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cb985f33-6e8d-48f0-9364-6185a35d5b26" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">durant.dumb1.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f3773055-36f4-4814-b430-f3c0eb36e3b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sswwmail.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0427c3fb-8bc9-4d9c-860e-03b4fed19424" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.rooter.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3dc361d4-e3a4-4fd0-aced-8dd563537afe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.ifilmone.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="012d7bbf-b31b-4f05-8b21-9905e57f221e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bkmail.blogdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d831671f-1610-4906-8a46-183e68766006" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">web.voanews.hk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7d7201a3-fafa-4ac3-adcf-93d7aa901c99" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">thailandbbs.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ed7218b-524a-42b2-9e33-c0f62c2827bc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ftpseck.ftp21.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c753731-f494-4b48-bcda-8a9a02a3302b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">happy.tftpd.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f995db45-de5f-4cde-b0a7-d9c8441d3870" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">will-smith.dtdns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17a8b122-ad7c-4fc2-83dc-fbcec2eb2547" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nine.alltosec.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f8ecba1d-72c1-45f9-bd8b-9c8abdea44d4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3389pi.servegame.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb7df86b-0149-4ea9-a96f-a58192fe7bbf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wucy08.eicp.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbdf6b4c-2dd3-4319-b686-458be5adefd0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apple.dynamic-dns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dd6587ab-ce35-45d0-b34d-aed954367938" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.vxea.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6d8774f6-c3e3-40d6-aa3e-3f581a72782e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">office.alltosec.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a2e56639-bc41-47b2-ba99-219ebb3a0836" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">romadc.homelinux.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e2363271-b127-4185-8eca-e69c0ff7f769" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">products.alltosec.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e08f793-f84b-4c0f-a77c-782331d6b8e2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">web.vancouversun.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8fc9c49a-de57-4287-861a-860b73750987" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">anhei.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="750b53a6-4863-4c21-a650-d730561997db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qemail.gotdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b70f1a4-671a-4bd3-94fa-c51ccf97c8e1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">systeminfothai.gotdns.ch</Content>
+      </IndicatorItem>
+      <IndicatorItem id="82ccbef4-4163-4410-8ad3-2b05745a8b49" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">web12.nhknews.hk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c14e0a79-8e39-4a64-87da-e44212220e90" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">115.144.107.53</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f8558ca8-36a4-4195-b3c6-edde008280d3" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">115.144.107.52</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f37ac71-735b-4d4e-9747-790489ea7d81" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">115.144.107.46</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16ee9447-1bbc-4ae2-b521-3f31a9cb999d" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">119.205.158.70</Content>
+      </IndicatorItem>
+      <IndicatorItem id="679df39e-4d56-471d-b9bc-190ae5148bce" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">112.167.143.179</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5fa08ef-e4f0-4695-9da5-f513b1743ffa" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">115.144.166.209</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f43830dd-975f-4c73-be89-fa92403a1758" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">115.144.107.22</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9d7e8c2-e6f4-4546-affb-9c29e272d844" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">104.156.239.105</Content>
+      </IndicatorItem>
+      <IndicatorItem id="622fa33c-dc6b-4335-9053-b38daf3dbe60" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">43.248.8.249</Content>
+      </IndicatorItem>
+      <IndicatorItem id="98ab5d42-4530-4868-8cab-271d61362edb" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">115.144.107.134</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4c6360d4-3047-461d-9904-7650030896c3" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.226.127.47</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e44ef182-a3df-4bb9-afb7-f6ac05456670" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">luotuozhizhu.blog.163.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

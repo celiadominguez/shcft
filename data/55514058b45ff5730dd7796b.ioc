@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="779b7b89-1cd1-4289-8a63-27f588ea980d" last-modified="2016-07-10T09:34:57">
+  <short_description>Dyre Botnet Using Malicious Microsoft Word Macros</short_description>
+  <description>Dyre Botnet Using Malicious Microsoft Word Macros</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:57</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/55514058b45ff5730dd7796b">https://otx.alienvault.com/pulse/55514058b45ff5730dd7796b</link>
+  </links>
+  <definition>
+    <Indicator id="f2f01f66-f2fe-46c7-b32d-06d64d888139" operator="OR">
+      <IndicatorItem id="ddf88143-0af6-46d3-b824-90704caccb41" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">20357c95962d1cda36eeb7386ea31aea</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ee50cde-8e51-4722-8654-a265ae4129a6" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">512b7bac1ce4cf63dd9bb6dbe7f16f20</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3d53d17f-4aad-4667-8a34-c9938752a16c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6162c6b0abc8cab50b9d7c55d71e08fe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5a7f91d6-4fe6-4e84-b3ac-ec4e9f730f57" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.211.17.201</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

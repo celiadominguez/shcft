@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="999c8575-bf01-420f-a46a-60600153fe52" last-modified="2016-07-10T09:36:25">
+  <short_description>Hanjuan EK’s March Madness</short_description>
+  <description>Hanjuan EK’s March Madness</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:25</authored_date>
+  <links>
+    <link rel="https://blog.malwarebytes.org/exploits-2/2015/03/hanjuan-eks-march-madness-malvertising-campaign/?utm_source=twitter&amp;utm_medium=social">https://blog.malwarebytes.org/exploits-2/2015/03/hanjuan-eks-march-madness-malvertising-campaign/?utm_source=twitter&amp;utm_medium=social</link>
+    <link rel="https://otx.alienvault.com/pulse/5511966113432a4db2baad5a">https://otx.alienvault.com/pulse/5511966113432a4db2baad5a</link>
+  </links>
+  <definition>
+    <Indicator id="67137dae-d246-4eb1-b3f2-6a26fb5c2e3c" operator="OR"/>
+  </definition>
+</ioc>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d6386393-beb1-412c-af6c-ec2675d0e53b" last-modified="2016-07-10T09:31:27">
+  <short_description>CERT-FR alert on Dridex</short_description>
+  <description>CERT-FR alert on Dridex</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:27</authored_date>
+  <links>
+    <link rel="http://cert.ssi.gouv.fr/site/CERTFR-2015-ACT-024/index.html">http://cert.ssi.gouv.fr/site/CERTFR-2015-ACT-024/index.html</link>
+    <link rel="https://otx.alienvault.com/pulse/5580cbd1b45ff57c3925e6fa">https://otx.alienvault.com/pulse/5580cbd1b45ff57c3925e6fa</link>
+  </links>
+  <definition>
+    <Indicator id="c669c0e2-65ab-4b0a-9151-cb4a7dd9a5c7" operator="OR">
+      <IndicatorItem id="e86bbed3-aab0-4474-a2a5-3589e1b2a398" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">79.143.191.147</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d874f5d6-0e0e-4dd9-84e0-c6c0a18608b8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">94.23.53.23</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fba1922a-0e01-4ffa-bab8-fba6c2002731" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">203.151.94.120</Content>
+      </IndicatorItem>
+      <IndicatorItem id="87b11662-6ac6-4963-b0aa-c418435a68c8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">146.185.99.250</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e50a0c2-b9c4-442f-8254-e069fa505e62" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">31.186.99.250</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6022b118-4f0c-41bd-803b-83faa1b2032b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">50.63.174.16</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e0d533c8-bd60-4825-921c-65655398394e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">37.143.9.63</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

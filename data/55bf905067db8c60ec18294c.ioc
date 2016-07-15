@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c1cd76ea-1be1-4638-8e25-0d2ca1cf543a" last-modified="2016-07-10T09:32:15">
+  <short_description>Discovering Recent PlugX Campaigns Programmatically</short_description>
+  <description>Discovering Recent PlugX Campaigns Programmatically</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:15</authored_date>
+  <links>
+    <link rel="https://asert.arbornetworks.com/automating-intelligence-discovering-recent-plugx-campaigns-programmatically/">https://asert.arbornetworks.com/automating-intelligence-discovering-recent-plugx-campaigns-programmatically/</link>
+    <link rel="https://otx.alienvault.com/pulse/55bf905067db8c60ec18294c">https://otx.alienvault.com/pulse/55bf905067db8c60ec18294c</link>
+  </links>
+  <definition>
+    <Indicator id="ba94167c-e02c-46a4-84d5-db9d37be62bb" operator="OR">
+      <IndicatorItem id="ca964f79-648b-4d69-a52e-bd0839fa330a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">amxil.opmuert.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c749d86-56c1-498b-8f2a-9e706cbf9ef7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sbuudd.webssl9.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7eb7dd34-1158-404c-aea7-da051d36568d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">721e92d9bcec1baa687b6a244f24fc26e09da04e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0884bcd8-db91-4f8f-9aa7-5a2ffcde6043" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">9edecb01897b2984daa29c979701e6df7c75160a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1eea4c9e-d1b4-4661-a406-1a3d0b862984" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">79b073433082abfb6096b98c0780c5c0b5cce08b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a20d3f4-df9f-4f49-8f3d-6593000362a7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2d99e88c30cd805f5e346388d312f7a3e3386798</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb342bc1-d284-418e-90cf-e9a8ee7e9c69" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b5ea24faa3f9fe37cd30f8494fb828d9e993b2ca</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5190395-e025-4056-ad79-12e69d1cac49" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">1c6a50e51203fda640b8535268bee657591d0ac5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="adf27e39-a09b-4693-8dc4-c7b2da182b1f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.249.28.6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="180a9a4c-5eb1-4464-af92-d7eed9f59f16" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">52.74.141.137</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be580e81-67e8-4dc4-886e-9c7dcb8f462b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">23.245.4.46</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

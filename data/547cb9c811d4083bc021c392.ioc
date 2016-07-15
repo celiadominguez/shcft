@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="4b57d4a3-00ae-47c4-8d64-eaddef844772" last-modified="2016-07-10T09:37:52">
+  <short_description>FIN4</short_description>
+  <description>FIN4</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:52</authored_date>
+  <links>
+    <link rel="pasted_text">pasted_text</link>
+    <link rel="https://otx.alienvault.com/pulse/547cb9c811d4083bc021c392">https://otx.alienvault.com/pulse/547cb9c811d4083bc021c392</link>
+  </links>
+  <definition>
+    <Indicator id="eee43846-dcd6-448a-9455-2c119bccf221" operator="OR">
+      <IndicatorItem id="3a820b76-6cfc-48cb-b6ce-ebee01303e4e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">outlookexchange.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe2ffea6-2513-477b-be01-d60e770dedff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rpgallerynow.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bfdf6baa-c998-49d5-b605-e70ba6aa58e9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">msoutexchange.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4350603-e494-4274-b40b-1acd06922bc2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dmforever.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="25a64b15-41a3-4e02-837c-d3d39f9af36b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lifehealthsanfrancisco2015.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89a1e1cc-676a-430b-8f62-508b257c5d4d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">outlookscansafe.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c4d3d6c8-d15b-4cf9-9205-d85f76a36130" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nickgoodsite.co.uk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7ed152b-6617-41c9-86e1-56100ad1d78c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ellismikepage.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab25a72b-94f8-4dcd-9779-77a5f1359d7d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">junomaat81.us</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

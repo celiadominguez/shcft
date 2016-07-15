@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="217d2007-f43a-4568-b319-2c7ed862e321" last-modified="2016-07-10T09:37:15">
+  <short_description>Google Chrome update Spam drops CTB Locker</short_description>
+  <description>Google Chrome update Spam drops CTB Locker</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:15</authored_date>
+  <links>
+    <link rel="http://blog.malwarebytes.org/social-engineering/2015/02/google-chrome-update-spam-drops-ctb-lockercritroni-ransomware/">http://blog.malwarebytes.org/social-engineering/2015/02/google-chrome-update-spam-drops-ctb-lockercritroni-ransomware/</link>
+    <link rel="https://otx.alienvault.com/pulse/54d7adee11d40853d8e13c8d">https://otx.alienvault.com/pulse/54d7adee11d40853d8e13c8d</link>
+  </links>
+  <definition>
+    <Indicator id="43fdfbe0-5a6c-44f3-864b-38f5b349302d" operator="OR">
+      <IndicatorItem id="0af04d9f-c4e6-4c6a-8ad2-5db2a47b5e52" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">goodtobeloved.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49df0df0-a666-4914-95e0-59a2d692839f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">thelastxmas.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09d857f6-e436-4efa-9a7c-07883808135b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baddadsclub.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0df4bc2e-91b7-4304-b02f-aa012cc6bfd3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">assetdigitalmarketing.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c00559c-956d-400e-ae73-db2732613d34" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">geordie.land</Content>
+      </IndicatorItem>
+      <IndicatorItem id="05c612ac-1284-454d-8b65-8cbc58cae75a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cognacbrown.co.uk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42bbab74-98ee-4985-86c1-bd8529e3f0b7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.goodtobeloved.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="075381e0-708c-4895-9b20-618176ce14ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.baddadsclub.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b8ec678-3eb5-4222-a11f-a5d29ca5105d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.thelastxmas.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a995016-e6cb-45fe-864b-6c9732920574" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.geordie.land</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

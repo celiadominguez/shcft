@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="e29feeb8-4c1c-445e-80c9-ec006d324dd7" last-modified="2016-07-10T09:35:32">
+  <short_description>Enterprises Hit by BARTALEX Macro Malware</short_description>
+  <description>Enterprises Hit by BARTALEX Macro Malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:32</authored_date>
+  <links>
+    <link rel=""></link>
+    <link rel="https://otx.alienvault.com/pulse/553f5ef1b45ff56224148b1e">https://otx.alienvault.com/pulse/553f5ef1b45ff56224148b1e</link>
+  </links>
+  <definition>
+    <Indicator id="9e59bde8-5965-4283-b45e-f9cae834fa49" operator="OR">
+      <IndicatorItem id="b6617c0b-f755-47ff-b739-e059dd78433d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">05fe7c71ae5d902bb9ef4d4e43e3ddd1e45f6d0c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb14eec1-b8de-4b71-b49f-c0864c0f4375" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">559a03a549acc497b8ec57790969bd980d7190f4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ba8f2b7-53e9-42f7-aa92-d7f1fbe08dbc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">02358bcc501793454a6613f96e8f8210b2a27b88</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23c289b5-eacf-480f-959a-609c08f0f538" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">11d6e9bf38553900939ea100be70be95d094248b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13e37693-f943-4293-880e-a6e806099093" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">19aed57e1d211764618adc2399296d8b01d04d19</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30d0b30b-b341-4483-854e-a25a4db546f2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">61a7cc6ed45657fa1330e922aea33254b189ef61</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3048569f-593c-4a9c-b064-ab2f899499b7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d047decf0179a79fd4de03f0d154f4a2f9d18da4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dbbdfefe-c618-444d-97b3-23ec9e868ec5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5e392950fa295a98219e1fc9cce7a7048792845e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="62dea0b7-cc9d-4808-b7a6-a8030904c9e4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">6f252485dee0b854f72cc8b64601f6f19d01c02c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="92a89112-c1a9-4e71-a852-ed2b289b92fb" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d3bf440f3c4e63b9c7165c1295c11f71f60b5f8c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="545521d5-6fc5-4180-9508-395b768688e7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c0ca5686219e336171016a8c73b81be856e47bbc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ecbaae8-e6de-4955-9eda-b05304b3e14f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0163fbb29c18e3d358ec5d5a5e4eb3c93f19a961</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d99da00-611b-4c01-ba25-f7bef11ff821" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">85e10382b06801770a4477505ed5d8c75fb37135</Content>
+      </IndicatorItem>
+      <IndicatorItem id="858a594c-15a5-4db5-b42a-60a23adba9f0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">ec7a2e7c1dce4a37da99a8f20a5d4674f5c80a1f</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

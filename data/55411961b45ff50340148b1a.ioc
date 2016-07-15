@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="72d19bdd-3c26-4df2-a56b-ee5979dd5a74" last-modified="2016-07-10T09:35:30">
+  <short_description>Mumblehard indicators</short_description>
+  <description>Mumblehard indicators</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:30</authored_date>
+  <links>
+    <link rel="http://www.welivesecurity.com/2015/04/29/unboxing-linuxmumblehard-muttering-spam-servers/">http://www.welivesecurity.com/2015/04/29/unboxing-linuxmumblehard-muttering-spam-servers/</link>
+    <link rel="https://otx.alienvault.com/pulse/55411961b45ff50340148b1a">https://otx.alienvault.com/pulse/55411961b45ff50340148b1a</link>
+  </links>
+  <definition>
+    <Indicator id="bc651955-0cb5-496a-b7dd-cbce2ce1ca6d" operator="OR">
+      <IndicatorItem id="c6a65928-5943-4ece-9bbc-4023d4c73837" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">65a2dc362556b55cf2dbe3a10a2b337541eea4eb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9150006f-a72a-4392-92ac-c862c6d809b4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">331ca10a5d1c5a5f3045511f7b66340488909339</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f0624f99-f486-417b-a096-a3068f335b89" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">58d4f901390b2ecb165eb455501f37ef8595389a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="529708d2-793d-4423-b0b3-dd12b0d01234" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">e62c7c253f18ec7777fdd57e4ae500ad740183fb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e1c85767-c96b-44b7-aa5e-be846637e540" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">95aed86918568b122712bdbbebdd77661e0e6068</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8e5574d5-e48a-4215-a8e0-a3126a67fbea" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c83042491efade4a4a46f437bee5212033c168ee</Content>
+      </IndicatorItem>
+      <IndicatorItem id="50b9cb49-c35f-4fc7-ba36-c3410975d292" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2f2e5776fb7405996feb1953b8f6dbca209c816a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="481c3b1e-4460-470b-bedf-88b881f9de08" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4ae33caebfd9f1e3481458747c6a0ef3dee05e49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="67d8184c-fc34-48d7-ac51-4b3be9785ea7" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">194.54.81.164</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f326c762-15c9-43fc-b12f-518c62924823" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">194.54.81.162</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e31afe4b-df94-4665-aa66-7716b044bf6a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">194.54.81.163</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

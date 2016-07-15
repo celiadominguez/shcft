@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="accb0dec-b694-4788-a1a7-1f2bb3d6c980" last-modified="2016-07-10T09:34:53">
+  <short_description>TorrentLocker Correos Campaign</short_description>
+  <description>TorrentLocker Correos Campaign</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:53</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/555392b2b45ff53f95641977">https://otx.alienvault.com/pulse/555392b2b45ff53f95641977</link>
+  </links>
+  <definition>
+    <Indicator id="bf17361d-c2dd-4816-b167-792bceac7619" operator="OR">
+      <IndicatorItem id="44774d08-ce45-451e-849a-0699f7170df9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">correos-portal.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8bf8b6a4-7084-4e47-b3d0-3c0fbbba83f1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">correos-portal.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="088a3c4a-d893-4bee-ad4d-75b009046834" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">es-correos.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

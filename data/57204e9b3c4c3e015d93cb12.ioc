@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="1568c5bb-8401-420a-ac69-1600fdf7d6aa" last-modified="2016-07-10T09:27:18">
+  <short_description>Poison Ivy Activity Targeting Myanmar, Asian Countries</short_description>
+  <description>Poison Ivy Activity Targeting Myanmar, Asian Countries</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:18</authored_date>
+  <links>
+    <link rel="https://www.arbornetworks.com/blog/asert/recent-poison-iv/">https://www.arbornetworks.com/blog/asert/recent-poison-iv/</link>
+    <link rel="https://otx.alienvault.com/pulse/57204e9b3c4c3e015d93cb12">https://otx.alienvault.com/pulse/57204e9b3c4c3e015d93cb12</link>
+  </links>
+  <definition>
+    <Indicator id="8b033b4e-3bcc-406c-80c8-2e878e242f48" operator="OR">
+      <IndicatorItem id="bd36453a-dbae-42f7-aeee-6c5cab12ae8b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webserver.servehttp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e1fa3dc6-e6cc-4861-89f1-4bc7fa513a69" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">web.microsoftdefence.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a0b604f3-3671-4a38-b2b3-ab5c98590e4b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jackhex.md5c.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a97c18d-cbe3-44ca-907c-475dbff30cdd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">admin.nslookupdns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f2e840d1-4837-4535-a66c-2ea587cc67d8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news.tibetgroupworks.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="116e4f0c-1f3e-4f97-8756-bb4a4964b023" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">cbbfc3b5ff08de14fdb2316f3b14886dfe5504ef</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b98ef5cb-9f35-4ecb-a101-a04747752ebd" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">63e00dbf45961ad11bd1eb55dff9c2771c2916a6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48f8da4c-41d9-4158-8886-c84bf88076d9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a7d206791b1cdec616e9b18ae6fa1548ca96a321</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f50d7f60-8a6c-4b24-bf76-86f19629f488" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">49e36de6d757ca44c43d5670d497bd8738c1d2a4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad53c8c2-5205-41be-98d2-744369553d37" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">ec646c57f9ac5e56230a17aeca6523a4532ff472</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b7959f0-604b-4189-8d79-8458f3fa95ec" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f389e1c970b2ca28112a30a8cfef1f3973fa82ea</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f2621a22-e546-423c-b2aa-4ee21ef40649" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">ef2618d58bd50fa232a19f9bcf3983d1e2dff266</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f59cdd45-cbbc-4d8d-9326-29451ce9b9e9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">675a3247f4c0e1105a41c685f4c2fb606e5b1eac</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

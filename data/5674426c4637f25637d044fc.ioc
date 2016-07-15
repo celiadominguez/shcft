@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="1d97e686-3c2b-4fd6-8854-c347c10a187f" last-modified="2016-07-10T09:29:12">
+  <short_description>Operation Black Atlas, Part 2</short_description>
+  <description>Operation Black Atlas, Part 2</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:12</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/operation-black-atlas-part-2-tools-and-malware-used-and-how-to-detect-them/">http://blog.trendmicro.com/trendlabs-security-intelligence/operation-black-atlas-part-2-tools-and-malware-used-and-how-to-detect-them/</link>
+    <link rel="http://documents.trendmicro.com/assets/Operation%20Black%20Atlas_Indicators_of_Compromise.pdf">http://documents.trendmicro.com/assets/Operation%20Black%20Atlas_Indicators_of_Compromise.pdf</link>
+    <link rel="http://documents.trendmicro.com/assets/Operation_Black%20Atlas_Technical_Brief.pdf">http://documents.trendmicro.com/assets/Operation_Black%20Atlas_Technical_Brief.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/5674426c4637f25637d044fc">https://otx.alienvault.com/pulse/5674426c4637f25637d044fc</link>
+  </links>
+  <definition>
+    <Indicator id="a9b47b4e-6e22-4499-aa42-68b96438ed19" operator="OR">
+      <IndicatorItem id="717dde8a-72a4-42c1-a75e-72a99c5d1718" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jackkk.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c6fdbb9d-0d33-436e-ba80-9ab7f1dffd37" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">randomfruits.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9ecee262-9e42-4450-b28b-573cf6879996" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">m0ntecrist0.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03cd1d0f-4dda-48e6-b087-ee34946be22e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">toorchins.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf652773-0f93-4e77-abaa-6f683499c4e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cockblockingwhorecuntsnow.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="87f11555-46c3-4d86-8c43-482d64cac6bc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">topbullka.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="27e7657f-d311-4561-acb9-711730e38154" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">chiproses.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="50c32a35-ba4d-43dd-866f-7b2052c1e3c6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">corner-update.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cea38811-0f2f-4847-b7cc-19adb693dfcb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">315andro.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="626baad1-d74f-4a84-8291-a31dc32447a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">power-uping.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7d56385-0709-4e42-8e3e-ff5fe4db0819" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">super-cpu.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d13f32c2-6beb-4ddc-ab65-4b037eb6cd01" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">m0ntecrist0.co.ve</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6fac4ec8-646c-4b22-a114-875aad4ca59c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blowingcockflowers.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8b2bcfbe-d4bc-4e61-93f0-d6978d02a0da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jtrho.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cb86e6c1-6e19-40d5-b4b0-b800ea4068c8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">inf1nix.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9137b68d-453b-484b-b72d-65e3cf727d35" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hntrgesdgfrge.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48a95ac9-888e-4b51-97f6-5578afa1736c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">damcodes777.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a1f13542-05e7-46c6-a4de-12b4759060e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">super-updates.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c36f5497-7870-45bb-b837-905ce8ae0b29" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.keycodes777.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3fc5926e-ae00-4c59-8519-04409700308e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jabruslan.noip.me</Content>
+      </IndicatorItem>
+      <IndicatorItem id="72183982-0c64-455f-b8c6-29a322897f99" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5bf0256876cee98e20c92c8771b98f3143b07d61</Content>
+      </IndicatorItem>
+      <IndicatorItem id="90c50943-01a1-444f-9bed-e3e9f5866009" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b5b49cc3a6890a1f457ebe77a085cc2ac5c5da59</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7eefe13f-d748-458a-af32-2808eda8c587" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">1a2735678d87aec490a547988ba2f8e6507bb86f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a95a4ba4-b4df-4bb9-a7d4-5386cced7f0a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">670fc386dd77f954f287b3cd0d6697e732648a0b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="edd83fe6-5780-4625-a403-827c5addf99f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f74b17ca7a542323534a7c7766a8dfe821c6bcce</Content>
+      </IndicatorItem>
+      <IndicatorItem id="525a4daa-f2fb-4458-b006-a44a493700a4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2177e275c8278a62ee1c80e7b00f7ae60d6b5a89</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4705e01b-5585-4245-81cf-e24c8837f164" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">812a94e2efee245da285d4c85e2b69904ef25a9f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16648d2b-74ce-44f6-a287-c2d8c20f6922" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">83e9b381fd21348abbc93365d1fdf011b8a6d258</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f1aee30-8676-47ac-8a38-b94baf3a2779" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">99eeb0c88105637954110727968a71321453fae0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="72d65e65-b3ae-4116-8d17-7b6036367bc7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">007c82ee41939459e1bc843097e1a56287cd86bd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4bf48f35-3eda-4a8f-a621-a7d399633989" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0868af41f7279a8cee499bdbb100084564e1aaff</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77554cee-cc80-410f-acbe-887a7a5f7618" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c1e70d785435186052dc226abae33d891fd00918</Content>
+      </IndicatorItem>
+      <IndicatorItem id="50517940-02d3-4020-851b-3b02825474d3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f6d548f245169b965671b279dff052d5d26f4ec7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d3d16d36-2a75-4666-b12a-6beddfde57b6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2ac2b4742e1578c88978ba2219b0c0adf9c3389b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06e0ad77-b39b-4bda-afaa-b03bd1dd5ea7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">22001d13fb7c0c18bdc0fc60df0b41d12f774c5c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48e691d7-2214-4de6-b751-5f4bbea139d7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0e840ae8efa952429c15c00776d63539c44fcef2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8a6f8d9c-cde6-4e64-ad62-d9e992f202d2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d8cb77dd40f9b2d2363b110f79401d2ac7be5f91</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d992fca9-223d-49cb-beae-037174adea69" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">1cf29b46593f3004f1b0e0e0de6855a779aca159</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6bf229fa-65d3-4ee2-9545-a1b014fb86e9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">ca9c671bb8e40fb4864f159b1c78774f9c218779</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d1f08778-192f-4709-ba89-c5a663d7b87c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0874fdc7a6212dc5f9b9dd9ca7c8dbf16abf947c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1440649b-de94-4113-bd33-830f41e60767" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5bade04603e2d16487ca05558d8d0aa1b492701d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2c818254-41b9-439c-91ac-a74fb8d627ea" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f7e088153eddbc87a44c8bac8ef713b7203c1670</Content>
+      </IndicatorItem>
+      <IndicatorItem id="222d36a7-600c-4baf-a6d3-6188a3208fdc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">60b679361db8413060cce8ad901006d5ecdf0d21</Content>
+      </IndicatorItem>
+      <IndicatorItem id="daf22d06-b3e2-4b61-9278-9e8ea1904688" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d436fc11aecf241f9d15b97f3fdd9e8453cdc316</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e494d2c-43fc-43fa-b18e-ff730227d0c3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">80aedf2eddc9e2f39306cbaa63e59c7a08468699</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e40c738-972b-483f-b233-35d76c909cf8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a61672a5b8812002fde1d54169be5c4f9ff4fd76</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cb5e3137-6397-4c39-9eb9-7eaf3574b108" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">808f582f8899f5f482a01c2601e6826b253f82bb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="975d34da-16f0-491e-a575-4f4a6718ac9d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4032e5062e8bc9ba792a9b758f12be5f51e9b908</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ba7b8414-a59e-45b5-8819-c30ecc106dbf" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">29957f3b6f001debe2afa0d530e0a63afaf01f22</Content>
+      </IndicatorItem>
+      <IndicatorItem id="df3c1886-163d-4e53-adb3-0f6fbb0a0d22" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">87abfc7c67a8770776ef6971b0dba3aa83039470</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7ab337f-de4c-46ec-9c39-ab12adf77821" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">020f7125456744b95877f79bc0bc649593d1e7e4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b50cc65d-c71c-40da-88dc-0b4e23cafcd0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">02cb522137f370355de9c2e3cae7ca9a168b95ec</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c94dabf-2f48-4952-8af6-37e3609dd84e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f638c84b3264ff27a0891f34c85d9fa7cba32f38</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e042480-c2a4-43b5-937a-78ac5f6c0972" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">22a01b064b3c173163ace33138ef243fbf7ef6af</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6d53e84-298c-4c68-96d9-b4ae8ff95c5e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">6192e520207a4ee0ae32c3a199668fc0a65dd9c2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2fac46e3-0b98-4683-8f31-ecaf9473420d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">80fc7265d47dc623da11324ad550d45d70fea4f9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4527b7a5-418d-4f4a-87d4-80c9d96c5c74" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">596b5792a0eaff8010ffef5bb1e109ff3b3ef27b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a246aac-b8f1-44d0-95f5-bba0409d78c9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">9105fe70cb4177b03275b49b7fe78d437a3a8759</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce81f7a0-4777-4c70-84b5-09c9d380605b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">3f186948a30cff34861ac0c539aece70e21c848e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6e97515-b8cb-468d-a7d7-a4f3d6917dd3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">447ef3406bc2d06492e7a217e5f0eafb4f6c4f97</Content>
+      </IndicatorItem>
+      <IndicatorItem id="85ce797e-1f1f-459a-aa86-788eff9e208e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">77dc1389835f48454ef5d83d3aa3a424eac54a8e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b061ffc2-264b-4954-8341-40557b407225" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0644c56c4c0503b961f81eb85ed05e8ff9df7f1c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bba03c7a-f518-4792-acfc-4e9f27bf078e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c5612b48c7a3887c8af0bec830598046b125d2d5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2328ed60-64bc-4c4b-8687-2fc10722bf26" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b1983db46e0cb4687e4c55b64c4d8d53551877fa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01cd0763-6b43-436f-b1ed-8017ceecb8e6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c47c3719d74a7c0352982bf5026f60f03d184cf8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d67f4b8-8c4c-4880-8a36-0711aca2032e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f9b4451988f4dfbaf918a5a32c7976da89377fd2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f2aa1d4-8fda-4a44-b43e-b918a02bf1bd" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a01b7f55c5edc6576d1349a0a23b781552c74244</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34ad1372-c4d9-4a01-a057-56fea55cc884" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">27e99e527914eca78b851bb9f2a4d0441d26e7e3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7bcbb3b8-bb4b-4884-98ee-74d1b9a1e68b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">cfe25d6e4b994b8f07fdfc197c8f0b2081df4d5b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="101b3c35-cdb5-4026-8295-8b358dcf91b5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">37adb7c54943b338000cefce6d895c05468fa2ce</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5d11ab6-edb9-473b-bb16-805b6d93fe2c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">42af42114efc18afe726a38bfbf3fd36036a69f8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b22f4661-3748-49cf-b05c-723609442339" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c3732c425d41b68150e0eb372d860a6ce1398973</Content>
+      </IndicatorItem>
+      <IndicatorItem id="18c897bf-2f36-4562-b3c7-bf74d582fdc1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">1df323c48c8ce95a80d1e3b9c368c7d7eaf395fc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f9e3db4d-783e-4aab-8093-d5bd8921e9c0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f96bacd550e8f113134980cde33eecfa6da3ebe5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4377b77-b0b8-49c3-8ccd-e25864235b22" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a913dc86f9217a9c5163f2508d86a085013f9ef0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="47bca6a6-9f5e-4f25-b95a-67f1fddbde6e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c2974699bfc215501614bf88379da446d84baeb2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="53e5a1c7-b3cd-4db2-9289-8d88be68c765" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a8cca3c64065961d3f8f47f1e40553a525590450</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbdcd82a-d42b-44b0-9b2c-ab6d1282520f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">327181e170cac8d5076b493faa52436f9cff9d8e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7ea1bd99-61f6-4883-aae7-a0c444a0e81f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">13f1f2b2eac06d0ac9a499d4a18e55e7ae931434</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f284b2df-7ea7-4a63-947e-b493b8c06e56" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">56fe558916e51a0f81dfb207183be465199accbc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1bf91f24-17da-4431-bd41-c348f8033ca0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">29051ca6c3e0c21065f2cbce8bfa2926f6d95fbd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="373c931b-078f-45f5-b7ea-cdcad9114a44" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">81672ade63280796b8848350fd819f3b63d3d975</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da239138-f154-4223-b8e0-300824ac6d25" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">46a0b25701f4202904964ee055a24f111dcf2427</Content>
+      </IndicatorItem>
+      <IndicatorItem id="47dd101f-6608-4e19-b121-69c3054e759f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">3cc05e28b1cd6bf5624a336f72272c89843a462a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f4f4339-3951-45cd-b890-ab3c24e30303" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f8e4435ac616d4bd45796aaee9cbb1e9d882a56e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c0d15baa-8a3e-4c2e-a906-61e413bb02f2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4ee213576bf936e8df31c725ab13ab9fa5dbea72</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2d1b1491-8244-42d6-8040-f66f258cfde5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">ec932d26a059a188af6320b8ca76ce6e609f4878</Content>
+      </IndicatorItem>
+      <IndicatorItem id="45fc7638-6199-475f-b4ae-23930c4ad56d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">92a8ce59ef6cdbb677c0690e2e2dda9da0d506e2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f3330b9-1ef4-44f1-b66f-379cf7c0386a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c2fb1d8a1a6d4480ece2325ce8c91dd05832494d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7b69c51-2b39-4319-8075-3e665d5aa28e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">bc7618bfc3a80ea89f52362baa230ee87a24ca3f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="14d56d37-283f-43dd-a96c-4283862d5820" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">194.63.142.101</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5bf5ea81-de08-40b9-84b1-e208e864b1f9" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.213.192.82</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3732bd27-1ea0-4f68-81a6-81cbc818f6c9" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">154.70.153.87</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d30e4d9-279a-4783-bbcf-4f34c24cd4d0" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">178.32.130.49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="617e1b69-c4a6-4cb1-bfd5-910c25cfc224" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">111.90.146.61</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d8383415-df71-492c-b158-68f874e64a3a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">86.105.227.125</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4dc7fa51-e1cf-4e95-89b8-944550ecd15a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">195.3.144.101</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30ff3f0c-cafb-4dcd-b480-031a6fcf5a7b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.213.192.66</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cfe96d91-9e1a-4989-a120-791acd4e696e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">138.204.168.109</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fa1aaa2a-14a6-4f74-b1c4-c026f65b7626" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">155.94.213.66</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bb29eccf-7632-49bc-862d-af80475ca374" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">89.35.178.109</Content>
+      </IndicatorItem>
+      <IndicatorItem id="add7b12b-d6ea-451e-b674-8ca3ae0f90d5" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">89.45.67.200</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b732503b-983b-4248-b196-c62961b309f3" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">178.32.130.53</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a6d1a13-96d5-42cf-a360-88edb008b280" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">111.118.215.201</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec645318-8ed1-4632-b169-95ee75ca11a5" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">178.32.130.54</Content>
+      </IndicatorItem>
+      <IndicatorItem id="75ce0b3c-c51d-4fa2-8397-7adfecc1e640" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.213.192.72</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f5e994a6-fdec-4ac0-8905-1ff914664ee9" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">195.3.144.85</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9ff4110d-9ed9-4f42-8552-8c682a4e0ea6" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">86.105.227.124</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4b5b5ed5-6204-4519-a558-848fc928c629" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.56.80.133</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19ff29c5-e43f-4d2f-a20e-b22bce71b621" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">86.105.227.123</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16f9b7e2-cabc-4992-b62a-c69554120b10" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.213.192.74</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f999d7f-d12e-4f5b-b775-7af2772216ff" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">46.161.30.200</Content>
+      </IndicatorItem>
+      <IndicatorItem id="647fbc9d-bd19-49d8-b12c-803d50598179" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">dumps.dumps@yandex.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9512e98-a19e-4a8b-bda4-e218c2683982" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">petrov.strong@yandex.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a8bc755-48dc-4004-be55-1fb29bc5ba04" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">bizdotbiz2@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8650d544-d03b-4269-b829-8df631e13f38" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">brian45345@safe-mail.net</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

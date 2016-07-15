@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="bf830089-b9de-4eaa-9e38-efb0dad8d56c" last-modified="2016-07-10T09:35:58">
+  <short_description>New POS Malware Emerges - Punkey</short_description>
+  <description>New POS Malware Emerges - Punkey</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:58</authored_date>
+  <links>
+    <link rel=""></link>
+    <link rel="https://otx.alienvault.com/pulse/55346a2eb45ff5369c3ffd2e">https://otx.alienvault.com/pulse/55346a2eb45ff5369c3ffd2e</link>
+  </links>
+  <definition>
+    <Indicator id="2c3d1555-0b45-4c5b-8cb5-1d291763dfa0" operator="OR">
+      <IndicatorItem id="e42b6b08-40d9-4696-ad7f-8791855f678c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0a33332d200e52875c00ea98417b71621b77a9dc291e6a3bdbd69569aac670cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bb1b05e7-fc1d-4972-a32b-985a889a2a87" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e0c4696093c71a8bbcd2aef357afca6c7b7fbfe787406f6797636a67ae9b975d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0650e983-5e1f-4289-bdc8-4072fd3570a7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6c7a26ac738c940cdce1e0fcbd9995994ce19332ea444c4ea87de52d2fe9713b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2cf806a1-9d9b-4fac-93d1-f18acae01076" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e06f57b984d52153d28bdf9e2629feb16e2dbdea617702fb3397c959ee70ed68</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9760858f-f098-4462-bc99-5467137d3df9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">1dd9e1e661070c0d90faeef75d5a487641a4bfb99c58841827ee5b97e6315eaf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1c449f77-c617-48d2-b002-2d071d804438" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5ce1e0f1883d13561f9a1cef321db13c4fefddf4fed1d40e7e31f3b04595f527</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34da687b-1ae2-4506-875f-40bd91bce733" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">04678de7a93ca1fd7fc7eba1672ec04c9855160b4cace440cfcd3c66d8543026</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

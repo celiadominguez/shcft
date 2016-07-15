@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="35004329-12aa-4f25-a76d-7908b994456f" last-modified="2016-07-10T09:34:47">
+  <short_description>Operation Tropic Trooper</short_description>
+  <description>Operation Tropic Trooper</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:47</authored_date>
+  <links>
+    <link rel="http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-tropic-trooper.pdf">http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-tropic-trooper.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/55550891b45ff566ef6419a6">https://otx.alienvault.com/pulse/55550891b45ff566ef6419a6</link>
+  </links>
+  <definition>
+    <Indicator id="3135975b-2c44-40ce-8ba5-287c589ad071" operator="OR">
+      <IndicatorItem id="355f5078-ae3a-4c09-8466-0fd2cb961075" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">air88.ns01.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac5ced20-366c-43a7-ad12-371fb20f55bc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ph11.ns01.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="311dab1b-ee88-4c33-bc26-e3c546a334de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">info.acmetoy.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="551264e1-40ae-428a-8759-258a08ac7c35" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">msc.ddns.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1a67b388-5f51-4a4d-942b-a339de7d753e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">air99.ns01.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="507b16dd-4f21-4b6a-8a24-1f70e3896ca6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ph11.dns1.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3fb592e8-ad09-4f06-8089-32ef4398520d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nevermore.onmypc.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c996c7b2-5edd-4715-94a5-4cf4a3dd7c2a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">air88.ddns.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="88819e06-ef0c-4fa3-9731-91f6f19659c4" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">198.211.3.83</Content>
+      </IndicatorItem>
+      <IndicatorItem id="18f26432-bdaa-45f1-b866-19776c1cd8b6" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">50.117.38.164</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7753615e-8098-4f27-b191-e08b17fbf45f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">61.222.31.83</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55969b49-c5e5-4bb9-86ed-b4371ba238fe" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">113.10.183.104</Content>
+      </IndicatorItem>
+      <IndicatorItem id="df7d5857-951b-49e7-8f3c-e85a669d852d" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">113.10.221.89</Content>
+      </IndicatorItem>
+      <IndicatorItem id="14b02d8e-641c-46eb-8479-5d1ffeac5006" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">61.221.169.31</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6dca5ddf-ba0b-4f65-bb59-a09bc3876728" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">69.221.169.31</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7bde6716-6efa-4160-9c4d-e3695ab8deb7" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">208.187.167.126</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e98a275-1294-4977-aa66-37c78ae55b16" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">202.153.193.73</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f1f12bd6-533e-494f-b415-f5aa180febd2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">173.252.220.169</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70885e80-b1e4-4068-8ecc-c98e6a68214b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">61.218.145.179</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

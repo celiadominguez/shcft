@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="2eb51fdc-2b57-46d4-9f0d-b5a5ba08c7bc" last-modified="2016-07-10T09:33:31">
+  <short_description>US Healthcare Organizations Most Affected by Stegoloader Trojan</short_description>
+  <description>US Healthcare Organizations Most Affected by Stegoloader Trojan</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:31</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/us-healthcare-organizations-most-affected-by-stegoloader-trojan/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Anti-MalwareBlog+%28Trendlabs+Security+Intelligence+Blog%29">http://blog.trendmicro.com/trendlabs-security-intelligence/us-healthcare-organizations-most-affected-by-stegoloader-trojan/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Anti-MalwareBlog+%28Trendlabs+Security+Intelligence+Blog%29</link>
+    <link rel="https://otx.alienvault.com/pulse/558afc3ab45ff51e0325e6f1">https://otx.alienvault.com/pulse/558afc3ab45ff51e0325e6f1</link>
+  </links>
+  <definition>
+    <Indicator id="d7bcbfb6-8db1-47b2-b226-8b555a48d7cd" operator="OR">
+      <IndicatorItem id="227cab8d-eecc-459a-9510-a2e4084316fa" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">bce6a9368f7b90caae295f1a3f4d3b55198be2e2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="07704086-41e7-40de-b704-45dc5123805f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2d979739fbf4253c601aed4c92f6872885f73f77</Content>
+      </IndicatorItem>
+      <IndicatorItem id="abe1acf9-821e-4ddf-9546-2bcdb88a5edf" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b8db99cf9c646bad027b34a66bb74b8b0bee295a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f49af05-2363-4328-87aa-17ad85e07c96" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">11f25bee63a5493f5364e9578fa8db9ed4c4b9c9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4654b4a5-0627-4072-bf8a-6ac030f81884" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d5d0a9ecf1601e9e50eef6b2ad25c57b56419cd1</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

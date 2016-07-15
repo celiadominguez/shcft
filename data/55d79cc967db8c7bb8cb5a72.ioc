@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d103ab92-68ca-40c6-9d35-e14fd5fd89a7" last-modified="2016-07-10T09:31:37">
+  <short_description>Inside the spyware campaign against Argentine troublemakers</short_description>
+  <description>Inside the spyware campaign against Argentine troublemakers</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:37</authored_date>
+  <links>
+    <link rel="https://firstlook.org/theintercept/2015/08/21/inside-the-spyware-campaign-against-argentine-troublemakers-including-alberto-nisman/#appendix">https://firstlook.org/theintercept/2015/08/21/inside-the-spyware-campaign-against-argentine-troublemakers-including-alberto-nisman/#appendix</link>
+    <link rel="https://otx.alienvault.com/pulse/55d79cc967db8c7bb8cb5a72">https://otx.alienvault.com/pulse/55d79cc967db8c7bb8cb5a72</link>
+  </links>
+  <definition>
+    <Indicator id="c044aeaa-07d2-4c1e-a8db-35561c7acc9d" operator="OR">
+      <IndicatorItem id="daf84229-1132-4c16-8655-c17a20d30bd9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ca5481e56de4b78348c008c36803fc044baea9ea5a5ea8534b3e88ce35f0958a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ef60d6a-7e7c-40fa-bcb2-633ab264cf61" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0776cc9d22730006c5a818afe78f78e578107eccc5322424f49e2d4fff3efec4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b3e1c91-69b1-4391-818d-cf543f5138a0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c0664ca05a351388c903d7e989257fe244b25098bf74394a9325f4b0a7c5472b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7aa95e5b-2b4b-452b-a405-982f287a2dec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">deyrep24.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e37333e-bda0-43f7-8ea1-2175cdac1f12" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">daynews.sytes.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ba2eba1f-520e-4163-8124-ad60e2c8adbb" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8fb96dfab7e4c0acb1eb9f4e950ba4b9</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

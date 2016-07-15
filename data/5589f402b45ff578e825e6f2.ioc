@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="4851b303-ceed-4bda-af12-b4a0e315408f" last-modified="2016-07-10T09:33:34">
+  <short_description>Stealthy Cyberespionage Campaign Attacks With Social Engineering</short_description>
+  <description>Stealthy Cyberespionage Campaign Attacks With Social Engineering</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:34</authored_date>
+  <links>
+    <link rel="https://blogs.mcafee.com/mcafee-labs/stealthy-cyberespionage-campaign-attacks-with-social-engineering">https://blogs.mcafee.com/mcafee-labs/stealthy-cyberespionage-campaign-attacks-with-social-engineering</link>
+    <link rel="https://otx.alienvault.com/pulse/5589f402b45ff578e825e6f2">https://otx.alienvault.com/pulse/5589f402b45ff578e825e6f2</link>
+  </links>
+  <definition>
+    <Indicator id="ca9dd4f2-29f3-4230-8aba-b2189ff19f70" operator="OR">
+      <IndicatorItem id="8a03bdd6-b490-43e8-9c8a-ed35385c2b4e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eholidays.mooo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0613ac54-4f52-40f0-adce-daab0caf5d62" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mines.port0.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55132f2a-7d16-4319-9e7e-07ade9a79a0d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">humans.mooo.info</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b34b63f0-36f4-4bbb-97ba-9e7b07baa48b" last-modified="2016-07-10T09:32:37">
+  <short_description>Compromised TV and Government-Related Sites Lead to PoisonIvy</short_description>
+  <description>Compromised TV and Government-Related Sites Lead to PoisonIvy</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:37</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/hacking-team-flash-attacks-spread-compromised-tv-and-government-sites-in-hong-kong-and-taiwan-lead-to-poisonivy/">http://blog.trendmicro.com/trendlabs-security-intelligence/hacking-team-flash-attacks-spread-compromised-tv-and-government-sites-in-hong-kong-and-taiwan-lead-to-poisonivy/</link>
+    <link rel="https://otx.alienvault.com/pulse/55b8dd5d4637f20ecbb10fd6">https://otx.alienvault.com/pulse/55b8dd5d4637f20ecbb10fd6</link>
+  </links>
+  <definition>
+    <Indicator id="47b2da8e-f55c-4ffa-a474-93031b6c1468" operator="OR">
+      <IndicatorItem id="c7f16ed3-8aa4-42a2-a526-95432cfe8676" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wut.mophecfbr.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e02d4276-4564-430f-a6f7-8555b7c6a2a5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d4966a9e46f9c1e14422015b7e89d53a462fbd65</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3ca1523-d7d9-4c1f-9d97-79615ac6dfce" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">fdcdf30a90fa22ae8a095e99d80143df1cc71194</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4101c2cc-0360-4264-a80d-23abe4f6e973" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2dc1deb5b52133d0a33c9d18144ba8759fe43b66</Content>
+      </IndicatorItem>
+      <IndicatorItem id="888eb63e-5a08-44c4-b23c-a70d2053015b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">9209fee58a2149c706f71fb3c88fef14b585c717</Content>
+      </IndicatorItem>
+      <IndicatorItem id="574d0bf4-d954-48cb-9f42-1904a87bbb06" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">223.27.43.32</Content>
+      </IndicatorItem>
+      <IndicatorItem id="271792e8-29b9-4dfe-8788-862e043cf202" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">win7.myz.info</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="eee4c754-de32-468e-a34e-2f582dbe371c" last-modified="2016-07-10T09:33:05">
+  <short_description>Unit 42 Technical Analysis: Seaduke</short_description>
+  <description>Unit 42 Technical Analysis: Seaduke</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:05</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/07/unit-42-technical-analysis-seaduke/">http://researchcenter.paloaltonetworks.com/2015/07/unit-42-technical-analysis-seaduke/</link>
+    <link rel="https://otx.alienvault.com/pulse/55a54124b45ff5420294e69e">https://otx.alienvault.com/pulse/55a54124b45ff5420294e69e</link>
+  </links>
+  <definition>
+    <Indicator id="7ca739f9-3895-4884-aa19-bd86002a25d0" operator="OR">
+      <IndicatorItem id="c6caa279-cf3a-4a32-8c61-60a4935f42ca" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3eb86b7b067c296ef53e4857a74e09f12c2b84b666fc130d1f58aec18bc74b0d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c52d929-0184-430c-932d-8257661e40da" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a25ec7749b2de12c2a86167afa88a4dd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="104e5d6d-1c08-4a87-a3a6-58adc4fc6825" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">bb71254fbd41855e8e70f05231ce77fee6f00388</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="e501fef0-1996-4e36-9893-22d04fc9f03b" last-modified="2016-07-10T09:29:31">
+  <short_description>#1020 Dissecting the Malware Involved in the INOCNATION Campaign</short_description>
+  <description>#1020 Dissecting the Malware Involved in the INOCNATION Campaign</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:31</authored_date>
+  <links>
+    <link rel="https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_FINAL.pdf">https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_FINAL.pdf</link>
+    <link rel="http://www.threatgeek.com/2015/12/fidelis-threat-advisory-1020-dissecting-the-malware-involved-in-the-inocnation-campaign.html">http://www.threatgeek.com/2015/12/fidelis-threat-advisory-1020-dissecting-the-malware-involved-in-the-inocnation-campaign.html</link>
+    <link rel="https://otx.alienvault.com/pulse/5671dc9667db8c3f8b467f1d">https://otx.alienvault.com/pulse/5671dc9667db8c3f8b467f1d</link>
+  </links>
+  <definition>
+    <Indicator id="092d164f-0e93-4e30-80e1-ee81e149353d" operator="OR">
+      <IndicatorItem id="a4984493-bdd6-47d9-98fd-de015e59b7d9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">fce3dd4bd160b8c0698ca1dfba37bc49b3e1ad80cf77a31741bdbd2fa698be36</Content>
+      </IndicatorItem>
+      <IndicatorItem id="790cdd9b-a209-4d4a-956b-d77dfce4a6f7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">cd07ac5947c643854375603800a4f70e2dfe202c8a1f801204328921cb3a2a4c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f961226e-9dcc-40ef-8082-128ce4fdfeca" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">01a0c03f7e01bc41e91cff5d2610ac22da77dbfd01decf60c486b500390cd3ae</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7050906-6795-46fc-8e47-f5a3aa04ec81" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">1ed0c71298d7e69916fb579772f67109f43c7c9c2809fd80e61fc5e680079663</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30dec3e5-f282-416e-933e-65d703a03bc9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5bb4814bd28ee8abb15be6b8e723f6960f37ec17a619f5d93efbcc6fc59502f6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ba2f5ee-7bdb-48ab-9519-b33aaf2c06e4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">inocnation.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="168143f1-efcb-471b-bb5f-0b3d9c6ef1b4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mail.cbppnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="898bc16c-8717-4e37-be14-83800f2eed2a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4f4bf27b738ff8f2a89d1bc487b054a8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17f31197-2423-4452-86bb-783d99a10a3f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a7bd555866ae1c161f78630a638850e7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f2e4c6e-d319-410c-b5a2-28c8d410553f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2f7e5f91be1f5be2b2f4fda0910a4c16</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c2bc58e1-7b49-4a3d-acf3-584c505e7841" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">68f1419721354ec1f78a71e10b54fca8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a3bae634-552b-4c77-82a6-48e3494a37d2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">75d3d1f23628122a64a2f1b7ef33f5cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce939087-5bc5-41fa-949b-4b593c2c25e1" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">202.172.32.160</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f88c053-aa40-4207-9d4b-7d05575a5d7a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">211.104.106.41</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06720816-606d-485e-b148-3c1b6f5ac280" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">87.193.23.40</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

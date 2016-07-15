@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="675d805b-df4c-4e95-b515-95a9e692a2e2" last-modified="2016-07-10T09:32:55">
+  <short_description>Pushdo It To Me One More Time</short_description>
+  <description>Pushdo It To Me One More Time</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:55</authored_date>
+  <links>
+    <link rel="http://www.fidelissecurity.com/sites/default/files/FTA_1016_Pushdo.pdf">http://www.fidelissecurity.com/sites/default/files/FTA_1016_Pushdo.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/5534726ab45ff539c79fe735">https://otx.alienvault.com/pulse/5534726ab45ff539c79fe735</link>
+  </links>
+  <definition>
+    <Indicator id="677cf1e7-0417-438f-9b3f-ee67efecf2fd" operator="OR">
+      <IndicatorItem id="bc213279-c8ad-456f-b9a6-85fe1c177750" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">safpobdazy.kz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c67c9149-12c4-4c0e-bbe0-0a9335580d1e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xunsudyara.kz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="865d6399-e855-4ab7-b82b-677600368339" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">frimeset.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc6e7488-6f34-4578-ba28-dc9497504ed4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hyihyimel.kz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46a5e843-e9ed-42a4-b13c-6a50a16b42bd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hufuqzyilaru.kz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e8d8f07-0ff0-4d8a-937a-893d40fe73fa" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b988944f831c478f5a6d71f9e06fbc22</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3172daaa-7a3d-4441-9934-25c5ee02b994" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">be284327e1c97be35d9439383878e29d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86f6b027-5f1f-439d-b88b-be1ac11718c1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e93799591429756b7a5ad6e44197c020</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4e6f8651-4575-4cfe-a569-97e61fda0022" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">40165ee6b1d69c58d3c0d2f4701230fa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cc17fc93-82e6-4c35-9131-787cdfb170d4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6e54267c787fc017a2b2cc5dc5273a0a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="531c14d1-59f8-489f-81d2-b30300943186" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">891823de9b05e17def459e04fb574f94</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e1a84e47-f633-4b05-81ea-c65b36d7b4f1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">de3b206a8066db48e9d7b0a42d50c5cd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c8014ae-c2eb-42a5-ba22-37ab461c8674" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b94bd85cb360c1565f037b7613cf0073</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a553419d-3e37-4215-bedf-f57254e5bbba" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9bb45bb6e1f54a059db110f60a2ef9b8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ff2b240-9c98-4c3b-941e-d9890504f9e2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7b7584d86efa2df42fe504213a3d1d2c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ea34404-1d75-4fe0-9f0c-2936c4e5c94a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f088b291af1a3710f99c33fa37f68602</Content>
+      </IndicatorItem>
+      <IndicatorItem id="98f33729-5c57-47d6-9dfc-cead13d91201" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8888584c6e11cad1d90f18310e8b77c7</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="0e131d55-d551-4bdc-b91b-73e6706de011" last-modified="2016-07-10T09:36:56">
+  <short_description>Derusbi C</short_description>
+  <description>Derusbi C</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:56</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/54dcd89613432a5a2bac32f2">https://otx.alienvault.com/pulse/54dcd89613432a5a2bac32f2</link>
+  </links>
+  <definition>
+    <Indicator id="953dc6f9-e8c5-460f-8df9-4093ca2a6e44" operator="OR">
+      <IndicatorItem id="c1628f1c-9096-4a77-a074-89d894824fcd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">google-ana1ytics.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="032a7711-906e-4b1d-a2b5-bdd9aca34a86" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">trendmicro-update.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d909e87-7360-4e8f-8f11-75963fe919d4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">google-ap1.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5103d8c-9068-4c42-8326-eef3b9dfc49f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">microsoft-update.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13b7fad2-ad1a-449d-b64b-bc2150f7aef4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news.trendmicro-update.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5dfec9c-87fa-4c1d-b5ae-df7d2ce14a78" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lib.county-library.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ea713d67-5b0a-4cbd-ba58-43a93d241335" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news.solidwork.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="266406ea-4ed7-4835-822b-eca9731b862b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teach.bl8.org</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

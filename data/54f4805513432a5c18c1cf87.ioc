@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="5185fcb2-8dd4-444f-ae45-386e0aac630e" last-modified="2016-07-10T09:35:12">
+  <short_description>PlugX servers</short_description>
+  <description>PlugX servers</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:12</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/54f4805513432a5c18c1cf87">https://otx.alienvault.com/pulse/54f4805513432a5c18c1cf87</link>
+  </links>
+  <definition>
+    <Indicator id="aeb337c2-7af5-4766-aa22-0a9f34c371cb" operator="OR">
+      <IndicatorItem id="fbecff84-4c9a-4731-84d3-f83726c8fefe" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d746ca9b74fb04782e0e783980f7702a9356f1c7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0033382a-d774-4c2b-b739-0a5c4c7783ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">147fbdfeed9f0825026b3b3ce558c3ad00410b11</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bbdd9d02-4dd4-452c-be4f-fa292c5b1c31" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">9b90d6608ba6167619b5991fd70319dfcd1fa881</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b2252eb3-f036-4b0f-bbea-d8fbb61cadec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">freemoney.ignorelist.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35f24283-5179-4c01-86b5-b056c9b31116" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.freetimes.dns05.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="41ed33c0-cc9a-40db-86ad-8ea7555a7f86" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">supercat.strangled.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8136ea31-3be6-4ef0-89bb-573b0860f9c2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nusteachers.no-ip.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="258649cd-72d9-4a9b-813c-abda2c23c51d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lucas1.freetcp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2fcfd228-49f8-43c8-a86e-079f2b5b6e50" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.notebookhk.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="735724d2-5a47-4ff0-993a-f473c4e1de2e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sumy2012.jkub.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7ae32e1-c496-459b-9eaf-9fd8fdfbedcc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.togolaga.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="88a8b837-f64e-4ad7-9213-9c0efdc35a87" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lucas1.dnset.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbd1505b-3f52-48f9-beaa-6dca5e3e7529" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ruchi.mysq1.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="285e2dba-e475-4b5e-a673-0633ed960129" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gaurav.mooo.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

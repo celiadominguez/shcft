@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b4a5b56e-e2d9-4f1f-93a8-0ed8d99fbee0" last-modified="2016-07-10T09:29:57">
+  <short_description>STRONTIUM: A profile of a persistent and motivated adversary</short_description>
+  <description>STRONTIUM: A profile of a persistent and motivated adversary</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:57</authored_date>
+  <links>
+    <link rel="http://download.microsoft.com/download/4/4/C/44CDEF0E-7924-4787-A56A-16261691ACE3/Microsoft_Security_Intelligence_Report_Volume_19_English.pdf">http://download.microsoft.com/download/4/4/C/44CDEF0E-7924-4787-A56A-16261691ACE3/Microsoft_Security_Intelligence_Report_Volume_19_English.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/564deefa67db8c7a156bdfa3">https://otx.alienvault.com/pulse/564deefa67db8c7a156bdfa3</link>
+  </links>
+  <definition>
+    <Indicator id="c8cc3441-e4ba-4bd8-9eb3-67362ffdb0a4" operator="OR">
+      <IndicatorItem id="a487af60-d94c-4e8f-bf9f-52f966414924" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nato-news.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ddd568d6-57d4-483c-86cf-4e4e80009eec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">electronicfrontierfoundation.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7d03e51-6254-4bde-a1fc-3363f56535e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">privacy-live.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd3c1e76-5734-4b6d-85ab-4fb9a592a1c3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bbc-press.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f8b086f-6a49-4c57-822d-49969bf973b3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mail-ukr.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0be1603c-d887-4c8e-a726-ee513fc69dc0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">osce-press.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="33f17825-be92-44b6-85a6-691c41e2ac2f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">accounts.g00gle.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b848f5f8-50ec-426b-af96-6f335d9a93f9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">us-mg6mailyahoo.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

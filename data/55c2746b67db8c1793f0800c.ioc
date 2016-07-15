@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="26d284f0-9343-4cc5-9fb8-bcf89dcb7cf3" last-modified="2016-07-10T09:32:06">
+  <short_description>Uncovering Bunitu’s Secrets</short_description>
+  <description>Uncovering Bunitu’s Secrets</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:06</authored_date>
+  <links>
+    <link rel="https://blog.malwarebytes.org/botnets/2015/08/whos-behind-your-proxy-uncovering-bunitus-secrets/">https://blog.malwarebytes.org/botnets/2015/08/whos-behind-your-proxy-uncovering-bunitus-secrets/</link>
+    <link rel="https://otx.alienvault.com/pulse/55c2746b67db8c1793f0800c">https://otx.alienvault.com/pulse/55c2746b67db8c1793f0800c</link>
+  </links>
+  <definition>
+    <Indicator id="e80fa473-cf18-4e47-bc30-1e57ce78bc2e" operator="OR">
+      <IndicatorItem id="2e547dee-48b6-485e-a673-2357f12a5be3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ac4e05a013705fd268e02a97c15d6f79</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a2f7493-b934-48f9-a291-5be7d8891357" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b71832a8326b598208f49bf13e5b961f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="110908b5-c5b8-414c-a5c5-7ed119345078" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1bf287bf6cbe4d405983d1431c468de7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dbb9dba3-107f-4209-9594-bf1698137de3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">542f7b96990de6cd3b04b599c25ebe57</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f2c5eae-cf38-44d2-8e77-d89398a4bbb4" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.211.15.37</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86a8f5d4-46fa-4322-9682-dd415c059145" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.211.178.145</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f22b7a2d-a72d-42f2-9789-db1c8f978303" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns1.joinparty4beer.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c542e102-ed76-4c0c-97f9-6236e9f1e7cb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns3.joinparty4beer.xyz</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

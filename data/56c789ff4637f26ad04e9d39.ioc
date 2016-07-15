@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="9bf1327a-0245-4d26-a4ab-da05130a1888" last-modified="2016-07-10T09:28:39">
+  <short_description>Citadel 0.0.1.1 (Atmos)</short_description>
+  <description>Citadel 0.0.1.1 (Atmos)</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:28:39</authored_date>
+  <links>
+    <link rel="http://www.kernelmode.info/forum/viewtopic.php?f=16&amp;t=1465">http://www.kernelmode.info/forum/viewtopic.php?f=16&amp;t=1465</link>
+    <link rel="https://otx.alienvault.com/pulse/56c789ff4637f26ad04e9d39">https://otx.alienvault.com/pulse/56c789ff4637f26ad04e9d39</link>
+  </links>
+  <definition>
+    <Indicator id="98016802-fd5d-44fb-8ab7-0fa00ea6317f" operator="OR">
+      <IndicatorItem id="fc8ae650-df37-4405-a587-5ae9049cf327" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c286c31ecc7119dd332f2462c75403d36951d79f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c768ecb3-55f5-4e77-b4c8-2421fadfe57c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">04f599d501ea656fb995d1bfa4367f5939631881</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21a0efb0-7559-427d-9ba5-6ccaab4450a1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">56b58a03adb175886fbca449cdb73be2a82d6fef</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb085437-e230-4191-83ec-ee190b12b139" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">963fe9dceda3a4552faa88babd4e9954b05c83d2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d3c23df-f382-43b6-9cd1-d4e36a0287ac" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2716d3de18616dbab4b159bace2f2285da358c84</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c69365f-ac69-4e7c-821b-a69a5ea6d76a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">bfd9251e135d63f429641804c9a52568a83831ca</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0f2a6c50-0b65-452a-a289-de1cf91e7d2e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">02ffc98e2b5495e9c760bda1d855dca48a754243</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e6ac1be-2912-4db3-899e-6f4988f053e1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">450a638957147a62ca9049830c3452b703875aee</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c9873bcd-33af-4acb-95cc-67e87ed33390" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">7c90f27c0640188ea5cf2498bf5964ff6788e79c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="230cf399-d575-4d50-80d6-6f0ad323562d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b3fdc0dafa7c0a2076ab4d42317a0e0baaf3ba78</Content>
+      </IndicatorItem>
+      <IndicatorItem id="04cb29b6-1174-444a-ab86-f752ff3a2117" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">267da16ec9b114ed5d9f5dee07c2bf77d4cfd5e6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8780b094-0938-462e-9171-ad0580a00111" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d399aeda9670073e522b17b37201a1116f7d2b94</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e2e35817-3227-4aa3-89a5-650b8d8df74b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">959f8a78868ffe89cd4a0fd6f92d781085584e95</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0ab61fc6-e61c-45f2-a8e7-528849ce2684" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5cac9972bb247502e700735067b3a37e70c90278</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a09070b6-b5e7-4cd6-915c-9cff83cef849" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">3b004c68c32c13caf7f9519b6f7868bf99771f30</Content>
+      </IndicatorItem>
+      <IndicatorItem id="df79c5f4-562b-4f76-a925-1706da0d7da5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0b40f80c025c199f7d940bed572ea08ade2d52f9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="024bb50d-56c7-4a90-b2e2-d5752c2b160b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">daabf498242018e3ee16513e2a789d397141c7ac</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bbdca279-71b1-43d5-a985-906098dd8c89" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">8bbfa46a2adcdf0933876ef920826ab0b02fcc18</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4236b689-05d0-440d-863c-47b2b7e2bf42" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a7d98b79fbdd7efebe4945f362d8a233a84d0e8d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="99f36d6d-a858-47ba-a138-cb53ee60ebc2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2e28e9acac691a40b8faf5a95b9c92af0947726f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aab47fe7-40c8-4d44-aefd-3f2052c9c703" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">14c0728175b26446b7f140035612e303c15502cb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e9a0d78-d7ad-40a3-bc31-972143c0906b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b7ae6d5026c776f123bfc9daecc07bd872c927b4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8500b883-34c2-4b2b-a799-8d987e3190ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4f6ae5803c2c3ee49d11dab48ca848f82ae31c16</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c6793fd0-3f61-4e42-8e16-7120a435fe3b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">e6dd260168d6b1b29a03df1ba875c9065b146cf3</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

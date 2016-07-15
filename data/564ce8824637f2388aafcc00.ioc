@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c21e4ef9-7f3d-42f1-9f88-e161b30add44" last-modified="2016-07-10T09:29:58">
+  <short_description>Sakula Reloaded</short_description>
+  <description>Sakula Reloaded</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:58</authored_date>
+  <links>
+    <link rel="http://blog.crowdstrike.com/sakula-reloaded/">http://blog.crowdstrike.com/sakula-reloaded/</link>
+    <link rel="https://otx.alienvault.com/pulse/564ce8824637f2388aafcc00">https://otx.alienvault.com/pulse/564ce8824637f2388aafcc00</link>
+  </links>
+  <definition>
+    <Indicator id="4263c62b-0248-4b7c-ba6e-ed1c189a08e8" operator="OR">
+      <IndicatorItem id="998964e2-abec-4854-9e91-3489e0ca2d29" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">inocnation.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bcf9d96a-52b4-41d9-bb8a-d1eab9672592" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">we11point.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c045bd9d-9512-4d80-b82f-0055f5b813db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdn.sanecat.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16ba63cb-f00b-476e-b5e4-db403bb65ca7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">oa.ameteksen.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ba83765-ff79-4818-b059-e2bb5eaa0cb8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">capstone.homeftp.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="253cffde-0c91-4021-8178-18f010a973ad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webmail.vipreclod.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd787c1e-efe2-4dba-ac79-daf905122d25" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">180.210.206.246</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

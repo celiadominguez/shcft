@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="da23959a-be1c-4b00-81f0-886d3c6ab043" last-modified="2016-07-10T09:30:39">
+  <short_description>Japanese corporations targeted with active malware spam campaign</short_description>
+  <description>Japanese corporations targeted with active malware spam campaign</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:39</authored_date>
+  <links>
+    <link rel="http://www.symantec.com/connect/blogs/japanese-corporations-targeted-active-malware-spam-campaign">http://www.symantec.com/connect/blogs/japanese-corporations-targeted-active-malware-spam-campaign</link>
+    <link rel="https://otx.alienvault.com/pulse/5617f51367db8c47d4ceb615">https://otx.alienvault.com/pulse/5617f51367db8c47d4ceb615</link>
+  </links>
+  <definition>
+    <Indicator id="e12e554c-a1e4-47ac-9896-ff5893937bd9" operator="OR">
+      <IndicatorItem id="18c68b24-f083-4df1-af14-9b69007ad151" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">192ec79c4506e32ea95b2dbcf6989473</Content>
+      </IndicatorItem>
+      <IndicatorItem id="94fb0de5-9d18-40ae-9442-8d1cf2bccfe0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">dec80a4e5d88a73ff1527e0a2f0de26f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b65a9497-7927-4b1a-b80d-98c5f219c964" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cf80cb5b16c8021ae2feecef25f53370</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="81ef15db-85b5-4b3b-bc1c-68d115c67d57" last-modified="2016-07-10T09:28:17">
+  <short_description>The return of HackingTeam with new implants for OS X</short_description>
+  <description>The return of HackingTeam with new implants for OS X</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:28:17</authored_date>
+  <links>
+    <link rel="https://securelist.com/blog/research/74063/the-return-of-hackingteam-with-new-implants-for-os-x/">https://securelist.com/blog/research/74063/the-return-of-hackingteam-with-new-implants-for-os-x/</link>
+    <link rel="https://otx.alienvault.com/pulse/56d88f4a4637f2499b616f21">https://otx.alienvault.com/pulse/56d88f4a4637f2499b616f21</link>
+  </links>
+  <definition>
+    <Indicator id="4de913f9-de1a-4259-bd0a-ac3951cc58c3" operator="OR">
+      <IndicatorItem id="4ff94789-6e7a-44a6-8b9e-1e9e2166fd2a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e2b81bed4472087dca00bee18acbce04</Content>
+      </IndicatorItem>
+      <IndicatorItem id="afdfabbc-c8fd-470e-a65d-aa520421ea9e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0eb73f2225886fd5624815cd5d523d08</Content>
+      </IndicatorItem>
+      <IndicatorItem id="770553dc-9ded-4cd6-95e7-e501e2b98577" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">212.71.254.212</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

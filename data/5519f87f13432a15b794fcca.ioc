@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b8244fee-fa84-434e-ad20-c3a314b63aeb" last-modified="2016-07-10T09:36:16">
+  <short_description>Malware Dridex Arrives via Phishing Email </short_description>
+  <description>Malware Dridex Arrives via Phishing Email </description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:16</authored_date>
+  <links>
+    <link rel="https://blogs.mcafee.com/mcafee-labs/banking-malware-dridex-arrives-via-phishing-email">https://blogs.mcafee.com/mcafee-labs/banking-malware-dridex-arrives-via-phishing-email</link>
+    <link rel="https://otx.alienvault.com/pulse/5519f87f13432a15b794fcca">https://otx.alienvault.com/pulse/5519f87f13432a15b794fcca</link>
+  </links>
+  <definition>
+    <Indicator id="4cb2f07c-3dab-4623-93ca-30f09094cfce" operator="OR">
+      <IndicatorItem id="45d72721-f0a0-4b93-87a1-32dbcc380df7" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">193.26.217.197</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f0982833-7e3a-4e94-a4f3-217401d36c22" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">193.26.217.221</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b67d8177-354d-474e-95be-fb4dba84af51" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">121.50.43.175</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4094f069-1c5a-4cf3-873c-eb7a13c1b2f2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.226.93.51</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5a3f3fd9-1598-4430-ab4d-7381927f3a8c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">74.208.68.243</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f084c21b-e393-4f34-9d92-fc94309e2e61" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">82.151.131.129</Content>
+      </IndicatorItem>
+      <IndicatorItem id="027b3fc6-75f6-461f-bf5c-a134873bd9f9" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">176.31.28.244</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58b249a2-147a-4edf-9732-5b4b067d0e3c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">62.76.41.15</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf510d3a-e095-447c-b1bb-a4065f2d428f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">178.32.184.7</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

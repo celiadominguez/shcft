@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="98abf597-a274-41ea-b04f-9eec4e65efcd" last-modified="2016-07-10T09:27:23">
+  <short_description>Teaching an old RAT new tricks</short_description>
+  <description>Teaching an old RAT new tricks</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:23</authored_date>
+  <links>
+    <link rel="https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/">https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/</link>
+    <link rel="https://otx.alienvault.com/pulse/571931ffc1492d015b14bb6a">https://otx.alienvault.com/pulse/571931ffc1492d015b14bb6a</link>
+  </links>
+  <definition>
+    <Indicator id="24a4c11b-da51-4d73-8264-6f7584ae9705" operator="OR">
+      <IndicatorItem id="b63e6f66-2906-4aa2-ae0c-7ac911a81f4c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b7cfc7e9551b15319c068aae966f8a9ff563b522ed9b1b42d19c122778e018c8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f3f5cc7-9808-41f8-82cf-bd91bc972395" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azona2015.chickenkiller.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ea177550-61a3-41a1-a0b9-3a5bd383ca1d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azona.chickenkiller.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2c6e4c0c-4c37-422f-a211-f319e4d2b0b8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">65752e742d643d121ee7e826ab65dc9b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c744be54-8649-4280-84d8-f550af2325f8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9e05fb115bd4e85cfc0e32c72aa721be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4caada2-6559-48ba-9d00-5e1fe94ba391" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e5c71180f117270538487cd9b9b1b6d8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43cee96e-997f-475f-a539-82c4f8d9846d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d740ed3f33ca4cef3a6aa717f94bf52a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b383f9b7-967f-47b0-9111-52d0ebcb3c43" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">3b1ac573509281cdc0b6141f8ea6ed3af393b554</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c1a59d46-a703-4f20-a9ec-44f1880655d5" last-modified="2016-07-10T09:29:07">
+  <short_description>NetTraveler Spear-Phishing Email Targets Diplomat of Uzbekistan</short_description>
+  <description>NetTraveler Spear-Phishing Email Targets Diplomat of Uzbekistan</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:07</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2016/01/nettraveler-spear-phishing-email-targets-diplomat-of-uzbekistan/">http://researchcenter.paloaltonetworks.com/2016/01/nettraveler-spear-phishing-email-targets-diplomat-of-uzbekistan/</link>
+    <link rel="https://otx.alienvault.com/pulse/56a1157f4637f24bb848c949">https://otx.alienvault.com/pulse/56a1157f4637f24bb848c949</link>
+  </links>
+  <definition>
+    <Indicator id="e4b28844-8ab8-4dab-a120-8b534de7dc80" operator="OR">
+      <IndicatorItem id="d8be12f4-5618-4599-ae71-5a9eb39059e2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">74db11900499aa74be9e62d51889e7611eb8161cd141b9379e05eeca9d7175c9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="afc9587f-a24b-44ff-9c20-4af30dbc1e6b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">41650cb6b4ae9f06c92628208d024845026c19af1ab3916c99c80c6457bd4fa9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a773d26-7d71-482e-b2c3-02f4edeb6faa" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">495bb9c680f114b255f92448e784563e4fd34ad19cf616cc537bec6245931b7e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="919bdf54-f814-48f6-91f3-7ccfef5039b4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3b4e4d7a0b1185a45968d90ffe6346f4621116d14dbf88b5138040acc022c757</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f407567-e68a-4ee6-8009-3af37ac0b489" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8f6af103bf7e3201045ce6c2af41f7a17ef671f33f297d36d2aab8640d00b0f0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="242b42f5-ac27-48c7-80c2-77baaba475d9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">001fff6c09497f56532e83e998aaa80690a668883b6655129d408dd098bd1b4b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="329faf1f-179b-4d34-a86a-26f9cc868a5d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3f4fcde99775b83bc88d30ca99f5c70c1dd8b96d970dbfd5a846b46c6ea3e534</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe61b301-7ced-4780-a463-df805668b6bb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">voennovosti.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0f9c209c-e671-45d3-a177-a5ffac26b3c0" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">98.126.38.107</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

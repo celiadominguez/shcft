@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="dca8a1a7-5b70-4d59-96af-500e29741c86" last-modified="2016-07-10T09:31:33">
+  <short_description>RTF Exploit Installs Italian RAT: uWarrior</short_description>
+  <description>RTF Exploit Installs Italian RAT: uWarrior</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:33</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/08/rtf-exploit-installs-italian-rat-uwarrior/">http://researchcenter.paloaltonetworks.com/2015/08/rtf-exploit-installs-italian-rat-uwarrior/</link>
+    <link rel="https://otx.alienvault.com/pulse/55dbbc8c67db8c7bb8cb68c4">https://otx.alienvault.com/pulse/55dbbc8c67db8c7bb8cb68c4</link>
+  </links>
+  <definition>
+    <Indicator id="c10bc49b-3090-40b2-b97e-7d201ad2b2ba" operator="OR">
+      <IndicatorItem id="1d5a7fa2-9a63-4e08-b69e-978cd5ed66a6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5dce01ec5e1bc1b4f5012e0b4bf16532206284fc8c64cfb8dcf907f45caf98fc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fc6a90fd-3bda-4019-83dd-ebb6ec63b2a1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">57a5d0da72655df9c5ca9137df7210b86845eeabae488537c70e36587274937c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f9c8761f-fdc7-4e04-9806-8ad74151c831" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a6dea088c9e2c9191e4c2fc4ece7b7b7bd3f034f444362d35c8765f6ec4bd279</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e7a9988b-6b7d-4c75-9eb9-8eccf36136f5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f4aa83297844eb8297711e32554e41f677cce290732171583199a57fb7a0674b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad0dae25-6b40-4209-86b3-d4daa4d4119e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">login.collegefan.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1040ac29-6cf7-4047-9eff-d1496e307c51" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">login.loginto.me</Content>
+      </IndicatorItem>
+      <IndicatorItem id="75ed0fc0-09ce-4553-9884-b92575ec6279" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">23.249.225.140</Content>
+      </IndicatorItem>
+      <IndicatorItem id="71a4af9f-3e0c-4ea4-ae4d-f0873d38c607" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">63.142.245.12</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

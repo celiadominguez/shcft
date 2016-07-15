@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8d43e6d0-4582-4ea2-9172-265e9da406b5" last-modified="2016-07-10T09:37:23">
+  <short_description>Sites hosting CTB-Locker</short_description>
+  <description>Sites hosting CTB-Locker</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:23</authored_date>
+  <links>
+    <link rel="http://blog.malcovery.com/blog/ctb-locker-the-newest-crypto-malware-now-via-spam">http://blog.malcovery.com/blog/ctb-locker-the-newest-crypto-malware-now-via-spam</link>
+    <link rel="https://otx.alienvault.com/pulse/54d3010411d408167c9dea81">https://otx.alienvault.com/pulse/54d3010411d408167c9dea81</link>
+  </links>
+  <definition>
+    <Indicator id="8ee96ef6-8db7-4684-ab79-1273a92eddfa" operator="OR">
+      <IndicatorItem id="113e4e20-a102-45db-911a-6fb539e4c6fe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">voigt-its.de</Content>
+      </IndicatorItem>
+      <IndicatorItem id="20a45619-add5-4e4f-bbf2-ec39d8dffe0d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">scolapedia.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="29fa5f58-d6da-4625-821c-92b715ca1002" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pleiade.asso.fr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ba880cf3-0841-41a0-ba9d-4b28892d1d25" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">breteau-photographe.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="90f81eeb-898f-444e-839c-0d03ee619d59" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">maisondessources.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

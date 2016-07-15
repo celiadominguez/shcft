@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="713bc21d-c366-4cfb-bd8e-a5b21f7ff5b1" last-modified="2016-07-10T09:35:06">
+  <short_description>TROJ_WERDLOD: New Banking Trojan Targets Japan</short_description>
+  <description>TROJ_WERDLOD: New Banking Trojan Targets Japan</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:06</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/55497269b45ff5016bd77951">https://otx.alienvault.com/pulse/55497269b45ff5016bd77951</link>
+  </links>
+  <definition>
+    <Indicator id="4cd3aca3-88f0-4d1d-b2c4-f13c98227305" operator="OR">
+      <IndicatorItem id="d2a23b98-c5f9-42a9-b61e-b6a414bf9fd2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e2ec93581e7792bb39fae2c14fc0756f730ec8c66d7c436bce1f4e7b43fb1ab0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b352d51-e374-47e0-8465-abea35d75b51" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">d9d4360f106935d5bbae363623021491d51e5208e2c30d0a30ea06462b28a72f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="578cd8d4-eba3-4849-a2c1-98dc95ca1962" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f27690e8c1b3619fd3e53cdafed363a6a71e31c57e888a8c62a1242ba40dc605</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4b89062e-9196-4ab7-a7e5-a8a4f74040ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c2758245cbe7fe0fa586267f79de36a8960622074f6b95db2d633df31d301363</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0321fc72-f252-4595-9528-9bf5c8309b02" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c004beecc36f461d1c62d27b4055cdb3d608c9de8523aacbc3ab55648c9dce53</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7dac491a-63e9-4ede-a9bb-543047bacac4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3db100e20ef6741bd4d1ef2efe3a75aa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e83191e0-34da-4fe5-83c6-f6848fba3e3c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e13aabaa3a6357d215f9620315fc047f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="378c05ff-9395-444c-bee0-4ad8a27a8f11" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">accbe79ecfe8275457001a45f30a44fb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="10a65575-94ef-4007-aa6f-8cbbd39f13dc" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">221a1377ccd41553b16ba2a09546683c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f45fa6ed-1ae5-4493-806e-3dd0ec34f46a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">749b30a0650bc39ed09d0cd775a97c3d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="109cb79b-ade0-4bec-ac88-eebe38df1940" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">46070ec0b7d4e1b7d6d8152bb1d1e6e7475c5b20</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3bb1ec41-0b7d-4fda-bbb2-89f1080cb8e7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">17ca16506b4a1a92b9e4c5fb809f425c7b670bb8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dc166131-9e38-4c84-85aa-60b020a5dd2f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">36ca118945ee4d9ba60c9178b47ea0a5d9547b7b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="082f89cf-5e15-4f4a-91ae-b3c5ee59ae8a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">3860dc86d0300b9c38c4029c8c6da2d0014695ee</Content>
+      </IndicatorItem>
+      <IndicatorItem id="18841cd5-d3b3-4268-8a47-f761ac5dbadc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">bec543de58afbbd5ffa6976bd9844fee78d7fd72</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

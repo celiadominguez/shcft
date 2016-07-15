@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="245e77fd-ff13-4039-8bf1-2364a331d6ca" last-modified="2016-07-10T09:33:00">
+  <short_description>Microsoft Office Zero-Day CVE-2015-2424 Leveraged By Tsar Team</short_description>
+  <description>Microsoft Office Zero-Day CVE-2015-2424 Leveraged By Tsar Team</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:00</authored_date>
+  <links>
+    <link rel="http://www.isightpartners.com/2015/07/microsoft-office-zero-day-cve-2015-2424-leveraged-by-tsar-team/">http://www.isightpartners.com/2015/07/microsoft-office-zero-day-cve-2015-2424-leveraged-by-tsar-team/</link>
+    <link rel="https://otx.alienvault.com/pulse/55a7cbb7b45ff51f5c94e6a2">https://otx.alienvault.com/pulse/55a7cbb7b45ff51f5c94e6a2</link>
+  </links>
+  <definition>
+    <Indicator id="2ca658c7-97a3-466d-83b8-3866e86ec781" operator="OR">
+      <IndicatorItem id="dbc91a60-3a72-4c08-a29e-79b6c3991a51" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wscapi.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4cabd126-2874-437e-9db5-ac2380b855fd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">storsvc.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4b6fadb1-876c-4718-ac64-e274f29353e0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tabsync.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a761f923-399c-4428-8f4c-bc7b37ad6864" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">112c64f7c07a959a1cbff6621850a4ad</Content>
+      </IndicatorItem>
+      <IndicatorItem id="62b35c7a-06af-4ec2-8c43-b4d38758e60c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">dffb22a1a6a757443ab403d61e760f0c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad2a7cb3-208e-4a8f-80f9-d94c1b04a7cb" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2dfc90375a09459033d430d046216d22</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7cee362a-6d6d-495f-ab42-a9ea8f73d640" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">66.172.11.207</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

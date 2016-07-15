@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="6ad2dd8e-0e56-44c0-8491-ad0606ed7467" last-modified="2016-07-10T09:37:16">
+  <short_description>Pawn Storm IOS_XAGENT</short_description>
+  <description>Pawn Storm IOS_XAGENT</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:16</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/pawn-storm-update-ios-espionage-app-found/">http://blog.trendmicro.com/trendlabs-security-intelligence/pawn-storm-update-ios-espionage-app-found/</link>
+    <link rel="https://otx.alienvault.com/pulse/54d65cc111d4081f74813649">https://otx.alienvault.com/pulse/54d65cc111d4081f74813649</link>
+  </links>
+  <definition>
+    <Indicator id="1f2f94fe-957f-4b27-b3e4-d6b3bbd1214b" operator="OR">
+      <IndicatorItem id="62cb35f2-f1bf-4f07-ad6b-8cef808a8fd1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">30e4decd68808cb607c2aba4aa69fb5fdb598c64</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e03c79cb-cf35-4b31-a662-4516b3fa3ecc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">05298a48e4ca6d9778b32259c8ae74527be33815</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f5df26fb-d71a-4798-ac65-935798ab2926" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">176e92e7cfc0e57be83e901c36ba17b255ba0b1b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="98120181-79a2-42ea-a34b-109f963eb175" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">198.27.64.218</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

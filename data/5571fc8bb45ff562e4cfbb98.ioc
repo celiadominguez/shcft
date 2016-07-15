@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="35cfd90b-64f8-4215-935d-deb1ca23ac09" last-modified="2016-07-10T09:34:03">
+  <short_description>Cryptowall Spam: My Resume Protects All Your Files</short_description>
+  <description>Cryptowall Spam: My Resume Protects All Your Files</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:03</authored_date>
+  <links>
+    <link rel="http://blogs.cisco.com/security/talos/resume-spam-cryptowall">http://blogs.cisco.com/security/talos/resume-spam-cryptowall</link>
+    <link rel="https://otx.alienvault.com/pulse/5571fc8bb45ff562e4cfbb98">https://otx.alienvault.com/pulse/5571fc8bb45ff562e4cfbb98</link>
+  </links>
+  <definition>
+    <Indicator id="186f735a-813b-4324-87b0-6d53a24c1729" operator="OR">
+      <IndicatorItem id="40f60303-ddba-484c-929f-b2d1df8d89d7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6be76dcc877ac42d5af53807b4be92172dea245142e948dba1367c274ab6a508</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f9282d72-07ee-4e16-99ea-95ea1da06225" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3889d489f3905164b2c5731b8fb9c9bbe95ead175c7070f0aa77efe040a18b35</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d59d25ea-b5ea-4105-be75-bfab05080a11" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">2dd699613d9b6b709e4667457acefc3009db57684a85f488396c4e8f4c2d9521</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2587d469-e853-4ddb-a5fa-605ebb36d4ab" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">81af832b81e034dfe742698104a90c1ff6bd490e1c289a49968a15036a268a6b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="63e233ae-e0b0-4cbd-ba9a-92e3e49fc1f1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">36da04ec68a9e0031f89d12065317f8a64ca3598ad0349991fb684e323435a62</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28f7948d-20de-40f2-bf57-e262edce69e7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5fead4017f0770fd0dd8a99b97b514730f46c30ecd61857b1359701b2d73caa7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b2bf4258-cc03-4922-9528-1c5fec7740b4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0c066baf5153cd8e522b74316fed24c075020ff59c52361f253918fa2d66c7ad</Content>
+      </IndicatorItem>
+      <IndicatorItem id="567d4e3b-352e-4ab7-b42a-51a916f53cef" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">41188ce5a34605fd853b48ea1f026dc5ffc778c808be57d630f87146c7dd3bad</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b00af362-a871-47f0-b091-c97380f15e94" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">10fbbeb985f18de13a145f05314a4ab2aaf42fcc276c3e24c6491b6482fe1d5f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d33c3e0-daa1-4331-bb68-88c1e7d4bf77" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b53b58df6445bc4c754f178af66f0b3a5ddf1e93971439d05be61ad9f0bc0997</Content>
+      </IndicatorItem>
+      <IndicatorItem id="92dbfe9e-a011-4c70-8fd4-710e64e1bb68" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">2c03f7497ea8cfc4e8633f0ced8d28e65d8505f94e8d28297c7096f42d8bf2a2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38ecf3f4-bffd-439f-a206-0d7a4a3b9bca" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">2a7b9016bb8004d101dba337c5d1e679c4b88bea198e425a42081ec4186e5b45</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70254a65-f17e-4d30-a88b-639fb13598c2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5bf3471231a4b0a5ad0685c9ee36e9f1f21df3f6c8fcbcb83d60fd64cc513582</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e4ad27f-acff-4d3a-8346-deb0cb88477f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f6ad2ad1fceb98f6a61360afd17d02dab4c0d2919fa6ddfd978582cf044a9655</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

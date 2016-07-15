@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="de7b3995-d931-4154-9b4f-9bfd10de551e" last-modified="2016-07-10T09:34:13">
+  <short_description>Phony Tech Support Scams Now Target Macs</short_description>
+  <description>Phony Tech Support Scams Now Target Macs</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:13</authored_date>
+  <links>
+    <link rel="https://www.bluecoat.com/security-blog/2015-06-02/phony-tech-support-scams-now-target-macs">https://www.bluecoat.com/security-blog/2015-06-02/phony-tech-support-scams-now-target-macs</link>
+    <link rel="https://otx.alienvault.com/pulse/556f303cb45ff5182ecfbb8c">https://otx.alienvault.com/pulse/556f303cb45ff5182ecfbb8c</link>
+  </links>
+  <definition>
+    <Indicator id="8ae490e4-c6d4-495f-ad3b-51ac7458af9a" operator="OR">
+      <IndicatorItem id="6c41fac3-93cd-41c6-b795-ce6b038824ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">macsecurityalerts.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a1fe2ef8-84e1-445e-b542-22b2e0023241" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">macworldservices1.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46e684b6-8807-4a50-8fb8-b9671e14c6ba" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">macsupports.info</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8d802c69-31d2-41fd-997e-92e94afd3ace" last-modified="2016-07-10T09:32:49">
+  <short_description>Watering Hole Attack on Aerospace Firm Exploits CVE-2015-5122</short_description>
+  <description>Watering Hole Attack on Aerospace Firm Exploits CVE-2015-5122</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:49</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/07/watering-hole-attack-on-aerospace-firm-exploits-cve-2015-5122-to-install-isspace-backdoor/">http://researchcenter.paloaltonetworks.com/2015/07/watering-hole-attack-on-aerospace-firm-exploits-cve-2015-5122-to-install-isspace-backdoor/</link>
+    <link rel="https://otx.alienvault.com/pulse/55ae6c82b45ff5081194e6b0">https://otx.alienvault.com/pulse/55ae6c82b45ff5081194e6b0</link>
+  </links>
+  <definition>
+    <Indicator id="99d60d6a-2235-4909-b9a8-6e776af93bc8" operator="OR">
+      <IndicatorItem id="59592839-f8d4-420f-aeba-3044dfa82014" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">53edff51e0e52b2d1e8526fea144e9ea923183c2cfece8a87dda92b8390651af</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dab3eced-4e30-4688-bff3-1df33cf2f9f4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">052aad8133e1ffc2863581db33d366ba4180dfcf2e01ed7acbea4d53c355ab59</Content>
+      </IndicatorItem>
+      <IndicatorItem id="388b569f-3892-40f9-a6d9-59dff62b74a0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">bdbd4974f872a6b62528f4f03c64d6cd9cf5e9352582f5ae242dc7f843a6fe55</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e560c61c-a828-43c9-bbb5-ebab2e02a5c2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">27439adaa07f5ad16eb8039c16eceb4e71f6358e7fc13ac645e8878da8c3e77e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e3e3ecd-2f52-4ee8-8017-262e3dc4a732" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">25ba7d0399dda177a2f35f2f5804ba54a272e43c192649339e5cbf8bd4efa0e0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd3d077e-7b9e-44eb-beff-471812f7b186" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">05acabac8bca04ac36fbd8b7dfbe21bde720ebe82a6b642721114e7fbda01bea</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c5f5d0e-841d-4175-83c5-c435d3c97009" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">anywhere-staring.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="24b5afac-e962-4d1d-b6f4-57a32689777b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">start-vedioing.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e29d3c3e-41f3-498e-a656-2bceac7b30b5" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">319500b2c792aee6cd8ef8ee87d9dc1e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dc4a7226-1110-483d-90a1-1f5a4a11e802" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d0d267d8cbbb7dbc59cfc68742fd0559</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dee2c12b-0400-45c7-8697-604b1f8b3a38" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7f1779f37f257006576b2d41919441ec</Content>
+      </IndicatorItem>
+      <IndicatorItem id="182e5e26-f659-42bd-9eae-b210cb26e9fe" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bcdec2a79eadf1da2166bbb705a25aae</Content>
+      </IndicatorItem>
+      <IndicatorItem id="64b7822b-08a9-4b9f-b348-cf3994a3426c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1f132f365e60cd43fff75cd3ca464463</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e67e734-2d9a-433d-9411-e975f4a8068f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">10dbfb65836773567b466918250d7ef4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="900e811d-5eda-4030-9188-36c9c53cfa09" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4330f5ad25980e0ebb0165f6b49727152735ef4a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="12e5b055-92b6-4347-af8f-8a8618277cb6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">723db4f13e98364098d76b925ea197f9ecd5309b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06ba3821-30a4-4cf8-90d1-ac7e8272f110" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4586685cc724dedffb9c41f65b2dffc7017f2970</Content>
+      </IndicatorItem>
+      <IndicatorItem id="47f411ef-d1eb-4bb1-b2ae-792e93aedc4a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4df97974b36adadfdfda44172484019ad2edd649</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c77574b6-f2a7-4124-8df6-0a78c58e00da" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">fd2ce90293cbb7cd28b42ce8ffb2ce5d95ed3260</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b14242b2-b083-41cd-b58e-875cf6409b99" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4ac396084e932733bb887b51fa5a5e489d9cb0ec</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49f42497-4e0e-44bb-8313-157c1efa919f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">172.246.109.27</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

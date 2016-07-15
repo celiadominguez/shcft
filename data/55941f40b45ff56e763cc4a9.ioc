@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c0d3057a-df35-4c8e-bfa1-143255c3e08d" last-modified="2016-07-10T09:33:19">
+  <short_description>Malware spam: "HMRC taxes application"</short_description>
+  <description>Malware spam: "HMRC taxes application"</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:19</authored_date>
+  <links>
+    <link rel="http://blog.dynamoo.com/2015/07/malware-spam-hmrc-taxes-application.html">http://blog.dynamoo.com/2015/07/malware-spam-hmrc-taxes-application.html</link>
+    <link rel="https://otx.alienvault.com/pulse/55941f40b45ff56e763cc4a9">https://otx.alienvault.com/pulse/55941f40b45ff56e763cc4a9</link>
+  </links>
+  <definition>
+    <Indicator id="9289d235-0c18-48ce-b949-a906f4a96885" operator="OR">
+      <IndicatorItem id="caa1c3ed-3ade-41ef-8009-8bef05e15836" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ab036a9c324ad09ab36d3d805e5bcdc8be8103ceb7db3dd5f95dafa1054b96c0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="71521117-c389-4bc1-86c4-bfbad98f9ed8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ba841ac5f7500b6ea59fcbbfd4d8da32</Content>
+      </IndicatorItem>
+      <IndicatorItem id="db534967-fed4-4b7d-a4f6-fd6ffb6e0384" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">93.185.4.90</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

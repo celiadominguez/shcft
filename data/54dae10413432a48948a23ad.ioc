@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="6d8fc45e-7673-4593-82e8-1896d6178ff7" last-modified="2016-07-10T09:37:03">
+  <short_description>Symmi new DGA</short_description>
+  <description>Symmi new DGA</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:03</authored_date>
+  <links>
+    <link rel="http://johannesbader.ch/2015/01/the-dga-of-symmi/">http://johannesbader.ch/2015/01/the-dga-of-symmi/</link>
+    <link rel="https://otx.alienvault.com/pulse/54dae10413432a48948a23ad">https://otx.alienvault.com/pulse/54dae10413432a48948a23ad</link>
+  </links>
+  <definition>
+    <Indicator id="c48fea78-ead0-482b-8e54-93a6b0544073" operator="OR">
+      <IndicatorItem id="5867f901-f4a1-485c-9124-84994e9a9c9f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">imewgiopaqexacb.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f26d1cdf-0cdb-49bb-8056-973734052339" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ufrasequcoequdi.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="101bd467-f534-4bd0-90d8-a64bba7097a1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xaguuswibuoqope.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="90b197ca-56a6-47d8-8cf5-4c29261f3dd6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">imugoqsoakiqahi.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="394ba539-125c-4c6a-903a-2a728a05497b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gecoohocalifluw.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d09bb1c3-07cf-4f09-86c8-55273b39ba1b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ugxeicbeveudusu.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42aff65d-46e5-4a6f-9471-f1e95881645b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">duwugunuwaqauk.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="280067bb-a768-4c38-91b9-f30c47e0543f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vabuibofqouxog.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="91c6428f-9e1c-4310-94f6-970e729bde71" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">urasahrenaheen.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd3a0a9b-7a05-42c8-9ff8-9ae69ce258b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pivuogusodtoku.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e5630b2c-2c67-44b0-8c70-2f700ce0a919" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">feohpoaqpeheuw.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fcbeb4d5-1c4b-4631-ac0c-1f44ebf985d1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">opacutebmadufo.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49a5d51c-1d95-410e-887e-a9125f2d9acd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">oxacuhuvanoxxo.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6be7f8ec-fa00-4a26-8cec-e4307727322c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vitevecaasbaim.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="822ea8b5-fbf5-4dda-9a29-70fc003c3568" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uciluswaaqnieb.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="94db4fce-5016-4a0f-b9cb-6264813a3f6f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">axgoxevikupoxa.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad58e02e-af57-4f90-8e3f-647c22b66833" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">haerbugoviosmu.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4c1940b-a827-453a-9e67-23bcfb12b2e1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aginemkiroacus.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a13c1fa0-9f27-443f-a0d9-0c3f0a78b326" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">efrubatoiketxa.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d297457-4a1a-47c6-9b09-694a4e49a4ec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">geevheuqsemaif.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6fdbd070-b31e-4baf-b9ff-0b0be568b11f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onogibuluremg.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1c8ea4e4-4c96-450d-9ce5-5bc9e94a325f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">niubsacaosuce.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="937ae8ae-b9c1-4002-8bb0-8098e93d66fe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">looxnaaluhotw.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7d1b792-8330-4bbf-938e-ca0aceaa2866" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ogovugtuipawi.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86615a1f-0608-42c8-9602-4c2b23ff1263" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">deivekmiuwoxe.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0daa50de-5400-4d6d-9fa2-992da9644b2a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bovuugodvuecf.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="11a3a85a-95e8-45e3-babf-6d13aeed9bdd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gouhumuvelcua.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aa47b24b-1225-4cb7-aa8a-b1140652f82f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ecunxoorokonw.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6a57f5dd-5fdf-4a1f-aed1-de5d114de403" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">umashadilauru.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4c0a999a-d8ba-4d7b-af47-e9e6c4a66441" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uhrixaloduuse.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86fc0c6b-86e8-45eb-97e4-c89d16bd05e0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vebiabipkilo.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f110073f-68f7-41b1-a7f2-f0777e7da95a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tixufaheurvo.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a9b41bf-cc70-42f3-bff5-54d66649ab90" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">muarocavhaqe.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a862447-d997-464b-b821-da81afcd66a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ovicceosweub.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9666bd02-0b00-4554-83a6-f4ac30bcc9c3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">siriomilfomu.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c72de28a-93dc-42ca-85c0-9f775c741cd3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">veeswaehsisa.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe094dc4-767b-48f5-b410-97f97dd77478" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tubiebikceli.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="075926d9-9d9b-4521-b427-117928e0292a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">afowkaupbabe.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6461d85-d87d-4131-a090-96ef71cf6eb1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">buxotopelah.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ea9697e-de03-4626-8eb3-db9aac0ab542" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">obwihecidik.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="61997ed5-63e8-4a09-9874-5fdf7c76c5b1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">exdihasuhes.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06b09a43-658b-4e62-81d5-8173d639e3d5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">irmatexoitn.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e39ddc95-14fb-439a-96a0-6239961e9a5a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eqosenrealq.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0dac7f64-6737-47de-b3f7-6e4d06af0e14" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uwuhuhawidb.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eace0346-84a9-4594-9203-df9c09008f28" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">olkaerxedus.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="165375cb-a9b3-44ae-a35d-8892aa39fc9b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">obneifqumea.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f01a3618-5efb-4674-bb6f-4b57fcac25f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bodihemouxk.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7aab663f-d824-496d-80d4-375079d383f3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">doefruevtan.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6a62f41f-a8cb-4da1-b7e3-b24198b32850" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">deohupivoco.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9416bdf6-c177-4aa2-a5d7-c10614aeade1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ipkureleakm.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e02efd6d-cd12-4895-a777-285efb8f6f6f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baugkoosdui.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aeb4fa66-929e-484f-93a1-47dbd5e9ac6e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eretodweqee.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e9d5f1a-8675-4777-8ce3-65da15298f84" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">haaxicuconx.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="626398ad-dc04-4eb7-902b-92b2339ebb15" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hunoikuxibi.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2bf48ccc-833f-4eae-945f-5327525812e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mivibicoruq.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0ccf43cb-1ae4-40c7-a4d3-8de236589acf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qularivafou.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="18b20de2-d7d1-4fa3-b935-0f3d30c212b1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tahimoteev.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e1840dd-5826-4740-a1b7-28879edc32eb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">edehgogoep.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f6485af-8629-42f2-8d67-0b1e010252f1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">muavosecit.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7fd40260-0ec1-409d-9cd4-e239f07c9b04" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rocaexesti.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="81ff2816-51c4-45b6-8919-8ff18025164b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ukwoubapgi.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b708552-bd40-495e-b548-a2b6ddc58221" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">decouqunic.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="75061021-1377-40e1-a747-a677612180e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xiupfisuaw.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5c8e135b-1438-4734-86e0-fe90a455aa5d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ucsauhdune.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d367e637-b1fa-4db4-81c3-8e2ed9ff721e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wewateikho.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6ca85d6-5224-4084-989f-5425787fa476" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ercehuhowi.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57c86eb1-e949-4528-863b-f33d1bc8dc55" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">haufidasu.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c4118f7d-d322-4e42-a509-c164a7d425b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">huosinamu.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bb6dce7f-679e-4623-9555-d043500fe13e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vireacvio.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="150befab-d127-4172-8761-fc00f9d8e8ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">loopowakm.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e88cab6e-19da-4bdb-af5d-e1a26dbe72dc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uhbacoinm.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c3947f3-10ad-4b1c-aa0f-48b3b77c3d67" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uwsiokxua.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="098c02f3-f328-4b0b-809c-2edace55663b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gabouhlat.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9727041a-948a-4f7e-bb13-42e2d48f0dd7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">veonwient.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2cc90d90-eb7a-4e9e-99f7-5b6669e55740" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ociqusdal.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de5e2cd2-8221-488b-8e6b-2e843eb681d7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tevalurii.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21ae7995-42a2-40da-bd2d-ab1bc5e12a5a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">udebliena.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff8dc8d3-6ac8-4f9d-89a0-93fe4f6c5db6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xoegfeima.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77cb156e-b345-45ac-9c05-ffb3a688e08e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hiwosoofa.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b747621-def2-4bed-879b-10dd03f7af36" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cuopxeudu.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="99133a5b-9390-4077-8c55-07f39998e33a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">leuvuftet.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3460bcb-0125-4402-83a5-3a28e6c095f6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">axtoomov.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b697596a-50cb-4a97-bb7d-ba608692fb44" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uxefilka.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c3d7f38-160d-4bff-8dc8-4f8660d96bcf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">loliqooq.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff394fd2-b0c4-4311-bc83-f4f2d3b4f0ae" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1ca728b9d0c64b1edfc47aeeebb899b4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4837fbde-0e9d-4bbb-9db6-84748cb7a631" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e0166446a676adb9e3160c9c06e56401</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d797def3-b167-4880-97cd-3fe4e976c11b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">55f6945302a5baa49f32ef25425b793c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c2e11419-a65e-420d-bf47-8a71c4c3104b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b75f00d7ae2857a3e1cc8f5eb4dc11b9</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

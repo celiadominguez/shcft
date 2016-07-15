@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="4eefa722-d8b7-4e5b-a7b0-63dc1a3b376a" last-modified="2016-07-10T09:28:25">
+  <short_description>ATMZombie: banking trojan in Israeli waters</short_description>
+  <description>ATMZombie: banking trojan in Israeli waters</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:28:25</authored_date>
+  <links>
+    <link rel="https://securelist.com/blog/research/73866/atmzombie-banking-trojan-in-israeli-waters/">https://securelist.com/blog/research/73866/atmzombie-banking-trojan-in-israeli-waters/</link>
+    <link rel="https://otx.alienvault.com/pulse/56d47460aef921516b8200e5">https://otx.alienvault.com/pulse/56d47460aef921516b8200e5</link>
+  </links>
+  <definition>
+    <Indicator id="7bd8ee97-1c1e-41e2-b9dd-4b64f5ff6b67" operator="OR">
+      <IndicatorItem id="2062e893-2bd4-432c-a5b4-e164cb03199b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">msupdcheck.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e1ce23d-5db2-4a36-baf3-42a362c59f17" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">retsback.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b78f0739-8de4-4cf5-a249-17472ec5ede9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">systruster.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7f933d6-25b9-4ec4-a6a6-69b8a1e7364a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">updconfs.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4a0815af-6ba0-4900-bb35-3ddc65becc5f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">13d9352a27b626e501f5889bfd614b34</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6cc3512-e7fd-434d-b60b-eba153d72fbf" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e5b7fd7eed59340027625ac39bae7c81</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38047c5a-9f66-4473-b94b-4903e176a2a6" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">80440e78a68583b180ad4d3e9a676a6e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1bb112e5-9b20-4c67-a536-e60dafef9bb4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4c5b7a8187475be251d05655edcaccbe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd60b162-3b10-4926-8830-8865674f1996" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">efa5ea2c511b08d0f8259a10a49b27ad</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b704dbdf-fadb-40f0-a1a6-26e5252ee0c2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c0201ab2a45bc0e17ebd186059d5a59e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3eff9b6f-7b4b-400e-951a-a726cba846be" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d08e51f8187df278296a8c4ff5cff0de</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4fa76d19-bc43-4070-af1d-0d5aacb547dd" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d2bf165284ab1953a96dfa7b642637a8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="218b2710-3f89-413c-bb09-c7465b399572" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">84bb5a77e28b3539a8022bc3612d4f4c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="68a41f47-8f3d-4fd4-ab26-d0f180706a9a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">47b316e3227d618089eb1625c4202142</Content>
+      </IndicatorItem>
+      <IndicatorItem id="803ccee1-a869-4b6e-b0f6-b298451b6b50" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6d11090c78e6621c21836c98808ff0f4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="73a323b2-661e-4b46-9c2b-56a08470860e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.215.154.90</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5c660589-2866-4b84-ba12-e53f0f2a7c8e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.230.211.206</Content>
+      </IndicatorItem>
+      <IndicatorItem id="763555e9-972b-4401-9fbe-e9444a03a435" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.86.77.153</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac5f4c78-0054-4a73-8cd0-e2937a83903c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">88.214.236.121</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

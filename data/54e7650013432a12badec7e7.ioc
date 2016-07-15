@@ -1,0 +1,600 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="10104323-c653-4ba1-8ee4-f96748f969ce" last-modified="2016-07-10T09:32:21">
+  <short_description>The Equation group</short_description>
+  <description>The Equation group</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:21</authored_date>
+  <links>
+    <link rel="https://securelist.com/blog/research/68750/equation-the-death-star-of-malware-galaxy/">https://securelist.com/blog/research/68750/equation-the-death-star-of-malware-galaxy/</link>
+    <link rel="https://otx.alienvault.com/pulse/54e7650013432a12badec7e7">https://otx.alienvault.com/pulse/54e7650013432a12badec7e7</link>
+  </links>
+  <definition>
+    <Indicator id="37365b78-32c4-4226-b0b5-defdb9e269a1" operator="OR">
+      <IndicatorItem id="744ff70a-d0df-42ee-8eb4-785d08c012f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">quik-serv.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="72391a6f-68f4-468a-8a44-d462ebbffbb5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">speedynewsclips.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ca59a252-2c72-4acf-8345-18e1ef4e3a11" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">thesuperdeliciousnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fac06e6a-5599-403c-a686-9b533c0f9ea6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fnlpic.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb4b5fc5-2a09-4623-a9eb-52f578355d80" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gar-tech.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38250f1a-1a68-40a9-a337-9a4e7ddabaec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avidnewssource.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3630304c-173b-4de1-812f-b00c55b683c5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">globalnetworkanalys.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd0c1593-7759-415e-a1c5-900108584a72" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zhalehziba.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7dc8c2dd-c7b8-4fa9-89a4-ee41cb0108b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">technicserv.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4dd343a6-d770-4c3d-ad87-07f9a416803b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rapidlyserv.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46ee0f6c-405e-41cb-abb9-e79bdf2adbf4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">selective-business.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf1bb317-bd1a-48c2-955f-101922b84685" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">charging-technology.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="787cbdf8-32bf-4b01-a68d-d437111a890b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">crisptic01.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d11b8eb2-4fed-466e-baee-fdb11afcfe4b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rehabretie.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="addbb2ad-f1cf-47b1-bf11-23fd305ab844" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timelywebsitehostesses.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a384dc3-81b6-4b58-8402-5eed77bd3249" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">techsupportpwr.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f846e961-b2cf-474b-9b7c-f3e9cd5db239" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">afkarehroshan.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b0a97564-81eb-4080-8581-aa6f212ca184" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aynachatsrv.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e8412c5-16ed-497d-9ee8-16ff06844c71" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">roshanavar.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="839c784d-be4a-4dec-aa07-96fbc8a5c024" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teatac4bath.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="67b32a6f-e521-4093-ae6e-ff08721edf68" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">forboringbusinesses.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0aa705a2-f1ce-4356-9b38-5eeeda0aaff8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ad-noise.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="15666e74-c870-47cc-8c66-5757009e216c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">myhousetechnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="39cf98a4-4d31-4f53-b312-9fd797a089e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dt1blog.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="561afc2e-8cf6-4aeb-9499-1bc385f27713" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mimicrice.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ea882509-1fe8-43ba-8e4f-02a380b8ec50" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">technicupdate.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="840bef08-e5fb-4d5f-8cea-63e37a9ad343" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">amazinggreentechshop.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03b7baf1-eae6-4956-86a2-65d36ec60d9e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">havakhosh.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="845ce37e-93c4-49c9-ab2f-47fbd4bd9ee3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">easyadvertonline.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d9b9bbf-21cb-4acf-b5c1-98ef0b54292e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">goldadpremium.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="97eb6e30-36d6-4310-b97b-53e7e37c29cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">parskabab.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17e235e0-6efb-4846-a91a-ce2997f798c8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nickleplatedads.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01644dab-c370-4d59-a040-25b73a9a6df4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">honarkhabar.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="edd582b0-333e-48b6-b1a5-13b08cf4ac20" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">posed2shade.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ea7a157d-1741-4ad5-8676-916b246f9289" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">subad-server.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fcaa0e55-8758-4eb6-a017-9f2dc4bef0f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ghalibaft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8447693e-1f10-48eb-aba3-b2c770c247cb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">toofanshadid.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="304f6ac4-f0cf-4a1a-bfe4-eac583f55bc7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">advancing-technology.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7db09b68-d6c1-48c0-885f-7b23f366e3e9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">functional-business.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3af65367-a991-4f3f-8a79-ae00dbc603ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">newsterminalvelocity.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0945f723-81c2-43ad-8d18-767b70cd22db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">slayinglance.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="83dfbfac-23a8-42ef-83d1-c4f28373b4b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">suddenplot.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="edd9c87e-1c02-4a1f-bc1d-197af69a4e28" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">itemagic.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49f098e9-f213-4303-975a-2a03e9f35190" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adsbizsimple.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec71f187-67d7-4947-9242-616983cc4621" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">industry-deals.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="afe8e51f-fd7c-4153-a37c-d2711ba66c5d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sherkatkonandeh.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="29ee0408-8fef-4809-9096-e555052400d6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ad-void.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5d3f2d0a-722c-4179-ad27-b7d093f8bd40" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">downloadmpplayer.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2901aa0b-d729-43d8-af1f-df8796c32286" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xlivehost.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e8cfd10-7354-45ba-9c92-71d71ecc6b2c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sherkhundi.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ec63897-5b3f-4545-a7d2-d6106da12a19" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">taking-technology.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7523966d-bf48-41b2-a68b-2c17a82b3401" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">business-made-fun.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="292be314-1699-4eb3-b5d4-db86e8886e72" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">standardsandpraiserepurpose.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a6540cf-dedb-4eab-be7e-d5af8141c68a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">arabtechmessenger.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c8e6906-28c5-42f4-bfe8-bfd7c78e84f1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">businessedgeadvance.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="894abe56-1146-49fb-95d5-0e6b6e4c0c1b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tropiccritics.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="92a5f4c4-1b84-4ad7-875f-d151dac8a540" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">forgotten-deals.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8783f87d-881d-4504-97b7-4f01192d427a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">team4heat.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e241cc2-29d9-49a3-8c25-fc00456735b6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">serv-load.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="24a5c1f0-ef89-4e89-86af-b29c5b1d9da0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">monster-ads.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="07404b2f-806a-4bc8-9e93-9ae999897aec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">meevehdar.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f938e83c-63bd-4f83-8561-9194ffb9eeb6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ad-servicestats.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="590fb110-ad08-40cd-8563-cc98e10e890e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cigape.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="493d295b-dd0d-496b-b9f2-11cd9349be81" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">newjunk4u.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af687a49-72ff-4135-b527-4b5fc9eabebf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rampagegramar.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="37b8297b-192a-4e54-bc94-607fdb345005" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">darakht.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="488de492-9f1a-4f76-ba2d-820cadb945d0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">techasiamusicsvr.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b75247ab-70bb-483f-ba85-a0c30a0d57f7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fliteilex.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6862f1cb-b606-4e70-aea0-f695102a35f2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">quickupdateserv.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="795fa274-e6a1-4c30-aa6e-9c1248212e18" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">customerscreensavers.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c6c2bd90-e460-42bb-8f1e-c1422a8d1b98" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">brittlefilet.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6d6f72eb-eadc-4c79-b70a-6f785eec687a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">successful-marketing-now.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9264236e-2758-43b0-b780-ed9f0c49c205" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">islamicmarketing.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="60170cb5-86bc-4ed7-a20a-e74c94c21b3d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">technicaldigitalreporting.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9a46ccb-2275-44b1-8ebf-a08231611993" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">unwashedsound.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2785650f-c48c-4b0f-a0fa-41dffa0e566d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nowruzbakher.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e7ffd169-6f8f-492f-a75e-13b757f4022a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">technicads.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c592e129-1d85-48d4-8e74-2103866f916b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">businessdirectnessource.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="81aa2fbc-c253-410e-baea-3adf79b62c91" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rubiccrum.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f4c6b7ed-6d69-4657-a808-3b573907e106" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">247adbiz.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf544f61-50e0-4126-ba56-aa35e48e7807" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wangluoruanjian.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38710ec6-7bc1-489e-a219-59dedb11a3c4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lsassoc.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="df7cf2f8-c753-420e-8c2e-32839783b07d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cribdare2no.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e159d888-70e1-480a-a31a-286f5674b84e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">technicalconsumerreports.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43bbcb50-2c81-4e0d-a4fb-56782a2ce993" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">damavandkuh.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="88dbfeeb-69c6-4e11-8c0a-590ba6c1eb88" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mashinkhabar.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="32cf5fef-229a-4bed-82d8-5c5053b18621" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">foroushi.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c2570d3-3064-4be2-9224-1aaa3b3ff595" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bazandegan.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="92909f87-a82f-4538-b291-069e1216da1a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">listennewsnetwork.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2c77d3e3-aa1e-41bd-9b89-fca7b5c8d8ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">phoneysoap.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="05beeb48-faf4-4799-bba1-83baa8178b0a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webbizwild.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f7dcec8f-9654-421c-9f88-6e222c328925" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rubriccrumb.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d648ff5c-c03e-4006-9eb4-9f559aed7ab5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dowelsobject.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2a49f478-4689-4b89-943e-48d5efaf8073" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">coffeehausblog.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ae992899-b7ea-4fa3-a70a-6c321739a3a1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">noticiasftpsrv.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="760ad05e-e1e4-4bb5-911e-01f38d640133" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">following-technology.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a95e566-5a1a-465d-98b0-fb70913111db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">honarkhaneh.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e8be03b-f27b-48eb-afb5-48b38f85bb49" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rubi4edit.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4c7b2980-c2e2-4c2d-8511-f5d1783a6bbd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">technology-revealed.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4a22caf-c85f-4d68-8b34-1eb7792535d0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">melding-technology.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2c4c5670-d2a4-4ce0-9d85-5185c5f51311" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">charmedno1.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d3714533-132c-48f8-9774-560dd278c6b4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">platads.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dd1a3a4d-eb03-43b5-b65e-debc0486c8ad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">goodbizez.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a90c75aa-4900-4308-8cbb-9ab1af395714" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">unite3tubes.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09cd5ff1-4297-41e7-8a2b-fc5dbead1d97" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adservicestats.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f52ccd76-b021-4c63-a6f9-463c8d725f02" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">businessdealsblog.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c48f2e9-60bc-4692-93c6-976955e57fa4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">housedman.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0ba0f8c9-500e-42dd-9e7e-3a5411df74c2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.forboringbusinesses.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57f2cdad-342a-40ad-a027-858001bb64ba" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webuysupplystore.mooo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bbc77e30-8b04-4a74-aae3-295ac5a4b8d7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">newip427.changeip.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="590ae8ff-885e-4cfa-9d45-82b3f815fd95" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.dt1blog.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d6c9983-4b28-4457-a4d1-418e2b33efe8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">195.81.34.67</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6eef9326-808a-4151-9ffa-f6294bb9c38c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">195.128.235.231</Content>
+      </IndicatorItem>
+      <IndicatorItem id="260d9745-12ce-4e64-bf7d-27a95576aa73" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">195.128.235.233</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f8aab27-694e-4c0c-bf99-356ad7703c54" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">190.242.96.212</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de99c371-6b44-4dcf-9644-32498b05107a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">195.128.235.235</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e59cb991-45d1-4182-9b51-12162273e8e5" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">85.112.1.83</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f6f3a3b-c41f-40a1-b667-378ddcf951c6" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">212.61.54.239</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6160273-0045-4956-bc6a-7a7c715b1483" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">81.31.34.175</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c121f14c-4a95-4953-8c88-acee6c285107" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">210.81.52.120</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5855fc19-e4db-4e75-b787-d370b9fc55b6" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">89.18.177.3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9bba16ec-3f96-4c64-99d0-ace08cbfaf7e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">190.60.202.4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86ee0ecd-31c4-462a-a4d3-7cc459f8c9fe" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">87.255.38.2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff47dcd2-d400-4d39-b5c8-16773669ea25" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">195.128.235.227</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02063afa-ccbc-4fe2-b4ba-5ceb81155d25" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">203.150.231.49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="659273e3-a730-4a25-b573-a1120d6b0f6e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">64.76.82.52</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d3a0dba9-8de8-4a95-bcc8-9202e4cc5f41" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">81.31.38.163</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48a1a032-58c2-4df2-9271-bd696adea127" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">81.31.38.166</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6428ae19-362f-424b-b7e8-0690d777b162" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">41.222.35.70</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0064a49a-6979-4735-a3a4-e2de5981eea2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">84.233.205.99</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f8ee1a0-8779-4d90-92ca-49a0f19bb925" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">149.12.71.2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58063645-89d3-431f-891b-bb9aa1273564" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">202.95.84.33</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c74eb980-4809-4c89-af26-0e049b598896" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">62.216.152.67</Content>
+      </IndicatorItem>
+      <IndicatorItem id="92afe14c-1c07-48e8-9350-0d5c307c22c2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">203.150.231.73</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2a6a5607-3150-4570-93ad-99d8fe64c142" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">81.31.36.174</Content>
+      </IndicatorItem>
+      <IndicatorItem id="976fa3d8-ece3-4ceb-9cbe-b78e40db42b2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">03718676311de33dd0b8f4f18cffd488</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9550a03-17c1-4d1b-9915-ab71a3674b00" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6fe6c03b938580ebf9b82f3b9cd4c4aa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4881263-a97d-4b29-8392-a38a2795b867" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ba39212c5b58b97bfc9f5bc431170827</Content>
+      </IndicatorItem>
+      <IndicatorItem id="467a1952-66df-494c-b2bf-e5b1443ed29b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4556ce5eb007af1de5bd3b457f0b216d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02574d22-e046-4629-bc78-d17251e8f573" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9b1ca66aab784dc5f1dfe635d8f8a904</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cffa47cb-1cb6-4674-bf71-005724227d55" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">11fb08b9126cdb4668b3f5135cf7a6c5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c312f743-534a-44c5-95b2-8b86b495a4c9" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2a12630ff976ba0994143ca93fecd17f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1a2e2f18-261f-4644-a70a-b4240746152c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">24a6ec8ebf9c0867ed1c097f4a653b8d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35bdbb51-9b58-41c6-a10c-0be61d52d1f5" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9180d5affe1e5df0717d7385e7f54386</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b8500b8c-0f0c-4cc4-9fa8-648230d58ba1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">752af597e6d9fd70396accc0b9013dbe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aac35a39-29b8-4616-beba-7b4773f62396" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0a209ac0de4ac033f31d6ba9191a8f7a</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

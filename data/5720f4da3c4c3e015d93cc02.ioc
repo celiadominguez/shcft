@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c613323c-32fd-445d-b85f-315301daf3b5" last-modified="2016-07-10T09:27:17">
+  <short_description>South Korean Users Affected by BlackMoon Campaign</short_description>
+  <description>South Korean Users Affected by BlackMoon Campaign</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:17</authored_date>
+  <links>
+    <link rel="https://blog.fortinet.com/post/over-100-000-south-korean-users-affected-by-blackmoon-campaign">https://blog.fortinet.com/post/over-100-000-south-korean-users-affected-by-blackmoon-campaign</link>
+    <link rel="https://otx.alienvault.com/pulse/5720f4da3c4c3e015d93cc02">https://otx.alienvault.com/pulse/5720f4da3c4c3e015d93cc02</link>
+  </links>
+  <definition>
+    <Indicator id="46289791-cebe-4e88-8506-7f1e20654cf5" operator="OR">
+      <IndicatorItem id="870fdbba-ed0d-44c6-a37e-f43d3c55358b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3cfd66340f204e1b8697e7a8514c00ab</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f68f225f-8b89-4b84-964c-ddc8a1e69dc9" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9cb45f0170e80ce0ec8601030c540cb0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cabfec68-0600-4bd2-83af-6340cd3e440b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ee0def01d390ca7fd7ced414c83f9782</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6021389e-74c7-4127-a3b9-61188fca07e2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2aabd4fa21cca0f153f57ccc1f3c54c0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="127dbd07-359e-4579-bf91-c9da0f6d2304" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">dfd4dc577d02b76efea004cd2c131ff7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eed69810-46f7-4fca-aa37-04e18c2f97a3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">163f885cc88c0e69a4094122e5667190</Content>
+      </IndicatorItem>
+      <IndicatorItem id="020d0616-5b3a-45a5-a905-34a04bf6adec" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bbcbd3dc203829c9cdbf7d1b057f0e79</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e1ee2bd-0ea2-4fa4-8fc4-9f166ad67efc" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">174.139.0.211</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b231a2fd-3b49-4a58-a6b6-1050d2dc25d2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">205.209.141.84</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2c862bec-1415-4ffb-bdac-5cbc43628d87" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">100.43.185.34</Content>
+      </IndicatorItem>
+      <IndicatorItem id="79babf9a-179d-4de4-b717-7d603233dffc" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">174.139.194.82</Content>
+      </IndicatorItem>
+      <IndicatorItem id="237805b4-a13c-46e7-8b9e-e83e1be8bc04" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">207.226.136.14</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9fb767c-4e64-4b4d-b11a-d157f2ccf086" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">100.43.185.42</Content>
+      </IndicatorItem>
+      <IndicatorItem id="69c22087-0613-4185-b73b-715c7f33ae52" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">107.151.158.196</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f39a1a44-1687-4044-ad1f-86502e906ee8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">206.161.216.35</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

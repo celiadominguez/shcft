@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="0321c19a-f3b7-4f7c-9810-bb9ac58562e3" last-modified="2016-07-10T09:29:29">
+  <short_description>Attack on French Diplomat Linked to Operation Lotus Blossom</short_description>
+  <description>Attack on French Diplomat Linked to Operation Lotus Blossom</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:29</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/12/attack-on-french-diplomat-linked-to-operation-lotus-blossom/">http://researchcenter.paloaltonetworks.com/2015/12/attack-on-french-diplomat-linked-to-operation-lotus-blossom/</link>
+    <link rel="https://otx.alienvault.com/pulse/567455bd67db8c3f8a470752">https://otx.alienvault.com/pulse/567455bd67db8c3f8a470752</link>
+  </links>
+  <definition>
+    <Indicator id="698c00a5-fd43-4135-9c68-c5ecd341fb6f" operator="OR">
+      <IndicatorItem id="fcc31f66-b0e6-4ffb-9ad2-73d73870af4b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">appletree.onthenetas.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="08870c2d-debf-4c78-8d6b-d2a55c079508" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dnt5b.myfw.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="505f9559-4b3b-46f7-9f73-b700a8621964" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ustar5.passas.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6da6cf98-669c-4a79-8281-8eaa3eb1f838" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e9f51a4e835929e513c3f30299567abc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b53e55cf-1d9a-46b5-b12c-5ab5e92cca96" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6278fc8c7bf14514353797b229d562e8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9df4242c-0ddf-46a7-855d-e864ae5c26fd" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">748feae269d561d80563eae551ef7bfd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c5254ce-5fe9-4541-b95a-91b0f9428b40" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">06f1d2be5e981dee056c231d184db908</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aa2c3152-b362-47ad-8ea0-457fe0c2a3c4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9fd6f702763a9840bd1b3a898eb9c62d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce934558-41ca-410f-93d2-e60632dfdd37" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">203.124.14.229</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

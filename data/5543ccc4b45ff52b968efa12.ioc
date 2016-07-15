@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="964cf740-d251-40c3-bc91-c8ad8d5837ae" last-modified="2016-07-10T09:35:16">
+  <short_description>Operation Poisoned Hurricane</short_description>
+  <description>Operation Poisoned Hurricane</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:16</authored_date>
+  <links>
+    <link rel="https://www.fireeye.com/blog/threat-research/2014/08/operation-poisoned-hurricane.html">https://www.fireeye.com/blog/threat-research/2014/08/operation-poisoned-hurricane.html</link>
+    <link rel="https://otx.alienvault.com/pulse/5543ccc4b45ff52b968efa12">https://otx.alienvault.com/pulse/5543ccc4b45ff52b968efa12</link>
+  </links>
+  <definition>
+    <Indicator id="c097cfa2-2ff5-4402-bd95-2b904a3e6a76" operator="OR">
+      <IndicatorItem id="4f51a95e-0870-408d-b3fb-79aa51eed5a4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sd.nexoncorp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01877dca-31c7-4b46-abad-6ac085f80c2b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">th.nexoncorp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cdd51aac-12ea-4bb4-b380-af9c04c724da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uj.verifyss.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aad5405e-d72d-402d-a02c-6c3fbd53a901" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wf.edsplan.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b1236ad4-6b1a-4a7b-9d96-0711a67e0e4b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.verifyss.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d6ecffd2-c239-4681-97fa-59a86ad42f14" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uj.verisignss.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f89641e-cd62-4bc2-b8a4-afd910d8ba4d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ml65556.gicp.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6d2050e-7347-4105-9517-cbf38e96d05d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mail.nexoncorp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="303d4fbd-083e-418f-9996-4e142218d814" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">unix.edsplan.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d4348862-a0db-4a14-b5eb-464e95978d6b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">door.nexoncorp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="84821811-c61e-4f5a-a525-516695bec1f7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uj.byonds.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f789e56e-5cf6-4042-81b5-293316f6b765" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tw.verisignss.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e41e9ef6-33f9-4b5a-8ddf-62e77ba081a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gl.edsplan.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f1ea567-620f-4767-bbac-5d179af98ba1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bq.cppcp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e015b0ed-7d5b-4e34-baea-84d61acc448e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.adobe.comupdate.adobe.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

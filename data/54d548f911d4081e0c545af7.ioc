@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="39e7d68e-1a97-4fac-9d43-32f9dfc71831" last-modified="2016-07-10T09:31:57">
+  <short_description>SSH Brute Force Campaign - Thai Limited</short_description>
+  <description>SSH Brute Force Campaign - Thai Limited</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:57</authored_date>
+  <links>
+    <link rel="https://www.fireeye.com/blog/threat-research/2015/02/anatomy_of_a_brutef.html">https://www.fireeye.com/blog/threat-research/2015/02/anatomy_of_a_brutef.html</link>
+    <link rel="http://blog.malwaremustdie.org/2014/09/mmd-0028-2014-fuzzy-reversing-new-china.html">http://blog.malwaremustdie.org/2014/09/mmd-0028-2014-fuzzy-reversing-new-china.html</link>
+    <link rel="https://otx.alienvault.com/pulse/54d548f911d4081e0c545af7">https://otx.alienvault.com/pulse/54d548f911d4081e0c545af7</link>
+  </links>
+  <definition>
+    <Indicator id="76932800-8b86-413e-b14b-8f287e923320" operator="OR">
+      <IndicatorItem id="e8241b7e-f325-47ad-850a-784733879a06" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">heethai.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e19a130-0213-49aa-8650-7873b1dbdebc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">navert0p.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ffea62ca-1651-4284-87df-cd18fb73312d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dsaj2a.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="26b394bd-7c1f-45ae-ae6c-60ae7e9d5064" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hcxiaoao.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="267f1f9b-b2c0-4c1d-9e6b-5e4e2fdf1b43" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rxxiaoao.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21bc4a8a-cffd-408e-85eb-e22614d7e84f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">buhenge.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e471c9f5-95ab-487d-b9d6-459876b4d87d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wangzongfacai.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d19b16ed-41c8-42a8-965c-d81cc65e2324" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dsaj2a1.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b8d5e96e-f360-4cda-941e-aaaabc93a566" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dsaj2a.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c65d4b18-ea83-4e07-90e9-5ba93d1d19bb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">info.3000uc.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4636623-b5d7-4d9b-8e3b-385f05bc1b37" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.25.9.228</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ad254da-1a94-4ac2-8f72-3e6e0f2b639c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.25.9.229</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46becb6b-2b24-41a1-b1a3-3cfe18785a0a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8c204556960b73b25667ca80f33a72f9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a5f5548c-ea54-4244-b28e-d8dbfe72a027" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">85ecdf50a92e76cdb3f5e98d54d014d4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8849c2e9-32e2-49c6-b334-3c0216c1b427" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0b7630ead879da12b74b2ed7566da2fe</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

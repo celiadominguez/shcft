@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="6919d8ad-cca8-4ace-aa50-26b41e78cc59" last-modified="2016-07-10T09:34:25">
+  <short_description>New PoSeidon spotted</short_description>
+  <description>New PoSeidon spotted</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:25</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/5564cb44b45ff543c5e5b456">https://otx.alienvault.com/pulse/5564cb44b45ff543c5e5b456</link>
+  </links>
+  <definition>
+    <Indicator id="002ec825-757c-41d6-b32a-f562681be1fd" operator="OR">
+      <IndicatorItem id="a93c14f8-7ed9-4328-b42f-210a884a90f5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">servelatmiru.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6c8db77-a9eb-4180-b5c6-021f77da75f0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">litramoloka.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9605d848-352f-4143-8ce8-b7e841120733" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">srachechno.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bb660e96-0dae-45f3-ab73-2928c21008a1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">molokalitra.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="82dad460-634f-4375-840a-550d3c0f490d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">queryforworld.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58fbc996-6881-4f55-a41d-e3be60a6fe0a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wertstumbahn.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf52ac70-5ae9-48a9-a064-046032a5f5e1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">litramoloka.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="52647512-e24b-4bac-a119-af0c4faf6149" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cawasuse.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="64fed51b-c3ea-4600-8f1d-2f6c386ffe4a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">terethaundv.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="515da5d7-4ee2-4583-925e-a2d5b23c034e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ferepritdi.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3edd9bc8-c030-4612-b02e-3b461f05e290" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">restavratormira.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="97c777b6-a1dd-4911-b808-67974be3b21b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">petronasconn.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f9f5cd2b-eb13-4201-9db2-bb35128cf976" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rabbutdownlitt.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f47263e8-7ca1-483e-ba1e-4a494af6d92b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">howthatficy.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc792dc9-3182-46b7-b748-c6188de9334e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apporistale.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a8d579fc-3219-4a7d-aca8-7d34dbb0cccd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vesnarusural.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c6498cd7-4bdb-445a-8216-09db95ac44c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dingdownmahedt.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56e3028d-8942-49b8-ad67-14bcaeb8027c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">serfilefnom.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c40f650e-f16d-4f82-af11-bd97f1a4c2c9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">switlawert.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a19706a-28c1-4d97-a574-423307ea848e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cawasus.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43c33b14-5930-4294-8677-e27a1d8f4c39" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">refherssuce.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="edae64f5-eb4f-4e43-892c-6ac628ac5010" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dinghareun.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c165d467-beef-431f-b179-29dc7d619daf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lasttrainforest.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d9de680-d011-4dc8-8442-149116f06774" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">serppoglandam.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f2a39c7-bfd7-44c5-bbb0-290460789b65" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mehanistran.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7788775d-831e-4d21-8a4f-84d22b6791ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">reswahatce.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eccdabea-80e6-4355-9ab9-058dff79eb56" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4fd2bb5f54a0c8095fd6542eb9034b44</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f3884981-ed56-4506-9c05-3c8ddfbb347c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6ab8f3fa3e8c80a7cccd4a264e3cb0d5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="502b167e-400f-4832-a44f-9f9d4f848a42" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">79c4c03a6662b31d47a957bb41d049ca</Content>
+      </IndicatorItem>
+      <IndicatorItem id="53045473-d846-45f0-a05f-6b8ebb8a799e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">63e5fa6cb5305b00a8146d0865d63b17</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c602a65e-5a29-4f51-ab24-0bb36fee9b06" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">387113b0f63bcd56a4aae7ec08e9936f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42c993e6-cecf-4a7c-8c6d-f0ef4ab70810" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">fba75377b29fbaf70d9bbee37a96310c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8b535e2e-7389-436f-b0ad-0bd33f3f4a17" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5b160c024e10ab184288c6aa7eaf0ad0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3b5e7f5-3db7-44c6-9a3e-a00236916738" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2d3432f1a866db2424f1192ca9edf0d8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6daa1336-3c30-47c5-9610-eb2233246193" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a586db30ab21a02eee9e8ab2ebe8a2b5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="784814ca-750b-4546-b1cf-3a5f0e12f038" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3fb907a9612019e72aed25ab2e18607a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f4824e81-c55d-4a0d-bc75-b4670c13bc9b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2145d54164c32faba44164ea7c9add33</Content>
+      </IndicatorItem>
+      <IndicatorItem id="484f1425-4272-4ee1-b4ae-bdf551a55e45" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4e7de5020ec9b8957761c9b7277ae0f1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5c58d25-761d-4b7c-97d2-f78ec3d0d01d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a316dcbae71721527033f57c85cdf503</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e2e96e1-8e3d-4459-8e6a-97d39f71300b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">52cd2524c6f0e569127d6486e278bad5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb5eb97d-edd9-4c6a-9a98-89f939a4d93f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">repherfeted.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

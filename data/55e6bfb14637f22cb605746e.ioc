@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d8daa2c6-a1ee-41a1-8487-2af72ba6ab78" last-modified="2016-07-10T09:31:20">
+  <short_description>The Spy Kittens Are Back: Rocket Kitten 2</short_description>
+  <description>The Spy Kittens Are Back: Rocket Kitten 2</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:20</authored_date>
+  <links>
+    <link rel="http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-the-spy-kittens-are-back.pdf">http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-the-spy-kittens-are-back.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/55e6bfb14637f22cb605746e">https://otx.alienvault.com/pulse/55e6bfb14637f22cb605746e</link>
+  </links>
+  <definition>
+    <Indicator id="d9684733-23d4-4434-b866-046378d7548d" operator="OR">
+      <IndicatorItem id="9ba39f70-d811-46e0-bfcd-f6f4eb2fdcc9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">af364ff503da71875b6d7c401a1e98e31450a561</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57d44607-f8e5-416d-983d-dc825845b5d8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">64ba130e627dd85c85d6534e769d239080e068dd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28b3b34b-3d66-4c3e-8f5b-0280a1753ab7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">46a995df8d9918ca0793404110904479b6adcb9f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9607d909-2a2d-4193-87e3-ef47b3f48b40" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">457f54e9a0f32f2648f95a8e339d9fd9aed23fa7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="973767cc-17fe-4832-955a-0a406505cce3" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">84.11.146.62</Content>
+      </IndicatorItem>
+      <IndicatorItem id="577e0727-a2f9-4ca8-bc07-2cc246ef2f09" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">107.6.172.54</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4fbef4ba-71fa-436c-978d-34230602ae76" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">107.6.181.116</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c513151f-26f1-49d3-9417-6893df2e3d42" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">29968b0c4157f226761073333ff2e82b588ddf8e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="858521d5-4ba5-4202-8465-fcbc1ffd8840" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">eeb67e663b2fa980c6b228fc2e04304c8992401d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="33051f75-0339-4a22-b53d-3f2d1b367f53" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">db2b8f49b4e76c2f538a3a6b222c35547c802cef</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

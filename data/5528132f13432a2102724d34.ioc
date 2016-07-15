@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="12829578-2c46-4b08-8127-2d3a7fad9c2a" last-modified="2016-07-10T09:36:08">
+  <short_description>Potential TV5 Monde intrusion indicators</short_description>
+  <description>Potential TV5 Monde intrusion indicators</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:08</authored_date>
+  <links>
+    <link rel="https://www.bluecoat.com/security-blog/2015-04-09/visual-basic-script-malware-reportedly-used-tv5-monde-intrusion">https://www.bluecoat.com/security-blog/2015-04-09/visual-basic-script-malware-reportedly-used-tv5-monde-intrusion</link>
+    <link rel="https://otx.alienvault.com/pulse/5528132f13432a2102724d34">https://otx.alienvault.com/pulse/5528132f13432a2102724d34</link>
+  </links>
+  <definition>
+    <Indicator id="6af9d1bf-3738-4488-bf02-606065e4ed65" operator="OR">
+      <IndicatorItem id="6ab934f5-f86e-4254-bfd7-9f92fb4fddd7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aziza12.no-ip.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d86d07a2-09ac-43a0-bf60-91b103c8f00a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">islamstate.no-ip.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2025f049-67bd-408b-adb1-287a65177e24" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">178.73.223.9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aea51f1d-b70f-4d60-a1fd-b2ddf34f17ea" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a5ce6dcb062ceb91a6fce73e99b3514d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fef1fb7a-a6af-4ece-925a-d3e7a04f6544" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">de8e6e14b7e548eda7d4ff33bb3705ad</Content>
+      </IndicatorItem>
+      <IndicatorItem id="551574e1-1cf3-4dfb-b825-6787ba0883d6" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2962c44ce678d6ca1246f5ead67d115a</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

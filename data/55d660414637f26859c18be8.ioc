@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d44b27ca-df96-4e26-9c0a-55b1598a768b" last-modified="2016-07-10T09:31:41">
+  <short_description>Retefe Banking Trojan</short_description>
+  <description>Retefe Banking Trojan</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:41</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/08/retefe-banking-trojan-targets-sweden-switzerland-and-japan/">http://researchcenter.paloaltonetworks.com/2015/08/retefe-banking-trojan-targets-sweden-switzerland-and-japan/</link>
+    <link rel="https://otx.alienvault.com/pulse/55d660414637f26859c18be8">https://otx.alienvault.com/pulse/55d660414637f26859c18be8</link>
+  </links>
+  <definition>
+    <Indicator id="f1ad4580-adfc-41e6-ac1c-a9654137e56c" operator="OR">
+      <IndicatorItem id="a7a1bca6-6971-4547-85a4-0cdb1eb5d4e5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a7087592f6f91f9bde54a855fb7b41f1114734533b9b681a918ccd161b08ca24</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3e4609d-3e4a-4759-b0d5-e7cb68f51974" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e35cc9dd6898a857dcc7cd1b496a81cfca16696069bdf22b52f72a56d462d546</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01ce7e69-d876-42f7-b804-9354895feff1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0be4050e6282c997a7bda11b1f72930d7eda9443ac715e521a893f0c52f3e78e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ffc4ba5-4502-4157-9cde-e29aa40069f9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">27c15bdb941231ef7e7d5303110d7057e60bae1c6c25be08ae9f364c11cde2ba</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0c765036-fe6e-42d7-a102-691394be4bf2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">917f5494ac20bf8f6fa64184d94c35f89eca86a37ecd1396e40cf92fc9e166a8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e09e6eae-84b5-4236-be6a-547f38900207" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ed477fd1d4924e28c0f774673baed375c2707dd28a9f335b59f615b3a8975351</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ae98fede-3047-4604-8f10-616812084886" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">4da274435c6a571b52e6b1b5b359064fa7faace354a5103c8e52cef958bb1b02</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b46951b-9a37-449a-9c73-e1c8dc49f8f2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">guard-safe.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6080e86e-1418-443c-8a3e-63b14309c1f1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apps-guard.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2623ac37-a418-4e50-bbde-86037714888d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hsshvpn.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f49e1f28-87d7-4fd2-90e5-b9e3c680c3b0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">securevpnalarm.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d1c65382-40e2-4081-8975-38c3be69cbcc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">securevpnhelp.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4bf74536-6aa9-42de-a705-7cb7fb85c4cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">swissprox.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7d2ded0a-b349-49f8-bc9c-054cab2602a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">securedtonnel.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c5e3dfd-e710-4120-a8bd-3258ae16802f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">safevpn24.net</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

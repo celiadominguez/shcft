@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="e8ee787e-48d6-4b03-b245-de272efcfce9" last-modified="2016-07-10T09:33:33">
+  <short_description>AV Labs: Sundown Exploit Kit Indicators</short_description>
+  <description>AV Labs: Sundown Exploit Kit Indicators</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:33</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/558ade59b45ff518da25e72a">https://otx.alienvault.com/pulse/558ade59b45ff518da25e72a</link>
+  </links>
+  <definition>
+    <Indicator id="1a303b55-a2fe-4f77-b1fc-4311ff1b00d5" operator="OR">
+      <IndicatorItem id="64cbb23c-da95-4789-b808-89f0ce556152" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jhgfskjfshgjkfhgkjfsghf.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5afbcc76-997e-4dbf-9ece-ff190023bf05" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wsghbfgb.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4bc5d05f-7432-4580-befe-02e1d4075641" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dessawert.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a809c71f-71ac-42b2-88d7-a46965605713" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">newderty.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42e2c0c3-6149-496d-8d95-6afee08fda12" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">msiurgfhjrlsuhgfrslihkj.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5dc205ba-13f3-4262-bef1-b5fe720418e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tgtfgtoiloilkuilkui.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c6e61a4e-eeb4-4a29-94ad-ae8eef1cf493" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sddigoipl.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2a0f2f89-db93-4434-afd6-bd927d4acbfb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">oikujyhgt.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e4619aa-75f5-495a-b750-53688b2b4668" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uityiuetyruieytreuiyt.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a6805d1-cf0a-4dc9-be6b-617d7a09b1af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jhfdgjkdhgfiuyt.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f6e1439b-499e-42ba-8052-f504285854ac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">treeeww.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ddc42792-c169-4830-8fc7-2cbed9ad6153" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fdfddffdfdfhyyuyuyrjhy.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a6922f3-5dad-46f4-abd8-f38ad72ccfd3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eerrtt.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4c96378b-5bf2-4fde-9c5e-f56a395cef02" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jugainfghjfghfffhfhfhfgj.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8faad793-dc26-47b0-9b0a-8651528964cb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">messaiie.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="901e5ddc-b26b-4982-a98f-00e765bcbda9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">susoopa.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3bd5298-7e99-4aa6-b845-bd7d4f917c72" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jjghfjkghfjrr.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e7a2016-dad1-4e3e-b677-0ed0f5749be9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xectre.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="743e7304-0102-4768-bed8-9b82f501f36d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">detter.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ef62b9cb-7c76-463a-bc85-966fd8ab4879" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bongoongo.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7da63ab-f6e8-4711-a05d-70a561b7d3b1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fflllww.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad789fef-9ff0-415c-abc7-ad8e9e3f63f3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fteoplle.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7ef1d5bc-2fa0-4ad4-a13f-7dfa1a8e64d6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fgfhbgdtgfhbdtghf.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b1b19c3-1b80-42ec-b0ba-c6e74dcb5ec1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yhtooo.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e634aeea-be72-4892-afb4-a30b91fb6608" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fgfsgfsgfsgfs.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="99031e6a-3bc2-4b6c-b97f-664c21b6a367" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tggtghyhyrghg.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ebf4289-0882-43b4-a03b-b0edea4c7b2f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">averagetheskidfellow.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7ca29809-e4f7-4f44-853f-c9fef6ceb937" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lambada.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c52b5681-d73d-4629-b149-0c31d9055c0f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lklklkldkldkalsdklasdk.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a841039a-6900-4a74-9540-7dd2fd1c4683" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pobbib.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e72f7472-3b1f-4660-947b-543b61ba595e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mousegigiop.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de16afe7-3266-4511-b50d-5ffbebd5f2ce" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dfdsfdsf.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="abc20373-b755-49eb-9380-6e6a79d3203e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gtyu.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f6722219-653e-43fd-ac0a-95cd5d09cb19" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">whoknowsshitheadforyoutoudrunkfuckyou.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f41e15e1-5265-4b22-8bd8-8e741acb2cc1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">iutirtrkljhglrjkfh.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9aaaabeb-0680-4e6d-b0e2-1be9148d56cd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">serlerrr.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="948f7214-6eff-4e44-bb3f-538ac6a3d384" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pollaid.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="88d2e7d1-50ae-4ff8-8238-8e14f709bcb3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kolll.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d2301650-d9b8-469e-baee-7ef3f1099710" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kituta.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5defa0c8-ab1e-40c0-a1c9-27a4df3b19d5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sdeadsfasfsafsa.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="914dd670-7591-442c-a937-8bc9763eca7d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">oijuythyth.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a54cc3b9-b962-46ef-9d87-d1fbf143807a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fallattret.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ae6b478c-8c0e-47e8-9f19-f2b3ef3d11d1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yyyyyyyyyyyyyhyh.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09bfa183-5bec-4d88-b7a5-df9054edb6ce" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fggjjuu.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d96d5f6a-cfa8-4699-889b-e74109b2104a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gfsdgfgsdfgsdagasdgsad.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="327a2319-8690-4f5a-875c-61a4bebca031" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fgrfgrdetret.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cae2190f-ccf0-488c-bc72-532e0308de4e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">assfdfrgfr.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dc118dee-a2cf-4276-a1ae-29a827a235b4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hyhyhyhrtgrt.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1cd47754-abc5-45aa-8881-20e56b8fa391" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hjgjhrtr.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06cf4e32-620c-4017-b1ea-b7e17b71c66f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teleme.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e85236a-19f8-462e-ab69-96a685a1651f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lkdsjfdsd.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36528cc2-243a-4270-97b3-54073ad32c36" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">retrett.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="07f6dccd-0ab1-4d9c-85f5-471a342cc30b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fdfdfdggghgh.co.vu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="597b0ce3-4466-4d55-8daa-98019279bafd" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">93.174.93.181</Content>
+      </IndicatorItem>
+      <IndicatorItem id="81d7b834-a006-4f01-b3f9-c48d70dd4e2d" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">176.123.6.133</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0538de3b-7871-44e1-8539-03bc171febe2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">176.123.6.132</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

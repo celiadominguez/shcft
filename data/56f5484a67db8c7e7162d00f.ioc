@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="44df0b26-39a3-40e4-a255-eb06b157cada" last-modified="2016-07-10T09:27:46">
+  <short_description>PETYA Crypto-ransomware Overwrites MBR</short_description>
+  <description>PETYA Crypto-ransomware Overwrites MBR</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:46</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/petya-crypto-ransomware-overwrites-mbr-lock-users-computers/">http://blog.trendmicro.com/trendlabs-security-intelligence/petya-crypto-ransomware-overwrites-mbr-lock-users-computers/</link>
+    <link rel="https://otx.alienvault.com/pulse/56f5484a67db8c7e7162d00f">https://otx.alienvault.com/pulse/56f5484a67db8c7e7162d00f</link>
+  </links>
+  <definition>
+    <Indicator id="fbbd3e51-211f-4c5d-8e86-939ea47182b0" operator="OR">
+      <IndicatorItem id="5747e986-8b72-4c30-bb9a-774d9758b20b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">755f2652638f87ab517c608a363c4aefb9dd6a5a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46186054-f6ab-46a8-85ff-be2d7a4f9e36" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">39b6d40906c7f7f080e6befa93324dddadcbd9fa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6a86caf-c488-43d0-bdcf-4cb47ac5b962" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b0c5fab5d69afcc7fd013fd7aef20660bf0077c2</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

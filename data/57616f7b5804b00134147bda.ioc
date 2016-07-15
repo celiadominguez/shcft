@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="39c1ee17-6368-40d2-9ac2-a13c5815b5cf" last-modified="2016-07-10T09:26:53">
+  <short_description>THE XDEDIC MARKETPLACE</short_description>
+  <description>THE XDEDIC MARKETPLACE</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:26:53</authored_date>
+  <links>
+    <link rel="https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf">https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/57616f7b5804b00134147bda">https://otx.alienvault.com/pulse/57616f7b5804b00134147bda</link>
+  </links>
+  <definition>
+    <Indicator id="bf29f618-f00e-4473-9644-baabf909e2f4" operator="OR">
+      <IndicatorItem id="79408e48-db14-453d-860c-64a8570f28d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q96b7b7.strangled.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be4ecbb6-5385-4e94-b297-311df0a6660b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q968787.ignorelist.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af3591a1-dbda-475b-8611-9425736ecb8e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q968787.strangled.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9de9bbd-3fb8-4771-83eb-bd8d68d2ac76" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q96b7b7.homenet.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7090cab5-f4a7-466b-a9d4-14e8f29dfd46" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q968787.homenet.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="017fdbfc-d236-43bd-a241-5184d89157e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q968787.mooo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0233a8b7-c5a1-44dc-82c6-47dbfac1a3f8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q96b7b7.mooo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf8ebbe7-b704-4d14-97d7-abd7e7898e50" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q96b7b7.ignorelist.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e779499-ac34-49ef-b14c-dcf6e1446b73" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e8cc69231e209db7968397e8a244d104</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7907ff03-75c6-482d-837c-af09356387c3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a53847a51561a7e76fd034043b9aa36d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cd9bae78-9155-4b1a-a806-453a7123d146" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">fac495be1c71012682ebb27092060b43</Content>
+      </IndicatorItem>
+      <IndicatorItem id="447c4752-e89d-46b2-851e-2d7c64f75122" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e8691fa5872c528cd8e72b82e7880e98</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3901b93-eb87-4e3d-872b-2790bf7c950b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f661b50d45400e7052a2427919e2f777</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aad09b0e-f02e-4422-a044-d7feede59fb7" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">37.49.224.144</Content>
+      </IndicatorItem>
+      <IndicatorItem id="452db320-3f09-4366-82c0-7f1e9b1f2688" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">5.56.133.145</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ca7ce848-8d0c-4d62-9dca-d8b6b2550073" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">191.101.31.126</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

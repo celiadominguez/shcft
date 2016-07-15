@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="145a61ce-f97e-4a63-be61-00305a58683c" last-modified="2016-07-10T09:34:40">
+  <short_description>'Los Pollos Hermanos' crypto ransomware</short_description>
+  <description>'Los Pollos Hermanos' crypto ransomware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:40</authored_date>
+  <links>
+    <link rel="http://www.symantec.com/connect/blogs/breaking-bad-themed-los-pollos-hermanos-crypto-ransomware-found-wild">http://www.symantec.com/connect/blogs/breaking-bad-themed-los-pollos-hermanos-crypto-ransomware-found-wild</link>
+    <link rel="https://otx.alienvault.com/pulse/555b6414b45ff5650e2e4e03">https://otx.alienvault.com/pulse/555b6414b45ff5650e2e4e03</link>
+  </links>
+  <definition>
+    <Indicator id="f4e1840d-9bee-49ee-820a-aa1f50a268f6" operator="OR">
+      <IndicatorItem id="1ae52d13-2de3-445d-bcae-232552d01c03" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7922c086284336c08a01ad57481377700e0b668266b439ee8b1e0e1743fdc461</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b87e20b-e150-4277-bacb-09eef40f54da" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">164050af0908991f27b95258156b084e9c84eb09b85a762889a1509986cc9614</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46e5d01a-ed89-4a4c-bb47-f63d03273ec7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">833acb89e21f5791eb357ab424dc39ab</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c1c24355-aebb-4cb3-a580-f21361d08b07" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5137acd2498297e1e42119e088a025a9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b26002da-6f0d-40a9-a40b-412c578ca7d8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5aa6c3e6afa618c5e8834c214afb91d476a3b524</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cb855c47-08dd-4f17-9654-a41371181c36" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">400ac99791e9343eb90edfbddd53182493338deb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7d11ac1b-4147-479f-bcd9-8c4a38f38f27" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">193.230.220.38</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

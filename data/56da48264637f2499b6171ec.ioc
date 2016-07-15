@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="29ecc3ea-e76e-4891-82c4-00ca0d032721" last-modified="2016-07-10T09:28:16">
+  <short_description>Backdoor in Wordpress plugin</short_description>
+  <description>Backdoor in Wordpress plugin</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:28:16</authored_date>
+  <links>
+    <link rel="https://blog.sucuri.net/2016/03/when-wordpress-plugin-goes-bad.html">https://blog.sucuri.net/2016/03/when-wordpress-plugin-goes-bad.html</link>
+    <link rel="https://otx.alienvault.com/pulse/56da48264637f2499b6171ec">https://otx.alienvault.com/pulse/56da48264637f2499b6171ec</link>
+  </links>
+  <definition>
+    <Indicator id="0f06f4d6-5276-4eb4-b7fc-75806ed77801" operator="OR">
+      <IndicatorItem id="3b3cfa4c-45f7-49b3-98c5-6fef5ebfa7c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">trimtoroot.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="29ec70ca-4c54-469c-a09a-4365f53737fe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wordpresscore.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e0120672-d1ee-4851-b444-d9a837aecb1b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">donutjs.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

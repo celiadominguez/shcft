@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="31528f23-ddfb-4803-b9ea-0fc71292ef35" last-modified="2016-07-10T09:36:35">
+  <short_description>BandarChor Ransomware</short_description>
+  <description>BandarChor Ransomware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:35</authored_date>
+  <links>
+    <link rel="https://www.f-secure.com/weblog/archives/00002795.html">https://www.f-secure.com/weblog/archives/00002795.html</link>
+    <link rel="https://otx.alienvault.com/pulse/54fa039b13432a1659b26558">https://otx.alienvault.com/pulse/54fa039b13432a1659b26558</link>
+  </links>
+  <definition>
+    <Indicator id="66c8f22c-bf24-4876-b86a-fe759395c1e4" operator="OR">
+      <IndicatorItem id="f959b6c3-4498-42e1-90a7-392640102a7d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xsmailsos.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="772164a7-aaf7-408d-939d-d405dc8d1cbf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">89025840.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="81d1cae5-5cfc-459c-b1af-b5eb9eec9063" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">martyanovdrweb.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a70bf11a-823f-4736-8987-3eaaf8d5ed63" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">euvalues.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="90d97dae-422b-4e89-a23f-09e76a6a4cf7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">netupite.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16b9734f-05a3-41fd-af64-99d50ab25f89" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">enibeniraba.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9300c85d-88be-49d4-974f-b1d28e2d3a81" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">decryptindia.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6bcd3061-7e82-4fd4-9724-070a2e2cf8f5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kapustakapaet.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1593b70e-0300-4191-987c-7f074811f09c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fuck-isil.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be90ac9f-8f4e-4fc6-b36f-90b563dff113" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baitforany.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5f19ec47-d935-42bf-9824-9f5ca18e313b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahalaymahalay.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c633794-f7ef-4df9-876e-760054fcede5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">ba8909eef5ee280ae43b935cf4ae38ccf21bde56</Content>
+      </IndicatorItem>
+      <IndicatorItem id="753e10ce-a47a-4dd8-acf4-fcd9afc83988" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b4362fcd75fd071fc8237c543c56df5736b8e177</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e2b0000-8a3a-4cc4-82b2-03cbed156f97" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4b356b88fb3a3dce1f009e4e92cd4a59383e0764</Content>
+      </IndicatorItem>
+      <IndicatorItem id="22456e4f-accf-456b-96b0-5fbd330b9635" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">de7ced27456a1e4581d6a4bf126f56061b7f9859</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6fe3b0a-a59a-4084-b785-2a7479d98f86" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5f71be645e8ac995555a891087b46ed357386dbe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e117c95-87eb-41b9-9de5-5259c719bb12" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">31aa8ec187e1241a94127336996f9cb38719eb9b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c49b2e00-c0c3-4838-98ca-e9f83d69e8bd" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">afd4216e93a82feebafd3a68e9308ca4b0b54372</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

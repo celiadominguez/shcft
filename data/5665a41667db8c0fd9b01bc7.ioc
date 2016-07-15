@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="7d00858f-4a70-4821-b730-eed6a8f26d36" last-modified="2016-07-10T09:29:46">
+  <short_description>Financial Threat Group Targets Volume Boot Record</short_description>
+  <description>Financial Threat Group Targets Volume Boot Record</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:46</authored_date>
+  <links>
+    <link rel="https://www.fireeye.com/blog/threat-research/2015/12/fin1-targets-boot-record.html">https://www.fireeye.com/blog/threat-research/2015/12/fin1-targets-boot-record.html</link>
+    <link rel="https://otx.alienvault.com/pulse/5665a41667db8c0fd9b01bc7">https://otx.alienvault.com/pulse/5665a41667db8c0fd9b01bc7</link>
+  </links>
+  <definition>
+    <Indicator id="c3a5a492-83a8-4723-b94e-fe8894f5797b" operator="OR">
+      <IndicatorItem id="57b016fe-5df8-4593-9d65-f04e3928a913" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ac64ef80f8209ae7b67be0be9ea6400e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dbba0ba3-a8a9-491c-9a8a-38cec253a75d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1c17c92519523a129e9abd298bb78521</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad03fa74-8120-4f4a-b2e9-47426f36a7c0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">fed12e07499e8cd3a5a47f1f7a8db0be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1dbe0080-42fc-400b-99f9-e66d72b51458" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">efbff3b08b5d368976eb4675bb4c000f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70dd0e4a-b989-4762-924e-cd436c0d3f79" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">012e6f3ee70d6558f8002d0efce5c9e0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="443df73d-232e-4e43-bc95-c2791171436c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c145624f148980ad026ea7b79e61212d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dd7d9547-e14b-40b6-ba89-f67443154b20" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">372f1e4d2d5108bbffc750bb0909fc49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5ee8df9-1bdc-41b3-b0f2-64b522f248af" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d0b9f9bccbc3725bfcc9546986982ff3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3bc5f7d-73fb-434e-8733-f05ebf366d88" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">76b6dc622264e3ad822a691a7ec68865</Content>
+      </IndicatorItem>
+      <IndicatorItem id="05407d58-9da1-4475-aa3e-fb143f46452b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">dd366fcb810594e0620fdf672b03f4d5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e0c4b591-75eb-446b-a818-3d8b1503b806" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">21cd4a30ac322bfc9bd2401ea17acfc0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbb90c28-ab58-4894-a5dd-90735b1fa8bb" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">073a2998a6f1ccf0ea89fe60ce4bdeaf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bcbb44fe-7e5d-47c7-a130-5ef4fe977771" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">472926fe51fc6a4fdf687e8a4de64d78</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4cabd93c-bad1-415b-a13b-e817979d6c3a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">15de35de527ebe2115746b4fd4f1ba1d</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

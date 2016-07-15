@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b55ec1b3-aadc-488a-9f7e-6c31fe3e563b" last-modified="2016-07-10T09:36:57">
+  <short_description>COOLREAPER</short_description>
+  <description>COOLREAPER</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:57</authored_date>
+  <links>
+    <link rel="https://www.paloaltonetworks.com/content/dam/paloaltonetworks-com/en_US/assets/pdf/reports/Unit_42/unit42-cool-reaper.pdf">https://www.paloaltonetworks.com/content/dam/paloaltonetworks-com/en_US/assets/pdf/reports/Unit_42/unit42-cool-reaper.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/54dc090813432a511777bead">https://otx.alienvault.com/pulse/54dc090813432a511777bead</link>
+  </links>
+  <definition>
+    <Indicator id="bd23629c-4a92-4baa-a008-d0e0ffc55203" operator="OR">
+      <IndicatorItem id="0985dd5e-a5f3-48cf-97f9-1990a5a8e195" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">3753244484c4a8b2b2dc8c3b7e119eabd0490398</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e241a9a-fc3b-4fd1-a79c-948d24b151b2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">39240a84070040c27221b477f101bf9b1555d7ce</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77f160eb-9320-42ad-b70b-4a64a72e99b9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">icudata.51coolpad.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b1ee07e7-0c19-498e-a472-77547221275b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">icucfg.51coolpad.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e26dc17-4298-49d5-a3fe-354bbbe79d1d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">icudata.coolyun.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0c089572-4d12-4768-b78d-a41d5e2a415a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">file.coolpadfuns.cn</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f744fb6-4cf7-426a-9bda-fcf682034d34" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">icucfg.coolyun.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af26cb13-6db0-4c14-b6bd-df055c0170c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dmp.51coolpad.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e3a1f0c-b8de-4e89-8def-9c2cf09a579b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auth.coolyun.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="522a998f-25bb-4d6c-ad70-8c1aa2f6414a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dmp.coolyun.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9dee5b58-cd6f-42bf-9f09-c911ffa895f9" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">113.142.37.149</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c88ba273-f729-45ed-aa79-2a655f1f3f44" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">113.142.37.246</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7fad3f40-7ea8-44a9-b554-101fb2f94acf" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6fc67ebcb6423efa0619877722ffc3ee</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

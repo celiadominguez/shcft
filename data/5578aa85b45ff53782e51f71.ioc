@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8d927b6d-1602-4ab6-9d35-12627fee01f2" last-modified="2016-07-10T09:32:46">
+  <short_description>HawkEye Keylogger Campaigns Affect Multiple Industries</short_description>
+  <description>HawkEye Keylogger Campaigns Affect Multiple Industries</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:46</authored_date>
+  <links>
+    <link rel="http://www.isightpartners.com/2015/06/hawkeye-keylogger-campaigns-affect-multiple-industries/">http://www.isightpartners.com/2015/06/hawkeye-keylogger-campaigns-affect-multiple-industries/</link>
+    <link rel="https://otx.alienvault.com/pulse/5578aa85b45ff53782e51f71">https://otx.alienvault.com/pulse/5578aa85b45ff53782e51f71</link>
+  </links>
+  <definition>
+    <Indicator id="7e2c36f9-a484-438e-8c4a-d38bda5f5428" operator="OR">
+      <IndicatorItem id="eccaf3ff-635f-4143-81dd-fd32c509ba13" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eke.pe.hu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="91256760-af75-4a96-8a0e-a7508f05a1cd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">don5.besaba.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fdcbdfbd-6274-485d-ad66-57be12d754e9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">den9.besaba.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ee42282c-82ae-4396-a1ea-783f20fea526" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">biin.besaba.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="434e54b7-b8d1-41c9-85c0-4788c5fb6e11" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">decency3.besaba.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ea8f9b1-a389-49ee-8e45-349dab39eed3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">don2.besaba.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9660b352-92ea-4809-a46d-ec5655e89a43" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e232417590b6fc4bd783c5ca66ea6d7c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4af580a7-6a12-44a5-a1cc-bfe70f1c6b4f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2582ca4e6687084d8d032d4f1cba525c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f97582de-0e74-48e4-b685-7e2493993953" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9e87cb1c1ca1545e9b0293231324becf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e840f9f-027e-4da9-adcd-d9766ca23fc3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4b311f1e344ceda09fbc8ea58067e338</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f7b46419-7ba4-474b-a55e-5436c26728e5" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">65479f2bc8ce65fb489e1984a98e9e78</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e227cd76-8908-4819-8a88-49f1fc929e24" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">019a689dcc5128d85718bd043197b311</Content>
+      </IndicatorItem>
+      <IndicatorItem id="12c08657-1d69-4bf5-bc20-73b76871c892" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4efc57e86d070dcabd078e23ec147c08</Content>
+      </IndicatorItem>
+      <IndicatorItem id="73636432-d598-41be-abb3-36a036c1300a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">06743a9a276758e67e7a6f66d662fca6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="549c8d21-6efd-426b-a0e2-e05c21cb18a4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4da4e24086338bd0451bec5230d9ca86</Content>
+      </IndicatorItem>
+      <IndicatorItem id="903cbe52-a89f-4ef8-bc35-d8978465c3d4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">112444bfba5d7931dd173f0606a82e3b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a2c60f91-68ec-4411-9030-683a8db62718" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5504cb0b827226ef0d4067ff511bca1d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd612b02-0e12-4591-84e9-d8cefe2d5bf5" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1e5c2a9c10d6719ce9017dbdc74f141c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4efeaa37-35f5-4f45-8961-c8e6433a5e5d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">59c8d2b1592137e27c1ca85e3773f068</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f8006f5-67be-49c6-8c33-6233a490591f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7abba2c4190c7101d16bc6c1ea136ca0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f032c233-c138-4b86-8d05-349f1fe42dd1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">be11151eac8ecaad89e8b4fdc8510e7c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b16a8cf2-30e1-4cf9-ad84-5e02364f2f44" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">eb2844fa3256355b4ac74612d1358626</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cfe197bf-eaa8-420a-a730-7865a0ee4bf5" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">30028e1e24febcf077d6db602b010805</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac5b5503-f737-4260-9fc2-c9b13bed088a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">adde5c8d98e9c099677d7e81164d7e61</Content>
+      </IndicatorItem>
+      <IndicatorItem id="50e9c56f-1313-4e29-b117-bd63e9efc6c1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">20884d73f1d0847d10b34fe490062815</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cd2a719d-28e4-4484-ada6-6103267c3dec" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">06d2238a45998d15733aad0567b5ed1d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eed4dafb-7846-41ff-a1b2-69a020fbb05a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">59a6db3dad5444042c0f69fc905f1c11</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4979f98-2312-464a-8179-b90bfc9f1921" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">027e6819e54bf93a0a79419d92047946</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a3bcb070-9fd7-40c0-872d-8fc4e15229e1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">087be68dde98f4f243a9caccf2ba119d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e8b2d1c-1090-410b-bdb2-a4e684328b76" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1641b030c7cab3369abf294972d29f39</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7f0c0ef-726f-4523-b7ef-5fc0cb1d6835" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">exportexportt@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f2d093d8-6598-4502-8928-b3d3f13ec0b0" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">jideofor100@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aadf6763-6325-4ecc-bc1e-b3a84df6351b" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">gabeevkon00@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b7fecf1b-2d76-42d6-8493-3e8afb50f504" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">tradeej@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a6abfc6-d94e-44df-9162-ef67afe90df4" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">mrssussydominic@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2721d834-bb81-4093-a62a-3112e0b98c47" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">anjoe2@mail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2d85a7ac-0f5e-407a-a735-000c14050685" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">jacojacococo@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="22f98953-9fc6-40c9-8e1b-d08d8fa4647c" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">himecsalesmoon@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8634718b-a3e2-411c-9d32-e6a741274bb5" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">elvarisi2014@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bbafbea5-b205-4f66-8758-f818b77e1737" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">moveonboy1@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="83032fd6-f626-4eaf-9128-3213542a207e" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">smartlogscom1@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="963cd786-afcc-4a61-8c22-bb61208d9d8b" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">josephaboud987@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5860d181-7712-462a-9160-efb60f57ec7b" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">canicecompany1@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1c08a476-62d1-436f-b629-20c163f545aa" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">gregj6522@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="00b2d1a0-f701-4c54-8528-478157b1fce0" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">mackpingold@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb4cefaf-afae-40a8-9f82-f598737964a7" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">anayookonkwo2017@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a3c2f79-2480-41dc-b5b5-3c1adf507b4e" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">kataskatas2@gmail.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

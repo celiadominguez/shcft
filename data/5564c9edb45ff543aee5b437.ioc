@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="0e99b62e-be6e-4c88-9506-51280c126f10" last-modified="2016-07-10T09:34:26">
+  <short_description>Linux/Moose</short_description>
+  <description>Linux/Moose</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:26</authored_date>
+  <links>
+    <link rel="http://www.welivesecurity.com/wp-content/uploads/2015/05/Dissecting-LinuxMoose.pdf">http://www.welivesecurity.com/wp-content/uploads/2015/05/Dissecting-LinuxMoose.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/5564c9edb45ff543aee5b437">https://otx.alienvault.com/pulse/5564c9edb45ff543aee5b437</link>
+  </links>
+  <definition>
+    <Indicator id="997f0efe-9faf-4c4f-a7a3-7dc8d26a2774" operator="OR">
+      <IndicatorItem id="3ec4d9f7-f481-4b55-a13f-f83ede36272f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">10e2f7dd4b2bb4ac9ab2b0d136f48e5dc9acc451</Content>
+      </IndicatorItem>
+      <IndicatorItem id="41278b15-6024-4ffe-b0b2-2811db14e313" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">dd7e8211336aa02851f6c67690e2301b9c84bb26</Content>
+      </IndicatorItem>
+      <IndicatorItem id="075d109a-b49f-4684-aff3-0f525af4f83d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4bffc0ebfe8c373f387eb01a7c5e2835ec8e8757</Content>
+      </IndicatorItem>
+      <IndicatorItem id="edf96262-1ad9-492e-abc2-5b0cf91aecd1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">bfc2a99450977dc7ba2ec0879fb17c612e248ece</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9aa200e9-ee94-4ede-af90-6ac00a2c73a8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">095ee85aa648de4e557fc243de17d4f00ab2091f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5b87f01e-5971-4ea6-a2fb-f139640a8985" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">54041ce90b04698465b866ed169ddf4a269e1e76</Content>
+      </IndicatorItem>
+      <IndicatorItem id="14fe1111-6ba6-45dc-ad1b-6711850dbb5b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">216014dba6f1a636c44530fbce06c598d3cf7fa1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8a80c7c1-829a-4332-8aa8-4b91775ee0f5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">85c3439b6773241d11cda78f0ecfea4c07e55fd2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e78d118-b385-4fe8-b2b5-0beb933534ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d648c405507ad62ddb3faa1dd37f659f3676cacf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cdfe16d5-f600-4e47-a919-e6048313813b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">727a63e07d9e1b8f60fddeeb62a80bd7fe7b58f5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e5993f8-1ae2-45c2-bed7-dc63521eebbe" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">77.247.177.36</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e0b4eba-c450-421d-aadb-78695d8be6c9" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">93.190.140.221</Content>
+      </IndicatorItem>
+      <IndicatorItem id="960dbea5-0656-407a-8548-ddd9a84cbd01" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">85.159.237.107</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c3ff85d-9af4-4039-bf8f-0f2c1a47681e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">85.159.237.108</Content>
+      </IndicatorItem>
+      <IndicatorItem id="45227ae1-dac4-4e52-a88c-bd066bff5fbf" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">77.247.177.87</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="9d149617-e474-48d6-bfd5-35cf113979de" last-modified="2016-07-10T09:31:21">
+  <short_description>PlugX Threat	Activity in Myanmar</short_description>
+  <description>PlugX Threat	Activity in Myanmar</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:21</authored_date>
+  <links>
+    <link rel="http://pages.arbornetworks.com/rs/082-KNA-087/images/ASERT%20Threat%20Intelligence%20Brief%202015-05%20PlugX%20Threat%20Activity%20in%20Myanmar.pdf">http://pages.arbornetworks.com/rs/082-KNA-087/images/ASERT%20Threat%20Intelligence%20Brief%202015-05%20PlugX%20Threat%20Activity%20in%20Myanmar.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/55e557fa4637f21c54c1bb0d">https://otx.alienvault.com/pulse/55e557fa4637f21c54c1bb0d</link>
+  </links>
+  <definition>
+    <Indicator id="966a2e89-dd0c-4202-8b05-20b2ac5676f5" operator="OR">
+      <IndicatorItem id="44a3470d-8e91-4473-9324-76634b1cdfa6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">appeur.gnway.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce4e0e19-502d-4e5c-bbdd-4e3ab7345b93" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webhttps.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="deb45e85-f4ae-4ace-b8b1-59e4b0e1eb8c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usafbi.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="693285a9-0a2d-4bc1-8aeb-894da9767a3f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usacia.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4ec95fd-9fa0-425e-b867-f6cbb7bb64b8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e2eddf6e7233ab52ad29d8f63b1727cd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="314e0d49-b209-41cd-aed4-e7c7984c56fe" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">78a9897344d756701d4674c7f559610a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7703c528-5415-4823-979a-16328e6bf183" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">eeb631127f1b9fb3d13d209d8e675634</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e20a6686-e772-40f4-ba62-a500f7cb0e9c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5ee5df9a5f4d16de3f880740db884f69</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c30d452c-0554-497b-873a-64ccf51bf7e0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1e36a853bc0b1d111ce726a508bc1a86</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0fefe710-6306-401c-85ae-033d719bd5be" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a1c0c364e02b3b1e0e7b8ce89b611b53</Content>
+      </IndicatorItem>
+      <IndicatorItem id="79cbafcf-c723-4853-ab84-d25e4c0957c4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">69754b86021d3daa658da15579b8f08a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f94ced9-7375-4aea-b06f-acdcfab19323" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a30262bf36b3023ef717b6e23e21bd30</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b435f1f8-9b7f-485d-8dcf-ae8c95ca7d8a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9aceefb76c2e227c651ef6a035461b5c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5a21f02-0da2-404c-b8c6-15ca2012ca71" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d0c5410140c15c8d148437f0f7eabcf7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0477886f-dff0-4a3e-9b28-885c10cc828c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d055518ad14f3d6c40aa6ced6a2d05f2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dde2845b-106e-4fe1-91de-7711f7b2de12" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">532f4c671a19145cf19c34d18138da63</Content>
+      </IndicatorItem>
+      <IndicatorItem id="674714e2-3cee-482b-b2fd-aff4b267ad66" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">809976f3aa0ffd6860056be3b66d5092</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="694fd3eb-95f1-40c5-befb-74eca4aca83d" last-modified="2016-07-10T09:30:59">
+  <short_description>Android trojan drops in, despite Google Bouncer</short_description>
+  <description>Android trojan drops in, despite Google Bouncer</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:59</authored_date>
+  <links>
+    <link rel="http://www.welivesecurity.com/2015/09/22/android-trojan-drops-in-despite-googles-bouncer/">http://www.welivesecurity.com/2015/09/22/android-trojan-drops-in-despite-googles-bouncer/</link>
+    <link rel="https://otx.alienvault.com/pulse/5601b6c967db8c6fb351bbca">https://otx.alienvault.com/pulse/5601b6c967db8c6fb351bbca</link>
+  </links>
+  <definition>
+    <Indicator id="3bdf15fc-4216-46b6-998c-5ee1f7e8a20c" operator="OR">
+      <IndicatorItem id="727175ff-59ba-4959-9937-c75d7cec6224" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9cbfd66f35a36d9f75a89f342da9c784</Content>
+      </IndicatorItem>
+      <IndicatorItem id="00ee5eb1-aa4a-4665-a2b7-2509479b63c1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">745e9a47febb444c42fb0561c3cea794</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7803de3e-4584-49f0-8f09-b21e75d2b222" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c19896fdd3b96b9324c6b79cc39eca5b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57ea608a-3ec1-4ef9-b507-567f3d6b70ce" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">195432955e70ec72018ead058f7abc2d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ef7e750b-cad2-4a4a-ab46-21376ee6b323" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ee8e4e3801c0101998b7dfee33f35f95</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cd0bb843-1d32-498f-bc5c-9725aab466c7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5586e93ac84317348904adfe01c9715c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd159090-6ac4-4374-8776-4cdf72ca8fb4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f8df9e2d21018badc7555a9233a8b53e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2c41b4d6-6d07-4971-9785-66673f91d973" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d7facf652d3947a53f85431ba8a4cd4a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b9a90782-563b-435d-8435-c07b5ee640a7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8721901a2caaeb98a19e0fb909ce2569</Content>
+      </IndicatorItem>
+      <IndicatorItem id="65975168-b0a2-4df0-9604-6a469c6f60c9" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9b72df484915ce589ade74e65ecdfaed</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d6d61a3c-d461-4ab9-b98c-682a884b1381" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0d7c889e8a9be51a58041d55095f104f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5288567-c1d7-4558-bef0-96d9101658bb" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f8879f759b00ed9d406dd14ce450584b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ceb74a25-0cc9-40a3-b385-2c749886bff4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2f6323af124f9fd57edb1482827f9481</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4dbcd06f-aff2-44a6-9c1f-4bf0b2c3c27d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">10edaf2b4c25375644faf78a25790061</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d20ad960-c641-4c91-9e84-50efcf7c1896" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ba3c1894310d38aa814ad3c58f1c8469</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ba0db3a7-a697-4752-8e8d-fcf7f6cc1ce6" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1516174c4a7f781c5f3ea6ac8447867b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b9e4041b-7316-45e3-bb95-1f3cf55f01b1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f05ac3ac794ee8456db4d0331830d2d8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2db42b59-0305-4c0b-b3b6-68732ced529e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">87cc79d6f6795fea0df109e181d1a3e8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ee6add1a-14ad-4c70-b79d-227dd038fc53" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d5afd7ba5b3bd24cd4fa5201882e1a9d</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

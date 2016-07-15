@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="eb0d8fa8-9102-424e-a329-701a67f37c9c" last-modified="2016-07-10T09:35:54">
+  <short_description>FighterPOS</short_description>
+  <description>FighterPOS</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:54</authored_date>
+  <links>
+    <link rel=""></link>
+    <link rel="https://otx.alienvault.com/pulse/553473bcb45ff53a349fe709">https://otx.alienvault.com/pulse/553473bcb45ff53a349fe709</link>
+  </links>
+  <definition>
+    <Indicator id="7de66be1-9f02-4993-802e-52dc0129606c" operator="OR">
+      <IndicatorItem id="47cba936-4b31-4421-9444-d0f5dab33b2f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sitefmonitor.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce240b9e-d455-4a81-9aa2-4e2801f62d50" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">msr2006.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4331080d-1c53-45d7-907e-1d7ed4f2c191" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ctclubedeluta.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7dafb3ad-b0c1-4ecf-97ff-4c5f1be20c4b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">55fb03ce9b698d30d946018455ca2809</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ca5a0e74-284a-4fac-a7c7-43a28888abf3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6cb50f7f2fe6f69ee8613d531e816089</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30ff68fc-a7a6-434e-8b0a-465898376309" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e29d9560b6fcc14290f411eed9f4ff4f</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

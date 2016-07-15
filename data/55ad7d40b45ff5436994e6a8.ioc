@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="86d7cad4-8611-4bca-9f5a-381f6bb24beb" last-modified="2016-07-10T09:32:50">
+  <short_description>Watering hole affecting the Permanent Court of Arbitration (PCA)</short_description>
+  <description>Watering hole affecting the Permanent Court of Arbitration (PCA)</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:50</authored_date>
+  <links>
+    <link rel="http://www.threatconnect.com/news/china-hacks-the-peace-palace-all-your-eezs-are-belong-to-us/">http://www.threatconnect.com/news/china-hacks-the-peace-palace-all-your-eezs-are-belong-to-us/</link>
+    <link rel="https://otx.alienvault.com/pulse/55ad7d40b45ff5436994e6a8">https://otx.alienvault.com/pulse/55ad7d40b45ff5436994e6a8</link>
+  </links>
+  <definition>
+    <Indicator id="ef055631-214f-440b-aaf4-04d2046f7a57" operator="OR">
+      <IndicatorItem id="2b28ae49-206c-4d54-9bb6-af09231d8f34" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vpn.nicklockluckydog.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="919775e0-465a-4240-9bc6-a58269fd60e9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pic.nicklockluckydog.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a49871d2-ccd6-4132-808e-72e10dd083e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ssl.nicklockluckydog.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0aabd60f-1b54-493a-9568-c4c08fccc24f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">books.blueworldlink2015.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4924aed5-f4ea-47c0-b2e2-32c7b8e4eb94" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">16e5a27bd55e0b4e595c9743f4c75611</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5f3ccf82-86bd-4596-90f6-ee0ac7c2d0cf" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5877d15215b7f398319f0de7ba7b1947</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3505d3af-651d-43e8-ae45-d046583c0797" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b4522d05a9e3a034af481a7797a445ea</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5277b9e-7931-4863-8b0d-68ac35d6de5b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2ee25de7bd6a2705f3f8dde0dd681e96</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e7f3374-e0ea-4a5c-9e26-3e65a6cf121c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">108.61.117.9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd51dee0-0b7e-44b2-84eb-08c325974ef6" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">175.45.233.205</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f3ae4073-5765-422b-8a39-bb3cf5fbbf3b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">192.243.116.241</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dbe28906-dcc0-4bc2-90cd-fac46e95d713" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">nicklock2004@aol.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

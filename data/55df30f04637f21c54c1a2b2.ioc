@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="40e23c4d-5340-4707-b5b9-7aee8bee0646" last-modified="2016-07-10T09:31:30">
+  <short_description>London Calling: Two-Factor Authentication Phishing From Iran</short_description>
+  <description>London Calling: Two-Factor Authentication Phishing From Iran</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:30</authored_date>
+  <links>
+    <link rel="https://citizenlab.org/2015/08/iran_two_factor_phishing/">https://citizenlab.org/2015/08/iran_two_factor_phishing/</link>
+    <link rel="https://otx.alienvault.com/pulse/55df30f04637f21c54c1a2b2">https://otx.alienvault.com/pulse/55df30f04637f21c54c1a2b2</link>
+  </links>
+  <definition>
+    <Indicator id="51e74ec3-8185-4182-9257-24b6db7cb035" operator="OR">
+      <IndicatorItem id="9ec2ae15-96d2-47a2-8e87-269807a06e9d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">service-logins.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f91fe4e6-862e-4110-af6e-78cb72a683be" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">services-mails.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c105542b-4c22-4fdb-a912-b824a8c7e46f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">signin-verify.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ece576a8-c551-4f28-a47d-f1592965c5d0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">login-users.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1abb885b-eb10-47da-b3d9-9baeadec6239" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">account-user.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5176b704-ffe1-4588-8220-6d27b07583b0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">signin-users.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0cbe682b-d002-46af-b2e8-d4adc17a8241" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bluehostsupport.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c2cc0c48-2976-4d46-8407-3051e15fffb0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">support.qooqlemail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a1e293cd-0485-4fce-ae78-b708e667488a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">login.setting.verification.configuration.user.action.first.step.edit.check.privacy.view.document.setting.verification.configuration.user.login.logins-verify.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="758c2d4c-5956-473f-9f5b-2d7218da8f75" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">reuters.users.check.login.newsia.my</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6046af08-df1b-42ae-a47f-5da8488f00cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">login.logins-verify.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30bec2a4-7d1d-4d84-b18f-fa4cc198708e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">141.105.68.8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5573a28-096f-420f-a993-9cee2f5bc18a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">162.222.194.51</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4dcc57f0-d5c4-453a-91f3-c656b8307ec4" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">141.105.65.57</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aaeb02e4-cb7d-4681-9462-b4ae139f88d9" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">141.105.66.60</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4977d4a0-92da-4fd0-850c-be33b126a42a" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">bijan.yazdani2002@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c48daf2f-29bb-4ab1-b19e-cec690c021f2" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">kavaliulinovich@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a89e0de7-5212-4987-808c-a497afd24765" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">reply@support.qooqlemail.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

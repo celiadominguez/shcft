@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b0ce7e00-1af5-43a8-96f9-250fa3323d2c" last-modified="2016-07-10T09:36:05">
+  <short_description>Adventures in PoSeidon genealogy</short_description>
+  <description>Adventures in PoSeidon genealogy</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:05</authored_date>
+  <links>
+    <link rel="http://h30499.www3.hp.com/t5/HP-Security-Research-Blog/Adventures-in-PoSeidon-genealogy-Tracking-a-malware-family-tree/ba-p/6730758">http://h30499.www3.hp.com/t5/HP-Security-Research-Blog/Adventures-in-PoSeidon-genealogy-Tracking-a-malware-family-tree/ba-p/6730758</link>
+    <link rel="https://otx.alienvault.com/pulse/5528128813432a2101d757b9">https://otx.alienvault.com/pulse/5528128813432a2101d757b9</link>
+  </links>
+  <definition>
+    <Indicator id="9562bb8e-3c82-429d-bd4d-a774927eec24" operator="OR">
+      <IndicatorItem id="e310b3f0-1ac3-43c1-b8fc-9f94a7af5418" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">etidfortgot.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c0ef422-b269-4a60-9513-a1932bc97edf" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">151.236.11.167</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b7c6e795-a80f-4e40-bef7-4b6a45e30d6b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ddf9bd20283c837cb6a6071c45563bd70890a537413603f0508b39973ffea4e0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d64045af-669b-4f24-afa5-cd257a4bb1f1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6a7ce1b73cc65c8af11738b6d5e1acf9e9183a4f57a36547c715bb5041d14f0a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="314a48c4-2c2c-403a-941f-f14438d824ad" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9e295d3807772889585d16cb5f334156f0c866cc50fbbbde8bc8ce9266ad4d21</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ae598b2e-1313-406b-96a3-20362ff762c5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">38348805d728f816b13667d53b2d20dbd46212d94594dc98b191a01f9f3d090e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b2989f8e-d2a5-493c-a2c5-54f0e377f9f1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e81a858fca04b2a9c72b40a6e56be236d8e9491da3d7c53b1fd012c14c6b90a2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1c27f479-0d21-4a49-954d-1b67a5290431" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">40680dbfb20fbb536bc04cffd886eb33481b655b978d213cd4c0b421cc8e245b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fbeea3e5-ada4-4e55-a53f-ffcacf76b3dc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">78e445df06d81d872d4011184188f8218d0ed3c1e641679f5a3e1d0c3a6e5559</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7927eb16-789e-4350-8fee-9891682e00b1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6d73793894b9a8f0404e5378c7edf68243da67b907e634231fc629860d24a6d9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d60eeec-7b6f-4405-b575-4224aed8a8df" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">73ffd3f2766ca107382d5a9c64a91b17e6adaf7b202fad85cf7b564f300fb86f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3a4a0b3-4988-42af-a885-7ee900660764" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7b78170a7a29a689788aea9d45af0365af9ea35693735e94857bb03a13d547dd</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

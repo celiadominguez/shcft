@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="1bad90bd-2dcb-406a-a650-d7c0303f29ad" last-modified="2016-07-10T09:33:13">
+  <short_description>Wild Neutron – Economic espionage threat actor returns</short_description>
+  <description>Wild Neutron – Economic espionage threat actor returns</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:13</authored_date>
+  <links>
+    <link rel="https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/">https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/</link>
+    <link rel="https://otx.alienvault.com/pulse/559dc013b45ff576a5530782">https://otx.alienvault.com/pulse/559dc013b45ff576a5530782</link>
+  </links>
+  <definition>
+    <Indicator id="578d670a-45ad-4db7-bdd7-2c6eef6aea4e" operator="OR">
+      <IndicatorItem id="358ce7d6-6818-47d3-bfa4-e181ae6a797a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">corp-aapl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="069a62d0-0b86-4c1f-abc3-719e0c6b8d70" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fbcbn.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4fa565e0-e364-41f0-8985-015e0b6c1897" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">app.cloudprotect.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1192d717-c610-4041-b96c-95de2736dd7c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ww1.jdk-update.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c472f72-20c0-4475-a54c-fd57c5dcd525" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ssl.cloudprotect.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4060b20c-e178-49f2-94f5-6fdb04322e9c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pop.digitalinsight-ltd.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17ae966c-dc55-453c-a505-4368af2775a6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adb.strangled.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4a3091e6-19c9-4ce5-9f73-42e9c6149e9b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cryptomag.mediasource.ch</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9238a31-e7fd-4e5e-a16a-965e4650e798" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ssl.updatesoft.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a40a0036-8e2a-457f-83f4-2e73f5324817" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">img.digitalinsight-ltd.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4cb03e3f-5028-4a27-811b-8ed563cfa178" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">logs.cloudprotect.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a598b8b-37ca-4a03-84fa-3edd360f73fa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fw.ddosprotected.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4dfd71d-813e-472a-8621-64105e35ac03" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cache.cloudbox-storage.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="512b4d9c-b9c3-426f-8664-2eec724d6835" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ads.digitalinsight-ltd.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43339495-2903-4ad4-b840-db70e4eb7653" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">min.liveanalytics.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e770bf8-32cf-47d8-9fdf-855ccaa9ab7f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fb.clust12-akmai.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5d9e5740-9853-49ea-8954-adfe69211140" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">find.a-job.today</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e1c8bb1c-ab2f-4f2f-bd7b-39eeac908876" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ee24a7ad8d137e54b854095188de0bbf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff14597d-6fdf-4973-bbd6-45325acc28d8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">088472f712d1491783bbad87bcc17c48</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f6772aeb-ded2-4d8b-9010-d5cf116862c1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1582d68144de2808b518934f0a02bfd6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="25801125-6899-46f7-8429-c00f956f5a9a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">95ffe4ab4b158602917dd2a999a8caf8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d8f2baa3-7c8d-4d23-9fe4-55bab65b92fb" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">dee8297785b70f490cc00c0763e31b69</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b7e182bd-4773-4fde-90c3-a6a616d120aa" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">48319e9166cda8f605f9dce36f115bc8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec32601e-c5b2-4f30-989e-4dfb40912b90" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f0fff29391e7c2e7b13eb4a806276a84</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2a7cf81f-00d3-44fd-8d82-a8a5f30a8141" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">342887a7ec6b9f709adcb81fef0d30a3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe449077-e5db-4071-a7b5-ea5505bdf290" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">14ba21a3a0081ef60e676fd4945a8bdc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e578d41b-eaaa-401d-a034-0d6838483e05" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1f5f5db7b15fe672e8db091d9a291df0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86ad936e-1bcf-41d7-aaa1-ce920db365a7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0fa3657af06a8cc8ef14c445acd92c0f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c807cbfd-a99f-4420-8029-c1eca25f0f05" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">62.113.238.104</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9a2334c-ad37-4ea6-8a95-37a6b48f372f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">217.23.6.13</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0507640d-8b40-4e44-8311-8d54622a4e92" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">64.187.225.231</Content>
+      </IndicatorItem>
+      <IndicatorItem id="274f61a0-a449-4813-a301-3427ee12f362" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">66.55.133.89</Content>
+      </IndicatorItem>
+      <IndicatorItem id="91590cbd-b4cc-475e-a796-f87424e366cb" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">46.183.217.132</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23b4362c-88da-457a-a42d-bce83400b3ae" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.10.58.181</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34830472-e528-4eb0-b762-8b23109fee52" condition="contains">
+        <Context document="ProcessItem" search="ProcessItem/HandleList/Handle/Name" type="mir"/>
+        <Content type="string">Global\LnrRTPDispatchEvents</Content>
+      </IndicatorItem>
+      <IndicatorItem id="91d2d8cf-16b6-41bd-b9a7-bd8c75bbaa69" condition="contains">
+        <Context document="ProcessItem" search="ProcessItem/HandleList/Handle/Name" type="mir"/>
+        <Content type="string">_Winlogon_TCP_Service</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

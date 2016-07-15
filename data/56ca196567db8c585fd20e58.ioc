@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d7e00a81-d3e5-4e6d-8543-d7536c96beaf" last-modified="2016-07-10T09:28:38">
+  <short_description>Linux Mint website hacked, ISO backdoored</short_description>
+  <description>Linux Mint website hacked, ISO backdoored</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:28:38</authored_date>
+  <links>
+    <link rel="https://gist.github.com/Oweoqi/31239851e5b84dbba894">https://gist.github.com/Oweoqi/31239851e5b84dbba894</link>
+    <link rel="http://blog.linuxmint.com/?p=2994">http://blog.linuxmint.com/?p=2994</link>
+    <link rel="https://otx.alienvault.com/pulse/56ca196567db8c585fd20e58">https://otx.alienvault.com/pulse/56ca196567db8c585fd20e58</link>
+  </links>
+  <definition>
+    <Indicator id="59b5a583-672a-439a-ae79-ad179ab33bab" operator="OR">
+      <IndicatorItem id="0fa8bc98-9ee4-4f3c-9dea-5490cb67b379" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">absentvodka.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c37144d4-90d2-4beb-be11-8bfe9b699154" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">5.104.175.212</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

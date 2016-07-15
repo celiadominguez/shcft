@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="ebba80c9-fbff-43fd-a91c-d2fc286f2578" last-modified="2016-07-10T09:33:24">
+  <short_description>Digital Attack on German Parliament</short_description>
+  <description>Digital Attack on German Parliament</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:24</authored_date>
+  <links>
+    <link rel="https://netzpolitik.org/2015/digital-attack-on-german-parliament-investigative-report-on-the-hack-of-the-left-party-infrastructure-in-bundestag/">https://netzpolitik.org/2015/digital-attack-on-german-parliament-investigative-report-on-the-hack-of-the-left-party-infrastructure-in-bundestag/</link>
+    <link rel="https://otx.alienvault.com/pulse/558d85f0b45ff55ccb25e6f4">https://otx.alienvault.com/pulse/558d85f0b45ff55ccb25e6f4</link>
+  </links>
+  <definition>
+    <Indicator id="839b988b-c251-4967-9095-83dd50eec58e" operator="OR">
+      <IndicatorItem id="de83572e-d411-4f30-abc9-efad9025b6b5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b12fa566e808c406e038af46012a8a28b76f58661872c0f76d12d9765aefa076</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19f2fb16-b24a-45c4-9a0b-fe1592f16dc2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">730a0e3daf0b54f065bdd2ca427fbe10e8d4e28646a5dc40cbcfb15e1702ed9a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="69e01bf0-321f-46d4-8a4c-8095baa7e9f0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5130f600cd9a9cdc82d4bad938b20cbd2f699aadb76e7f3f1a93602330d9997d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="406771d0-4b35-45fa-aaa2-4770f8b6d3f1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">566ab945f61be016bfd9e83cc1b64f783b9b8deb891e6d504d3442bc8281b092</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5d5533b8-9b70-4eaa-b01d-345647abbd1a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">77e7fb6b56c3ece4ef4e93b6dc608be0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="efe3aa83-f22d-44ac-b032-c3b6a03f0bc2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5e70a5c47c6b59dae7faf0f2d62b28b3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="371c22e2-2812-4657-9c9e-1121c9748e5d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f8292b67f20861a61d0716ebcfe56495</Content>
+      </IndicatorItem>
+      <IndicatorItem id="405916dc-9fe2-4f8b-9904-1224859acb2f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">176.31.112.10</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

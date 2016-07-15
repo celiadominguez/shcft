@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b2f88b11-8c1a-4cbc-b6b0-1e0685ccc9b2" last-modified="2016-07-10T09:34:12">
+  <short_description>Disrupting an Adware-serving Skype Botnet</short_description>
+  <description>Disrupting an Adware-serving Skype Botnet</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:12</authored_date>
+  <links>
+    <link rel="http://phishme.com/disrupting-an-adware-serving-skype-botnet/">http://phishme.com/disrupting-an-adware-serving-skype-botnet/</link>
+    <link rel="https://otx.alienvault.com/pulse/556f3cdcb45ff519c4cfbb91">https://otx.alienvault.com/pulse/556f3cdcb45ff519c4cfbb91</link>
+  </links>
+  <definition>
+    <Indicator id="9d843085-8ca5-4a62-a561-2bbb70643347" operator="OR">
+      <IndicatorItem id="623e4e57-927d-40d7-9be2-787aa80cdd38" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e53e531cb329238f5505bbdc6a46a10b431b2ac5efd8eb04f904105fd5e27328</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3fb30de3-3b1e-47a8-894d-a643ce468dc5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">154fc9ca4fca3ce7b7b102806f3347786963aa2977b9b5b8bcfacf9c8b839ce4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d17fff77-0301-4494-a49a-dc0b2d1a6c9f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a12c5213bc215be3c2c9e42538362136b769a785d909400c4817b2d0ab88bfd6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="570db860-e1da-48ce-8749-5448c1060f4f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">2f1fe501c65e584da6e8958f2b68233f8c85310a26e3e2b6728f02dc603c7b67</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ca18794-7346-4ab4-94b0-e77aee1e147a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">fffb304155aada3717b2035a69f576c0f0c2888246070dee5ebc5a1dd7a36d22</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a476c01c-23bb-4e1f-8f07-3210b3db780b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e96fc98562d35391ee124f0d5e714be2107e50127bfee391a20570cc26cd71ab</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a49a167-7e11-4c18-ab44-4e2f829d2440" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ee6c4bb2aa3486752e39c0905e8b3826fc182b576bdd3a347f8c1bbaf7c27c27</Content>
+      </IndicatorItem>
+      <IndicatorItem id="075af5fd-f42b-490e-85df-e49e81e7def0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a0ee3336335b3673d364a67b93a158139b9059d887b6461a0ed380a234688e8b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4844de2-1e76-428e-ae85-8072889ab8ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">playpso.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="390cf384-7787-4ccd-956d-06df712a0e5a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">msglp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a21e5d0-bb89-465f-959e-09fa2ed85cb9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">viewssr.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a03b7688-c257-47b6-a195-2f7c57573d69" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vomsg.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b194bd86-0eae-4a1f-892f-a261e0de58ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">msgmss.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="33d9e36a-7abd-41bb-8f46-4d2fa396b2df" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">viewror.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b13d3405-c43e-48ca-a944-f7a4bff79a6e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.playqv.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42c75b85-3778-4a89-bc39-8860337633d5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.viewhc.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6497cc55-db31-4f80-beb5-f91824cbe0de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.playvx.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da440d16-e52c-44c3-adf2-fb3c12c77ce5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.msgsvs.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03f84f37-c7a9-4497-9dbb-c356824dc28d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.viewxc.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3a67998-ac9e-4574-aff3-2fcd17f2b719" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.viewrq.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="091e600d-2ff2-43c4-992f-adc18b791349" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.ossmss.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

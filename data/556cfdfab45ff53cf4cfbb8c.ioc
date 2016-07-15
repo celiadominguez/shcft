@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="417eccbe-b9f6-40b6-bd8c-cc213d5bd185" last-modified="2016-07-10T09:34:17">
+  <short_description>More Porn clicker malware masquerading as Dubsmash</short_description>
+  <description>More Porn clicker malware masquerading as Dubsmash</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:17</authored_date>
+  <links>
+    <link rel="http://research.zscaler.com/2015/06/more-porn-clicker-malware-masquerading.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+zscaler%2Fresearch+%28Zscaler+Research%29">http://research.zscaler.com/2015/06/more-porn-clicker-malware-masquerading.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+zscaler%2Fresearch+%28Zscaler+Research%29</link>
+    <link rel="https://otx.alienvault.com/pulse/556cfdfab45ff53cf4cfbb8c">https://otx.alienvault.com/pulse/556cfdfab45ff53cf4cfbb8c</link>
+  </links>
+  <definition>
+    <Indicator id="27c33356-2d55-439c-b165-fd23dcf91264" operator="OR">
+      <IndicatorItem id="148ed392-3b8d-4a64-843c-62bed337def2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">memr.oxti.org</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

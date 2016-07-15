@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="08d9a590-9593-470f-b08e-5b89631309e7" last-modified="2016-07-10T09:30:22">
+  <short_description>Adwind: another payload for botnet-based malspam</short_description>
+  <description>Adwind: another payload for botnet-based malspam</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:22</authored_date>
+  <links>
+    <link rel="https://isc.sans.edu/forums/diary/Adwind+another+payload+for+botnetbased+malspam/20041/">https://isc.sans.edu/forums/diary/Adwind+another+payload+for+botnetbased+malspam/20041/</link>
+    <link rel="https://otx.alienvault.com/pulse/5627b08e4637f21ecf2af4f2">https://otx.alienvault.com/pulse/5627b08e4637f21ecf2af4f2</link>
+  </links>
+  <definition>
+    <Indicator id="cafb0109-e553-4862-8e5f-0e60b0a6f8df" operator="OR">
+      <IndicatorItem id="ed9f3ee7-fb97-43b4-a9c8-53c0d3a37b4f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">trusplus111.gotdns.ch</Content>
+      </IndicatorItem>
+      <IndicatorItem id="413783a2-8e01-4505-bbe4-cd17063a1757" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">serialcheck55.serveblog.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5b822579-f33e-46c0-92cc-604246f63a76" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pauloo1.corotext.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8ee17cf1-6fb4-4590-9da1-43bb694f6c95" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">p0.corotext.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="644442f1-bfaf-4c7f-8ac0-4eab037b29f9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">selkrom.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ce26c48-806c-4c2e-bb0d-8966a9add781" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5ab9653be58e63bf8df7fb9bd74fa636</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fccb606c-e094-4d2f-9bb7-13fb837b8abd" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d93dd17a9adf84ca2839708d603d3bd6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="075a9100-96de-4d62-8541-2f6f9e5b8582" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5190bde4532248eb133f4dae044c492a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4dab173d-ee41-4f51-93c3-497602f90a13" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">da9f9b69950a64527329887f8168f0b4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dee716a4-bb3b-430d-9680-e77630f2e25b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1fb2b0742e448124c000c34912765634</Content>
+      </IndicatorItem>
+      <IndicatorItem id="52f13d58-ba36-4fc5-ae77-27a4d6c0abb4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0df04436cce61f791ec7da24ab34d71b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a124990-00de-41f7-ae66-5a675b5a4a6b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c5cdbf91ebd4bab736504415806a96b7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="803af3cc-debf-4a72-b464-65634be0d069" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">201fd695feba07408569f608cd639465</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec48feb9-ebd5-496f-aaf1-348f17308519" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">78990750a764dce7a7a539fb797298a1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36b4c012-e3bd-41c0-a1dd-ad3c0537eb65" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e08b81fd1b1b409096e65011e96ac62b</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

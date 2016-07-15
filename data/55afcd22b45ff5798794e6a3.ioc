@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="ca0fdf3e-07dd-484a-b500-746f1579c841" last-modified="2016-07-10T09:32:44">
+  <short_description>APT on Taiwan - insight into advances of adversary TTPs</short_description>
+  <description>APT on Taiwan - insight into advances of adversary TTPs</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:44</authored_date>
+  <links>
+    <link rel="http://blog.dragonthreatlabs.com/2015/07/dtl-06282015-01-apt-on-taiwan-insight.html">http://blog.dragonthreatlabs.com/2015/07/dtl-06282015-01-apt-on-taiwan-insight.html</link>
+    <link rel="https://otx.alienvault.com/pulse/55afcd22b45ff5798794e6a3">https://otx.alienvault.com/pulse/55afcd22b45ff5798794e6a3</link>
+  </links>
+  <definition>
+    <Indicator id="d07232db-3840-47dd-ab19-61dd47cd705c" operator="OR">
+      <IndicatorItem id="5e5bff0c-98b6-4eaa-943e-510ee7084369" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">05bc4a9b603c1aa319d799c8fba7a42a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6137f751-9c4f-4261-871a-b564ba61eea9" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cdf0e90b0a859ef94be367fdd1dd98c6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6d8b859a-0880-433b-86e1-fd347fd7cf67" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">548884eabebef0081dd3af9f81159754</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a81784e-7fc6-4e1c-94bd-3553d95fe40a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">27f5b6e326e512a7b47e1cd41493ee55</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b6f847c-6ca3-4ce0-a9a6-e06b6575c7ea" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6e4e030fbd2ee786e1b6b758d5897316</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ecc82585-ec64-4d22-83cf-3c637cce7799" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">213.179.57.178</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4792e956-aa8a-45bf-b71e-02b4519e5ccf" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">128.91.34.188</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16a9b95a-2611-4b56-9c26-b830b27ba185" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">200.87.48.4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c938f164-26a3-408c-9247-f1b6af3ce828" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">128.91.34.175</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

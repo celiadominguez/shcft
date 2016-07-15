@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="e4c28cfb-2217-4963-bbae-8e276b8ca290" last-modified="2016-07-10T09:30:16">
+  <short_description>Pornographic-themed Malware Hits Android Users</short_description>
+  <description>Pornographic-themed Malware Hits Android Users</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:16</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/pornographic-themed-malware-hits-android-users-in-china-taiwan-japan/">http://blog.trendmicro.com/trendlabs-security-intelligence/pornographic-themed-malware-hits-android-users-in-china-taiwan-japan/</link>
+    <link rel="https://otx.alienvault.com/pulse/562fcef84637f2189130f2b8">https://otx.alienvault.com/pulse/562fcef84637f2189130f2b8</link>
+  </links>
+  <definition>
+    <Indicator id="9e5dc8d8-0458-408c-b8dc-c06ea6fc26cd" operator="OR">
+      <IndicatorItem id="d7a3fbc2-0bb1-494e-a06a-844343d7af04" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">085466c14e4dcf1690106352f0046bd2f6c1962f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aec7ea17-dffd-4a2d-acd1-caf214f44401" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4c0c74e4a240362e9ee603efab18e4f2266d4249</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9d48eb8-75db-4220-8f3d-637d43741b28" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">24b32b2a09eb3130584d8d0d35aa05e3952f2e8b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fc011fb9-f164-4288-9d8f-612d8b0dd94e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">563fe5c8b2cfc3b448d7c65d8fd5e24e45f9927b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="df63ebb5-26e6-4fd7-a6f0-f13bfe622345" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0a2004080409d53f628794241a59e67880d6b2a7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4eb6c2b-14a9-4f22-953c-eef56f6c1b8a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5adca9a5e44a216e123cd191ff42d25c4d87eee6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3542c02e-83b8-4c2d-b6e8-bb2e33445b55" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">573f44865809e3a1435a5438aa8d482b12186768</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5d2952ef-e4b1-484a-a335-85a68a30281f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">95a506cdbe887a86c1f35607ac69ae477d3417b0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77d878d2-5828-4723-bdec-616b84eaa0a8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5e141f138f110db12c1d749ab2c984e5c86a46b5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6a45fd5-d49b-487b-a13b-a7f60f5f45fc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c77a21af5cfe7cd59797ee1eef4d712094264085</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4e7c8c16-c79b-4d16-80a4-b64c563632cb" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c2236c5c02da7efb502a372e46e7fc0d33673bfc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34e2b835-b250-49a7-b336-f1de58868094" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">fb0ff3f46ac73cf7c93e7cc2da00d6eeae3c36f2</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

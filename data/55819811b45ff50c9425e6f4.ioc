@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="aa9ac388-1af1-4edc-afe0-18c390e4d060" last-modified="2016-07-10T09:33:42">
+  <short_description>The Spring Dragon APT</short_description>
+  <description>The Spring Dragon APT</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:42</authored_date>
+  <links>
+    <link rel="https://securelist.com/blog/research/70726/the-spring-dragon-apt/">https://securelist.com/blog/research/70726/the-spring-dragon-apt/</link>
+    <link rel="https://otx.alienvault.com/pulse/55819811b45ff50c9425e6f4">https://otx.alienvault.com/pulse/55819811b45ff50c9425e6f4</link>
+  </links>
+  <definition>
+    <Indicator id="458fed29-9bea-4e70-834d-b0a1598b812f" operator="OR">
+      <IndicatorItem id="1ceb8e2b-2f8a-463c-866c-3ae1f96c33df" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.bkav2010.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ecdc8626-bef5-4abd-9064-802748773649" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a42c966e26f3577534d03248551232f3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="296685a6-7a1a-4aab-b099-e673de05dea4" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">210.175.53.24</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

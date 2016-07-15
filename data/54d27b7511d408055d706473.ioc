@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="77c38499-8d63-49d8-9ffb-44a0548bad4a" last-modified="2016-07-10T09:37:25">
+  <short_description>CBT-Locker ransomeware</short_description>
+  <description>CBT-Locker ransomeware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:25</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/54d27b7511d408055d706473">https://otx.alienvault.com/pulse/54d27b7511d408055d706473</link>
+  </links>
+  <definition>
+    <Indicator id="15a99ee1-7b95-4ecc-99a2-b99358aa4a9a" operator="OR">
+      <IndicatorItem id="836e562a-5ce3-41b5-832c-8ecfe7bb7f7e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">523ec0348d94af33b57b8527bb006b03</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4181a9cb-d65e-4e4c-b95a-345fd8ae3cab" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f8549c7f866cc31c7ee379134383f96ff38c0a6d7ffbfe93ffedf97351cf254f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4eccd438-0f6e-423f-b0bf-cd188e674c44" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5a9f78f075a3a5f6442d2b956e499330502eb641</Content>
+      </IndicatorItem>
+      <IndicatorItem id="430a8d0a-3bf6-4317-bdc9-a62e0a3c4e0d" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.47.5.108</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f5716552-4415-441c-9628-79623ee242f2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rmxlqabmvfnw4wp4.onion.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e31b1f8f-7cd5-4083-b162-82da5f2c69e0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rmxlqabmvfnw4wp4.tor2web.org</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="13341615-e18d-4382-8e78-43eee67b881f" last-modified="2016-07-10T09:29:49">
+  <short_description>PlugX used in attacks against Mongolian targets</short_description>
+  <description>PlugX used in attacks against Mongolian targets</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:49</authored_date>
+  <links>
+    <link rel="http://blog.safebit.mn/2015/11/plugx.html">http://blog.safebit.mn/2015/11/plugx.html</link>
+    <link rel="https://otx.alienvault.com/pulse/565da40d4637f2388ab046e9">https://otx.alienvault.com/pulse/565da40d4637f2388ab046e9</link>
+  </links>
+  <definition>
+    <Indicator id="f6d45e45-78e8-4dd2-a718-d687f824664d" operator="OR">
+      <IndicatorItem id="985cc3bd-fc7e-46b2-9e85-1177e9443c01" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">catologipdate.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9bffb0fc-5d44-4ad7-ae22-a0dceb3f2f56" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mol-government.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ded11bd0-b0da-48bf-8b6e-b2056212c928" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baatarhuu.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c33d0a59-8c09-468a-9bab-962aa6753eb6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mongolbaatar.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e739acfd-f2d1-4f2e-be54-f9a9b5c2e5d7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">goodmongol.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55e022f8-78be-48e5-88f8-3e073ffc88f8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">molnews.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3bcfcb50-1714-46da-8994-a221ea4d42e1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">firefox-sync.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="418b8cf0-09a8-4783-bfa3-5cc82ec47cc5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">heritageblog.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="85d6c41a-3d2d-400c-b961-7dc87d89b61f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teever.mn</Content>
+      </IndicatorItem>
+      <IndicatorItem id="82d928c3-4181-474e-b7f3-58b2dfe38edd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">google.lookipv6.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="686b34fb-13b1-4e6b-bc9d-a40f0e2bea2c" last-modified="2016-07-10T09:34:52">
+  <short_description>SPEAR: A Threat Actor Resurfaces</short_description>
+  <description>SPEAR: A Threat Actor Resurfaces</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:52</authored_date>
+  <links>
+    <link rel="http://blog.cylance.com/spear-a-threat-actor-resurfaces">http://blog.cylance.com/spear-a-threat-actor-resurfaces</link>
+    <link rel="https://otx.alienvault.com/pulse/5553c139b45ff54306641997">https://otx.alienvault.com/pulse/5553c139b45ff54306641997</link>
+  </links>
+  <definition>
+    <Indicator id="df84fbb7-ca69-4856-905e-9de1b722fd93" operator="OR">
+      <IndicatorItem id="c5eb4329-11b0-4c45-87c4-6584adeb31cf" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6ba1d42c6493b18548e30bd60ca3d07a140d9d1945cf4e2b542e4a6d23913f40</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2826b8f1-8252-4f9c-9843-4c27e7cfce2e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9d838fd9d21778ed9dc02226302b486d70ed13d4b3d914a3b512ea07bf67e165</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a81cb3b-99f6-4be6-9e6c-184c25283b41" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3219767408bba3fa41b9ab5f964531cf608fb0288684748d6ac0b50cf108c911</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b32d6744-7b81-4c44-992d-f9d9c6f2dc34" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">67bd81f4c5e129d19ae71077be8b68dc60e16c19019b2c64cdcedca1f43f0ae3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9384d596-dba0-4a11-8792-16f4dd01a01a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8794189aad922f2287a56c5e2405b9fd8affd136286aad7ed893b90cd2b76b9c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1a786e93-1d42-4f1b-a194-16aede86477e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c593a844a87b3e40346efd5d314c55c5094d5bf191f9bb1aeec8078f6d07c0cd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38617f21-706b-4e43-9d3c-048b7d13369e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fuck.ruouvangnhatrang.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c2c64f5-1fba-49aa-af63-980bfe0bd9d1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webhosts.sytes.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="05e69ee9-a59e-417d-a133-21885af0abb7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">computer001.dumb1.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="41b773b6-1ec1-49e9-b212-f69e0336b02e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.micro1.zyns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="123ea157-2482-47c9-8e7b-4dd7caeb4010" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.olay033.dns04.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="530d01e1-5b49-40a2-8f14-4907f08616a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">beyondbuck.dns1.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c3f85134-ed01-466e-bde6-a8bd7e86ff91" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">word.crabdance.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16d2c162-5cc9-4ffa-9a34-60e052ce694a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ftp.fornobody.dns04.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b1b7b67c-2a80-4ab9-b5a7-9301e0a90268" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">microsoftservices.proxydns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c8b1c15-3318-41b5-8f45-ee246a274015" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fornobody.dns04.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7274f5b-6083-4383-bd48-e404b552eba8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.fornobody.dns04.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6295717d-9eb5-47da-97b9-b840feafbd90" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.ollay011.zyns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="439106f1-093e-439c-b284-3ffa9b260306" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9999992009.myfw.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="26e5787f-70dd-4b6d-be3a-0c83bd1884d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9999992011.rr.nu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9ac5fa6-1b9b-4cfd-9c2b-c42076c1ee88" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.microsoftservices.proxydns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="175e29f7-f4dc-490a-ba63-7b6fa081f10f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fighthard.mooo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a1061a38-614a-4d1e-aa8b-b48eb640dc54" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">microlab.dns04.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8b04daa0-a44b-4c78-9bec-fd5af91bb873" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">letitsnowsmart.instanthq.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c4338b41-9ec0-4963-b918-d520993064ac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.olay044.dns04.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="15c10624-a8b1-41d2-99b1-97d2400cbf70" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">anhtuan88.ns01.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a83c297-369c-4560-ab46-036c2a29d1d6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.qwertyui.dns04.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c51f2491-7dd4-4419-8097-ef2cd8342305" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">prime98.jumpingcrab.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="035419ff-d9c2-4130-8507-a3898ceebc8b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fighhard.mooo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c64c7277-a354-482e-8751-b0bfc7b2c091" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">queenberry.www1.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f20289e-3a16-4ca3-8e9b-408546794fbd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rampage.freetcp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f46bcf12-ef92-4077-ac95-9875255c9d9c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">anhphuong85.www1.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="62cbdf4f-7926-457f-bf3d-1ddc6db04b77" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9999992009.rr.nu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19339d01-aa0e-4aa8-88f9-4447527e4555" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">microlab.mrslove.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="25fac898-7f85-47b5-b2b9-ea4e7c240d89" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.micro.zyns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a365d0d3-9c43-42e3-a827-ad928d612f00" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">869fa4dfdbabfabe87d334f85ddda234</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

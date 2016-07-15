@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="52ad2ae0-2254-466e-997c-7b8d077685c1" last-modified="2016-07-10T09:35:52">
+  <short_description>The Sofacy plot thickens</short_description>
+  <description>The Sofacy plot thickens</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:52</authored_date>
+  <links>
+    <link rel=""></link>
+    <link rel="https://otx.alienvault.com/pulse/55367639b45ff51548a4b58c">https://otx.alienvault.com/pulse/55367639b45ff51548a4b58c</link>
+  </links>
+  <definition>
+    <Indicator id="e1f5b7db-7d1a-45fd-98fe-efc7fe5131a2" operator="OR">
+      <IndicatorItem id="84ba382c-d033-4573-8b16-7ca31b09cfc4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">67ecc3b8c6057090c7982883e8d9d0389a8a8f6e8b00f9e9b73c45b008241322</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d64e2cbd-6706-496e-b7d5-2b6702cd900e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nato-int.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ba93b98-a0dd-4bbc-b70f-78504ddab9dc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">intelsupport.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c88e8209-aca4-4867-b2f4-8289dbbd7fa1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">globalnewsweekly.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d711164b-b8bf-4ac9-9707-7fd284bceff4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">westinqhousenuclear.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="527fd351-8f32-41ad-ace3-e26c61aa495b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">softupdates.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b70a765-add1-4af6-8319-2c29e6ff423b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">natopress.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b36b13c-99c3-40a4-beaa-e49eb7189098" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">techcruncln.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7ea28c31-2d1c-4777-8ef9-38d5b8b735d5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mediarea.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ccc43492-474f-4906-ba58-46f6b86d32b4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">defencereview.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="54b12d10-dd00-4cce-af83-e640f6f1128f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">netassistcache.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8da65eef-06c9-4e43-adf6-761b70bb9375" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">privacy-live.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e66dedfc-7cb0-4b0b-9f73-56e5769da88a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">settings-live.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a80fb512-41f5-4649-b2f0-c6af84f91da4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">enisa-europa.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="73017caf-cdd7-4822-84c7-d7f7029e09e0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">defencereview.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="532c0992-4d30-476c-92d6-0d64b98fc306" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">natopress.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="62783589-f2b0-4867-bf60-0d5af49d31a1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">brnlv-gv.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7643b5e1-4dfb-4560-add7-ff1600e75ddc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nato-hq.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6312af92-1c47-4f6e-84d6-9f22695db2e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">enisa-europa.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b351a56b-32e9-409b-835f-762f954a0e06" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">europeanda.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="88d35000-89c0-4375-8e5b-c6c53689afd0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">militaryobserver.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17b5a8c2-bf0d-413d-976d-f65bf88fbcd8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bmlv-gv.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="74f06dda-3e74-481c-bba6-d60ae8827a6a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">osce-oscc.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be4d6af3-14f3-4116-9525-6ca95bbd14bc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nato-info.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="90b38b4f-c568-4ace-b5f8-40274bf4a441" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aolnets.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f2ecff8-7122-4c41-b47e-2fdc07064abc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">iacr-tcc.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc5b6d65-503e-4d6e-a346-e3f3e2bdb7da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">osce-military.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fbb80051-d642-455e-b2f8-6c79e530596b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">asus-service.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="025e5457-4cae-4104-891a-278b6479246c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webmail.westinqhousenuclear.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ea1ce163-193e-44c3-86e0-b0f928d161de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">privacy-yahoo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e61afc6-809f-44a0-a74a-eb388439aa16" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">foreignreview.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a5c6f348-6188-47ba-a261-4ff792ed7871" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">delivery-yahoo.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

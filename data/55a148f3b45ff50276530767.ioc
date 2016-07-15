@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8337c597-b0ba-4696-812c-d693d39806d7" last-modified="2016-07-10T09:33:07">
+  <short_description>APT Group UPS Targets US Government with HT Flash Exploit</short_description>
+  <description>APT Group UPS Targets US Government with HT Flash Exploit</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:07</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/07/apt-group-ups-targets-us-government-with-hacking-team-flash-exploit/">http://researchcenter.paloaltonetworks.com/2015/07/apt-group-ups-targets-us-government-with-hacking-team-flash-exploit/</link>
+    <link rel="https://otx.alienvault.com/pulse/55a148f3b45ff50276530767">https://otx.alienvault.com/pulse/55a148f3b45ff50276530767</link>
+  </links>
+  <definition>
+    <Indicator id="eea9b234-b503-48b5-8d9a-c92ef8c3187a" operator="OR">
+      <IndicatorItem id="e87f8dd4-4fc8-41ca-9c95-638ef01c30a5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a2fe113cc13acac2bb79a375f692b8ba5cc2fa880272adc7ab0d01f839e877ff</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0fe16885-c56a-488e-b2c4-71c995026b74" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rpt.perrydale.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="adc86889-cf9a-47bc-87bb-c19a90f0ef9a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">report.perrydale.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f527893-30b3-439e-8ed9-504c695063f8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">194.44.130.179</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

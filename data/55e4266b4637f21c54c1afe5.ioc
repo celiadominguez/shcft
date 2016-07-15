@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="57e248bd-56e9-4db4-8843-21c550ed839b" last-modified="2016-07-10T09:31:22">
+  <short_description>KeyRaider: iOS Malware Steals Over 225,000 Apple Accounts</short_description>
+  <description>KeyRaider: iOS Malware Steals Over 225,000 Apple Accounts</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:22</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/08/keyraider-ios-malware-steals-over-225000-apple-accounts-to-create-free-app-utopia/">http://researchcenter.paloaltonetworks.com/2015/08/keyraider-ios-malware-steals-over-225000-apple-accounts-to-create-free-app-utopia/</link>
+    <link rel="https://otx.alienvault.com/pulse/55e4266b4637f21c54c1afe5">https://otx.alienvault.com/pulse/55e4266b4637f21c54c1afe5</link>
+  </links>
+  <definition>
+    <Indicator id="f0d5b265-ae0b-48b4-8b7c-abb20ad07a5b" operator="OR">
+      <IndicatorItem id="862b0d3e-0de6-4a0a-8763-39a59b50c97f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">top100.gotoip4.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d51dd7a0-af01-4b10-a86f-e54c6956e9ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.wushidou.cn</Content>
+      </IndicatorItem>
+      <IndicatorItem id="74a98516-c2bf-40dc-b13e-337baecd8f95" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4a154eabd5a5bd6ad0203eea6ed68b31e25811d7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2a32a35f-69df-4351-bca1-8a85a5fc2ddf" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a05b9af5f4c40129575cce321cd4b0435f89fba8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5d5055cb-347b-4759-9006-b65e44559b8e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">9ae5549fdd90142985c3ae7a7e983d4fcb2b797f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b68b6f4-5407-462a-a4b8-4462f7674a5b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">717373f57ff4398316cce593af11bd45c55c9b91</Content>
+      </IndicatorItem>
+      <IndicatorItem id="90721e36-7cee-4f64-9089-5ad89ebb67d3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">af5d7ffe0d1561f77e979c189f22e11a33c7a407</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ae58c21c-81ad-48d8-8809-b8350a49b3c0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">e0576cd9831f1c6495408471fcacb1b54597ac24</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c6946b2-9e1c-4a39-9221-799352dcad6a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5c7c83ab04858890d74d96cd1f353e24dec3ba66</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a8b1807-198c-4a9b-94d4-f69b5518d256" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">8886d72b087017b0cdca2f18b0005b6cb302e83d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="afd0d0d6-aa9a-4e7a-8b3f-5e6c025698fb" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">1cba9fe852b05c4843922c123c06117191958e1d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06f95c39-0f59-4134-b7e3-5053896892da" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">bb56acf8b48900f62eb4e4380dcf7f5acfbdf80d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="75cdc5ed-8702-4ca9-8313-72e2939e21af" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">113.10.174.167</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

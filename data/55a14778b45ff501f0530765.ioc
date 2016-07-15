@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="75cea302-dc82-44ac-9d45-1a7560fd2085" last-modified="2016-07-10T09:33:11">
+  <short_description>Sednit APT Group Meets Hacking Team</short_description>
+  <description>Sednit APT Group Meets Hacking Team</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:11</authored_date>
+  <links>
+    <link rel="http://www.welivesecurity.com/2015/07/10/sednit-apt-group-meets-hacking-team/">http://www.welivesecurity.com/2015/07/10/sednit-apt-group-meets-hacking-team/</link>
+    <link rel="https://otx.alienvault.com/pulse/55a14778b45ff501f0530765">https://otx.alienvault.com/pulse/55a14778b45ff501f0530765</link>
+  </links>
+  <definition>
+    <Indicator id="3e99a658-09ac-4277-aea6-52c84db8b5b1" operator="OR">
+      <IndicatorItem id="af8370bd-cce4-4761-8bd9-d73b81eed049" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">osce-press.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="60cca036-36b2-4647-9f19-825efcef04dd" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d43fd6579ab8b9c40524cc8e4b7bd05be6674f6c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f2d9f2b-3c20-4792-9a05-4eb34f542e3f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">51b0e3cd6360d50424bf776b3cd673dd45fd0f97</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c994b09-8421-4a3a-94e5-f60ee3b98f84" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b8b3f53ca2cd64bd101cb59c6553f6289a72d9bb</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

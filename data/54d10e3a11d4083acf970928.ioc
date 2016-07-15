@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="31ff80b0-df84-4f94-9d17-8a793bb79465" last-modified="2016-07-10T09:37:30">
+  <short_description>Adobe Flash 0day - CVE-2015-0313</short_description>
+  <description>Adobe Flash 0day - CVE-2015-0313</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:30</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/trend-micro-discovers-new-adobe-flash-zero-day-exploit-used-in-malvertisements/">http://blog.trendmicro.com/trendlabs-security-intelligence/trend-micro-discovers-new-adobe-flash-zero-day-exploit-used-in-malvertisements/</link>
+    <link rel="https://otx.alienvault.com/pulse/54d10e3a11d4083acf970928">https://otx.alienvault.com/pulse/54d10e3a11d4083acf970928</link>
+  </links>
+  <definition>
+    <Indicator id="04e66fe2-19e4-4b2b-a77d-ee093fe99501" operator="OR">
+      <IndicatorItem id="713a8128-e849-4276-ad7c-c3517ace6c78" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">retilio.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c137a5d6-e4f0-4606-acec-7078f7c79382" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.retilio.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

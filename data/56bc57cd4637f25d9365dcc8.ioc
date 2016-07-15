@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="88b62ee1-0607-44da-8579-5500e691861f" last-modified="2016-07-10T09:28:48">
+  <short_description>Tomcat IR with XOR.DDoS</short_description>
+  <description>Tomcat IR with XOR.DDoS</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:28:48</authored_date>
+  <links>
+    <link rel="https://isc.sans.edu/diary/Tomcat+IR+with+XOR.DDoS/20721">https://isc.sans.edu/diary/Tomcat+IR+with+XOR.DDoS/20721</link>
+    <link rel="https://otx.alienvault.com/pulse/56bc57cd4637f25d9365dcc8">https://otx.alienvault.com/pulse/56bc57cd4637f25d9365dcc8</link>
+  </links>
+  <definition>
+    <Indicator id="b8e34e97-842e-4318-aff0-da19bb361359" operator="OR">
+      <IndicatorItem id="4459eb82-60c2-46cf-979f-517a072189cf" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cac58ebacb036f706d58ec9f47ee64cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="172aca07-a2b4-42f9-94e1-6d6a080f5d82" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a568167a5950ae55f6f442d959de4476</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e8ab0ee-5a43-4b19-b31a-a29339912451" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">968c4e06ff32d97b1f2b3f2ce3bcbb7e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0abb69db-ec3c-46f8-bea7-3dce4ca5b95e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">222.186.21.166</Content>
+      </IndicatorItem>
+      <IndicatorItem id="80c1ba64-d714-4191-acf2-c633513f7a95" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">23.234.60.143</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

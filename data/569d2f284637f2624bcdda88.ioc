@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="12ab6303-7f16-43f3-a8bf-dd2990261866" last-modified="2016-07-10T09:29:11">
+  <short_description>BlackEnergy Attacks</short_description>
+  <description>BlackEnergy Attacks</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:11</authored_date>
+  <links>
+    <link rel="http://cert.gov.ua/?p=2464">http://cert.gov.ua/?p=2464</link>
+    <link rel="https://otx.alienvault.com/pulse/569d2f284637f2624bcdda88">https://otx.alienvault.com/pulse/569d2f284637f2624bcdda88</link>
+  </links>
+  <definition>
+    <Indicator id="1352e783-0403-48ce-83e2-51c91bb62ac2" operator="OR">
+      <IndicatorItem id="0ed45248-3b04-4392-81db-beadeee0077f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">5.9.32.230</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ba95905b-0117-4c9f-9bb7-91f1fb41fd0a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">31.210.111.154</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2db9d35d-df71-4793-a631-d07961c1c523" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">188.40.8.72</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c190aa96-6999-4060-bf04-2374f8d2f3ed" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">41.77.136.250</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fac46c9d-3d67-4406-9f5b-544abd25d8e4" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">148.251.82.21</Content>
+      </IndicatorItem>
+      <IndicatorItem id="005c6f66-6d9f-413b-bb9a-52c64b9aca85" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">88.198.25.92</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eeee0e50-08bf-4fb2-ab3a-8b8e5ef72f14" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">146.0.74.7</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="ee68a328-2180-4e92-b69c-d5985b9354a2" last-modified="2016-07-10T09:35:01">
+  <short_description>Trapwot Scareware Activity Spikes in April</short_description>
+  <description>Trapwot Scareware Activity Spikes in April</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:01</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/554d0729b45ff53f2bd77960">https://otx.alienvault.com/pulse/554d0729b45ff53f2bd77960</link>
+  </links>
+  <definition>
+    <Indicator id="f1999f9f-a7fc-4325-9a15-6a130d9f15b7" operator="OR">
+      <IndicatorItem id="80e937c3-72c0-4c70-a97b-b04c3a613fd3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">069fe64f235d46a1f89b26f273f509af98ee4a59d60ee358c66b1ea60666aecb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ad822eb-ba21-44c3-a9bc-53bf7e5e3342" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">26285f4d32235ea966824e662d694de41bdebe5d28d5041df902848380f8ce8b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="80071959-29a0-4399-8dcd-bc0495d1e9e9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">cbd7570974525a833589b29463a694bdaa9be8a7563ce828f2c8072354dcd731</Content>
+      </IndicatorItem>
+      <IndicatorItem id="875e44a3-aeb8-45c5-8935-cc0d8d6f9314" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mastertodayversion.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f67e6545-2f44-4d98-bc4b-4d64d4487991" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kashbox.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eca6c80b-b0ec-4409-bf39-2cf6f7c6ae17" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">updatemarketltd.in</Content>
+      </IndicatorItem>
+      <IndicatorItem id="df00ceab-6a44-4556-a8df-fcec04cb101a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">924b94b8432296662b708bcea9f377ad</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f0bc7ae9-d234-4cc1-bf3e-8233759e8125" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">548621bc51c9415ebaba30e0a9c1d8bb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="95a6c37e-8170-4904-813a-1cc8656e71d0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">502360b810b84aa06c1c6dda35aa8be0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3cdd1214-99ce-4d38-9946-076922071a20" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9f3ab8fb7d2fa7a468fdfd950471c251</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58148e4e-c837-4fbd-b09d-583f3885a433" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d84e62cccb831b6c90186034262f9794e4be0e8f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="81cb83a4-f00a-4630-b5d4-096649b717d8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">96a5e3f30b983847cce5452c12ab07d8efb46f12</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fdbf64ec-e736-4139-9880-70d9fe677a69" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">6c9449f90ec155581dd18b238c7ffeb96279f187</Content>
+      </IndicatorItem>
+      <IndicatorItem id="39a7a269-fb5f-4d41-b531-078066685022" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">181.112.55.130</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

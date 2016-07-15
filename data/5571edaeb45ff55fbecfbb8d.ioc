@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="32cf6107-5490-489d-87d9-b461030ca060" last-modified="2016-07-10T09:34:04">
+  <short_description>Neutrino Exploit Kit delivers zero-detection Zeus Variant</short_description>
+  <description>Neutrino Exploit Kit delivers zero-detection Zeus Variant</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:04</authored_date>
+  <links>
+    <link rel="http://pwc.blogs.com/cyber_security_updates/2015/06/neutrino-exploit-kit-delivers-zero-detection-zeus-variant.html">http://pwc.blogs.com/cyber_security_updates/2015/06/neutrino-exploit-kit-delivers-zero-detection-zeus-variant.html</link>
+    <link rel="https://otx.alienvault.com/pulse/5571edaeb45ff55fbecfbb8d">https://otx.alienvault.com/pulse/5571edaeb45ff55fbecfbb8d</link>
+  </links>
+  <definition>
+    <Indicator id="01cdf34d-2806-4ea8-9ea5-a2466d6b4c39" operator="OR">
+      <IndicatorItem id="385c4728-58e5-44b6-a5ce-1ad6a8814309" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">stat777-toolbarueries-google.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9183d8dd-ee11-40f9-9895-0c3f7e484200" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sells-store.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fcbc86a7-f1d0-456b-a043-07a1e47c5997" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2fc852f50667a09609d2a66770df180d</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

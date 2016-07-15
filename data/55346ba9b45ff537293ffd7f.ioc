@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="2f4ce8f7-d40b-4e66-ae16-7386bbfad578" last-modified="2016-07-10T09:35:55">
+  <short_description>AAEH Botnet takedown</short_description>
+  <description>AAEH Botnet takedown</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:55</authored_date>
+  <links>
+    <link rel=""></link>
+    <link rel="https://otx.alienvault.com/pulse/55346ba9b45ff537293ffd7f">https://otx.alienvault.com/pulse/55346ba9b45ff537293ffd7f</link>
+  </links>
+  <definition>
+    <Indicator id="5c9fd50e-5219-4f8e-b9ac-efb9855efa51" operator="OR">
+      <IndicatorItem id="08afc21b-3bb3-405d-b2d5-d219a33fab45" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk25.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5a942b82-9d75-43cf-91c5-560e27dcfdac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk12.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a780edb9-8515-449a-b60d-34c70b03c5c1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk15.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f124568-40cc-44be-9f86-fe22596cda12" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk22.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e03ae890-d76e-4b50-aa72-75fe2a7b2647" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk16.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="760bb173-c092-45f3-a886-a614fdd1c100" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk21.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce879435-1cd5-4a73-9e37-987a772fc997" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk10.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b7acf1b6-41cc-471b-9521-8ae14d87a786" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk7.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="04adb0e3-d3f6-494a-9add-caa7e23c1995" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk1.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="281da142-62e3-4cf1-bf22-225e7008dc8e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk20.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b35494e9-d717-4e63-9ace-e7fddcec5e37" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk18.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28ad0ca7-d62a-41e9-90ee-1c6400b68336" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk16.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d8a288f4-5552-4907-8cbe-97123912a297" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk18.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d9c45b5-f749-4b5b-9ed9-51407c6d3867" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk5.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="88b53eee-0cea-4a53-a91a-5ab5ada546a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk11.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ec382ab-cd52-44f8-a41e-03fb63825016" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk4.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23815410-e5b0-4d5e-95a9-7ce6cde44acc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk23.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="20e53f6a-c3eb-4339-9fec-2be5b8a4a243" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk13.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5adad76e-d6d4-4ac3-9c2e-4b024d3c5eba" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk28.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4e3114ce-9832-4013-b2e5-df16c9e0efc8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk13.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="54d33cd9-454a-4782-8f83-d466f488a64d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk12.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da77f577-cb4b-4594-acaf-067f1f762e0d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk4.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b0fc3cc6-0143-44f4-a46e-d33d1656ecf5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk8.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1460fcba-eb23-43f2-9f7d-e14accf67323" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk11.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4fc3e6e0-41c3-496a-8e07-3d3e987f488a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk24.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a01a1712-4d2a-42c9-9298-d3f862e0a4c0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk23.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a23f7ed-abb5-408c-9683-a3786739c621" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk10.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13848f52-7498-4003-ab11-a7542ce8509f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk18.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6323a5af-f40b-411a-a9df-bc94847ee171" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk14.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c8ffcce5-718d-4106-bf50-848a5f873a6c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk24.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02b8f6b8-a602-4f6a-a5ae-bf04747bac7d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk4.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9593da26-eac6-46c9-af0d-36060e26b2cd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk26.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f116ca6-d9f0-4701-9336-b2b26c0ad032" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk22.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36f2745f-9ab0-4ea8-9801-f82d5fa51c34" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk17.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="50f64758-0f73-46a2-adf2-389a2d108958" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk25.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eac25eed-f78a-4206-bf17-0e77a403fb31" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk25.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="484bb80e-2fec-4285-93fa-cdb07f21d7ca" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk1.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8e6c2bdb-b450-4c79-8a32-b5a7049900a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk21.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e6fdbba-193f-4b8a-a0f9-52e5b7375d0e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk5.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4313f340-55fb-4d11-9d5b-3545f3c1c0a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk19.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56d76d82-9bb4-42f0-af11-75e0d2880c39" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk21.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c0506967-4d90-4608-9c31-2050c0f766ac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk3.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cc7cbc08-559c-420e-ab7b-1513949e14c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk7.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="67c0e59d-8aba-45e5-aeaa-9af47eac688b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk2.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="435e7af1-1764-4e20-ac5d-508d57efa64b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk2.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="62f14da7-db90-4db6-b70e-ac2acf09690b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk15.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f24f61e3-d9a7-43c0-b61c-9687e329d376" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk23.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb7543eb-57e3-4f08-bbce-4be17fa35e7e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk1.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="162d1af4-b377-4f72-be5e-1203b4b697f9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk28.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec3b2982-369d-4cea-a81b-d0c76997359a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk27.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ccd81604-54ba-430a-80d6-0f305236820c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk29.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c195eda3-e124-4ccd-80e6-9445469c2930" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk29.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6429f3b-c4e4-4ff5-adcc-87805b0a8538" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk13.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3f0d2ca-e3e1-4138-b255-3b0afc3dde91" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk11.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7ccfa00-5d22-4b6e-aa5d-2bd4a62df197" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk6.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="203a200a-9623-433d-893f-7ff7b1d48d79" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk17.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43fd22e9-cc4a-4d99-8769-48955b081fc2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk27.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf436fb0-8b5b-46c2-a240-8bca79b92fff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk20.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86eb60e0-acfa-4ce6-9696-9b8618f85255" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk26.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8788fbcd-36d0-45cb-b148-07c6d917aa28" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk3.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bed86cae-271f-4a35-9fd2-727e896da1b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk8.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="444aab8d-b921-4140-b696-5afd5bfffb97" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk9.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b2b03717-a0f4-4b79-b7e0-239215295619" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk9.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="014296a1-e081-4673-81a8-f1611e81032a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk22.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="41c4667a-db60-4f74-be5b-e21e78e1c3c6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk6.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38c9c16a-092d-4e0d-a687-2a9f993ca1f7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk29.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d4e6a10c-08b5-4eb2-8f23-5e91ee30765b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk15.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c359f75-dc97-49a5-b2ab-50fb2fab6dd1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk6.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7c27daf-3a1e-47ef-9777-f9ed6742f805" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk7.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a49e6e7-fcf3-46d9-9e41-5aa9fe9d61d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk3.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1436e306-0586-4c1e-b462-3b32eeacb56a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk19.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e5502376-a8b3-4604-b34b-82b3c0eef161" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk5.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="901167cd-3f2e-44b1-bbc4-40c106490511" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk26.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="719068c0-4239-4a62-b0aa-e90fbba50012" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk14.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9733060-707f-4571-8a2e-d76382cc7bda" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk28.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a412cdd-8de3-4a35-a75c-39daab99f485" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk27.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9bbbdfd0-4bd2-49e4-aebc-2eb70e29e512" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk24.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ecd5b3f4-abc0-4909-9546-df53105a8202" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk10.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af2ca986-eca4-419a-9fa2-f8f4dd04487d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk2.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe256ec9-3590-4d18-8786-59b20c851cb8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk20.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="746fd786-cc3b-4f6b-90bb-7348a4c1181a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk8.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be58a8b3-8b07-4823-a1e2-6326b42fe2d3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk16.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bb1fef71-0506-47b7-9805-b171f86104e1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk12.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d32fc734-330d-4da7-9705-7d1d1133f51a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk17.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="93bb45d5-e2e5-4ed2-85cb-c172b60fc1c0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk19.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7abb6830-dd67-44ba-9276-47356637a24f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk9.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f0f991fb-a27a-4798-8a8f-92556fc5cfac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">timechk14.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c3d6f95d-5c88-4602-9ef1-919b3eb22425" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">46.244.21.4</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

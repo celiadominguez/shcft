@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="674a7ff5-30a5-4aab-868a-ab42b119fc90" last-modified="2016-07-10T09:33:06">
+  <short_description>Large Malvertising Campaign Leads to Angler EK &amp; Bunitu Malware</short_description>
+  <description>Large Malvertising Campaign Leads to Angler EK &amp; Bunitu Malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:06</authored_date>
+  <links>
+    <link rel="http://community.websense.com/blogs/securitylabs/archive/2015/06/10/large-malvertizing-campaign-leads-to-angler-ek-amp-bunitu-malware.aspx">http://community.websense.com/blogs/securitylabs/archive/2015/06/10/large-malvertizing-campaign-leads-to-angler-ek-amp-bunitu-malware.aspx</link>
+    <link rel="https://blog.malwarebytes.org/intelligence/2015/07/revisiting-the-bunitu-trojan/">https://blog.malwarebytes.org/intelligence/2015/07/revisiting-the-bunitu-trojan/</link>
+    <link rel="https://otx.alienvault.com/pulse/55a54000b45ff540d394e6a4">https://otx.alienvault.com/pulse/55a54000b45ff540d394e6a4</link>
+  </links>
+  <definition>
+    <Indicator id="0bef6cec-bfda-441a-9e65-428d17137901" operator="OR">
+      <IndicatorItem id="39f596cf-d92e-454f-9ab5-a032d146643c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nsb.quixjoumnf.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="41dd55ab-eb5b-4f38-aad6-ef991c3993f0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns0.quixjoumnf.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ecfed282-0253-4f92-9a2a-5808f4d62a8d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns1.quixjoumnf.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c02f9574-34f0-48a4-b1c3-d04280763596" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">004e9a3ea2670a76ee90067ff29816c31908e552</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af1eac5a-ff8a-4aa0-bbf3-0c43282a4cf0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">feb33f3a3ac53203697d2b04ddbefa038b199a21</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ccfc9a9-e076-4bfc-9a6e-a45a84638fb7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">fc512fc9ad3501aecf8fab06d2c76447879520d0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="942f50d8-da4f-4992-8bd8-a2222036f839" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">46.183.216.247</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8eadde94-15d4-44e6-ba7a-b9e065271fac" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.211.233.121</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d720e5a1-9fc7-4db9-b209-a654a4b3a7e2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">85.17.142.21</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ed23f7a1-031a-4918-a447-1ff931804e28" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.211.58.100</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

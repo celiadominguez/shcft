@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="773f7af6-8ade-439a-8069-962212dfa7af" last-modified="2016-07-10T09:26:54">
+  <short_description>Bolek: Leaked Carberp KBot Source used in Phishing Campaigns</short_description>
+  <description>Bolek: Leaked Carberp KBot Source used in Phishing Campaigns</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:26:54</authored_date>
+  <links>
+    <link rel="http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-campaigns/">http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-campaigns/</link>
+    <link rel="http://www.cert.pl/news/11379/langswitch_lang/en">http://www.cert.pl/news/11379/langswitch_lang/en</link>
+    <link rel="https://www.arbornetworks.com/blog/asert/communications-bolek-trojan/">https://www.arbornetworks.com/blog/asert/communications-bolek-trojan/</link>
+    <link rel="https://otx.alienvault.com/pulse/573fac68bc818b01320aea0e">https://otx.alienvault.com/pulse/573fac68bc818b01320aea0e</link>
+  </links>
+  <definition>
+    <Indicator id="25bbf8df-7019-4e5b-952d-11fae76d6150" operator="OR">
+      <IndicatorItem id="1e42d5a9-b3cf-46cb-884f-44591a8c8b97" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6e6ef05382010f857ecef17082e9c38b54133380f709b5b25e77afdcacf2b9ca</Content>
+      </IndicatorItem>
+      <IndicatorItem id="59da1fdd-089f-4019-8041-1128e430ed23" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">12769a17f85a4c7d56cfe5754184db976b9a361dc7b5d2a8f50e82d7442651aa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="593706f2-1888-48f1-9918-64938cc4b1a7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">62962da720d478bb3510dabc691db37df546749b440caa45d75d9fbfb69d82f9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6a0fea77-7bc0-4936-9f29-ce5a714463ad" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5eccbdae80a1c1e8cb8574986393fc958394b66978ec348d00afe3ec828d20ac</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7d532991-17e2-4987-b982-d194e2508cd0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rogers-clients.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fdeaf468-0e66-4017-9328-a4887bc237a8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tangerine-ca.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb4a2b32-e53f-4e9f-810d-a4906b7cc6be" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">signin-tangerine.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7acccd58-5e7b-486b-be4c-33a484afc0b1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">knutesecos.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9a148bc-cfde-4cfb-820a-58bc77a82ef3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tangerine-zone.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d218ef3a-0c74-49e9-929d-07b4cf4e1f3f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ogrthuvfewfdcfri5euwg.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="623b118c-6444-4a67-a47e-a47cf6ebdb9b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ogrthuvwfdcfri5euwg.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f6a03e9-1271-4601-8394-41787427300b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mensabuxus.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f74e552e-2859-4bc7-8b42-e85787a48828" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cibc-security.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0eb376a0-6a67-4dee-9745-f0f27ec23e2d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cibc-clients.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f1e7394c-73af-4431-89f4-2799dbbbf330" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rogers-ca.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eec8aeda-1e25-4ff6-86d1-a384386c24ee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">android-securityupdate.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="afe933ac-7686-4cf2-850b-935943b370d2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">signin-rogers.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d949c32b-8d6c-47b1-9488-c5b5c87a43af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tangerine-can.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9bc69624-c86d-4685-a6ef-71021e7d2038" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tangerine-security.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8b04e14f-564e-464c-ab8d-c09ccfc81631" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">16b36f340a9fbce13ee553b5996442d1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77bfdd03-bd6b-4d84-866a-b4ff16cee37d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">24a497e3993289168455f12d11f0430f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f603463-e4f6-45da-9aa0-1a8073598cc5" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.215.154.155</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

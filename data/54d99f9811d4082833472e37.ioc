@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="54337039-6214-4a1e-9db7-682bd96adecd" last-modified="2016-07-10T09:37:08">
+  <short_description>Fiesta Exploit Kit</short_description>
+  <description>Fiesta Exploit Kit</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:08</authored_date>
+  <links>
+    <link rel="http://blog.0x3a.com/post/110052845124/an-in-depth-analysis-of-the-fiesta-exploit-kit-an">http://blog.0x3a.com/post/110052845124/an-in-depth-analysis-of-the-fiesta-exploit-kit-an</link>
+    <link rel="https://otx.alienvault.com/pulse/54d99f9811d4082833472e37">https://otx.alienvault.com/pulse/54d99f9811d4082833472e37</link>
+  </links>
+  <definition>
+    <Indicator id="b1b02610-06c7-43c4-b7b3-a49e80dfddfa" operator="OR">
+      <IndicatorItem id="250bd200-356b-46f6-aebe-bbf90bbf7a92" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">znaaok.myftp.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="820a9302-159c-41e5-a404-d583c0bd2fe3" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">92.63.87.16</Content>
+      </IndicatorItem>
+      <IndicatorItem id="262ac3c7-247e-43dc-b3a5-e8e6cd531d65" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f4346a65ea040c1c40fac10afa9bd59d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8ff46148-274b-42aa-925f-9dd3c952cf97" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5c6c4a6a4c5adc49edabd21c0779c6e3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe1b840d-3ff9-409b-9c1c-bdfcee080ad1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f77e25d5a04d8035d49a27d1b680e35d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="39750a97-0ffd-409d-8e4c-192a0cbb00cd" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">31af1a5656ce741889984e8e878c7836</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

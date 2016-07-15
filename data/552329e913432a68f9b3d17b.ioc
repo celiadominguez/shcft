@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="bc815c39-c7ac-4a12-978f-ebb037f820b2" last-modified="2016-07-10T09:36:13">
+  <short_description>Spam Served With a Side of Dridex</short_description>
+  <description>Spam Served With a Side of Dridex</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:13</authored_date>
+  <links>
+    <link rel="http://blogs.cisco.com/security/talos/spam-dridex">http://blogs.cisco.com/security/talos/spam-dridex</link>
+    <link rel="http://blogs.cisco.com/wp-content/uploads/dridex_word_hashes.txt">http://blogs.cisco.com/wp-content/uploads/dridex_word_hashes.txt</link>
+    <link rel="https://otx.alienvault.com/pulse/552329e913432a68f9b3d17b">https://otx.alienvault.com/pulse/552329e913432a68f9b3d17b</link>
+  </links>
+  <definition>
+    <Indicator id="6c33b595-ecf5-434e-8686-782390902c86" operator="OR">
+      <IndicatorItem id="1c9a2382-1995-4706-856c-dc056ea4d187" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">199.201.121.169</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3a41abc-e296-4108-ae4b-8b8544904ab7" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">45.55.154.235</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a61d324-bbc8-4c25-b86b-fb37d8d6317a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.91.175.64</Content>
+      </IndicatorItem>
+      <IndicatorItem id="00138db2-bbf4-4de5-822c-483dc7f8de05" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">77.74.103.150</Content>
+      </IndicatorItem>
+      <IndicatorItem id="550e2c0a-09e7-49d4-b356-373123a52cf1" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">193.26.217.203</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0394a549-5188-4ada-b0b0-8d6106227c30" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">31.41.45.197</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7df623b-b5ce-470d-b95e-0fe4e301f7eb" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.39.149.21</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b927e29-c61b-419f-8842-d9070ea4939b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">56196ecba3fbc6314a383eba8bcbf8879f5251f4343ffe2d3748b1ee9de93b93</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbcc1ada-f216-4e48-a3bc-f9bcce120234" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ecedd609095925829e3861f99623a08f87a63076d212136b12f55a7463ff3a4e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eae243c9-afd3-4ac9-85b3-94b3a9bad6f9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">43309a810f2d7fadcd09d1c044b472c0edef0a84a9763f895812904f1903db41</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cb9d9a95-8a9d-4d47-aad3-28619b4e7b78" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0c3636f6d9502abeb8e714cfca9381cb941f1265d2aef06921cabd88569958d0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da295d10-b3c8-4005-a445-d1618f1f5073" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5c0d632b0decf0b856fa37eb828878cc39adfbda591829c4056b80cbde218cad</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6488457a-6e16-4630-bfe4-57f56edd57e5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c5cc2f88fef95f658c90f8a1e3518d75b15b504d8a184fd100d458e8891f6dd1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="df0fedc4-d850-414a-9eae-60e55b6ce1ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5cc88cf62c8ab69d3dcc1b5993eafa5c2b75ccf7c7a230a120b952bb4779e940</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb78aa86-9ee6-4c4c-8dbd-3af97acac209" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">bafbeb98f2878d88a6d37b64a47eb789d3459c5d6f787e671a01e156bbfb0044</Content>
+      </IndicatorItem>
+      <IndicatorItem id="10a6d457-ec40-4813-a64e-d1ca617dce61" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">153b24796e4ecf20246aaa19f9650aa3b93994bcd5d736e1193d435ce98d607e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cb3166a1-ece6-486a-acb5-ab02a4a266c8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f7692b39145af1e8d0184b953c1595390105589619e01847ddb70d9b7454f2c4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cfff1fd8-6cc4-4d5b-ab00-e588e874aec7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">67cf302dff151c5bab481630a8938034a0597203be43c6ac14c9b872dcd80a04</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f631af1e-94df-41b3-84db-4fe0122f0f75" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">021215c109abbde900a1ca0ba2a240effbb6306e04af5937b44a71baff458051</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9de9404-4d3b-4e0b-9f68-40889b4071d0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">65d47473fb824b198bf89198153621a1c5f80545ef6641334f00f49f2f6e1e48</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e86046c3-5a7a-4676-b9ba-4f881aafe596" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7694ef6610056f002bc8dd8a7f249b7f3027bc42fa1c9a10c09621f7e7e0aab5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0ecb99fc-9306-4e38-acac-5f1c2404df34" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5f5d81209f98a925f68fa71d847e109d63ba0af4bd49ec0e86b3d86110c0a8c6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8897a230-6409-4872-a410-8969cb7365c2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">2d2a951cec26e271c2e6f24514e0b35450cb85932a3d45965bdd5eb7d19b7a01</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce20e309-89ef-4572-93ae-40e1da945965" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">57d7684839101600400a87b87b693d3194911d53a611a301e60a212d48ad3265</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f091e7e-60eb-40db-8ae4-dc1415c17733" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">83345eb7f529712fca63a0456810107d1b25f279bc2e36d6142a95d60eb57690</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e66198c-619c-4603-a2b9-475cf6384e4a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b1dfc7aa345d01ede2531ae8cb93b20bece6678d8ff7efd3fe98eac7c262acb8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="69139dc1-94e7-4329-8172-ee4758eb27de" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e0e199c4bf9e0faffd0921ddfa870aecdebd5ad96d36c73513d0492824b797a3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e526d7d-03df-4028-be18-2e76ffedc49a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">fa2b2a61bf9dedca86fe05b68f4c5015c1ee79ff0a5d620d0517c13684e464c5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e8072beb-baf7-4eaf-b21c-c26ed843fd8e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">24c427b22f7c124344b1d1ad8faeb70be50360d167d5e11fd8cc8ac82f2c5796</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b21f626-5b4f-499b-b959-89567a73444d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a15ae9d91e57269efb15c768e7f7b0f0c7acf2e7cc452df1e2a93aad84cf5676</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b2c77cc-1126-48a9-a841-13cb2fccab2a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6b3810c0d8f5aa7e9f6390c9a7a93581a6766b87d2fb6c2a84f345ceec4b0c19</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ff6955c-cf95-4095-9bd6-8ec9ed1b2474" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9e428cf974084bf1bc24a05b109f061e0c4c3eb6f8b034d15b728062d605afcf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b7a4f72-2efb-48e0-97a2-6886180627fc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">2fd26eff17fc9d17b8c26e187441eb3163441aca7a025dc4e3f8762360e54503</Content>
+      </IndicatorItem>
+      <IndicatorItem id="18308112-677f-4926-841b-de96c9c7cbd6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7f2ad96dd55263e7e810e51f3d2a6b658dbbd33f4e70333ab5a3c608430c7195</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9ca8b4be-4f00-4129-8393-32b62b0e9664" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">01c7383d3dc15cdd36e0d68eee489683715abc58cb3d8c41430e3cbc06ae831f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4e0c0253-d9cf-40ab-aeef-c50c29bc7177" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">d97f8a613d13b87a5eb3feb773501ddbdb3a5ce645532b0ea6d61def96c5c9c3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e1c7cd9-c021-4341-90dd-5469b49e33ab" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">00ebff78f236992c87d1851ed39c51edb8dafc361fee1e495d438f39f2960b46</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0eddb98e-6568-47dc-adad-fd185cb35a2d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">06d2255b06fa8eff6eb90633c11b03717197bba807aee8168395a93002353a65</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49b8bfae-103e-4e17-8198-c8f2365c60c5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ceb512a26706e9055c5c7c6829a93da2593d8290e2f96c0d88a361bf5465de4d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc354388-e967-4809-98f3-38015512cd5b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">079418b9d05ba7ba1cabdb0e5e54c721e468d2630d2092aa233c73c6d8b584fa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a0431778-2caf-4857-b3d9-4343bc8a5b12" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">1b00a8206dde4818c3afa2240a74f757a3589ae596ebed7b78a07cb547096731</Content>
+      </IndicatorItem>
+      <IndicatorItem id="601b7c95-8591-4842-b485-686d40920048" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">39f5bc5ea6f6f44e4467b9ecf85733f7d756d6fa9bd44ff4a3ff61b8052290b7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4720330e-5732-4b37-9e12-8f07c7576d19" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">cda256163613aeaa8f4e2fad66ef4a847392d359996ff63f30e338824ad8fb2a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6af39c63-7808-42a4-a49c-0af60feb51ce" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">24a00991acf2448cb428e9a8a57e54365e1cb51673b416c6ce70fc5f57d5aefb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf18c44f-1df5-40a3-9399-a38cce5baaf2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">d5bca64e83d8bb5dd7c2ebbf1ec548235e8bc81df4fd6bc4ef2b9e9bb5cddf58</Content>
+      </IndicatorItem>
+      <IndicatorItem id="346981be-9efa-474a-a869-a4b425affa1f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">531cd466540ce4475849532444f60e8d4dace097a73dc0d27855aced4b5c55d3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="161d557c-9a93-45d1-8572-3b3fb0f0b0e2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5bc7cf7be1f391a1f47fe1e1daff7dccb05477eee2c213e9ced2930da0d54c75</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e49049b2-09c6-4c87-9b49-af2833ce5b3d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">56221852f2126ebcd1ecb5ae6a6a0222f2ce67ee3be055a6b6bd1a64e747e902</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36d86d87-8ceb-43d2-9f29-53775b8bf957" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c5a0a04251d54015e90089d8720d3a47495472c4a8e432af9e64aa116148f9e5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38498137-042f-4b99-b23c-1612a03503ee" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b8c12120fc8298f3cf9e637ddd73eca9e0f88f516cae7f00d9ce13360d625988</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2bc22758-e796-41cf-a620-fb08b979e5c6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a3f46b16fd25a9d8bfd8c7e8d041903f6769114a9c46d6c13b80814691bf424e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f284671-7044-4a10-95ad-c9b467821ba3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">10e59ee0208122891913f84785b93662c5ea1a2749cf6320fbe8fe9071a5f91c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a82c7b7-7fcb-44b7-b14d-45a51733ea64" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">4521696635ed15f8636d6c4c4620cd631f29bf605056cc52ef271d9d7bf864f0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb045bc6-bf65-460b-aaca-0d6d6c0bdba5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">651b3fb4c1807b1b725280cbc59532953dd855c5bf6f7ef41a37dc5653e10fee</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b238bd9d-c1b9-4068-9876-8f82646088c9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">715852e4d27665050e48ec7bc1b5838aa27f986918c215b3c906d0f07d6dd3ea</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f2739dfe-c62f-4237-b498-2bb66fc70fc3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">01f30887a828344f6cf574bb05bd0bf571fc35979a3032377b95fb0d692b8061</Content>
+      </IndicatorItem>
+      <IndicatorItem id="40c2c78a-0c4a-4281-8e7d-2ceffe06875f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">12452620622d78405d5cb3914085efed3d07355c949677e339f139777b0f8c50</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77d96995-90fd-42eb-9559-3eb29eb99c72" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">4f493a113ba258994da6600a4750c9a86aaa31282047c826a0cca7474c09f5fb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43e37d0a-6a41-4b13-8470-017ee092c135" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a0c28bd757fac1a27ef69b0b1240b48e7b76d569d7c812f697e6e799b9950740</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5512cb9a-13c3-47ff-b219-2f75412c7ab3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e1fa9f7c95cd97a07fe024f73367896fde0a27905c5464d4ad74a0563cdb788f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ac00f09-70f2-44ba-b9db-4b4cb3712ab5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">bacb4de5ae01f2fcc3a080633feb856597d2b388205217756b8c5e3a50c041db</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff96fcfd-14d6-40d6-95fd-eb0d59f540b9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ad6ab25bfa24c59b6345455170b4ae88a86d96e49ec04a07bf4aedaf1836ea42</Content>
+      </IndicatorItem>
+      <IndicatorItem id="061c48ce-4f6a-40a7-9ea0-3101872df156" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7acb74f37f0844a56cd0fd3af1ce6e1db35d4954d9fb9e722107080b9e4e6c01</Content>
+      </IndicatorItem>
+      <IndicatorItem id="586e2dcc-9c00-42d7-9df8-b590438bd64e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3ef213c1e2b44b7bf474af4c6ce9665a28ee4a6f097b7ff7d3bdecf28771a38a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb77b6dc-1bba-48e2-a58f-98920913ec67" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0c6ce8e5aebb40a22a771a9f9be2aab686260e5e00aa8a482b4306bf6b443603</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d280a597-baaa-40fe-8a3e-e7be7889cbed" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">33e5818e9f534ba38028cc64f5147e5bb07b6ccf7c76bc00571381d3d0e4917f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b16ef528-1bc7-4cae-9914-a6b774e5657f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6fb690d29190406d31461ed0d07370b329c0f4976ac936d3acb4a806a169f635</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3e0fbf2-7925-4a8f-9e0b-634891b89835" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">bbb7f0005790c73fa82802f7153e2c55794ad651471cf5dd192836783f2a1955</Content>
+      </IndicatorItem>
+      <IndicatorItem id="337b8d83-2360-4c7a-9848-85a99f02ed18" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">84a53e29c4a1016ed25b38b62742e23839e8285ff9a10fe2190468e48088759c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="47105e93-90b2-4ebb-94e2-d8ba7e4c24af" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c7016f7a317df006a6e10acbb017894dc1ae955b3a66a7d5c80e556c1331f03b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4e434025-0d8c-433b-a6fd-8a370c8de563" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">1aca9debe5b9e5bf93334c1a16c4340ab00922b9580537c4e5f472ba543649ad</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6fa3e8f5-9fb0-457b-8a29-218118594aca" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f42dd791495a93802851cfc98975b0ced502d66f0cd11c2d1d3d0b145be91e94</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4b847920-2eba-4657-a80f-e1ed48954e4c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c2754ff1fc18dd1a9fe027383ff0d210e1e28c15d281c0a457fdfe0a4b35417c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f00195e-1ba0-4fbe-8f06-6565493a97e2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">15d3b57e2482cc4343381c02a4670b5aa7ef31bb590b07a5a556b38c2b846c32</Content>
+      </IndicatorItem>
+      <IndicatorItem id="65137347-45b1-4f9f-8465-114e92cb2276" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7c9d5724064693dfeef76fd4da8d6f159ef0e6707e67c4a692a03e94f4a6e27a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dc7bd169-a886-439d-a16d-58eeec1e26dd" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">25fa9ff422dab272eb55a0b5891971070e4139d280b58ccc910fa2dd73bfbb13</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

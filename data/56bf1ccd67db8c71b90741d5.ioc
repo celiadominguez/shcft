@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="cdc8cf40-a5ec-45f1-97f1-868de6bee361" last-modified="2016-07-10T09:28:45">
+  <short_description>A Look Into Fysbis: Sofacy’s Linux Backdoor</short_description>
+  <description>A Look Into Fysbis: Sofacy’s Linux Backdoor</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:28:45</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-linux-backdoor">http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-linux-backdoor</link>
+    <link rel="https://otx.alienvault.com/pulse/56bf1ccd67db8c71b90741d5">https://otx.alienvault.com/pulse/56bf1ccd67db8c71b90741d5</link>
+  </links>
+  <definition>
+    <Indicator id="1f2a36c1-7752-440c-bb1b-7956263a38dd" operator="OR">
+      <IndicatorItem id="f21c3839-cc70-4778-a019-eb17a94f5f3e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">fd8b2ea9a2e8a67e4cb3904b49c789d57ed9b1ce5bebfe54fe3d98214d6a0f61</Content>
+      </IndicatorItem>
+      <IndicatorItem id="687b6779-dd8d-4cc7-b3bd-76345b3c0e6b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8bca0031f3b691421cb15f9c6e71ce193355d2d8cf2b190438b6962761d0c6bb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7af8d3a6-b98a-4f98-b0d5-9c745f4c6f7e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">02c7cf55fd5c5809ce2dce56085ba43795f2480423a4256537bfdfda0df85592</Content>
+      </IndicatorItem>
+      <IndicatorItem id="282cab11-ad9d-4310-bdaf-f88a8392e584" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azureon-line.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="85d0eacb-361b-4700-93ae-89c14f645189" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mozilla-plugins.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="656ca6d0-b368-453d-a6e6-ac1f3ba9a176" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">364ff454dcf00420cff13a57bcb78467</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5112762f-5f55-4515-93a1-17fb0ff6f099" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e107c5c84ded6cd9391aede7f04d64c8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77e84eee-d25a-42d8-aabe-1827dd526ce7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">075b6695ab63f36af65f7ffd45cccd39</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c2a32f9-78d4-461a-9728-6a8824e79286" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">198.105.125.74</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ff583af-ad2a-4553-86fe-928f61a53227" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mozillaplagins.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

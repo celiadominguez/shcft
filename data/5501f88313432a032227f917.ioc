@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="9c22eb17-6eac-45ae-bc6f-b3979e7cedbd" last-modified="2016-07-10T09:36:30">
+  <short_description>New Facebook Worm Variant</short_description>
+  <description>New Facebook Worm Variant</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:30</authored_date>
+  <links>
+    <link rel="http://blog.malwarebytes.org/fraud-scam/2015/03/new-facebook-worm-variant-leverages-multiple-cloud-services/">http://blog.malwarebytes.org/fraud-scam/2015/03/new-facebook-worm-variant-leverages-multiple-cloud-services/</link>
+    <link rel="https://otx.alienvault.com/pulse/5501f88313432a032227f917">https://otx.alienvault.com/pulse/5501f88313432a032227f917</link>
+  </links>
+  <definition>
+    <Indicator id="9cc14076-2c41-4d47-8e6b-67d2fbfbbc75" operator="OR">
+      <IndicatorItem id="e80c6084-c6c9-4630-9ea4-ef6ab8d9e532" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hahahahaa.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3bf9510d-5fb9-48ac-a6e9-5719fb2f2fa4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">porschealacam.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f5f93824-df6f-4f1f-a202-4226a0824e38" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">videomasars.healthcare</Content>
+      </IndicatorItem>
+      <IndicatorItem id="67bb54a0-592c-4b69-b4e6-fb9f26a92710" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.porschealacam.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="04cbae00-a8db-4435-a347-c13841946d79" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.121.114.211</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3e620d8-075a-433a-b1c7-659d8109ff0b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2d56709dfa628bdb10453b4d23d36491 </Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="45039fad-fff1-4b99-bde2-08a4a69cee3a" last-modified="2016-07-10T09:36:54">
+  <short_description>CTB-Locker samples</short_description>
+  <description>CTB-Locker samples</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:54</authored_date>
+  <links>
+    <link rel="http://feeds.trendmicro.com/~r/Anti-MalwareBlog/~3/Nxcmd081znk/">http://feeds.trendmicro.com/~r/Anti-MalwareBlog/~3/Nxcmd081znk/</link>
+    <link rel="https://otx.alienvault.com/pulse/54dceb4f13432a5a4c19ee45">https://otx.alienvault.com/pulse/54dceb4f13432a5a4c19ee45</link>
+  </links>
+  <definition>
+    <Indicator id="2aaa8727-92a8-4921-bd56-e07b62ed5a58" operator="OR">
+      <IndicatorItem id="30a32ac1-715e-442c-a099-80098c898e9c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">1e6957decefa207c2289f2b578414e4b6d97ff03</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58c3e6e4-159a-46ae-81b7-9affb701ae2d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5a9f78f075a3a5f6442d2b956e499330502eb641</Content>
+      </IndicatorItem>
+      <IndicatorItem id="95befebe-352a-4b9c-b4a9-3fb9d75e0a36" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">6aef7d5a462268c438c8417ee0da3f130b8aa84a</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

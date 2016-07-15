@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="f37c35ef-bea6-48d5-acc6-099bae5c9ec9" last-modified="2016-07-10T09:37:49">
+  <short_description>Linux Turla</short_description>
+  <description>Linux Turla</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:49</authored_date>
+  <links>
+    <link rel="pasted_text">pasted_text</link>
+    <link rel="https://otx.alienvault.com/pulse/5487367411d408320a370d67">https://otx.alienvault.com/pulse/5487367411d408320a370d67</link>
+  </links>
+  <definition>
+    <Indicator id="0d137bdf-c963-4fb4-9d91-d0d5d970dc87" operator="OR">
+      <IndicatorItem id="4e4de15e-a5df-479c-b1cf-44b583e8b591" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news-bbc.podzone.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eff92c1d-4312-4a95-ac56-0d61bee4ac78" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">19fbd8cbfb12482e8020a887d6427315</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f1537192-fd5b-46cc-99dc-d89440748c05" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0994d9deb50352e76b0322f48ee576c6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d8911722-b51d-485c-8f95-34e242b5afd6" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">14ecd5e6fc8e501037b54ca263896a11</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af04c860-5dab-4bc3-ae17-9dbab129ae86" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">80.248.65.183</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

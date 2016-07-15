@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="eadf369e-2cce-4b2e-bf69-a09d8533c839" last-modified="2016-07-10T09:31:44">
+  <short_description>New Internet Explorer zero-day exploited in Hong Kong attacks</short_description>
+  <description>New Internet Explorer zero-day exploited in Hong Kong attacks</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:44</authored_date>
+  <links>
+    <link rel="http://www.symantec.com/connect/blogs/new-internet-explorer-zero-day-exploited-hong-kong-attacks">http://www.symantec.com/connect/blogs/new-internet-explorer-zero-day-exploited-hong-kong-attacks</link>
+    <link rel="https://otx.alienvault.com/pulse/55d4be3b67db8c37b0a34f75">https://otx.alienvault.com/pulse/55d4be3b67db8c37b0a34f75</link>
+  </links>
+  <definition>
+    <Indicator id="e6c92dbd-cb2c-44db-b614-ca7c3cfafd5f" operator="OR">
+      <IndicatorItem id="e76d511a-c698-40ac-af76-ece916675b9c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">56ec1ccab98c1ed67a0095b7ec8e6b17b12da3e00d357274fa37ec63ec724c07</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2d240191-9bb3-4e3b-8211-58e42b5872c9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c437465db42268332543fbf6fd6a560ca010f19e0fd56562fb83fb704824b371</Content>
+      </IndicatorItem>
+      <IndicatorItem id="68fe193a-d0f2-4118-80c9-6bd381f7d6b1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">71b201a5a7dfdbe91c0a7783f845b71d066c62014b944f488de5aec6272f907c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fbe25f47-e48a-43dc-a78d-83cb00caad87" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">115.144.107.55</Content>
+      </IndicatorItem>
+      <IndicatorItem id="78805e76-5b0b-4bd5-9d8e-751da90d147e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">27.255.94.74</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

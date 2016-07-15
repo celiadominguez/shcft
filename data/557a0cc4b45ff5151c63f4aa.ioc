@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d89952bf-4a62-4efe-b466-60eba3da0c08" last-modified="2016-07-10T09:33:55">
+  <short_description>HP OpenView exploit delivering CoinMiner</short_description>
+  <description>HP OpenView exploit delivering CoinMiner</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:55</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/557a0cc4b45ff5151c63f4aa">https://otx.alienvault.com/pulse/557a0cc4b45ff5151c63f4aa</link>
+  </links>
+  <definition>
+    <Indicator id="f4831bd5-7bee-41dc-a4e6-007984ed711a" operator="OR">
+      <IndicatorItem id="1e2cab49-3a40-47e4-9eea-5c056ca1ce07" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">180.225.203.220</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ccd1eded-c468-46b0-9476-621beb7d9b32" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">66.186.188.227</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

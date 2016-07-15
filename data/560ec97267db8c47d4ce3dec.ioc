@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="ecdc4dda-01ff-4db1-b2fe-52207a39a8a1" last-modified="2016-07-10T09:30:45">
+  <short_description>Two Games Released in Google Play Can Root Android Devices</short_description>
+  <description>Two Games Released in Google Play Can Root Android Devices</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:45</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/two-games-released-in-google-play-can-root-android-devices/">http://blog.trendmicro.com/trendlabs-security-intelligence/two-games-released-in-google-play-can-root-android-devices/</link>
+    <link rel="https://otx.alienvault.com/pulse/560ec97267db8c47d4ce3dec">https://otx.alienvault.com/pulse/560ec97267db8c47d4ce3dec</link>
+  </links>
+  <definition>
+    <Indicator id="fcb2be01-c31f-465d-ba13-872180eae376" operator="OR">
+      <IndicatorItem id="11284f2e-0d8d-49b6-89ed-98c61cd48cf6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">6f3192b73d03bb0c1fcdfeffafc7826da12fde5a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5bc8db25-96d7-4dd1-9e1c-c45f50740986" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">daf0b9a8ad003e2a10a6216b7f5827114a108188</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4bea69a6-d1a6-46e5-b7c5-9a803d77dae0" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">ae041578acbf41d1ed0ef5393296a28cea24663a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="52007ca4-ba4e-4dd8-8bdd-e32f4a0e3c6f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">bfef4bcc1ee7759a7ccbbcabd9d7eb934a193216</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

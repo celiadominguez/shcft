@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="f92d7905-a1b9-4bea-bf64-59a1b314d374" last-modified="2016-07-10T09:36:27">
+  <short_description>Jamieoliver redirecting to Angler EK</short_description>
+  <description>Jamieoliver redirecting to Angler EK</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:27</authored_date>
+  <links>
+    <link rel="http://blog.malwarebytes.org/exploits-2/2015/03/jamieoliver-com-still-compromised-now-drops-digitally-signed-malware/">http://blog.malwarebytes.org/exploits-2/2015/03/jamieoliver-com-still-compromised-now-drops-digitally-signed-malware/</link>
+    <link rel="https://otx.alienvault.com/pulse/55033d4e13432a135890e089">https://otx.alienvault.com/pulse/55033d4e13432a135890e089</link>
+  </links>
+  <definition>
+    <Indicator id="b6d817be-24b3-4606-8183-2a505bc8c9a7" operator="OR">
+      <IndicatorItem id="387bbc8f-a225-459f-97a4-c2b46be49e5a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns1.jalocamex.pw</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4713071-594f-4d82-bd7e-233cfa0cd4c6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">368c429f5c1d0bbb0600015806090c5e000208580050095d0603085104510a07</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ed66bf01-f20c-4e79-8e51-d6045b0b773e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">269a225f107e172f5146525a0009005e0102095a0650055d0703095302510607</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff72ab20-20f2-4440-aafb-057fbbd0c131" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">259ff7ca35bf976a41594f5d540c56590101095d5255535a0700095456545000</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

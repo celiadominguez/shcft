@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b3067bac-a31a-44b2-ac30-d4b67947db3d" last-modified="2016-07-10T09:32:45">
+  <short_description>An Update on the UrlZone Banker</short_description>
+  <description>An Update on the UrlZone Banker</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:45</authored_date>
+  <links>
+    <link rel="https://asert.arbornetworks.com/an-update-on-the-urlzone-banker/">https://asert.arbornetworks.com/an-update-on-the-urlzone-banker/</link>
+    <link rel="https://otx.alienvault.com/pulse/55aec3dcb45ff53bb694e6b1">https://otx.alienvault.com/pulse/55aec3dcb45ff53bb694e6b1</link>
+  </links>
+  <definition>
+    <Indicator id="83556e69-f395-42fa-8bc3-7a5d79b56a4e" operator="OR">
+      <IndicatorItem id="952052ea-5509-42c1-bf44-b6306d02ba90" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">39bbde33922cd6366d7c2a252c4aadd4dfd7405d5271e3652940a7494b885e88</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f621714-dfa7-4a77-bc17-64167427b709" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zjz45p43xkw1rxa.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="128239e5-4d61-4a57-9e6e-f6208c84369f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lfaf9nqo49k9yz.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5523b28d-2a6c-4d09-8384-29ba6c9e5f1e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">anptlnadkpkhmc3.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="012bf218-1ed2-4a23-8869-e37157637862" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">szhtdp1scvhbnu9.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3236e1f5-f208-4258-b018-596d6d8bc810" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pb9r9w5bk5bipws.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dfe1d4c0-7036-4410-9b80-a37246668b8b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">amp45rhstc3b9a3.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="80fe5f6d-8690-41e7-ae2e-acc9b8677098" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ebfszfmcg325fnr.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e81b8e61-6fbd-4d90-b0b6-02526d997056" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lvzyjwj1fakh55i.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="142e137a-d758-4b44-8aeb-7957251b1d77" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9eiic393tze3nmx.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0945532c-b1f3-4c56-a784-563b8cab5a75" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">5bizcsfozjtsony.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f939a5a0-c360-4c44-8591-aa617249feac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dwc5cbjada.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f409bba1-83ce-45c8-b80e-e65e19d715af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xqxcysbkjadwpx.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c6ac0f6-5746-4569-b7c4-4ef242d1a99c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ysg9ivv311.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab93a35b-2994-4d78-a4b6-8bf1c8501773" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1vp412e12nheix.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c86c174-9950-4b2f-bfdd-bcff317664b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">59njm3tgtwggfu3.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0405b585-01f3-4a4f-921f-47fd17c196c8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">oxda13oess.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a76ba34-82e0-45b0-820f-e9a10792ba8a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">14mdbbx3242lm5q.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a57f97aa-f2ce-4fe5-b184-af5405ba22df" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1uer3u9vttynxg.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fcbd30d1-56a1-424d-a520-e2ed3ba0ee9e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">led3dddga4xgj44.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13ef05f9-eecb-427c-97a2-580b831fe04f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">01fd0f1ad59ad5403c9507bfb625fe0c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0714ba68-b359-4148-bd5b-2fd0ff8e4b64" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b91268172937a4adc04e2988efa2e47c8608815091f6c356200fc3e369516229</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="5f13b46e-ade9-4b11-9540-871d2b733847" last-modified="2016-07-10T09:30:57">
+  <short_description>Meet GreenDispenser: A New Breed of ATM Malware</short_description>
+  <description>Meet GreenDispenser: A New Breed of ATM Malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:57</authored_date>
+  <links>
+    <link rel="https://www.proofpoint.com/us/threat-insight/post/Meet-GreenDispenser">https://www.proofpoint.com/us/threat-insight/post/Meet-GreenDispenser</link>
+    <link rel="https://otx.alienvault.com/pulse/56043c0667db8c47d4cdfacb">https://otx.alienvault.com/pulse/56043c0667db8c47d4cdfacb</link>
+  </links>
+  <definition>
+    <Indicator id="84b265ec-e2bb-4574-b3b9-40ca0ced1dd8" operator="OR">
+      <IndicatorItem id="4500aa32-97e1-416e-9284-039397e458d8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">77850f738ba42fd9da299b2282314709ad8dc93623b318b116bfc25c5280c541</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d04fc4f-0d52-46a9-87c1-2f57737956e4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">20a1490b666f8c75c47b682cf10a48b7b0278068cb260b14d8d0584ee6c006a5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f458565b-a3c1-4957-8060-0380739e401b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7544e7a798b791cb36caaa1860974f33d30bc4659ceab3063d1ab4fd71c8c7e0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f545b9f7-8d52-49fd-872d-5a3d11b8b9eb" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">50db1f5e9692f217f356a592e413e6c9cb31105a94efc70a5ca1c2c73d95d572</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f8efbff-6b57-480d-bfd3-e056f088c0ab" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b7e61f65e147885ec1fe6a787b62d9ee82d1f34f1c9ba8068d3570adca87c54f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="846f72cd-9016-4589-b921-9be2a85d0f15" condition="contains">
+        <Context document="ProcessItem" search="ProcessItem/HandleList/Handle/Name" type="mir"/>
+        <Content type="string">dispenserprgm</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

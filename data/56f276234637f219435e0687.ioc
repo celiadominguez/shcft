@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="fe43b1ff-dadc-4e72-97e1-77497a0c33ca" last-modified="2016-07-10T09:27:57">
+  <short_description>Rokku Ransomware</short_description>
+  <description>Rokku Ransomware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:57</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/56f276234637f219435e0687">https://otx.alienvault.com/pulse/56f276234637f219435e0687</link>
+  </links>
+  <definition>
+    <Indicator id="7f9f15a2-b69c-450b-ae71-3f21a1f43722" operator="OR">
+      <IndicatorItem id="4aa52000-0924-4bc6-a568-7c683110dc30" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5a0e3a6e3106e754381bd1cc3295c97f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c37c975-9ecc-4862-8842-b13d861f5ded" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">15227b9145259b06613b36686f1c4317</Content>
+      </IndicatorItem>
+      <IndicatorItem id="41b583ae-2050-4bc5-95f4-40b8329c162d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">83fe135f5ac240bb81a1290591cd1b27</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af1f255d-8b09-4cfd-9cc7-cfdbff2ef59b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">97512f4617019c907cd0f88193039e7c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eaff4a00-b14b-42c4-a3e3-03e564962664" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zvnvp2rhe3ljwf2m.onion</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

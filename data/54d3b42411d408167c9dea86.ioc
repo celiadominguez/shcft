@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="2245b601-9822-47e8-a31b-5058171793ed" last-modified="2016-07-10T09:37:19">
+  <short_description>DEEP PANDA - Sakura</short_description>
+  <description>DEEP PANDA - Sakura</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:19</authored_date>
+  <links>
+    <link rel="http://blog.crowdstrike.com/ironman-deep-panda-uses-sakula-malware-target-organizations-multiple-sectors/">http://blog.crowdstrike.com/ironman-deep-panda-uses-sakula-malware-target-organizations-multiple-sectors/</link>
+    <link rel="https://otx.alienvault.com/pulse/54d3b42411d408167c9dea86">https://otx.alienvault.com/pulse/54d3b42411d408167c9dea86</link>
+  </links>
+  <definition>
+    <Indicator id="5dd8c93e-7113-4c54-858d-8793a0fdbba6" operator="OR">
+      <IndicatorItem id="dbca22c8-18bd-4ff5-a488-74d1256ffc2b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">foundationssl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a0351b8c-d7c3-4b2f-b90b-193c5483c43f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xha-mster.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2061bfa4-a241-4a93-8512-7016ea376bc9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news.foundationssl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dcdd4198-8508-4764-b0d7-1c0ddb208f30" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vpn.foundationssl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ee7e745-784c-46ad-9352-5f5f4958fc71" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.xha-mster.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0224d16c-25e8-4151-bc5a-0a5c7b106265" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">180.210.206.246</Content>
+      </IndicatorItem>
+      <IndicatorItem id="821498dd-4f1a-4222-9371-9bb1c259fcab" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">198.200.45.112</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fdaae1dc-c181-4e5f-ac94-143dd20f05c8" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">wendellom@yahoo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="61e9d4fe-a316-4914-adae-93015797789e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d00b3169f45e74bb22a1cd684341b14a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c57e1863-e8bf-4d73-98fb-13ed9dce08db" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0c2674c3a97c53082187d930efb645c2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42a1df2a-050b-40fd-9d57-4f57adc0c405" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ae6f33f6cdc25dc4bda24b2bccff79fe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="515de5ea-34e5-4eb1-bb8f-2661d918303f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">microscft.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="308a304d-8a39-4166-82f7-72fee2589057" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">we11point.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

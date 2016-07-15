@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="50427792-26fe-41f7-97ae-98f3f352827f" last-modified="2016-07-10T09:26:40">
+  <short_description>BEBLOH Expands to Japan in Latest Spam Attack</short_description>
+  <description>BEBLOH Expands to Japan in Latest Spam Attack</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:26:40</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/bebloh-expands-japan-latest-spam-attack/">http://blog.trendmicro.com/trendlabs-security-intelligence/bebloh-expands-japan-latest-spam-attack/</link>
+    <link rel="https://otx.alienvault.com/pulse/577c802c52c9260135acd45f">https://otx.alienvault.com/pulse/577c802c52c9260135acd45f</link>
+  </links>
+  <definition>
+    <Indicator id="fc0813b2-c01d-4dbf-b239-ca6b3a914169" operator="OR">
+      <IndicatorItem id="4182c854-c92a-4f2a-9c73-5d819b81440d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">cd34148a1ce37b13389647674653e981cfacd522</Content>
+      </IndicatorItem>
+      <IndicatorItem id="87d1ecdd-8951-4edd-8042-deccde9c33f5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">8ca281b70f1a7a9017bd29ada84ef28e6e6cc2c4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="558fccc5-fbcd-4f40-99f7-7958c98fbe19" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d628a73fba0782df945db4e2887cf9981a5814c8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="18f15bc2-04b1-4c5a-91bb-4717f616acfe" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">342f10ba182897ef5eb58a10b8d5173a47d04760</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

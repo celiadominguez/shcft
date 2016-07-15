@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b2e0b8d4-7007-4c20-ae27-3ea710a7f262" last-modified="2016-07-10T09:29:35">
+  <short_description>New Targeted Attack Group Buys BIFROSE Code, Works in Teams</short_description>
+  <description>New Targeted Attack Group Buys BIFROSE Code, Works in Teams</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:35</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/new-targeted-attack-group-buys-bifrose-code-works-in-teams/">http://blog.trendmicro.com/trendlabs-security-intelligence/new-targeted-attack-group-buys-bifrose-code-works-in-teams/</link>
+    <link rel="https://otx.alienvault.com/pulse/566f52a64637f25637cfbddf">https://otx.alienvault.com/pulse/566f52a64637f25637cfbddf</link>
+  </links>
+  <definition>
+    <Indicator id="4d417959-7ffd-4f1b-940a-e99a966eae1d" operator="OR">
+      <IndicatorItem id="36cc8079-927b-4633-a606-850bcd2dd0f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">csicohelp.ddns.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9426f0f8-0c09-4fb4-94e7-648c27434029" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">help.microsoftmse.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2eeb4ac2-179c-49d9-ba18-7f7373632534" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">idonotknow.serveusers.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d812d30e-1861-460e-addb-7be38009afa2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">truecoco.rebatesrule.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c64c2802-3166-4058-9c26-3db2c4aa0b49" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">upgratedns.zyns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4c5be8d8-5885-4a89-9834-3e8901ae22c3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cisco-database.ns02.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a9ea1d4-69d6-45ac-9ada-28a7da2832a8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.motorolasolutions.dnset.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c17edd9-32c9-4ddb-a22f-c6bdf323aa72" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gsndomain.ddns.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46f36db6-fbb2-4502-944a-e37e80e29c89" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">evergo.dnset.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0b557044-4791-4783-bcf1-664018f4ae91" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">update.microsoftmse.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="53c5bde6-a347-4034-ac8d-dde69d61fb54" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">msnserver.ddns.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4c1665d-69b2-4e77-8ae0-9368bfd53cad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">idonotknow.lflinkup.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16b4b254-a581-4947-bcdc-0f967e8ad22f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">updateserver.serveruser.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ce20967-bdd1-49bb-983e-14df55e5227b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mydnsupdate.mynumber.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c0c31dda-1c07-442d-8a3b-f5e86502a462" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nicelogpaser.cleansite.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b27317f-4358-4491-b6d0-40347bb2cff5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">office.etowns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7183902a-5d49-40f7-9914-917a032892f6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adobeupdate.serveusers.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="125d71a8-97b8-4171-8612-b82507438836" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aptscans.microsoftmse.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1acb41bf-c846-45f2-bd16-a9216fe3eb1f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adobebackup.itemdb.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c0d3371-8089-463d-a289-e6de07aeba8d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adc.microsoftmse.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2da54589-811a-42f5-a2e9-bd5115c8c47a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">butterfly.xxuz.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e59de72e-a53e-4ec6-a5bf-6b1d6c34d051" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">microsoft.dns1.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9729147-201d-4806-a56a-3ae6d2242871" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">8a1877929704ee62e54f6f819bfd15efbf15f212</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a586ada-31be-4ac4-b0ee-3ff5298493b7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">2f3a1906b9d11b2d1ede44aa40f9e2426afdf637</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c84df3cc-c5dc-4390-b72f-535b2dd7d323" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">e6a5e1018ea41c6c76f0d69cc4698f9912c889b7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab3095df-5d61-43f6-8acb-88aaad22efc2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">38f3658ffa357622abdd235a0f4447de3325310c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e200c8df-1a15-424a-978e-897b79db930a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">64eb9809de14a57d5aa557ee7678cb77096291ba</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6fd6d409-247f-4547-ae2e-c36886b24832" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a366ff9025ba49973570950a8379d232a5584166</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac88995f-14be-4d0d-a4c0-ee21803a998a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">83d3bb544e0542dd9c4168350adef928e4205e69</Content>
+      </IndicatorItem>
+      <IndicatorItem id="755608fe-f0c3-421c-a41f-9ff40d645d47" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c0f7d1e03de2a6d935e3291b2ab4e5fa559d9a48</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e8d4567e-4b3a-4ac9-b836-1367879c5501" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4eb78ce1b91dc5f4f25877ca1109f2a41f2193b3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="88b9dbb7-2acb-4916-a381-df88286a18ca" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c28e9f5e923713f84bfbb6608d2904e997e520b4</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

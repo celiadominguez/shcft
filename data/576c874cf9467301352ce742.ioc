@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="f0c3e2e3-7fb3-486a-8718-04b8b088c2a3" last-modified="2016-07-10T09:26:48">
+  <short_description>Tracking Elirks Variants in Japan: Similarities to Previous Attacks</short_description>
+  <description>Tracking Elirks Variants in Japan: Similarities to Previous Attacks</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:26:48</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2016/06/unit42-tracking-elirks-variants-in-japan-similarities-to-previous-attacks/">http://researchcenter.paloaltonetworks.com/2016/06/unit42-tracking-elirks-variants-in-japan-similarities-to-previous-attacks/</link>
+    <link rel="https://otx.alienvault.com/pulse/576c874cf9467301352ce742">https://otx.alienvault.com/pulse/576c874cf9467301352ce742</link>
+  </links>
+  <definition>
+    <Indicator id="7970cfa8-79aa-4955-8195-73d33f7c9864" operator="OR">
+      <IndicatorItem id="a8ce2b96-af6f-4937-aca6-937109acef95" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0e317e0fee4eb6c6e81b2a41029a9573d34cebeabab6d661709115c64526bf95</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1af90254-71b6-4e33-a08f-82a8b682bb7c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f18ddcacfe4a98fb3dd9eaffd0feee5385ffc7f81deac100fdbbabf64233dc68</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2516183d-cd68-430e-bb67-19b307aad024" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8587e3a0312a6c4374989cbcca48dc54ddcd3fbd54b48833afda991a6a2dfdea</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c53d1711-6626-4f59-8445-1a02785b7f05" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">755138308bbaa9fcb9c60f0b089032ed4fa1cece830a954ad574bd0c2fe1f104</Content>
+      </IndicatorItem>
+      <IndicatorItem id="073af4f1-1911-44ef-8350-cdd3c31c3ced" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">200a4708afe812989451f5947aed2f30b8e9b8e609a91533984ffa55d02e60a2</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

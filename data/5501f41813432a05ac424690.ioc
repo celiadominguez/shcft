@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="da833d5c-b0be-4a7b-8334-de783064d411" last-modified="2016-07-10T09:36:32">
+  <short_description>Targeted Attack Campaign Against Indian Organizations</short_description>
+  <description>Targeted Attack Campaign Against Indian Organizations</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:32</authored_date>
+  <links>
+    <link rel="https://blogs.mcafee.com/mcafee-labs/targeted-attack-campaign-indian-organizations-continues-exploits-focused-national-events">https://blogs.mcafee.com/mcafee-labs/targeted-attack-campaign-indian-organizations-continues-exploits-focused-national-events</link>
+    <link rel="https://otx.alienvault.com/pulse/5501f41813432a05ac424690">https://otx.alienvault.com/pulse/5501f41813432a05ac424690</link>
+  </links>
+  <definition>
+    <Indicator id="8987e7a8-a21a-479a-9372-33b640513234" operator="OR">
+      <IndicatorItem id="cf86e4ef-76a5-4192-a8aa-b03f120a50b1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b44a0ebddabee48c1d18f1e24780084b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f59fe71-a581-4d07-a2c6-cc3e2d824bdd" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b0ae36bcf725d53ed73126ed56e55951</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a62109c-fe81-4df3-90f9-d4846fe80b0a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">faa97d7c792e3d8e7fffa9ea755c8efb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc3bfd90-3511-4e82-b850-0d0813b2377f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">unisers.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

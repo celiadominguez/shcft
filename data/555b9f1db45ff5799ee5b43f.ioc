@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="e164e8a1-8903-48cc-adcc-62fbb5829667" last-modified="2016-07-10T09:31:56">
+  <short_description>Trojanized PuTTY Software</short_description>
+  <description>Trojanized PuTTY Software</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:56</authored_date>
+  <links>
+    <link rel="http://blogs.cisco.com/security/trojanized-putty-software">http://blogs.cisco.com/security/trojanized-putty-software</link>
+    <link rel="https://otx.alienvault.com/pulse/555b9f1db45ff5799ee5b43f">https://otx.alienvault.com/pulse/555b9f1db45ff5799ee5b43f</link>
+  </links>
+  <definition>
+    <Indicator id="e1839299-4429-406b-9a16-58e70d1c40b1" operator="OR">
+      <IndicatorItem id="eebc96af-b5ad-4e69-8da3-09c70305d8c5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">d3e866e5bf18f2d9c667563de9150b705813e03377312b6974923f6af2e56291</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38ea4ec8-2212-41cc-bbd3-33f79dd680d7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">go-upload.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="10995282-3421-4161-a0ef-1a1acb692413" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aliserv2013.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6fee961d-0c44-4c56-add8-12dd6555022f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ngusto-uro.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f4cea41-5540-4091-bad7-da3e20a40ed8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b5c88d5af37afd13f89957150f9311ca</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf1588fd-be9e-4448-9b28-e26dc82b4fca" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">51c409b7f0c641ce3670b169b9a7515ac38cdb82</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9553ab7-08cd-4fbc-96da-b7a8c75f8094" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">144.76.120.243</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec39ff69-460f-400c-87cc-3ba173fe2cd7" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">146.185.239.3</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

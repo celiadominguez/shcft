@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="fc31c999-63ee-478f-a22c-4ad2ab20df78" last-modified="2016-07-10T09:34:54">
+  <short_description>Destover Sony Pictures Compromise Dropper</short_description>
+  <description>Destover Sony Pictures Compromise Dropper</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:54</authored_date>
+  <links>
+    <link rel=""></link>
+    <link rel="https://otx.alienvault.com/pulse/5533d2e4b45ff504e84a24fd">https://otx.alienvault.com/pulse/5533d2e4b45ff504e84a24fd</link>
+  </links>
+  <definition>
+    <Indicator id="4a15e19d-5406-44d9-80c9-c25ffd029ee3" operator="OR">
+      <IndicatorItem id="a1f0ad22-b825-402d-8fcf-ca0aecfe54a3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d1c27ee7ce18675974edf42d4eea25c6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="efc8f48b-f2c0-4ec9-81c5-0d146d177168" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">289c9624337b700a77b4807ce93af613</Content>
+      </IndicatorItem>
+      <IndicatorItem id="587e2dd1-5e5b-4c99-8c4d-612d054e14c1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4d938f4a5b3bafb84cbd447fc3dccacb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="152c7249-b7b3-4f2f-9aac-ad2e5dd3afc5" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6788313a762c211dcb0de421607e6057</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b97ca6fd-55fa-4ed4-9678-48604492c43d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3a25847848c62c4f2dca67d073a524ae</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6bde175e-cbb9-4829-a2d5-6ebea2371625" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">88.53.215.64</Content>
+      </IndicatorItem>
+      <IndicatorItem id="560bffb4-2e2d-419a-a538-d7ffefc1af72" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">203.131.222.102</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fa32e5eb-66da-4b88-9d28-2bf4d9e9c369" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">217.96.33.164</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

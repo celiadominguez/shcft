@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d4a94267-4cbc-44c4-bf5c-b065fa27f7cc" last-modified="2016-07-10T09:27:11">
+  <short_description>Evilgrab Delivered by Watering Hole</short_description>
+  <description>Evilgrab Delivered by Watering Hole</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:11</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/06/evilgrab-delivered-by-watering-hole-attack-on-president-of-myanmars-website/">http://researchcenter.paloaltonetworks.com/2015/06/evilgrab-delivered-by-watering-hole-attack-on-president-of-myanmars-website/</link>
+    <link rel="https://otx.alienvault.com/pulse/557b04afb45ff5256263f4b5">https://otx.alienvault.com/pulse/557b04afb45ff5256263f4b5</link>
+  </links>
+  <definition>
+    <Indicator id="cccd62a7-fd0f-4efd-a067-0be012d8ef1d" operator="OR">
+      <IndicatorItem id="28d8350c-e7ac-4c1c-838b-d746402ed5c4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">91f7d6612c79cc0b266891c447359853614546837b003836ab342b091ee1a6cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0f3312d0-1a50-4cc7-a8ed-9418b2d03f14" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">10d9611e5b4ff41fc79e8907e3eb522630131b1bdc1010a0564c8780ba55c87c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f7db11d8-e83b-4ce2-9dc2-1ec478e842dc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b8c37a1db36d702932b5db97ec150269a323b5dc76059062beff7e330f2d136d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f564e48-e40c-44e0-8a10-c6f30a84f670" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b69106e06dc008e4fa1e4a0b0b58fcb1dc6d2016422a35cb3111168fd3fae577</Content>
+      </IndicatorItem>
+      <IndicatorItem id="44c80f9c-d11a-4280-a912-09a4a0be9078" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="827fe78d-25bf-4424-a4e4-3d395ea1f9e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usafi.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42396200-a9da-465a-b05e-af66f8ccf046" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">appeur.gnway.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38f3d519-b0c0-4a6b-9700-ceabf0e8b626" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usagovdns.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="658a26f9-560a-437f-8ce1-fe68683bf87d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usacia.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="39ba8967-d841-473a-a47d-02d8f4f36015" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mmslsh.tiger1234.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70bbfe85-0788-4783-bf3e-5c4453f7fb7d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webhttps.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0f1680b8-c05a-413b-bb78-3c8916b00568" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ceshi.mailpseonfz.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="93e11bd0-efef-48bb-bf9d-7e456e65faa0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dns.mailpseonfz.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6eaa207-4351-41ee-b72a-acf28bada39d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usafbi.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8ca06ca9-3640-4775-b38d-c17d10e9234f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dns.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="71f3405a-3b31-4450-88c7-8c961fab3048" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2e78e6d02aaed4f057f4dfa631ea5519</Content>
+      </IndicatorItem>
+      <IndicatorItem id="54924ef4-f332-45a8-b9fd-d060859d3a6b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">59.188.16.130</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

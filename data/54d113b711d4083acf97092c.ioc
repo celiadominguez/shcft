@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="441079c4-7710-448d-a4e9-30e98f6ac6ea" last-modified="2016-07-10T09:37:27">
+  <short_description>Dridex - Feb 3</short_description>
+  <description>Dridex - Feb 3</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:27</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/54d113b711d4083acf97092c">https://otx.alienvault.com/pulse/54d113b711d4083acf97092c</link>
+  </links>
+  <definition>
+    <Indicator id="cc8a5f3f-e632-4adb-ac1f-8e612fecfbf0" operator="OR">
+      <IndicatorItem id="93fd67ab-e84e-4f29-b086-9e5c6a74bd8c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">92.63.88.108</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d84b546-0668-4682-937a-4bcb36b2879b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">143.107.17.183</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e47bf5e2-c79c-44fc-8351-be9b9a4f8101" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">136.243.237.218</Content>
+      </IndicatorItem>
+      <IndicatorItem id="24965976-6a85-4866-9c9d-4093fa52ee08" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">5.39.99.18</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21174ab8-50bf-4dd7-af77-304f13c4b17b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c7fb34847ea945984d6d690c4b051b17</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be43f3de-661d-4d41-a9de-cc5968a4db23" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">684d7d17ba0508b4ca82c20853b18d9f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="918ee347-e209-411a-bf0c-a458e55332eb" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bc20d3a90b0ed4edc0e6208fb9182972</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

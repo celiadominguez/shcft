@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="a560b6a7-585a-4f79-b14e-c3d6e08d3b69" last-modified="2016-07-10T09:32:30">
+  <short_description> RAZOR BLADES IN THE CANDY JAR</short_description>
+  <description> RAZOR BLADES IN THE CANDY JAR</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:30</authored_date>
+  <links>
+    <link rel="pasted_text">pasted_text</link>
+    <link rel="https://otx.alienvault.com/pulse/546cf5ba11d40839ea8821ca">https://otx.alienvault.com/pulse/546cf5ba11d40839ea8821ca</link>
+  </links>
+  <definition>
+    <Indicator id="b4e5ad32-d8a5-4e36-b8dc-0dac3c838fb2" operator="OR">
+      <IndicatorItem id="6d313f46-2519-4573-9dec-c003af56a3e8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">src.sandcastlesmagazine.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2a773281-ccc0-4ea3-9c4e-ccba18c7f8e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">img.lakeforestparkhome.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28095c5e-0e9b-4f76-ae73-af9389c5f2de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdn.jameswoodwardmusic.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="15d58fa9-c21c-4310-b3d2-c96b85d932ff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdn2.movetoclarksville.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4bc182e2-c714-42d1-88e2-ccb05867fc38" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdn.movetoclarksville.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7a9747a-08fa-493c-aa16-879976c107ad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">img.greenwoodhouse.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="243e7d70-7c95-4489-ac24-148e90b1011e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yimg.1stdayofwinter.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f83ef4f-60ae-479c-b7b0-f9d8ed2f52e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yimg.1208nw199thpl.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f18b0f6-17a1-4575-a693-ac719f77d1e1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">src.sheffieldwoods.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f881828f-eba9-4113-9446-f78b5cb218ee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">img.kirklandhouse.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a2df0724-9ed0-4993-907c-f147191c5b1c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">img.broadviewhome.info</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

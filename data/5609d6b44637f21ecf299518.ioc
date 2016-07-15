@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8e79c727-d555-4a49-ab25-660f85eeba02" last-modified="2016-07-10T09:30:53">
+  <short_description>Infected Korean Website Installs Banking Malware</short_description>
+  <description>Infected Korean Website Installs Banking Malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:53</authored_date>
+  <links>
+    <link rel="http://www.cyphort.com/koreatimes-installs-venik/">http://www.cyphort.com/koreatimes-installs-venik/</link>
+    <link rel="https://otx.alienvault.com/pulse/5609d6b44637f21ecf299518">https://otx.alienvault.com/pulse/5609d6b44637f21ecf299518</link>
+  </links>
+  <definition>
+    <Indicator id="1c10466d-5eef-4fe2-b797-cd6363906edb" operator="OR">
+      <IndicatorItem id="59e3c520-5c9f-43a0-a085-a12eb56b87db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.jfkdsajfk5263.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70323619-7a39-4b64-9e23-97259ab0295b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a6ec0fbe1ad821a3fb527f39e180e378</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be2c5ca0-7d61-4e46-bdce-7dfea5372d5c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b9a5a00e134fe0df217c01145319b1cb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="63b6ae23-bba2-4f41-9c65-eee5635baea4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c242d641d9432f611360db36f2075f67</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf027f6b-bce2-429e-9849-949566225b0f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">142.0.137.66</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f3ae28ad-383a-4b5b-b52f-90cbbf3c7d08" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">142.0.137.67</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58043434-1666-4621-8828-f41e09feb4ae" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">142.0.137.68</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4abd8105-5540-4f53-9ff1-10077ffb37d2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">199.188.106.161</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

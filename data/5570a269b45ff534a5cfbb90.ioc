@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c4d641c1-0ac2-4269-bcce-96084f0305be" last-modified="2016-07-10T09:34:11">
+  <short_description>Japanese one-click fraudsters target iOS users</short_description>
+  <description>Japanese one-click fraudsters target iOS users</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:11</authored_date>
+  <links>
+    <link rel="http://www.symantec.com/connect/blogs/japanese-one-click-fraudsters-target-ios-users-malicious-app-delivered-over-air">http://www.symantec.com/connect/blogs/japanese-one-click-fraudsters-target-ios-users-malicious-app-delivered-over-air</link>
+    <link rel="https://otx.alienvault.com/pulse/5570a269b45ff534a5cfbb90">https://otx.alienvault.com/pulse/5570a269b45ff534a5cfbb90</link>
+  </links>
+  <definition>
+    <Indicator id="8c5f016e-1255-4fd0-ad85-53fd3c8a87b7" operator="OR">
+      <IndicatorItem id="d5cb718f-ecfd-4677-b144-ad129d0aec98" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a42db180958b17edff843dd8893f4caac6b754b7f8f80d24fd9a685a32dcf34d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8bfab9c3-0f03-4643-b2f5-2fb44732e9d6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e088500b44238d9244ae667ef6bd634bb15e87be11ed6206cbff3bef2450a859</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe8ea4e2-a51d-47ce-857c-da42661d6c6a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eroeroou.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ba09f1d8-9d7e-444d-b3e7-011977dd9e97" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">71972f763eb5eaeb87681d2615e9e68e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ecb564fe-4f14-462e-8514-92df82c88758" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">32599d6992f3990bf0395b843efdd4d3</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

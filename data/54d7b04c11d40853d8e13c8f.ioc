@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8e9dcbe6-2f84-42bc-b74a-a3ff51d2e4a6" last-modified="2016-07-10T09:37:12">
+  <short_description>Geinimi Malware  Android</short_description>
+  <description>Geinimi Malware  Android</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:12</authored_date>
+  <links>
+    <link rel="http://androguard.blogspot.com/2011/06/droidbox-testing-with-geinimi-sample.html">http://androguard.blogspot.com/2011/06/droidbox-testing-with-geinimi-sample.html</link>
+    <link rel="https://otx.alienvault.com/pulse/54d7b04c11d40853d8e13c8f">https://otx.alienvault.com/pulse/54d7b04c11d40853d8e13c8f</link>
+  </links>
+  <definition>
+    <Indicator id="4a0a7eab-fc75-439b-a44b-7fb8f46c31ca" operator="OR">
+      <IndicatorItem id="d63b8e4d-6ea1-40ad-a9dc-1510e194ba23" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">udaore.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3fb2dafb-4edf-4406-9153-f6060cf0e1c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">weolir.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd6601f3-b9bf-4ed3-9cc0-7f8bd9dda58f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aiucr.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7ee85c5e-1c8c-4b37-acde-72dc1144c027" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">riusdu.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="15d5da45-76ac-42c4-ae55-30e0a32120f2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uisoa.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="73e9f232-6489-4510-9be1-a639a85c400d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">islpast.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fa5e0598-de8b-4f12-88e7-68ea30b817d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">piajesj.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d38199a8-7dfd-4739-ae5c-82d01dc32d7b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">widifu.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0b0c88b2-f1a4-4ee0-aabb-d9fde70aea86" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qoewsl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a2224c6c-881e-480d-82da-e1cb12028627" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">frijd.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b1c66fd9-d9b0-4848-a1d6-520dd735a1a8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.islpast.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09fe6d63-62f7-424c-aea1-94b538b96c74" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.piajesj.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c6935e49-e4b3-409d-9077-291c2ccaea9e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.riusdu.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c8c4c915-9439-42b1-aae6-01f662b29257" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.udaore.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5706e3ac-38da-41b1-a2b4-26ccfaab60b4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.qoewsl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="809dd74c-4857-40a8-ac4e-8d7255638e4f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.widifu.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="150d91fb-8d46-4c84-97c6-45efcd7df87f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.weolir.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5bb7ea56-9ade-481e-a8f5-cb257b862768" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.aiucr.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f82007c3-7a6f-49e4-b7df-e77bb87572a9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.frijd.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ccdf191f-c37b-4e1f-88d0-f23d8a7598af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.uisoa.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35b48ba8-47fa-4633-bdf9-5ede96016038" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">117.135.134.185</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

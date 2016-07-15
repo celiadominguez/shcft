@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="9bb1fa82-e421-4667-838e-5ff55b2a19c5" last-modified="2016-07-10T09:30:55">
+  <short_description>Defaulting on Passwords (Part 1): r0_bot</short_description>
+  <description>Defaulting on Passwords (Part 1): r0_bot</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:55</authored_date>
+  <links>
+    <link rel="http://blog.cari.net/carisirt-defaulting-on-passwords-part-1-r0_bot/">http://blog.cari.net/carisirt-defaulting-on-passwords-part-1-r0_bot/</link>
+    <link rel="https://otx.alienvault.com/pulse/56048efa4637f21ecf296f8b">https://otx.alienvault.com/pulse/56048efa4637f21ecf296f8b</link>
+  </links>
+  <definition>
+    <Indicator id="3e91df0a-5fda-45ba-ae53-68aa0a744529" operator="OR">
+      <IndicatorItem id="c6318aa4-af64-40db-8996-529dfec599bd" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0ffa9e646e881568c1f65055917547b04d89a8a2150af45faa66beb2733e7427</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48715c5c-05ba-4436-8a30-25cd7634b370" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">5c8c41253aa68adeb955e7d1c7b8e084e06537f75eff12c3f3a0f3cb30cb2152</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c87ce1f0-c1e8-408a-b717-f5a7d65471fc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9c2848962733846bf50b490fd8f6c7ce9ecade2d3f2f530f5ecbba283af87d3a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5921acd-a782-4cf7-9c3f-4233993142f1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">86fbdd7df9486a17e9c408c7e50635e26402fdf297c9e97f1a5256100401dcc5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="975e7a1d-5976-49f8-a49e-ed63c84b533e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">46.228.204.44</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

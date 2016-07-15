@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="0282e4f3-ecf7-4472-a837-c00b08f07be7" last-modified="2016-07-10T09:30:32">
+  <short_description>The Postal Group</short_description>
+  <description>The Postal Group</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:32</authored_date>
+  <links>
+    <link rel="http://www.cert.pl/PDF/The_Postal_Group.pdf">http://www.cert.pl/PDF/The_Postal_Group.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/561fd2904637f21ecf2a9717">https://otx.alienvault.com/pulse/561fd2904637f21ecf2a9717</link>
+  </links>
+  <definition>
+    <Indicator id="4fd0a97e-e924-4041-8532-233ddb38a4a6" operator="OR">
+      <IndicatorItem id="37a1f9a0-e27d-4237-9d83-32a19bb737c8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">bcb7677cfe84ee85418c018f4fb13811637f05bc1234a9dd5e9be15d13a113ff</Content>
+      </IndicatorItem>
+      <IndicatorItem id="053a51c6-3d02-44b5-889c-f2129277dd4b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">df87eac90c5f3f04ccf2e38b38c196a00a6c3b225d790bab1cc97fb6c6ef67a1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7ba1a17d-b63d-48d6-ab9b-6e4bc0684d67" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">85740d8deee1cb968608a1e99a2c2e825eeb4a0d8e4df1f2f4a35cce6e8e15d3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="471d780f-0fbb-4224-86b5-589932b3f00a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3ab0beaf860e12b318f97dfdc629c066e71b0891e1bfd92473db82b86cc93012</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f7d943f7-8bf9-41d7-ad29-c78f262eefdb" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9eb68bd28de11fdfb397ba67605c3924d8d32e2ee5473209311ca608f212d4c2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="430acdf2-ea31-488b-8101-d8b169dc1e92" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b566239fc3854276619d7c0c157b837fcda02b6878014549f524de4c89f57b37</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2d6dc021-fcca-4b63-88c7-f570abbcb2c1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">94a4809a3ba8d40407c7d1f0cfc0b84446fa417a624043bb621879b42832108c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6722be8-88b0-4072-be72-9957e2a6afe8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">61763d147bfc3e5d414084435e0a2f4ac75d6101d9865f5171ca2bb089750c3d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3eba30de-adf8-49ca-a53b-3ff7cc6c5a74" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7cdf57eca5220399c45ddb92eed4bf1ac879ef4dbf150cba190b546b77b50357</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c987ced4-5ba9-4d28-8a4e-ac19c6099faa" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">91d8acd8f3c89b92c39ace385a67ac992fae5e56cf8f8c73b8b02e4e4c58deff</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c4450e88-93b6-42d6-a974-55581b495c22" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">97ea009213e2d6ae53862f66cbc5ba64470a4e5057a59a05dbf7a9206123a4c1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21aceedd-cec8-49ab-8eec-98cab2cbcdb6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9d7dbb4de40e0ef8867500988653cea03fa89a0c62dcc56a3739327f8a24d504</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5cabada7-a39b-4317-9586-ca44395b2446" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f9f7b0b949c1206c15b9f94702efb6d728988d4ae350748aa481cbf621136260</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9fe8752c-d26c-466f-8c73-12a4665d7f6e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">07f29192a339791a997c1a58ba58fa24dff31a60924110a610ed04cd691dac80</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a78c7dc-46ea-4c28-abef-ad86dfb50283" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">85cf88e113429393b4f0a4984f45dc0fb97e2a24b3c96f656607abe139504648</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e199c3ad-9050-45fa-8f33-66789f7f9ae5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7c4d4e98601b2ae11c4a27299ded2a15e635b317ef32f48f683da016ca77c1c9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb7b4884-89bf-4cbe-8cd7-d45d8cc0c1d0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">skinder-chatcast-topcat.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c0f5fdae-f59b-420c-a782-e604db60ee9d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">twitterbug-flashpedia-skipster.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="171c8d5b-3bab-4dc1-a9d9-cf2fca8c4dd5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wholetdiedogsout.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5f0a93e8-cc9c-48a1-8303-ad129b1a3aae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bizzanalytics.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b41e573-9277-44bb-9669-e7fc8dddd5b0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teknation-brighttube-zoomtag.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1c378237-f84d-4fe9-8069-670d91b066e9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sub-host-peer.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36620979-77da-4762-a22d-c4dd3db55cd3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">meevee-yamba-dynatri.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d9f6808-14f9-40fa-9c80-b3e98806f89b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gtagmanager.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="978ca096-cd88-4ff4-ae86-2f2badb35fe6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tweeter-stat.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c4b90c2c-3587-4e5c-b0c1-708e17d852f6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dynayo-rooxo-gabtype.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="96b56951-e94d-45ed-8a21-68c3a91fc41e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">walkingdead32.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de8ed311-fa1f-4c10-995e-199b0e80c845" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mymotherhascome.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f6a42f32-683b-4190-a4ee-0f6f34f050d8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">digiify-devify-chatfly.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77cc1925-e068-4409-b28c-5c2bbf6aad94" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">topcat-centido-abadel.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd70d0d5-a3f9-45de-806d-1818711314f6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pocztapolska.biz</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

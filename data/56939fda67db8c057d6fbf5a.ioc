@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c4558b70-70aa-4279-b9dd-6293863e96e9" last-modified="2016-07-10T09:29:20">
+  <short_description>Uncovering the Seven Pointed Dagger</short_description>
+  <description>Uncovering the Seven Pointed Dagger</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:20</authored_date>
+  <links>
+    <link rel="https://asert.arbornetworks.com/uncovering-the-seven-pointed-dagger/">https://asert.arbornetworks.com/uncovering-the-seven-pointed-dagger/</link>
+    <link rel="https://asert.arbornetworks.com/wp-content/uploads/2016/01/ASERT-Threat-Intelligence-Brief-Uncovering-the-Seven-Pointed-Dagger.pdf">https://asert.arbornetworks.com/wp-content/uploads/2016/01/ASERT-Threat-Intelligence-Brief-Uncovering-the-Seven-Pointed-Dagger.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/56939fda67db8c057d6fbf5a">https://otx.alienvault.com/pulse/56939fda67db8c057d6fbf5a</link>
+  </links>
+  <definition>
+    <Indicator id="19aa9930-4677-41fc-a227-0ecec4799335" operator="OR">
+      <IndicatorItem id="4b0e16f4-88ee-4ec1-948c-b6010bf1eb0d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">googletranslatione.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="963fe1f0-7caa-4316-a041-c0d85b483caa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">client.secvies.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="586c2273-ae35-41e2-bcbe-5b3ebc64e67b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">appeur.gnway.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5dc32ba0-0e13-4229-9519-375d15b5c0a3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usacia.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="76e7645c-0c75-4568-afb6-433108c387c0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ns.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1457a9bd-5645-43e4-8566-5572f097eb0e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webhttps.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="71c335a5-e474-40fc-80ec-43eed3729753" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usafbi.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="729d0940-d362-4c81-b76d-7a668b35e348" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">computer.security-centers.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7aa97f17-5816-47eb-bd5f-0c1e155338e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dns.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b28255f-3868-4d56-a5c1-3ec4b2b67670" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">76c0285bb89556564594ce1927b837b7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="67ee8b5e-61fd-4812-916c-03218f5d0efe" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">282cdf360dc627dac145842e666ea7e5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13e507c6-fde0-4892-a3ce-85576df8ef0a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">63a463f2c18676d868d39785a48f073a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bfe55222-84d2-4bff-a6c5-4b31b94d406c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">fcd3bec917b1cc095c1f2b06a75c9412</Content>
+      </IndicatorItem>
+      <IndicatorItem id="599b7fd0-28d2-4909-bf89-daa3c0758f6e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5ed8b90a8d5cabda83fc814e2bbd9600</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f8f92984-3a35-4397-989a-c10e941494df" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">31c52be912b7269255ec669176663136</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55b90baf-b004-489d-8717-a1b5442d8586" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">70f1a9ee69cea1b0f53099eb27753895</Content>
+      </IndicatorItem>
+      <IndicatorItem id="352c0e51-0735-41e3-b9be-630be6584bb6" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4e666c05656080180068f35cc7b026cb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ebc8c440-d850-4f5d-85a5-efd8cedb4759" condition="contains">
+        <Context document="ProcessItem" search="ProcessItem/HandleList/Handle/Name" type="mir"/>
+        <Content type="string">Global\doWcQFXMASDGYkATMXXeKSsQ</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6e15ba5-2ee9-4a24-a37e-e8a8cf5899f3" condition="contains">
+        <Context document="ProcessItem" search="ProcessItem/HandleList/Handle/Name" type="mir"/>
+        <Content type="string">Global\eNzAMQgOXyITQMt</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

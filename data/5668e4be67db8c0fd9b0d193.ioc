@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="9b81a533-4b8f-4ff7-85d6-551d64266818" last-modified="2016-07-10T09:29:41">
+  <short_description>Rovnix Downloader Updated with SinkHole and Time Checks</short_description>
+  <description>Rovnix Downloader Updated with SinkHole and Time Checks</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:41</authored_date>
+  <links>
+    <link rel="https://blogs.mcafee.com/mcafee-labs/rovnix-downloader-sinkhole-time-checks/">https://blogs.mcafee.com/mcafee-labs/rovnix-downloader-sinkhole-time-checks/</link>
+    <link rel="https://otx.alienvault.com/pulse/5668e4be67db8c0fd9b0d193">https://otx.alienvault.com/pulse/5668e4be67db8c0fd9b0d193</link>
+  </links>
+  <definition>
+    <Indicator id="607ddd55-d7d1-4883-a02c-ddd6258a54b8" operator="OR">
+      <IndicatorItem id="65f357eb-c71c-4e42-bd4c-a0c5e42e6dd0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ecloud90.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e225b53-808c-4456-9a10-4c871f92f962" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">upmisterfliremsnk.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c378ea8f-4caa-4177-8ab2-16ef8d17c0a8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">elorfans6.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30445c26-1c7b-4bcd-a03b-5d421ba8ef02" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lastooooomene2ie2e.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77490c64-84a7-4d1d-b183-3a22dc9fec57" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">srvdexpress4.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0dc673a8-3910-4849-ba06-b88a892efc45" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ecloud87.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c752c6d4-db33-4273-99cc-a8fc988d612a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">srvdexpress6.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="97642c73-4870-47a9-92cb-75d6ba95db5e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mediacontent.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="59114d1b-933f-4134-80a0-a3434a1a0e5d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tornishineynarkkek3.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01df068a-37b8-4a45-986c-3f7b1d576500" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tornishineynarkkek.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="66df4085-a7b5-47b3-8850-7d6c42433038" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ecloud86.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="80964774-12fc-4288-a71c-ba266d8f53ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">transliteraturniefabriki.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f5b9467-3580-48de-8b05-0f5624469cfd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">romnsiebabanahujtr3.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de46547e-30c9-4574-a55e-f2338363ee7c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tornishineynarkkek2.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b8596e67-cdbc-4752-a9e0-f3bf5252dda1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mediacontent2.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="abd9cf0d-a134-40dc-81d0-c4d08632b0dc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">romnsiebabanahujtr2.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c69c1f5d-3259-4653-8080-a0750009f366" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">srvdexpress3.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f337d29-6ae0-4090-af9a-357d8effdb30" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">srvdexpress7.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cd5eaa68-2ecb-4e1f-b5c6-63333a6a1e6a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ecloud89.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1a5f412f-3e7b-438b-984e-c4c0e469193e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">elorfans5.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="52d92d42-14bd-4eec-8ce0-d2ccb57bfdeb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mediacontent3.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="59a482a8-a942-44fd-956a-6227ccedaa55" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">srvdexpress5.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3962f533-2625-4952-ba8a-2bc363b94f7d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">romnsiebabanahujtr.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="933a2acb-f0ea-4c63-8584-b55c1df783db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">elorfans2.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="76c1e72e-f0bd-4a60-91ac-1902cc8e5f3e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">elorfans4.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="289fe763-5c8b-4b28-862d-b0362aff39c3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ecloud88.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a657d35c-5cf4-4a22-9529-48d0f075956f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ecloud91.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a8492e8d-87b0-4837-93c5-887b7eea2d7d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">elorfans3.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1a157506-0f31-4b59-bec1-b9a76bf4eb95" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b0bce8bd66a005eff775099563232e64</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c99421a5-0a49-41ae-80cf-4436d0cbcb4c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7123a117c44e8c454f482b675544d1a9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06c449ef-3955-4502-aba6-f90020fd01f8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5ea867f5f7c24e0939013faf3ed78535</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d2635c82-db33-4c9b-95b4-7c7c7cc75d4b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e8a94f1df66587abd7c91bfcbe5af5d5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="487348e8-8dcf-425e-a5c8-3077abd34529" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">19f14a5d5610e51f4985444f3f0e59ed</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49053994-04d6-449f-80cd-eeb233747ea0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">11f61c60ce548e2148c2f7a2e5f7103c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d972cec-bb09-49e9-9f3f-90a3e12c8d74" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7ce075e3063782f710d47c77ddfa1261</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d67f1672-7afe-4f88-b950-21a62f9f0ada" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">29ef765145f6dd76cec5cc89c75b44de</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d0450a6-da03-4675-aae0-5ba06f290db3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a6fd6661c6ac950263ba9a3d4fc55354</Content>
+      </IndicatorItem>
+      <IndicatorItem id="982a8b0f-810a-4b43-95e7-7cc3349480af" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e0bc0503ccc831c07d6cc4c394b5a409</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e5f5308c-eb70-48e8-8adc-2208155204a1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b7d63dcb586ec9a54a91379990dcd804</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d311d5b1-803f-408d-aff7-79a28f2e489d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0131d46686c66e6a4c8d89c3aa03534c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23dc7415-0bd5-4e2b-9932-eb93a60d3cfe" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">fdef7dd0b7cece42042a7baca3859e41</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

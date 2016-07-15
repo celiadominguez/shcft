@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="ec92d610-84b9-4990-b9c6-7c68a48ac276" last-modified="2016-07-10T09:31:01">
+  <short_description>Pkybot: A new banking malware</short_description>
+  <description>Pkybot: A new banking malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:01</authored_date>
+  <links>
+    <link rel="https://asert.arbornetworks.com/peeking-at-pkybot/">https://asert.arbornetworks.com/peeking-at-pkybot/</link>
+    <link rel="https://otx.alienvault.com/pulse/56016f4567db8c6fb351ac5c">https://otx.alienvault.com/pulse/56016f4567db8c6fb351ac5c</link>
+  </links>
+  <definition>
+    <Indicator id="dad14e10-40a2-4343-a463-b82d7c4e6505" operator="OR">
+      <IndicatorItem id="adc50dfa-037c-4fb5-bd3c-902adc7686ef" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9c9aaabb60ca27324da0cdfdd9715b6d0c9c6941217411ef5bf20930d0eadab0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7dc371c6-fe5a-45f7-861a-5236a63ce45e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">864dff5cc930c259e34fd04840a5115f61236e6affbb6fed3af49c78e0aa1460</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fbcbb782-e6a8-48d3-b07b-63f3b1287077" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mukosoma.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f5a4d3b-052c-49d6-aed3-ac1df4d41b88" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">duteraneh.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b0e5d83c-a7f9-462b-9f51-dfa9c3914075" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fedorena.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f3181ea8-01e0-4bf1-93e6-7692ed593579" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">manafasia.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a2650744-d0c4-453e-bfe1-c1198b710801" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">neyetta.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="783ef124-9f87-4f54-98b7-9ac299c4eed3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">liopnret.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1594eb09-d5fe-4c1a-b272-db98db98d9f7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">monogera.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9626a94-6a3f-44d2-ad95-3a30c187949f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pallodare.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f695ab87-9d9a-4369-95c5-2527957703fd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">votublist.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0aff97c1-c244-48f5-ac59-dfdea7b9b3da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nanoputanas.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02145333-0a19-42eb-a4e2-cd2dd2209113" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">boblaktto.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="75c14b69-84aa-4598-9a5f-7bc4160e201f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">potopland.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a02640f0-9f12-4614-ac9c-58bb416a803e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pannogen.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34108b81-ee1c-4e2d-97f9-5eefc359e6e1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">superzhopper.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4374f5e-e5c6-4b0f-9992-13df0084532c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">claus-management.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e6e2d33-8421-4f77-bc6d-2fd6f84198d6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">garbux.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="512beebc-038f-486b-9db2-790a76c87ee2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">feredac.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2425010c-e1c9-4749-afd5-2943795c9fbd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hirobakan.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d2384874-2911-4513-81c2-afd0065bcb98" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bolobranca.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7f396ed-15f3-4c36-b866-4cf40dc72720" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">giga-flock.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="977a88e7-1ab0-47ff-8f21-2d99f9596bdc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fanera-distribution.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f35e63ec-994d-4c57-96d2-8377d460d610" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nuratrben.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b6d8fd5-0547-4510-a0fd-371c2d6deac2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">noisymemo.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4957e9c-370e-4842-896f-8fb64e50aa92" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">megakatana.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="df8bc852-dc71-4334-bfa5-ca2a6fb42b6c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">koplodaro.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7631a3f6-f2e3-4338-bffa-e3d3bbbcb1ed" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">becadogale.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28af43b4-f1ae-4ad0-9ecc-9f61a70eec0d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xezikalanre.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a986ef0e-2593-46b4-9c26-f6c7ec18c66c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fergerama.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f5c8fecd-4efb-45f3-a61c-eb120db95543" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">golokird.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="27835f98-1e83-4f92-adf4-183725c43021" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5759b592fba82f44bae0edfa862bf77b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0bc1df47-ea2a-4f4b-9dda-2b4f1ab2158d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cb3d9850f7864489750c25b952d1bc25</Content>
+      </IndicatorItem>
+      <IndicatorItem id="91e25d7b-3125-408e-86df-edf4ecc2af84" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9028d9b64a226b750129b41fbc43ed5e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="88c0efb6-a043-46bc-929d-284fa3777dfe" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">38eb7625caf209ca2eff3fa46b8528827b7289f1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="566e2223-ea51-4b69-99a3-6c4bdf62ff9e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">opilki-limited.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

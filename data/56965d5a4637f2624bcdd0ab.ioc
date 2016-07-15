@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="28349882-11a9-43cd-9958-36bde7974afa" last-modified="2016-07-10T09:29:15">
+  <short_description>Derkziel</short_description>
+  <description>Derkziel</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:15</authored_date>
+  <links>
+    <link rel="https://mlwre.github.io/2015/12/11/Derkziel-Sofware.html">https://mlwre.github.io/2015/12/11/Derkziel-Sofware.html</link>
+    <link rel="https://otx.alienvault.com/pulse/56965d5a4637f2624bcdd0ab">https://otx.alienvault.com/pulse/56965d5a4637f2624bcdd0ab</link>
+  </links>
+  <definition>
+    <Indicator id="f0bb0e08-b468-40b1-a637-279b4c1f70c5" operator="OR">
+      <IndicatorItem id="91869f5f-1323-456c-8a0b-d25847140369" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fuckingyoursister.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f0c4e98-37fb-4865-b0e5-8ba87cc6510a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">aa3d96db36b5680cf5107ac09c003067</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b8beb6b0-bf94-4e4f-8120-527b9d556520" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2785dad301a4f1524e76af812a63bf99</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f7a54f21-cc31-44bd-bcea-60245f89b1ca" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bd72ff73db2b52e303881cf6326d62e6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f365a1c-05d6-4bc9-ab6b-9199c322917a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a7ad5cea87287ce8e47d8ef08273e0f6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ed9912a6-38ef-448c-bb32-2d7c37772c62" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6aa6dbb3d2a1a195bd621237bb65812d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad4bbe4c-cb7e-408f-bcca-859a4c211048" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7525ef63c8e9346a3e897c8d91231a73</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

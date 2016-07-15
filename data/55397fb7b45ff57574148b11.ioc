@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="e93e6400-1157-4cee-9d39-a6fa0c4673cf" last-modified="2016-07-10T09:35:46">
+  <short_description>Magento exploits in the wild</short_description>
+  <description>Magento exploits in the wild</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:46</authored_date>
+  <links>
+    <link rel="https://blog.sucuri.net/2015/04/magento-shoplift-supee-5344-exploits-in-the-wild.html">https://blog.sucuri.net/2015/04/magento-shoplift-supee-5344-exploits-in-the-wild.html</link>
+    <link rel="https://otx.alienvault.com/pulse/55397fb7b45ff57574148b11">https://otx.alienvault.com/pulse/55397fb7b45ff57574148b11</link>
+  </links>
+  <definition>
+    <Indicator id="20aa29e9-8c4d-4f32-8a72-73f084e3a810" operator="OR">
+      <IndicatorItem id="aaab5a14-25a5-46a8-8df0-5de2d29c8bbe" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.22.232.218</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49f8807d-a1a9-48d2-895d-ae8c234de0b7" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">62.76.177.179</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

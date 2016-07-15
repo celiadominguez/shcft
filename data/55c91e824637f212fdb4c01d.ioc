@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="0358fca8-0f79-48b5-affb-52f06baf2bcf" last-modified="2016-07-10T09:31:58">
+  <short_description>Firefox exploit found in the wild</short_description>
+  <description>Firefox exploit found in the wild</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:58</authored_date>
+  <links>
+    <link rel="https://www.mozilla.org/en-US/security/advisories/mfsa2015-78/">https://www.mozilla.org/en-US/security/advisories/mfsa2015-78/</link>
+    <link rel="https://otx.alienvault.com/pulse/55c91e824637f212fdb4c01d">https://otx.alienvault.com/pulse/55c91e824637f212fdb4c01d</link>
+  </links>
+  <definition>
+    <Indicator id="8db92d2e-bedd-4383-91e7-a5b8137704e3" operator="OR">
+      <IndicatorItem id="d307f084-794e-4082-805c-8d508ab2270c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">acintcdn.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="636d2839-1267-4e2a-8e0f-df974074ca50" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.86.77.48</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0133537d-daed-4cbf-a603-62c3fd939a63" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">maxcdnn.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ddea3694-a00a-4280-ab3a-f7b94c9f9d98" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">google-user-cache.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="6c20bd22-e4ea-4b6f-b824-6be3e1a48970" last-modified="2016-07-10T09:29:55">
+  <short_description>TDrop2 Attacks Suggest Dark Seoul Attackers Return</short_description>
+  <description>TDrop2 Attacks Suggest Dark Seoul Attackers Return</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:55</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/11/tdrop2-attacks-suggest-dark-seoul-attackers-return/">http://researchcenter.paloaltonetworks.com/2015/11/tdrop2-attacks-suggest-dark-seoul-attackers-return/</link>
+    <link rel="https://otx.alienvault.com/pulse/564e4a6b67db8c7a156c1235">https://otx.alienvault.com/pulse/564e4a6b67db8c7a156c1235</link>
+  </links>
+  <definition>
+    <Indicator id="a7f8a07e-7a6c-493b-b867-e49ff19d7cf2" operator="OR">
+      <IndicatorItem id="9e32bcc1-f587-41bc-942f-17f190d5c08a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a02e1cb1efbe8f3551cc3a4b452c2b7f93565860cde44d26496aabd0d3296444</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c0a12457-52c3-440b-bc76-c1fe3ae6665c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">43eb1b6bf1707e55a39e87985eda455fb322afae3d2a57339c5e29054fb52042</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35f3113b-ba41-42ab-878c-518162c89ce5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">1dee9b9d2e390f217cf19e63cdc3e53cc5d590eb2b9b21599e2da23a7a636184</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f2577f9-5e4d-4295-8e77-ac1fedca638d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">52939b9ec4bc451172fa1c5810185194af7f5f6fa09c3c20b242229f56162b0f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e14a7e8-d743-4f1e-bb21-d51d22c34de7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">52d465e368d2cb7dbf7d478ebadb367b3daa073e15d86f0cbd1a6265abfbd2fb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ae5eeff7-de6b-4809-8bb4-bd6cab8c6fb1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mcm-yachtmanagement.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b6e7da8-e00d-44ba-8c3b-03316591f5bf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.junfac.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="76eeac61-41a3-4991-8d43-7ec9e1117911" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.htomega.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1c474635-5238-444f-8e02-b7f72f27f959" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.combra.eu</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

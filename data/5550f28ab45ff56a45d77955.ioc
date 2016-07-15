@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="2f029043-a89e-4842-bb26-65669a18892f" last-modified="2016-07-10T09:34:58">
+  <short_description>Malware spam: "Payment details and copy of purchase"</short_description>
+  <description>Malware spam: "Payment details and copy of purchase"</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:58</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/5550f28ab45ff56a45d77955">https://otx.alienvault.com/pulse/5550f28ab45ff56a45d77955</link>
+  </links>
+  <definition>
+    <Indicator id="112315e3-934d-42e6-89bf-8913578a6bdf" operator="OR">
+      <IndicatorItem id="700f9a1f-854c-44fd-9ed6-a7cc4734a2e0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f0d261147d2696253ab893af3d125f53</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ebd23fd-b5df-46d0-bd00-3b09df0dbfc5" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.226.93.14</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e28e60cf-3dd5-41ca-90f0-586836ee542b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">46.36.217.227</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

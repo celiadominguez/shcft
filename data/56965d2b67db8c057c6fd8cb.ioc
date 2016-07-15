@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="5d801f22-35fe-49a6-adbc-6cfd8cb40f12" last-modified="2016-07-10T09:29:17">
+  <short_description>JS/Nemucod</short_description>
+  <description>JS/Nemucod</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:17</authored_date>
+  <links>
+    <link rel="https://kc.mcafee.com/resources/sites/MCAFEE/content/live/PRODUCT_DOCUMENTATION/26000/PD26309/en_US/McAfee_Labs_Threat_Advisory_JS-Nemucod.pdf">https://kc.mcafee.com/resources/sites/MCAFEE/content/live/PRODUCT_DOCUMENTATION/26000/PD26309/en_US/McAfee_Labs_Threat_Advisory_JS-Nemucod.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/56965d2b67db8c057c6fd8cb">https://otx.alienvault.com/pulse/56965d2b67db8c057c6fd8cb</link>
+  </links>
+  <definition>
+    <Indicator id="c3fcf568-8880-4f05-affd-4ccb9dfc76f2" operator="OR"/>
+  </definition>
+</ioc>

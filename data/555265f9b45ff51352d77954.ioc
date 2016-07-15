@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c1778fc4-c6ca-46d8-87fd-382f98e5c9e4" last-modified="2016-07-10T09:34:55">
+  <short_description>Messaging Application LINE Used as a Decoy for Targeted Attack</short_description>
+  <description>Messaging Application LINE Used as a Decoy for Targeted Attack</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:55</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/555265f9b45ff51352d77954">https://otx.alienvault.com/pulse/555265f9b45ff51352d77954</link>
+  </links>
+  <definition>
+    <Indicator id="a8b6d341-5c74-4ff8-9f3a-f23a2ae9c3a4" operator="OR">
+      <IndicatorItem id="8cc3904c-4d2b-4e6a-9d41-578ed399fe27" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f5e016b847145c61f0643c0270973002c67d30a5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e10ff3bd-5e5d-4155-b02f-6d7f127ab303" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">200.87.48.4</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

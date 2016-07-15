@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="574b1883-1c9c-44f1-8182-876c450a3892" last-modified="2016-07-10T09:26:39">
+  <short_description>Fancy Bear domains</short_description>
+  <description>Fancy Bear domains</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:26:39</authored_date>
+  <links>
+    <link rel="https://www.threatconnect.com/whats-in-a-name-server/">https://www.threatconnect.com/whats-in-a-name-server/</link>
+    <link rel="https://otx.alienvault.com/pulse/577eda97b16acc013569a1aa">https://otx.alienvault.com/pulse/577eda97b16acc013569a1aa</link>
+  </links>
+  <definition>
+    <Indicator id="edac0765-341c-4495-9e46-4e2d699d55b0" operator="OR">
+      <IndicatorItem id="d8f04939-077b-4ccf-bff6-e1fb81ded50d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">windowsnewupdated.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a8ac8783-7e92-4da7-b746-d1c824a86187" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">terms-google.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cfc418f7-5751-4014-b40a-51b1700dec31" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">honeyvvell.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6166d169-b6e5-48a7-8fc2-8e567640a6e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adobeflashdownload.de</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0150ed88-f293-4c6a-a513-b6d9b6d3f8f6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">goaarmy.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c222b07-94d2-45a5-83b6-d9dd7eef0c4e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adobeupdatetechnology.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c859ad28-bd57-4f50-9477-f0c18e87b03b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ms-updates.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bac0389c-dc46-4204-a920-4b33a6c14da2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wmepadtech.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb7bea60-62b6-4a56-9bed-310718548367" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sysprofsvc.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8e7a6e39-64fd-4677-9237-342d162462b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eurosatory2014.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aa701790-a941-4455-9d1a-ead188baa343" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdn-google.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4a37c9b-984b-4970-b7f1-09287ffe643e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tolonevvs.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="960da5e2-2c2e-4bef-a16f-18fd3eca3476" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">govsh.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="853ef3e3-6bb4-4184-b2c6-a8b8ad2e53e8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wincodec.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c770b0b-ce17-4775-bc34-2fbc4f785465" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adobeflashplayer.me</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e281e43-09a2-44b7-ac99-215c00296243" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adobeflashplayer.space</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70742021-3518-4a05-a141-ac1c7a6fdc37" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ms-drivadptrwin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d47fec6-a5a4-452e-8e43-5336395e4a23" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">euronews24.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28bd87b1-bf32-4989-b018-caea21e93d32" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vice-news.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a4369dd-9c7c-4421-ad60-b6693dc3d5dc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">akamaitechnologysupport.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="74093536-fde5-4c55-b21f-8a8d7c2e709a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ms-sus6.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="53f4a0c1-023c-4039-819d-ec6a830ace0a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">intelsupportcenter.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4f79cfe-e625-4c54-8115-c0c522c1c5b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">newflashplayer2015.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e637e5ef-b2c4-4075-bd21-6e90e15b720a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nato-org.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="404a173a-a727-4658-91fd-e5b90f923791" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wsjworld.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f1e5af9d-5b58-416b-ade8-9f7186e988c5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">securesystemwin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="87c40e61-d02e-4c1e-98ea-ee5b8eba39ca" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">academl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e9c9de8-12a2-4fa2-9f17-a214b7492a14" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pdf-online-viewer.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a999db29-56b0-44c4-8fad-c81c8c746bb2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">winninggroup-sg.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="74937daa-95cc-449c-b939-4388629045ca" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">marshmallow-google.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="85fb8051-eeab-4605-9473-2a7b70d56081" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">log-in-osce.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ee0e6a97-05f7-4258-9e02-3683922525c8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">thehufflngtonpost.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="31e971eb-ad63-4372-9681-ea09a54ef403" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">natoadviser.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e73c0ea-2638-4471-8ed7-a8e0c982dd49" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">access-google.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad724397-99c6-47e3-80f8-c1b71e3d467e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">natoexhibitionff14.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0c9e1d5d-5da8-4673-a01a-88e890d35edf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">intelintelligence.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3168e7fd-fb4a-4049-a16e-3721343de594" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">win-wnigarden.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="04040b59-3128-4ffe-b2ca-92ce5d1ef158" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">theguardianpress.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8da99d10-b9d7-4955-8e74-f8263dd88556" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">helper-akamai.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d808ca5d-143f-4295-9766-8735c65d1742" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">theguardiannews.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="40997ec9-c8f2-4679-ad21-1396ae717014" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">flashplayer2015.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f3dd6cb6-2007-497c-bb68-ea25d9f0ade9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">militaryobserver.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cac32d4f-5fd9-46b4-ada2-186b11a1829c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">intelsupportcenter.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77beae5b-55b7-421c-8bbb-71ea0e457211" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">naoasch.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6094fe8-6990-4788-99e2-67ade57e51c4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yourflashplayer.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d56a03b-2e8e-4d50-aadf-b89982955f6f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adoble.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="277c02fd-150c-4628-9dde-4d69584fd8c9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdncloudflare.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70181c67-b92b-4bec-856f-830fdc3b2b63" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webmail-saic.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="72e65288-7d0d-4d29-aa12-58dcaed5cf73" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cloudfiare.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5c05a381-1d2b-41d4-a973-85009e6ed2c8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wm-z.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9116730-6b47-461c-a2bc-7f188bca3cfc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sec-verified.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="547e73fd-0af7-4dcc-9555-8b18f1fc3244" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">microsoft-updates.me</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e2942326-1133-4830-af0a-e0cbe19a5381" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adobeupdater.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0bb48782-9519-4895-aa6d-0f4557ff691d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">micoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4980fee0-83c1-4bbc-ad61-8a4c378b23b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">akamaitechupdate.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a78a9fcd-858b-4748-a606-f66dd3ae564f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">winliveupdate.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c179021-673c-49c0-b06a-e06d4da5a58b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">egypressoffice.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c9ac9a6-d615-452c-8802-e881a802ea53" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">services-gov.co.uk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d075095-6db3-4407-8a0d-ccbccd71a0de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mail.hm.qov.hu</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

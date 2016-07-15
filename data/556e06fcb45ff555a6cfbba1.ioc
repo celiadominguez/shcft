@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8555ad40-0b98-44f5-9821-817a42d33973" last-modified="2016-07-10T09:34:16">
+  <short_description>Multiple Malwares used to Target an Asian Financial Institution</short_description>
+  <description>Multiple Malwares used to Target an Asian Financial Institution</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:16</authored_date>
+  <links>
+    <link rel="http://www.cyphort.com/multiple-malwares-used-to-target-an-asian-financial-institution/">http://www.cyphort.com/multiple-malwares-used-to-target-an-asian-financial-institution/</link>
+    <link rel="https://otx.alienvault.com/pulse/556e06fcb45ff555a6cfbba1">https://otx.alienvault.com/pulse/556e06fcb45ff555a6cfbba1</link>
+  </links>
+  <definition>
+    <Indicator id="d9889ce6-3648-465d-a2ab-62b4c4bc6ac4" operator="OR">
+      <IndicatorItem id="f529a67d-ebff-4bbb-babf-3fdcab2423e4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">diskoco.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d23e418-ee9b-42e3-a3a0-40a55c91378a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bbs.gokickes.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23455bb9-4730-429a-9ca8-9cc1f74ee68b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">domain.gokickes.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="62bc8890-155e-4938-8a7e-5bf38809acc1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">forum.energymice.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="542c5208-0f43-4a62-84d6-54f284d76009" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">img.lifesolves.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac918cbb-058a-4c85-ab32-68d5d607ab58" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3f9e7a1fb8093994ea0f0bbf151ff1e0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a9ee67a-885b-49a3-9b5d-9b2e6fc6ecbc" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a32d4a717fde77f437f9a01a7b8b8478</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5cb5d0b-c8a8-489c-a73e-762b8594ce0f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">34bad798c01b4b52d708c1409590ea30</Content>
+      </IndicatorItem>
+      <IndicatorItem id="53dff90a-d48c-45c1-8207-fc2f1b9bfb56" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4e25c2fc8cb2c57ae66ee3cf851e4bc7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b32c902-864c-4084-a99e-0a8d6cd72549" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">387942a24884ccadb60b7e7670a0f723</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b605cdc1-9c80-4c53-9530-33beaafa5132" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">756c11141ab617a2fe38b963a5548378</Content>
+      </IndicatorItem>
+      <IndicatorItem id="78868dd6-d007-4c5b-b223-5a9a083a5f90" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">abf5e379e336f0e6f7314f8bb3f7bcba</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7fa453db-1e7f-484b-adee-3ea6873a4d2a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">52f4092576e46747db71fb2c018d6ec5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5647485-6342-47a1-b18e-57b9b271a821" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">044e2e7c4813accdbe030c49cef3326b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="476493ab-db9a-403b-9419-f1366eb8f2fd" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">jimkimteen@mail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3bdebc6-f4c8-4be6-aedb-835bc1762118" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">dodomonk@mail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dc05b7d3-fe2b-4a2f-a867-f233d8c76c12" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">softmoon@mail.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

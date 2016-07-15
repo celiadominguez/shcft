@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="3ee3237a-5ddc-43e8-b3f3-ffccac224bc6" last-modified="2016-07-10T09:29:27">
+  <short_description>New version of Android.ZBot</short_description>
+  <description>New version of Android.ZBot</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:27</authored_date>
+  <links>
+    <link rel="http://news.drweb.com/show/?i=9754&amp;lng=en&amp;c=14">http://news.drweb.com/show/?i=9754&amp;lng=en&amp;c=14</link>
+    <link rel="https://otx.alienvault.com/pulse/56747dfa4637f25637d08132">https://otx.alienvault.com/pulse/56747dfa4637f25637d08132</link>
+  </links>
+  <definition>
+    <Indicator id="ffb8f45a-f55d-4ca2-926e-e30061951d0b" operator="OR">
+      <IndicatorItem id="bcf5cf04-188a-4aa4-bc80-0e8879ac9299" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">elo.andrserver.pw</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8ee30333-dd30-4b62-a456-e8de2d4b6d34" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">new.andrserver.pw</Content>
+      </IndicatorItem>
+      <IndicatorItem id="002ac772-dff9-48ac-b1a4-65e84b291e81" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0004194f6ef57fe77fd23734a897e74fda56ebb0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6953c548-e2ec-44e8-be85-325b18a9d6e1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">e2eb0b0c87b81d68b3f3f9675d3fda7a7bf8ba27</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77c3dc42-9917-42b2-ae4c-318addfec4be" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">37c2f95c3be60ba021c5e96cc02d278c55377656</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1dd0342b-101f-4f0c-9add-ef675c9856b2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">88a95ea5a37bf1bc56780327f639dc7806cea9bf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="08960f34-57b4-4dbc-912f-d00fe7667b89" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">8f9b50530d74a93582af54cc60faa412e6513b32</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dce609b7-75d4-4d32-b5e3-3f718844b967" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">393504cbfb30995b79378acea39b00bdda9deec7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86b70bbc-890c-430a-82e4-c328aaa62e76" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">afcaf7374c741ac7969a695ada97d860e2561564</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6cb7668c-da76-48f1-9a80-1b80e7cf0204" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">dc7b430bc5bb002c8bc8312050d2063d4e9e935d</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

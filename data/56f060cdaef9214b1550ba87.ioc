@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="9527a1d0-66bc-457d-b9e9-aa2dd62a71c4" last-modified="2016-07-10T09:27:58">
+  <short_description>New Family of Ransom Locker Found, Uses TOR Hidden Service</short_description>
+  <description>New Family of Ransom Locker Found, Uses TOR Hidden Service</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:58</authored_date>
+  <links>
+    <link rel="http://www.cyphort.com/new-family-of-ransom-locker-found-uses-tor-hidden-service/">http://www.cyphort.com/new-family-of-ransom-locker-found-uses-tor-hidden-service/</link>
+    <link rel="https://otx.alienvault.com/pulse/56f060cdaef9214b1550ba87">https://otx.alienvault.com/pulse/56f060cdaef9214b1550ba87</link>
+  </links>
+  <definition>
+    <Indicator id="70db35c2-fdec-4401-8087-b5f7f6e0d2b4" operator="OR">
+      <IndicatorItem id="0712e1fb-04e7-4d15-b930-8419b373da27" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d183ed4609e6ad7b00250c50a963db5d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d3f7e78-e5dd-4a6e-a24a-663feec090a8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">639c62bcae61054a229ed3c79a109cc4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c20e484-05f0-492c-bf92-5f7be10201e4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">29e71b864ac46bd3e2c216cce0403114</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b7fb486-7b18-43ec-8cf0-5e88fc17d173" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5ed449fc2385896f8616e5cd7bee3f31</Content>
+      </IndicatorItem>
+      <IndicatorItem id="256fc9a4-1a60-434d-bbdf-693dd5ab1642" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e8231d2b7a04a5826a78b2908a1dd393</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1bf0f934-f290-4450-bde9-2786fc81e298" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">fb016a14ef1384ec78a284636631ab17</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9b2f4e9-4e77-4e3f-bc18-0e6099500ee8" condition="contains">
+        <Context document="ProcessItem" search="ProcessItem/HandleList/Handle/Name" type="mir"/>
+        <Content type="string">ItsMeFA</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f0ed5650-479a-4c3c-992a-c29b3f27e744" condition="contains">
+        <Context document="ProcessItem" search="ProcessItem/HandleList/Handle/Name" type="mir"/>
+        <Content type="string">ItsMeSD</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

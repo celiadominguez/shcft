@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="7ddd0a1d-65fb-4377-b3a1-720dde6e0602" last-modified="2016-07-10T09:27:20">
+  <short_description>New FAREIT Strain Abuses PowerShell</short_description>
+  <description>New FAREIT Strain Abuses PowerShell</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:20</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/new-fareit-strain-delivered-abusing-powershell/">http://blog.trendmicro.com/trendlabs-security-intelligence/new-fareit-strain-delivered-abusing-powershell/</link>
+    <link rel="https://otx.alienvault.com/pulse/571e439f3c4c3e015d93c441">https://otx.alienvault.com/pulse/571e439f3c4c3e015d93c441</link>
+  </links>
+  <definition>
+    <Indicator id="fecfc6ce-031c-41f6-aa09-ea4feb1a8943" operator="OR">
+      <IndicatorItem id="7c827fa2-69c8-4e79-973e-6933ac8ec0ef" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4f739261372d4adce7f152f16fbf20a5c18b8903</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1267aaad-e322-4c2a-b29b-9a9dad626461" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">03798dc7221efdcec95b991735f38b49dff29542</Content>
+      </IndicatorItem>
+      <IndicatorItem id="82e6d9cf-e461-4e2c-bc42-1624d03a4e01" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">04fffc28bed615d7da50c0286290d452b9c5ee50</Content>
+      </IndicatorItem>
+      <IndicatorItem id="98a0702d-ca2e-4d2c-b47e-c098446e06ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">cfd1a77155b9af917e22a8ac0fe16eeb26e00c6e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f0863430-4738-4771-981e-183587616ec3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">acaeb29abf2458b862646366917f44e987176ec9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5ce2efb-3ad2-4d38-adb2-101c47116217" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">da3b7c89ec9ca4157af52d40db76b2c23a62a15e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="78be7432-319a-4c59-a4f0-57154f9e6ae4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">125156e24958f18ad86cc406868948dc100791d4</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

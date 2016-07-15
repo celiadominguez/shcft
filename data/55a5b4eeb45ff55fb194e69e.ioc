@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8046f6c0-00c1-488c-98dd-e53a755ee4ef" last-modified="2016-07-10T09:33:02">
+  <short_description>BernhardPOS - New POS Malware</short_description>
+  <description>BernhardPOS - New POS Malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:02</authored_date>
+  <links>
+    <link rel="http://morphick.com/blog/2015/7/14/bernhardpos-new-pos-malware-discovered-by-morphick">http://morphick.com/blog/2015/7/14/bernhardpos-new-pos-malware-discovered-by-morphick</link>
+    <link rel="https://otx.alienvault.com/pulse/55a5b4eeb45ff55fb194e69e">https://otx.alienvault.com/pulse/55a5b4eeb45ff55fb194e69e</link>
+  </links>
+  <definition>
+    <Indicator id="7a455570-c1cc-49d1-b9fd-3ad18795be48" operator="OR">
+      <IndicatorItem id="55dba6fb-7a48-4215-8334-0b4cac4397af" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">cdcdc7331e3ba74709b0d47e828338c4fcc350d7af9ae06412f2dd16bd9a089f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58a8f765-cee0-40cb-8a0b-6c3455b506cc" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e49820ef02ba5308ff84e4c8c12e7c3d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1551f2ad-3482-49d9-9d34-388a35f9e25b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">a0601921795d56be9e51b82f8dbb0035c96ab2d6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9911f1dd-6541-4d98-aad6-56e12ee5b5a8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">5.101.147.126</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2cfe570b-414a-4617-90e5-59d2953dfdd9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">29a.de</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

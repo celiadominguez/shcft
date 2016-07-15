@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="f11f2e97-e024-4d14-a82e-16538a442105" last-modified="2016-07-10T09:30:30">
+  <short_description>Attacks against NGO Linked to Attacks on Burmese Government Webs</short_description>
+  <description>Attacks against NGO Linked to Attacks on Burmese Government Webs</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:30</authored_date>
+  <links>
+    <link rel="https://citizenlab.org/2015/10/targeted-attacks-ngo-burma/">https://citizenlab.org/2015/10/targeted-attacks-ngo-burma/</link>
+    <link rel="https://otx.alienvault.com/pulse/5621208f4637f21ecf2aac36">https://otx.alienvault.com/pulse/5621208f4637f21ecf2aac36</link>
+  </links>
+  <definition>
+    <Indicator id="f0e9cd49-6fee-41ac-bf9c-de90a6fa1d51" operator="OR">
+      <IndicatorItem id="7c03bc16-a99b-4537-bf21-5ff12359468a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">t1.mailsecurityservice.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b96accfc-5815-4e30-98f3-8170cba75250" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gmail.iyouthen.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5058606-bc6e-4f4e-a309-b97b05da862b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">appeur.gnway.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="76c9bad0-bb47-455b-a046-f183c19f1f8e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usacia.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="357b7c9b-7197-4994-817a-5b4942e94df1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webhttps.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7a9e23c-9efa-4c3f-af02-a7aed9a91141" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usafbi.websecexp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d1714716-f0c9-400c-8990-b5dd51540f5a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">client.mailsecurityservice.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5d6aa3c9-c1ef-48cc-a6e5-377e7a885111" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">t2.mailsecurityservice.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d8354a4-f908-427a-92cb-96d7db143a44" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">15c926d2602f65be0de65fa9c06aa6c6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="614c31c7-b266-4987-9d3f-e649b6bb8da3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6701662097e274f3cd089ceec35471d2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4d9ceb9-a397-4f03-b418-8890cbaab6c8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5710d567d98a8f4a6682859ce3a35336</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cd17030a-9855-4d7d-962d-257de3609843" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">49ceba3347d39870f15f2ab0391af234</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3cceaa2a-e452-479c-a1e3-8e5be0a0f82d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">53f81415ccedf453d6e3ebcdc142b966</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1768e8e1-91d6-4350-961c-80324be2cd2e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cec071424d417a095221bf8992819388</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b49e6ec5-26e2-4b3b-8681-d303cbf63974" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">699b3d90b050cae37f65c855ec7f616a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dbe26c84-409f-4065-b579-42857c62a4a3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c4c147bdfddffec2eea6bf99661e69ee</Content>
+      </IndicatorItem>
+      <IndicatorItem id="241d40da-fdfa-40d9-aceb-83e6124014dc" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">198.44.190.85</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7eaaad1f-d555-4465-86b2-db2727f50fcb" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">wojiaojilao2@sohu.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

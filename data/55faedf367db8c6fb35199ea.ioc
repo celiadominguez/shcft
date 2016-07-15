@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="235a8455-ad66-4d58-a299-5740b013b28a" last-modified="2016-07-10T09:31:05">
+  <short_description>The Trojan Games: Odlanor malware cheats at poker</short_description>
+  <description>The Trojan Games: Odlanor malware cheats at poker</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:05</authored_date>
+  <links>
+    <link rel="http://www.welivesecurity.com/2015/09/17/the-trojan-games-odlanor-malware-cheats-at-poker/">http://www.welivesecurity.com/2015/09/17/the-trojan-games-odlanor-malware-cheats-at-poker/</link>
+    <link rel="https://otx.alienvault.com/pulse/55faedf367db8c6fb35199ea">https://otx.alienvault.com/pulse/55faedf367db8c6fb35199ea</link>
+  </links>
+  <definition>
+    <Indicator id="67e1ab9e-ffde-4892-bf93-fcd215dfa705" operator="OR">
+      <IndicatorItem id="c6d3165f-f716-49da-9005-64ca3d9eec07" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bbsystems.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3f047d0-d37c-497f-bc0f-e93f31ed107b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">510acecee856abc3e1804f63743ce4a9de4f632e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fa3fff2e-9f7e-482c-8ab3-b56c7510be8d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">dfa64f053bbf549908b32f1f0e3cf693678c5f5a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="32f08c69-404f-44e1-9b2d-ce6061e46788" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">18d9c30294ae989eb8933aeaa160570bd7309afc</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="5c983c15-2337-47bc-8831-6cae88175f90" last-modified="2016-07-10T09:36:29">
+  <short_description>CryptoFortress</short_description>
+  <description>CryptoFortress</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:29</authored_date>
+  <links>
+    <link rel="http://malware.dontneedcoffee.com/2015/03/cryptofortress-teeraca-aka.html">http://malware.dontneedcoffee.com/2015/03/cryptofortress-teeraca-aka.html</link>
+    <link rel="http://www.welivesecurity.com/2015/03/09/cryptofortress-mimics-torrentlocker-different-ransomware/">http://www.welivesecurity.com/2015/03/09/cryptofortress-mimics-torrentlocker-different-ransomware/</link>
+    <link rel="http://www.lexsi-leblog.com/cert-en/cryptofortress.html">http://www.lexsi-leblog.com/cert-en/cryptofortress.html</link>
+    <link rel="https://otx.alienvault.com/pulse/55024d3913432a05a47b5c1c">https://otx.alienvault.com/pulse/55024d3913432a05a47b5c1c</link>
+  </links>
+  <definition>
+    <Indicator id="b78f4bcd-caa8-4da2-9f37-cf232937c5f1" operator="OR">
+      <IndicatorItem id="89d55e46-0f13-4237-aef2-3098860db071" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3v6e2oe5y5ruimpe.connect2tor.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89472ca2-5747-40f8-97c1-78629acc5878" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">4ptyziqllh5iyhx4.connect2tor.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02efdfed-ef88-4894-97b9-cebb1321756d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tisoyhcp2y52ioyk.connect2tor.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2790ba0e-8c47-44e1-89aa-9a7afa2ceb9e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3v6e2oe5y5ruimpe.door2tor.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="755f1112-976a-4aca-bdb0-d844406ae1cc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3v6e2oe5y5ruimpe.tor2web.fi</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a74ec585-6087-4993-899b-8703908160af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tisoyhcp2y52ioyk.tor2web.fi</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e3fbded-89b7-4c03-9138-8bc8470bc7c5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">4ptyziqllh5iyhx4.tor2web.fi</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5447284c-c3dc-4dd2-8451-07c377a3d07a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">h63rbx7gkd3gygag.tor2web.fi</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c3de9824-b8d6-4111-a1ea-ceed9e7963b4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3v6e2oe5y5ruimpe.tor4u.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55243ecc-38a4-4488-bcbf-87d55da9598e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e6dda3e06fd32fc3670d13098f3e22c9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe6d6af4-91ac-4056-a63d-38e754613ef7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">26f13c4ad8c1ccf81e80a556cf6db0af</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6d7b169-21bb-4f3c-830e-a12295b361c2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7551c8026938b4acd149b1551393715f</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

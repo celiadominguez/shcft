@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="266fcebe-1f5a-48b1-b6f7-4a9c120406c8" last-modified="2016-07-10T09:29:36">
+  <short_description>Spike in Malvertising Attacks Via Nuclear EK Pushes Ransomware</short_description>
+  <description>Spike in Malvertising Attacks Via Nuclear EK Pushes Ransomware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:36</authored_date>
+  <links>
+    <link rel="https://blog.malwarebytes.org/malvertising-2/2015/12/spike-in-malvertising-attacks-via-nuclear-ek-pushes-ransomware/">https://blog.malwarebytes.org/malvertising-2/2015/12/spike-in-malvertising-attacks-via-nuclear-ek-pushes-ransomware/</link>
+    <link rel="https://otx.alienvault.com/pulse/566b0d5d67db8c0fd9b14d9c">https://otx.alienvault.com/pulse/566b0d5d67db8c0fd9b14d9c</link>
+  </links>
+  <definition>
+    <Indicator id="65fd4d47-ef30-4f27-98b0-ca5065960a63" operator="OR">
+      <IndicatorItem id="b9a8d05f-f60f-41b1-a165-a86fe2016556" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e67161f38d42b1119a1794e00ec9dc9c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4853b788-95f6-4080-aa21-a8910cbcc10e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f8b49ddbbe7d49d7c9784f32a7eda609</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e190d5c8-53d4-473b-81ca-0f6cbb587b99" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">be9705378cb95e2f1834f21eefe1de31</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5b7421c4-0cc6-4df6-8dc7-ea9b8437c9a7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d8bd341ea0ce5aa9ad457e8197961c38</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

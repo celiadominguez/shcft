@@ -1,0 +1,2447 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="e1434b97-e017-4373-9ee3-bec5a8aa1f4b" last-modified="2016-07-10T09:31:48">
+  <short_description>Nuclear Exploit Kit activity - August 2nd week</short_description>
+  <description>Nuclear Exploit Kit activity - August 2nd week</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:48</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/55cbd7f64637f20b6e54ae54">https://otx.alienvault.com/pulse/55cbd7f64637f20b6e54ae54</link>
+  </links>
+  <definition>
+    <Indicator id="e68585af-0259-47b9-893b-505f7ae4301a" operator="OR">
+      <IndicatorItem id="d0b3642f-0fba-4cfc-b4a2-34dc435558a9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">anylowso.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5ea24f7-9527-4506-b469-28d62c0d0fa9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon23.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="610e04e7-2334-472e-bb30-dd6535616168" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterdaga.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0338985c-a6e7-4086-84ae-de2fb3091ec8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabbuhugyfdesxcvo.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b290924-e240-4b58-a9c9-b3c3b3d97f42" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogavnovova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6ba21f4-0ca9-40a8-ae2d-24616ffb8005" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">66ygg.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="321bebd4-b619-4a60-91cb-750d5adb360d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabbuhugyfdesxcvo.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8bc868fc-f8ab-4edd-97c0-0b7f1c44451c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogavnovova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8985ba95-ac28-483b-90d0-91adc4ee0ffa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovuzzz.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4363874e-35f0-44e5-8cd6-6791314210ac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogaasdvnovova.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7ba5304c-20b8-4d5d-af74-fb1f062a4a2a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz4.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="50f6aea8-bb0c-4cd6-ba1c-6a3c39ec44dd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvo123vaigavno.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf9d0fea-8fa6-4613-98d8-cfe7b538fa4f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealnogavno.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9dce0c7e-dadf-436f-9e06-5d30cee0b068" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterda.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d433ad4a-4d30-43cc-8aef-d3c404f5550d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovaloh.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe820f9a-3ab4-43e3-8e94-e416d36b25d0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa5.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d79e2f0-1436-4d5d-ab4e-ecd0824fc293" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovujgf.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3027bd29-fe18-4dd0-af8e-013083b5d2a1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz4.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7d803c16-3fbd-4865-b542-6c0b676ff8ad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rhebrisaf.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="50f8dccf-6510-41d5-8846-1e20a7bb0082" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovaloh.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="920e70f7-a3ef-4993-a20b-cf91aa999e31" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterda.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0b8f365c-5e30-4950-8ccb-9fe0838ef26f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa5.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ce5b777-4461-4930-94b0-16b194fe1656" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz4.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="933aa5a7-a79b-4033-b1f5-b6bd3eba6f85" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak3.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a354055-925c-45ad-ac8f-6717b0128709" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogaasdvnovova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bebf2f6e-092f-411c-8087-42a041c241cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">allinanma.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c15e8bc-164b-491d-89aa-cd8e72ebd2d2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teoslim.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03dee49c-8d54-4b11-a3b4-a739cdf38556" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda77.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="610a0179-b483-4ca7-b6e6-5c35207d117f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabeweddbhujkoge.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3d03543b-1854-46e6-9f38-1c484703f2b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13d2edc3-f997-4da3-8cc0-d10beef8fbfc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="53e9a1ca-f80c-4d68-ba72-2bd34681f522" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gospodinytuidaynvova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fc42c0f1-8742-4698-a304-499c9cfe94a8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek2.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3d2029ba-ba42-405b-bf98-22143c8f7464" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogev3ovaneu3dac3hnik.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e42631ee-0a64-47b6-9adf-d4b3153acc6e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboebgh.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a64e773f-45c6-4337-8ed8-8a4f3adbbf70" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">g1osp1odin1ytui1dayn1vova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="47281128-4d85-469e-86d1-b97bb9090d69" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zvovapeterda2.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="07c0faef-c0f0-48a4-8f8c-d602519e33e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek2.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e8b90dc6-6205-4bad-97ff-deb9f712c2c2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboebgh.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c5927ec-cf42-48a1-abe0-be612a316d75" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kpddkeeded.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5370b82c-92a7-4322-b9cc-1631dd1b2d2f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabdtuhugfredhoo.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b711f890-d638-4876-bf44-4f6d7549978f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kpddkeeded.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="15cbc833-d6dd-47d1-b49f-dfe7d6235393" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealn44ogavno.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4de1f66-2f30-4ccc-a199-769bcd5b6fc5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teoslim.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e1a09501-626f-4862-bf13-da057b196982" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnsxuwkavova3.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28a6ea3e-bd59-48f7-8697-c031ff930d55" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak77.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0856cef3-af1c-43ed-a60c-6b08c76ce277" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zvovapeterda1.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b85d483d-6ce2-4016-8158-972afe3966d5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnsxuwkavova3.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8890ef76-2598-4354-b0ae-24caac316cb8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogaasdvnovova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c55be75-0a69-4362-9c0c-551b9b198b8e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ubeisyavovapls.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a048e8e3-0618-4597-8dc3-542590a5f86b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabcgukomotredcxi.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac56ca59-c55a-46bc-a651-2c677ad77ad5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogaasdvnovova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09bd83ca-442b-448e-9990-e09374578651" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">boganytuvovaiga.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01028126-522d-4cba-9c48-1284b5d9431a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovaloh.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6734d18a-0b7c-442b-ae8a-6ec1562414c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa5.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21b80b24-2de0-4977-9230-7d5564605790" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu678.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac313412-1f63-4cfa-95c6-1f3f58cece52" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">obskvakna.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c4cc27f-45a1-44cb-b104-33332acdd6d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabeweddbhujkoge.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="394136f3-9726-4769-8457-55c50211a63e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogenyvovailoh.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3cf380ac-5147-4a71-972e-0319439df217" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavna.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0170116c-243f-4e59-a049-dcb0f9423fc2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f62c0801-f729-436a-992c-36e4d87543a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogenyvovailoh.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dc07042c-a5ce-4a95-9e70-2b2fed63ccb4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kuytrj.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9db741a2-efd9-46c8-9744-8847e960ff5e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zvovapeterda1.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="54136aee-5ec4-41d1-be77-058ddd15add6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz88.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d83f0e4a-26d7-4c11-b079-c30501b843f7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnsxuwkavova3.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89a2b983-3f57-4aff-8b3d-f220b2ddd644" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova55.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="52175292-5a54-47bc-aec0-da95e50068dc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek2.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4c65e07-3294-4ec1-b004-d48bdd368b3b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboebgh.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d2938629-11da-4f75-99cd-dbc8a3f06da1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterdass.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f204467e-7e22-40c6-9cfa-ba7fe7f1545f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vamsamhe.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bdda577a-9ee7-4527-9009-8c1620f66f65" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabdtuhugfredhoo.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4fc4736-2bea-479a-bdbf-fd087d96dfaa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovaloh.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="99ad3270-454e-4e11-ac78-da647b991a00" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz88.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="914f3491-b571-45a2-b468-3e8649b316cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cukideinva.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="585c53ce-2456-4d2c-9b49-e0324164142f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboeb.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e18b531b-7283-4ced-9736-967300a839a2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabazrewdatupogre.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="baecfd55-f742-48b7-b8a0-e38af43413a7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2edfe13c-c652-4689-854f-f38bedbbde9b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zvovapeterda1.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a704d46c-cf7e-400b-9f9e-fef9dd08abc4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e316963-c501-4eb3-af82-4a8f35fadebe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa5.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3de0bd5b-d5cc-4810-a2b5-eae2fd87254c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabazrewdatupogre.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48f027b1-f482-4225-b2b4-f27ebd93e425" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak77.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="425b867f-fe34-4bf0-8e22-c012df12c2be" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz4.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02bbd015-bad8-4638-8bf0-42c0f1f9939e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bewenuivova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b7e79fe9-1363-46e4-bec6-7ec9f6edfeae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterdaga.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3f39a734-9435-4efb-a00f-07beddb79af4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">werrrein.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="adb88d14-50fb-4565-a648-7c311dbdcfb0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak77.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="efa9163d-788a-4f37-addc-35607c4a787b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavna.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="45cd9384-bc88-4d8d-9708-81a11b6e6987" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterdaga.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c8ceb830-c670-4981-ae68-caee86ada8df" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon23.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d0859af7-b2cf-4457-a094-77f5ff22bf3d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wunslewi.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab0b5063-da17-40c0-8b18-21071d089e5d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda77.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d6d0eff4-a3e5-4dab-81b9-c8aa96488bc0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">h3yiloavovka.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0743b54b-2180-442c-8d17-f916271f9186" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="45669829-1cd4-4507-83f9-38ef7ac43632" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0c504be2-5cd3-48dc-9384-57336532234d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zabeirotvova.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b974d80e-b792-458b-ae57-14c467493762" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">g1osp1odin1ytui1dayn1vova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4023a49a-393b-4352-8499-a59fae16aae5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">metobmo.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="570e076a-f5bb-492d-8411-d8c9aa419eef" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">centerssweet.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0bbbe6ef-df4e-4d4d-b954-6beecdc29cb9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovaloh.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="69d26a2d-deae-406e-897f-351e8ada46bd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyd.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a132fa68-96d9-4166-aac5-71facb8fbf7b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa5.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c96091b-dc8c-46ea-a301-ace82dc1ab07" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="562f5d18-b133-44b5-8af1-78034c8d93ce" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabeweddbhujkoge.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="80f1fc74-2dc8-4238-bd95-c871c962da85" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyd.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7462776c-42b5-41e4-9e97-be3b0bd30da1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova55.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="debb272c-abfa-47b2-90f2-09dd83a56783" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavna.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43c89f2b-af6e-48cf-a282-16cb85e99041" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e2c197b6-4720-41e1-a7ed-f78a4fc4e07f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz88.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="017bc8e8-1f06-427b-a917-27eb96df8e6a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zvovapeterda1.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac78a7cf-623f-4c7e-8ea2-2e6c6b757527" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kpddkeeded.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2590ac13-b1e2-42c9-9568-e78596b2422c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova55.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5607363a-f2d0-4254-894f-1241ea469b69" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabcgukomotredcxi.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f745c1c-91e7-464b-b2df-268804c02623" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz81.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab5d0745-378f-42a0-a76b-03be84a8d252" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zvovapeterda1.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="614b8a6d-fc18-4197-9ce9-766ea070dbf8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kpddkeeded.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ef36f2c-f69c-48c1-bdb0-7a13bc60b2fa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnuwkavova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0380afb6-54a1-4346-a5f8-0b00ed1fb45f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pizdakakoivovadaun.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="07f7b98c-fe99-4512-adb9-41a5807cf3d6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz3.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49e2d167-2e9d-461f-9f50-b5f4d265e126" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovu.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4fd577d1-5d4f-4878-85de-c3b49aa4552e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pizdakakoivovadaun.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d7bea45-0b10-49ad-bf2c-1f0135fbc8da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ubeisyavovapls.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f904f48-b332-4fa5-87d6-f5380d1d59a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21a3868a-f207-4fd2-8092-edf0a3b81230" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboeb.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23b0dd50-d14a-4a4b-b03d-8f8d85689120" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ubeisyavovapls.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="151f2e22-ab00-4e7a-a39c-5fde1e91c977" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboeb.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9cf90f9b-8da5-4690-9e19-9037d33dfb6a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabazrewdatupogre.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d88c7e7-7ae2-4786-be00-489da845691e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8519bf3c-6c8f-42ef-967f-0cdce2cb682b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovu.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="76e4a0ae-ebe5-4507-b64f-f6b13aab5bf9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holodpvovocs4hka23.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cb9ac68a-60c0-49f7-ab64-a52605ca0c90" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu678.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ccef4986-7f4f-44b3-83bf-d542fc96e4e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc04a966-db92-4840-808c-5e860b7f8654" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovu.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6dcced5-e738-4311-ba45-6d4490fbc8a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterdaga.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9da3e576-9428-4574-a766-381113e17b79" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak77.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d0296ae-d6cf-4c00-aec6-ef25d7212fd5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="873be75d-4dd0-4df8-b726-9438b708b097" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">expuytgh.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5f4c621f-e6dc-4676-833d-1ba069dc807f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fdea9699-a2bd-45d3-adf8-d1b840177be1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">djuefehff.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f4d491bd-f9e2-4f3b-b4f2-ef7e6fbac0e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabdtuhugfredhoo.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="878f840d-0072-4a05-95fb-b6dcb091f57a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnuwkavova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e47ee887-e13a-4b57-91d2-52b731bcb0c5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoigetulohvova.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd012d91-de88-43fb-9dfc-479d97292473" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zabeirotvova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d3edfe54-7bc0-486e-87cc-0fb3c6998b0c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvo123vaigavno.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86720003-d896-4f4c-810a-d57be022ff05" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovalohzz.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8dc81e4a-c3bf-4f59-a19c-52fe5db38353" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zabeirotvova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b007863d-6a10-46b2-80ec-146f409503f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvo123vaigavno.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1052fd40-27ce-42be-bb5f-a01f7ab1bfbc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">g1osp1odin1ytui1dayn1vova.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a7c05ab-cd4f-4e80-bf47-43292d3a76f3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f5bb1b88-0859-4d55-bf07-8ceddd7c41fc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">coosiean.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="462a2e09-7a8f-45a4-8a89-aed37e460256" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovalohzz.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e666afc5-9e72-47b6-a60a-f0a4dec9a177" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="44d30f38-36a3-47d4-a457-b0d9a6e40cf5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovu.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1994fda1-2be5-4367-a045-11f1df487224" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabbuhugyfdesxcvo.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="12a5f8f9-13e7-46a6-8268-2eb6e0affaee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogevovaneudachnik.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="95691a8d-ace9-4c3a-bbd1-29df76d62b9f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holopvovochka.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ad07fdb-c792-4865-a743-aa937e6d9f77" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovu.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="193ab11b-455e-42a8-864b-0935e0477fc8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak1.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19fb40a0-fe73-4ebb-b51f-2d83ebebb24e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz81.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6cba4452-90fb-4eae-a32d-5768243f9c09" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoigetulohvova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd28d984-03a3-42b9-a956-bf078f3f594f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pizdakakoivovadaun.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c598deaa-1fac-4949-a895-d7e21d7c3e58" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak1.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0b845220-eb33-43b5-a3f2-bbb4c610e1ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz81.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="989a65df-ed62-460b-b903-7684b7027772" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyda4.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0995abad-6403-453d-8398-fbb4e780203d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvovaigavno.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="281f655a-314f-4c55-8710-d5ea84aa9303" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealnogavno.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="114ce181-0912-49c4-8a6f-f8c5cecb6ea8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogavnovova.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5f7fed2-70f3-4269-b85f-155ff596454d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">spipoicod.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a0320fa3-38b1-427a-a15b-394b2e954521" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9f15ea6-0eee-4c04-89d4-c41c5a48c225" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovujgf.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f506f9a-251a-4e35-8dc6-1139e8931827" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogev3ovaneu3dac3hnik.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c4bf1f5c-393e-4004-a86b-69ba698effc3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ubeisyavovapls.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c9471490-a963-43ae-bdcd-04a335e71dd9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d49b8ebc-df7b-4c63-8ea1-8c4840f77d44" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogev3ovaneu3dac3hnik.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d721e0dd-2c05-4d08-93b7-05df37523599" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="80f28c28-1227-4012-9381-9a0359daa9e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d8c1609-6051-467f-8e4b-25367124f517" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovu.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c9c51bb7-6f67-4f02-839d-eac43c60423d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu678.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ae03a83f-65f3-4144-93a4-8fc1bbfe8a43" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b6112382-f7af-48de-bd8f-40540b8610da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabcgukomotredcxi.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ad008b0-3914-4375-b90a-166951248053" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dljedue.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5289768f-1b02-4057-95ff-3afb2111c247" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyd.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c3c3a60f-7e1c-4dd6-a152-200b9ac14939" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3efea4d6-d502-475e-8136-276ad47ae3f1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovu.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd3a7024-d412-48d9-a666-a0514b01568c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30b0d1ab-9010-4b93-acd3-f022bd2be19f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">centerssweet.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="31723b87-7482-4d52-8279-03efaa0066d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyda4.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="51fa57d1-4c27-4295-86df-8cd5f2c290d0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gospodinytuidaynvova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e9125a0-8c8f-4e08-92f7-008f177f1b7a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyd.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b8ceefec-32b8-4d4f-a611-5c673a5549ff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvovaigavno.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f61d5dae-16d3-43f6-8e44-0b36bf801ce7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">taguave.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c8c27333-263d-4262-987b-15a174671a80" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoigetulohvova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="83716b24-81fc-4199-a227-cc004f1638da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovalohzz.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9dceaeec-1ab8-44a4-b1b0-2f89ec2f4bdd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoigetulohvova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77d8c764-941a-4688-a959-6b6ec7d0f3c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvo123vaigavno.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38f0e41d-a87f-4978-b5d6-04340c081c4e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e418f81-0265-4bb2-ae6d-7903a495f268" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48bebd02-5040-4160-92a2-829de767860b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz3.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f1d55fc-f442-4b71-80b5-6c87a495b8cd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyd.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0279630e-b592-4759-9250-4a92be65c059" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakaa.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2887e26b-e3e2-498f-b2e5-66e3fde12151" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboeb.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1402a89b-47fd-4ed2-a1f9-3a7ae11248bd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tainttuy.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a837a3cd-99a4-4669-86a2-4d24e583fa16" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="efcc8298-8cda-4c59-9f61-10a0ceb4a512" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holodpvovocs4hka23.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e72d58e4-e7b0-4b9b-bca0-d952d160f9e6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak1.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7806bfd4-f623-4e57-b60a-0e113b5d50e1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holodpvovocs4hka23.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b30aa2c-ba42-4faa-b426-0135269cf84f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">boganytuvovaiga.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03975ee5-85dd-4465-9cff-60e031824ea6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterdaga.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="021bedbe-58b6-4cc9-934a-0d9eb5e04447" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoi5getulo5hvov5a.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36e0bee3-208e-49b6-9c33-93169c9cc1a7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aeb2c653-d9eb-421b-9eb9-4f28e664e871" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogev3ovaneu3dac3hnik.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b61301c9-c740-4ed5-b3ae-2a46470bed89" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavnafg.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36f1cfec-cb10-42b0-95b9-26174110e699" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gospodinytuidaynvova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ce9b8ce-463f-45ec-a2c3-d16d061dc8de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavnafg.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5b8746a-b682-4e2c-b643-afb5229c0b57" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnuwkavova.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be62e4d2-b64e-41e0-98f1-d9735b4da23a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterda.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9032f440-aadf-4ba7-8c64-94f80acb5a7e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovalohzz.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e16ecf07-bf13-413b-a78a-00c5b98e6751" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogevovaneudachnik.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="26babfea-c076-4958-9a1c-a5cc7ac5c210" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvo123vaigavno.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="14120c54-39b7-44c4-9a41-15c69022f8c5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboeb.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aca0f591-7c54-4415-b4ba-89b21b307d9d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">h3yiloavovka.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77418bc2-d4d7-46e6-80ad-090c8a265760" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealn44ogavno.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="183c433c-c33d-41a3-bd4f-e1ce44063ab7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogevovaneudachnik.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dd76226c-ad3c-4caf-b573-b52e54d6bcc5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="104eb896-0af1-4155-950d-ced3ac756b02" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">conntsopan.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ae2728fc-51b6-4030-ab74-201dea5474f3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zabeirotvova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="082f5bd3-f756-4a58-ae95-94abe36c0989" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvovaigavno.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="677085d0-dd8e-4c35-a5f5-232654a2ee88" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovu.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fc93b768-467c-4d63-bb5b-b457611a43ef" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon23.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="07afcf9b-1211-46b1-90a3-82c32814c977" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvovaigavno.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d6e026d8-e3e8-460e-8ef9-b0f8fc53b7af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovu.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4a46383-d005-4991-b74a-c03d15ad40ca" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz81.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aebf7a64-a021-439d-b294-4fa048ba0b59" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gospodinytuidaynvova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3a3a9b1-69d9-48c7-9722-f3344052bf01" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zabeir5374hnotvova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5059f378-4fe8-46f4-bab8-86cc600e4ca9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova55.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3bd0481a-d8a1-4018-b452-cd8961534b52" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ubeisyavovapls.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="693335f8-04d9-4a28-853f-b6965a1eda2f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gospodinytuidaynvova.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d8981812-dfd7-4f20-ae85-36aa8d4c6923" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon23.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ccdc2f3-c076-43f1-a8dc-c4259dd4e895" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pizdakakoivovadaun.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b8d65286-4aae-48a5-a286-482f066e8b3b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9cb5be87-ba51-46a7-be27-b69aecadf2ee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavnafg.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89b07670-9d23-4077-b52a-8f2a7c3b1ed0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4a17aa24-94db-4ea6-9080-eadebcf16e60" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34ef5dcf-7ef9-4023-b317-1c26121aff4e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">faverfed.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5632b75c-bbad-43c5-bb2d-489e2a38b858" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sykavovalohzz.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e82e5486-5b3c-48a9-bb25-8fe48dcd1b5e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49ef9cb9-57f5-413f-b4d6-9d14615782e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8040ae83-e911-4c3f-bb79-db0b9bb91311" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dd168452-304b-4090-879a-071a6914b886" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak55.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c134215-65b7-466f-9bce-56e891e62158" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterda.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e2f4481-2a26-46c2-a2ae-de23fb99e4e8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogev3ovaneu3dac3hnik.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="27b3501d-f580-4698-ab30-88e32d0d5c8b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">g1osp1odin1ytui1dayn1vova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5b896fdf-edf1-449c-b324-973661d1f0e4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealn44ogavno.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d8de4f0-28d3-4b30-b372-70fe860b538d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kolpasdri.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="728e48a1-c4a1-4301-aeae-ee3edfcec6a6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabdtuhugfredhoo.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16a2ed42-e67c-4819-82a2-239e40bf8b76" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">h3yiloavovka.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f585071d-0556-4104-8f6e-26e62052d4cb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">h3yiloavovka.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="59ff0504-dfde-4f20-99f6-7f63b5c89329" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyda4.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="980b2389-5e27-496a-812e-fb2eaca6fb5a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda77.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f7a3a47c-872f-4365-835d-913b540896fd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova55.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b1ee8dfd-85db-4b5c-96b1-432118db8928" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e987cdbe-c656-484c-9563-e9487d46cc98" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac98b55d-4427-4251-b11a-4dc54f7b14ea" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnuwkavova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ea44bba-aa24-4436-8b0f-f3a4ada7189f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pizdakakoivovadaun.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="83ac0a13-771f-4ff3-9efd-b9d2b9a184d5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyda4.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a98b1269-2357-4dfa-90b3-2bd24b95dd87" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnuwkavova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3f264ff-bcbc-4acc-9488-fccd03a38c91" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dnfrf.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="656e4394-e9e5-44cd-b310-301519934fd3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoi5getulo5hvov5a.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56883934-fb85-4e09-8000-b1ac67cb0fde" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a5de67c0-aefa-4787-ae1e-307ecb41047a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterdass.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34491877-2767-4f6a-b640-75e00f783d03" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">g1osp1odin1ytui1dayn1vova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a186f003-604b-4fb1-a7ab-06b33c265e42" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09a1e7c8-0bce-49df-ad0b-8c1d8a07d1d7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovuzzz.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3b262210-44e3-49cd-9a65-6b520fc6a979" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabdtuhugfredhoo.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5fb665a2-0c4d-4089-9fab-b9f1e9ce6194" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz81.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="defb99d7-ea0f-45d1-9d0b-f6787c83e635" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterda.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a864f844-9a31-4a66-8065-e2743ac42470" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabbuhugyfdesxcvo.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="286774f0-8dfb-415b-8ddd-4a72c05d098e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogevovaneudachnik.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fc039f44-ceaf-4aad-84fe-26930844850c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gercmikn.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58f616d7-47e7-4cdb-bd01-5c5b9a56d8ad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teoslim.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f6a22ae7-b07c-4984-b444-2de4c3f2d427" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogaasdvnovova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bf2899be-97ba-40c3-aee1-479b1af24cec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holopvovochka.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aada6cf4-6821-4622-9598-eb3ffe592758" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavnafg.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d4177f3-c8b1-438f-8277-93d232915adf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz3.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3524ccb0-9c8d-447b-8676-041665b9aa0b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak1.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ee8e35e1-bd83-42df-aa1e-c8547c57bd74" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holopvovochka.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ca51d81d-8e24-4e7e-b686-77e5dcf240f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavnafg.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fddc111b-ea9b-4fcd-9fd5-b62a51a5c7d1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="08593706-9e7e-4679-903d-9e3af3345022" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azvdrygvovanemyz.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f9b23a3a-c48a-4d94-aec6-6aab0a60871d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboebgh.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c0aaf355-ce68-4bb4-ad5e-077450e10a05" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovujgf.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89c355a7-1b31-461f-9b1c-fa1d82bddd19" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek2.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8adccd00-1a0e-47fd-9869-1675a3282ff6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak55.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8b65219a-35dd-4015-85d1-0cbbe1df5cda" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7045ea51-cf37-49b9-be6e-93e9c8e8d8a9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovujgf.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ed3c48c3-4c6d-492b-826c-e064e61a0906" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">66ygg.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3f8ab753-1635-499a-a191-7f57f5b7fe0c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="247aeabb-74dd-4a07-83d0-ba87e7fe3047" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b28ef22-44fc-4399-b586-e322e8f4b7a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">frrfrfg.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a27db79-516c-43cf-ab63-2773cffc733c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemzz4.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2826cfca-73d8-4f67-ac76-f14c3ede7549" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterdass.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="59f76039-aea8-4094-853e-15f36baa9080" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek2.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8343ed4c-a5ab-4789-9fc2-0528bf2059f8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapizdadolboebgh.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4c3abed8-df78-48b1-821e-7d873c25bce4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holodpvovocs4hka23.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8048870a-713a-4727-be4a-ec54d8df1495" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7f578e7-3734-4f32-b560-5aa2d7ba834c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogenyvovailoh.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38e42113-4f1b-4f7c-a183-c82a09f3ecd0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d977611-420e-4053-bbfd-52e64512bace" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5c1ff804-0595-43f4-a1c8-0af336b26fa8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabazrewdatupogre.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f8ffeb43-c79b-45cc-a1c3-76eebd6c8bae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">villhassgom.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34aae4c9-af60-41bc-805f-45e0e567294e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogavnovova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a670f2ff-5e38-4939-a4f8-3edce0335614" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">h3yiloavovka.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f2746d57-0c17-4208-a668-0850224692f7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zudgunsh.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3710def5-05eb-4792-8d40-7d0090597f02" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">boganytuvovaiga.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d56adac7-b28b-486c-a879-cdb5aa69cb6c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealnogavno.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5ff5dce-ed41-4a61-8af0-7f3a6ad6e225" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dhedhef.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="995e7386-ddbd-41c8-8e9c-21c5d07bbace" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drygvovanemyda4.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cd000c40-294b-47e3-8e09-fc95716b4f4b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealnogavno.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da567cf5-9049-479c-82e5-b793fde1cf89" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vovapro100gandon23.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dd48ed9f-fbd2-4b88-82bd-df8056620247" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lkjhgf.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d7693d6-838d-4e76-b415-b4b45449088b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterda.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3fde433-9e83-4199-91f2-7d9b1142beef" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoi5getulo5hvov5a.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="112b0470-6ab8-4277-b987-277b3c4a9ed6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovuzzz.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f2086a95-6a7f-440c-93c4-5f5f41a3942c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterda.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b0a9dfe-285e-431f-b030-3293354ad022" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoi5getulo5hvov5a.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2efae6d3-d2ec-462c-8069-76d6ceb114e2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovuzzz.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c587e6da-f0c4-469a-8a22-bd2ae3907ae1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabcgukomotredcxi.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b1b682db-c093-42ef-8bcf-dcd28d2ccd89" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterda.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5fdf87d7-90dc-492b-952f-62205c1077fb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz3.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8aef7f04-c63e-4fb1-83f2-94c47001eee8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz88.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35f5dae8-54c0-45f2-ba17-c2c6e89c3124" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">skhdkdvhk.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8b4108ce-0d4e-4b5a-afb0-971fec360ce3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogenyvovailoh.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09de7b4c-0c71-475c-a6fb-a8309d566b74" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoi5getulo5hvov5a.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="05ef7031-e64a-4af6-adbb-8741267513a1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabcgukomotredcxi.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="53ffe3d6-fa3f-4547-8cfd-dab735aec756" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cvovapeterda.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7716006-a924-49c3-9c80-53a2ee184912" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydakzz3.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7161e182-e93e-42a4-8935-06eab1091f65" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnsxuwkavova3.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9d7e45fc-0159-458f-b6bc-287d61160f02" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aadfresawcgyhlkjni.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0157ca50-8608-4bbb-9f82-1fd699e59835" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holodpvovocs4hka23.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49d3826b-44e6-40bb-bc46-4a4136d3377e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemydak1.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a0219fb1-db51-40f1-b72e-85e7283c0245" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealn44ogavno.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f6978217-bf23-4966-832f-09388435a897" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabbuhugyfdesxcvo.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16a0cb44-259b-4144-ae57-d348766c529f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogevovaneudachnik.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c1dbc2ef-cda3-4c95-b570-75edd4ee7dc8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avdrygvovanemyz.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de618226-76f4-4e89-a265-64413a14d21d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabeweddbhujkoge.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21060dbb-0f71-412e-aa60-8495b655d855" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealn44ogavno.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb6fe7b8-8f72-48d0-abaf-389e5424cb95" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kpddkeeded.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="080c645e-e339-421e-a955-fc50075250c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">holopvovochka.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a251e319-30aa-421c-91cb-37ad31cb66d6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bilsuccuc.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5278077-f6ce-4971-8ac5-14ccf01864aa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahyushkavovuzzz.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9af0c370-455b-413d-91fa-f0cdd7c82263" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kakoigetulohvova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b2ac2da4-8eee-4225-8167-481bd2a16a48" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovujgf.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c14431b-0880-426b-ab18-f35161d56e45" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabazrewdatupogre.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="20628a6d-8bfb-4120-9dc9-03ac55694f05" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d9eabdb-2848-4d87-a692-eb6e162eb8c5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zabeir5374hnotvova.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0404db5c-a6a2-4053-b434-858b84360b92" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterdass.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5020fa3-1887-4986-85cb-e9d7bb311a64" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1de02b41-2514-4112-8d00-d9aa85822d62" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gavnsxuwkavova3.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="658e1b99-4053-4cfc-aaa8-0daf757b8b26" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19f4e00e-cb42-4569-97ba-ea2b94e330db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterdass.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="93c91edb-1f50-419d-9e48-ab98c2d2e682" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aktogavnovova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="41f8b406-3a08-41a6-a241-235fcaea61bb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak77.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6c3b815-d049-4d54-bb6f-fe32e9aaa7df" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavna.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="705e779a-cee4-4749-96d8-b66c5df64d88" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apipiskavovu.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c6fe2788-ffef-454d-9eda-5298174662f1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bogenyvovailoh.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb89ee47-1da6-4d39-b81f-cb0b7fd4d022" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakusokgavna.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7dadd7b2-418a-43ba-926f-754662bf6531" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zabeir5374hnotvova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b140c27e-cc92-444c-b307-0061bce44270" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nytuvovaigavno.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="087727f9-42dd-4cdd-8dba-b79000d12088" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">blyavovarealnogavno.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff99e623-4683-458e-aa43-cdf2cc2133f0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">boganytuvovaiga.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fdfb7342-aa19-4427-aeea-adb1ba85f93a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">abdsewwqaguhuvvf.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a06067b2-6e0b-404c-b3c5-5f3ea24f9ecd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak55.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="08ebf962-bb63-4aa6-8005-9555d4d82271" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda77.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad668e28-4f2a-4f4a-834f-c84c08c6a88c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">teoslim.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="435851b4-4e38-4466-a389-2e7801f2d5b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">boganytuvovaiga.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="299c0b44-385c-4c93-888b-d2250fe9b2ba" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zvovapeterda6.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="287716a7-4b38-444d-9cca-aa95940ec433" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lkjhgfd.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5fe955f-3fbd-4b9c-a862-7f25496e4266" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu678.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4916c532-803e-441a-a8d6-5fab270995a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zabeir5374hnotvova.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b0a0a35-2fb8-4382-a25b-14e1716f225e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovapeterda.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="75cc75d9-e670-46fd-a859-04d08fa68093" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bvovapeterda.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="990f2e86-3253-4e1f-b78a-6e14dfa0032b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aabeweddbhujkoge.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6d1c2ed0-ba59-4e6a-abac-fcb3289add8e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aadfresawcgyhlkjni.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1937bfbf-c6ef-4244-9eb5-206093b5d17f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auvovumalenkiu.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f31ea011-c912-440e-a512-a8bb18c99e95" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdrygvovanemydak55.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c6ea3742-3160-44fd-857d-d74232293b5c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovakorova.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="37161976-d702-46ae-8b03-23644a13aea2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avovagomosek.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="04373b43-5f3d-4386-9d5d-54c180330b5d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fvpi8vc90xatpsobtkpscjj.millennium-medicine.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a55ae3a9-1c53-4f11-a2a0-3b569b7381a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cw5m92iiq28a4n2j9l98si9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c0606739-715d-47a6-b13e-4f39fb66170c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">y1qok6y92bq8w19s9e5m2pj.meditationshowtomeditate.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5454e45d-ea9f-4a22-b0c7-39bd3eae206a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yy6md9nghok1751gxwgqxti.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19ea7547-c74e-4ef0-98a2-5321654d7091" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">8z2sy9pt2dk5q1k4lmu1otj.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab4ba655-d48d-49f4-8239-7395954c07e8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dpud67ic6gdxq0aud8ywul9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34623a43-6b7f-4488-8728-0e59d56a4343" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">elg877mta6ttss0hc2nochi.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d53a3216-783d-4061-8087-33bf214e2a32" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">0l6hl69gjhpaeirephehwgm.istanbultop100escort.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af43bb9d-fc6a-43d0-a0cd-cf174f3fede5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9aiectnteuogj6tmngocsrg.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bbefdd0f-6a72-44de-a5a8-84b982938c45" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">o8ssms1t919s5gu21ksqcgi.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="537160c7-c7e7-4292-9a2f-ab731f1abdb3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9m8jw18si9q5922mk1e2tjx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dfcf1733-fee0-48a6-8c3f-39b1084ca829" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zia0rlzghp1igbh76phk4ml.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="31cb2c76-e19a-4299-9f13-22e8a9b7e1e9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">69uwc08gywd7dcmf0rqd6pf.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89464048-e79d-451b-907a-73f3e6060b53" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9ke12k5q1zs6mm1o8h2s2nx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f965320b-b8ec-4d53-9afa-89ec61e47403" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">66ducu8ycdw8wedf7cn0qtm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f56cdff-b970-4ff4-94dc-c24e73738512" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vdc0v1yf8184r6qjszqadzf.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7cede346-93e1-4dab-8183-0747b1e5b4e6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xf8z4xabsfbpa9czboaapf9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e8c55bd-046c-4c51-830a-cbcf9ff4da8a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdgn7yuwd7y0q6hwc0dr8hg.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6d0fffbe-90a9-4c77-acf3-80f2cd717b2d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">4ihhiaidwsh5l6rvkprg0np.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d69d4c14-615b-4fcd-9722-82b0db44d0a4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vahfy1jf81y4r7qods1adzf.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6689706-4aa4-492c-a948-44cd69a12036" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1qx1djrdh0b4f8aq59qxvfx.istanbultop100escort.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="33f4ed7a-a7a0-407d-b100-8567e4437bed" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">g5qscj9dmkoo2128ce3v1xf.millennium-medicine.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="07f953aa-6b87-41ed-8aa9-4f307519939d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">19oepmxpcwbmmap8msnafhp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="172f4ccd-6428-4e9b-88f4-e327eb298af3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dq68vw1vfd3r4qq1ooaylrp.istanbultop100escort.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e9a8e1e-e7b0-4786-bf53-ca39bf1f31a7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cru9ethszcyv98usjyh9umm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f616c9be-9f75-49cb-a6ed-6ede22ea3fce" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">i2xb9xs8pocbppatsxvfe9g.istanbultop100escort.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="99833363-c5f1-4713-842b-1047a7c31666" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sshpliwhr0f46iwoarg3ijp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="85924ab6-969e-4bf8-9e17-c5a4b5ab99ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1g0w81kvyep40yvqn19g3wi.meditationshowtomeditate.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="812fa77b-6d01-49fd-b0e4-87be9b267426" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bltwjlgsp0kekthmy0t83zj.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="003d9e9c-4b12-4958-b7f9-656c67539740" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">y1i0khy91sq8a14so35m2pj.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cd598746-60d5-4a02-bc17-ce576f269292" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xxe3in1ng59a17gwxkqymig.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="00251d6b-cf89-4756-bc71-d5be3c56649b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qi1u4rx418svu1gazqf2dzm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0bf2e094-1920-4c8c-a046-160bc9e13c49" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vafrun1duq4sqo8o1fdztjg.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9a2ab39-6f8b-4019-8ac2-4d8e1356f18f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dkuguh8z349zcr9iiss9tr9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8a153259-3cd5-49b8-b6f7-787cf93e6c2b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pnw0uhc8hhggbzj10scunzp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aa6df7e5-3ff7-415e-b32b-b1bf674a4b1c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fcvktnx5y98fgwlkdymll7x.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c806406b-be37-4296-8849-4a7e4cb1e8bc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yrneilem5luxfkg8lg0twji.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="594493e2-0bad-4467-92fd-1a741e271bee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yywkydmfx45odng716cx5hj.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ee36f15c-6636-4d3e-8a19-3503c22a9b4c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dpsg0p4ihia7qgph8l6rptg.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0acd2e8f-24a9-4248-b997-3147a9463f5e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">t2wjgt1i4ytt03kekz0jarf.matchkwik.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f5b77d1-71a7-4d7e-82e5-4a6509c9e796" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pwlevih0864ia7rgji9phwx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="44825eb2-d89c-4970-bde1-cb1f82e8ffb8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">95umat09jl384whu2sq92mg.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="10b66d8b-1834-44ed-a077-3b274971cee9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9ur13r89azct3lhx8shiu9j.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="375ab742-536e-41b7-81f3-9e201d1a4f50" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">0mfo98qywbdh0apsoapxxnn.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2d4fb73f-cffa-46d5-a0bc-8ddae94206dd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">en4w20ygve3tkel9pjxyttp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4d63474-1aba-448c-a611-07982d3c2792" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cl9wu70dbdc66q6de80dtpm.istanbultop100escort.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4933810-d3c8-46fd-a8ff-b4f0da03d244" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">u7u9ssc9ir1t8muwh9h3zmf.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e985fda4-fe75-4a36-9aa3-5c95854b2f49" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">0ahi9hpwlp9uqgr604j0ipg.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9ce5c65b-f25e-4567-bda8-2e7cde8e0329" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">daj7m22ak98w2a9lqfu4u7j.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de60ec3a-0e99-4bfa-bf59-3a99325b78ad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bpcg0p4ihia7p0oh4l6rxtg.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c65b6731-8e87-4023-9eba-42a694d011d8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pickif89b5hpxpao1pssm7f.merchantparty.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="27a7d650-c303-47ec-9f66-bb67ce2565f2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hgowhiip6c4axax4lrpb0ij.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7aaa7704-7808-4298-92f4-c5e2c84370f5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1lsr4qsvug1r8d11vfsanwj.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="283839e4-f01b-488e-8790-c0df10fba36c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1q01swrdox14f8aq0sqfvfx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec94d93f-92b3-4a75-bc7d-d8978df75895" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.66ygg.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="598d8c00-b1b9-4d9d-a445-11bba63e756f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">7k41wyyxe0g7o5ysmnnxdxx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1183e8ff-30ff-4a54-8f9f-734675c519c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q6twjlgol0ieket6y0tn3zj.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77ce68f7-ff5d-44c1-ab5a-6dce284ebc64" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lu8r39hqw49m16mx98jr2fg.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d50136cb-acfc-4f11-aca4-d1f09f9b2acf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wt0qgfe31k10u09gy1ee3nm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0728ebde-355e-4bbc-bb32-f9a5626e0f6a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">2109ez1kww0glzs35ya1wnf.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7bc1c7ec-880e-48c6-b5ea-1bcb1f22270b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lkncff65yprygtmnwvsli9f.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="24ce7771-f334-4bcf-abb9-abe85cd3dd83" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">19ogpgxpxib3qap8xsqafhp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="31f0fbec-624d-41a6-b7cf-b4eb0b94e057" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fxpo8jv9zxaspeobs6psxjj.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7943c5f8-53eb-40cf-a512-059830a8a355" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jms9n489ualuqu9smwm22lp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="37dcb78a-b63d-420e-b6be-02fe2612f13d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fa4xctntseigi6tmrhopsrg.mediatorsedge.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="82f0d0bd-4d5d-470e-916b-5e82289db0b4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yxg6mxyng7w7ym5x56136lm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf630e3e-1482-43f8-a943-5696c4f4c723" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">6te0matto9u7gc6smjxnogp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2dfbde54-e346-4200-af9e-39b8ef434e74" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">h0li61sprirhcigphha0px9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="67a824d7-a7e6-4287-a67c-374ef578be37" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">20gjoeexwtueklyy2dt3kh9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89097aab-e524-41ab-88ac-c7b4cdf2063f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wyynmkll595ngftail5dyz9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19d121d7-0449-4afc-9b3c-42e0cf9f7240" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fxps8d195xalpmobhgpscjj.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad344567-e426-48ae-ac2f-6c711aa8a8d4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ug7u0u5t8ghwjlghspiclwf.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a8a34ffc-8575-4672-aba1-0795f8a51a73" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">psklw31pc9yee3s915g01zx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e052704c-97a1-4e9b-a4df-1ab4dd1c811f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xky15jk7w7mgkflydnxxwlf.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="687aaa91-cac1-4a30-a6b9-ba7f28801077" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">y07c1udqcnd6648l6waoogx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="39eb21d7-d192-42f4-8405-860391348c33" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdetyhgre.ddns.mobi</Content>
+      </IndicatorItem>
+      <IndicatorItem id="984f9c19-d035-4f56-bc9c-5215c22380cd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">0tlsjneetwygq434kycea7g.merchantparty.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ef9ff4ed-e070-4c3e-bd43-73d91edcb9d4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xmknjxcgyy7t5yrx8w1lgwp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="142f29cc-6417-456c-8038-84e70437e18e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wx8olnfe5mt2ry8gl4yokni.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a824763d-ce91-44b2-8316-346d9e1f3671" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">2vcb9x88po10ppays4cf79g.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23773062-e5c9-4cc9-b208-c8bb0dc77b0d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">4dl191dvwvfedq5sqar8rng.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a91ec877-9a0e-4cf9-9ed7-4d63330bf165" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lw9tk1je8e0y9ihtjg3evpp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8eae1cab-b77a-4326-9ee2-a071ec514515" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">o4adqq1qvwov61pr8f9zdmx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1a8943b5-bee9-4903-ae56-3384e8b3ee41" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">0ypih6a2htr41lgithm00li.merchantparty.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e03251d6-ec5f-4a99-9138-e49df5acd16d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">s93sxao8cappaf89b6pib7m.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8b9a0b2e-6b2d-4a50-8fcb-2bcac927b9a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ts1icuqjr78xuet9hzuf9hx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd2079c1-e08a-4fc7-a5cc-e16b625891ca" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">krotewly2lg959mrknlflxj.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a87c433b-eaa7-45a8-82fc-188bd71cd613" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">0xp3ykwulk9q3me1gye10jf.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="314fc3a2-d0b6-427c-a8b8-3f189a8eff59" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">6l36u083q65dgdcwue7icii.maxvibes.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e8e54a0-d00e-4a0c-82fe-2e26d31372fb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3k70g9mlesw1v1d0yhcs1gj.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a242d05-21a1-4e32-b2f3-13a3c974283c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">e4wjgtazoy2t038ek40w4rf.meditationshowtomeditate.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5181719f-f600-4e12-b346-d091220ddddd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1o8mo1s8w81k5oqj69s2slg.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="acba6a10-7a7a-4e3b-8c9c-5c54f5086989" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">og6mmco8t6astulneowtlp9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4345a39-6a90-4309-8f32-3d923ac499a4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1dlw91koneal0ytok19g3wi.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1936a65b-8843-4796-b7f1-f26afb33a222" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yxo29r1n65ksl7gwxk0ymig.millennium-medicine.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fc3650d6-8c98-4c7f-a144-b7853337b1b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">o1edk7x916q891dsol5m2pj.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8246c94a-e00a-4a06-a42b-8a8ad381197d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">7e73te5t07j0rggykgw5rwl.mediatorsedge.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dd8898e9-6f84-466f-b3fe-820eb8bd103d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9ptibz8ul95ws3rhu2cr3zg.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="adcaf638-f81f-4f30-8194-521262a5db78" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">6qydu08mqipdmdcwsx72cii.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="afa24ca7-7717-4bde-b384-61d13d64b60e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.66ygg.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="39b1183f-44da-449f-9aa9-f4f11a51723f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nrglox91m7zg5mwgkyyxyg9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="53264b7a-1b3a-4b66-a36a-bca8e8cb99de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">m17v9w4j9tuqk9lf42sc8hf.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="285cfb96-15a0-45bf-af5b-ab707358256b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9ouvuh8s6p9zcrudhs19tr9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d344db63-9f77-4a6a-aa28-00b2d0b2185d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">upisiigl9kh64ayh10atrgf.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c1240219-c461-4b86-9f06-f415eb44e3f1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yp0wu7018dcq6q6d58ydppm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f83ac9c-29f1-4f41-a652-0f7a723695d6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">m6ctt0tergszkk6naomhvt9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c088f0a5-6ec3-469d-b149-7183a5ef3e3e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wc0tgue31k1l869ky1e9ynm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56791f28-619f-4824-ab79-d6ff397afec0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">c5lr27zhzth1s98sv99umff.merchantparty.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c4466f6f-cd65-4237-882c-5d86fda9b9a6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lkn04fa5y9kygtmuwhtlr9f.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="067b3bdc-e176-4f7e-9d8e-26c3281982e6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nr8lsxr1m7pp5pwg5yyxyg9.istanbultop100escort.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="007d6196-dafe-43de-9def-5c3bedef81bf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">shju1i81x0hj0ogcpnuudwm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="79354c6e-7f25-4a98-9922-2e6071b0d266" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">x5qsuu9emkoy212804c21xf.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f2fed276-d4ef-46a8-83dd-0202c9081d73" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">h0ilu8kg8f4qhpcjhgismlj.merchantparty.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1203cbf0-85bf-414a-9644-15f02df717b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fa41dsq81118m7rv7ds6t9i.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="92e1ba64-aebd-48a6-bad6-388dcbcd254c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">65y6u082qnjd5dywa777cii.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af819c58-f732-4996-8509-1c769799cb3e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">0l6hywdgeh4aviripcchkgm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89396766-71d0-49ba-ac37-10de0344576d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9pu2mk5q104tm8198r2s2nx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5a99dea1-0d23-43ba-a5eb-68be60ee70e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">982hijju0iguuutspchcuxi.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d4f4cd61-e386-426b-8f40-96ab225501f5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">87mt15p195221skqoq2g0w9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="60001554-da88-4be6-97b6-ade5444e9501" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ywl4tte34n07tijgk830xfi.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="add5275e-c961-4284-93df-7ee7df13f5e4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">f109ee1kw20gla93by4eenf.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c235d6df-8178-4112-a9c5-9222718a5710" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">shlh8g8dx9hj00gcpduuowm.istanbultop50escort.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="83b335e9-9687-4b27-82f3-c411cbe0ed1a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">29u82ujtlqo22w8ph294mpx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="426071e1-d8df-40f9-bfef-3b4372efb68f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">czirp9fhzthfs98vm9uulff.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc2e7a14-55cc-4174-ae1d-99a9958f4a34" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1ujh0hi8vpe8hudfsxgfc9x.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="14e353dd-9c22-4a3a-bb8c-b6c19cf7c935" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">534x1m2kov9n1q821lsoq9p.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad35176d-a137-4021-a280-4d66fe474621" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1wy0nhrxmm5xjj75g3xmdmh.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="482bb275-ab20-4143-9899-9501a405881f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">l494mws23822q8j3oeo9otx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aeb7d3dc-66b4-4822-9da2-9518271510cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">q9851ok34s792k1ym5qk1tn.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56c6e6a4-98be-43d3-bfa2-3d3881508eb9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cyfrikcizth7s98iq9uuoff.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="283920a9-23e9-402f-b82b-e73f1fec1ecb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ngujts3m6mtsaqt1sr2colx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f05ea6ef-aa0f-45ca-b2dc-b33e45434dbf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">i2ulcm8z3wd76cx10kqd6pf.mikelperezhtn.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f29854a-e06f-41fd-8062-1342cb50d413" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">5uto1m2kg5961q821fs9b9p.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c37aee2e-4aa2-41ec-a30a-4798c7c4577b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">a9axzjpn8bspmheonpcfjm9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="94da9a77-e8f2-49c1-a87b-ddbdb3d3460c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hgelhhi96rnac2xplrps0ij.maxvibes.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6751e200-46e6-4868-b370-889dc764bfe0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dq88vs13fsvr4qq1a1andrp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17253218-60be-4408-b179-9d92086e3e87" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mocptfvcp8basqdxya9phrx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="69ac3613-e8bd-4644-9353-8080371a0256" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mx3w1ey0kkxg5n08qsxn7pi.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fdb230b0-157c-4e0d-9ff2-58886935e000" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">o39ciru9psvitbhu5958z7i.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b46f88b-748b-47d4-9d61-80de314fe31c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dt5douwfmgyf1ybnllalk9m.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c49c7985-e73e-47ea-8f1e-3e304837322e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cxtjnewgtp3t6mognsgtafj.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="54887dd6-c485-42c7-9efa-8d00c924cf22" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">7le1w03q2gf1kkg1iy9ee99.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6480c840-de76-42ed-9999-e70debcdbe28" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nufmsxp1m71u5gwg5yyxyg9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="95174c63-709a-4da9-9628-a608da0c7401" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cutufz8i9drsx9szuckchfm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ef9c9df9-da2a-4b45-b6f3-823b25cd9ca6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">futuk98h91rtg9szuc2ahfm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbe1e29b-5867-408e-bdfb-12aea37a5861" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">c4pwu70mhdcy6q6db8gdnpm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ad94411-e3fa-4867-a000-75701d5a3d87" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vafr4z1d6q4sql801wstijg.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a32f7d31-48b4-4ba9-966b-6c08d6886cc7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mxdw1vy653yg5nuh5axi7pi.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce2f3a3d-0bb0-4546-b58d-4ae3b4cb0562" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ezwjgtwsgybtl3pekl0aorf.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0fd9796a-b25c-44ae-904d-d1bfb72b25a9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1ttut0jeitkwqlg4yl3lymi.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3afcbbf3-f0f8-44e8-bd92-d6b68b01699e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">6tskmamto8gjgcvsmxynogp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7703038a-be3d-482d-9a24-d9ede3937d0e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">p0gj4eetwtbte0yfa7t3kh9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3aa9621d-3df4-4522-94b2-eb2e6efbac8a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">m5ot4tbe6ki7tcnusag9xif.merchantparty.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="397586d4-3dd5-4f1d-a0a1-77c5c2bd3404" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dqk8v11yfdkr4qq1p2ae7rp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="405e88f7-c1b0-4da0-9f70-b29052ee8485" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">o0wacyrw7uqdcr68ddtcqtf.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="65e4e9e6-c10e-4bad-aa40-f3f3479fa54b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">r37kweeajkc2etgyetl02rm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c959a258-7942-4cc0-acb0-b4835643557a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9988ecjelqh2xwac2294mpx.istanbultop100escort.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="778fd4c5-5a00-498d-9e41-f3ad111b013a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">du1qqo8rqvamkdrfd6a1479.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1935dfd4-3d83-447d-b363-0b6d6b20c137" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">x5o15tb7w7mg96oyonxyxlf.mediatorsedge.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9466a5f7-6c48-453c-b6a2-896c1e45acb0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">o9s8cqoakfpaxpxpbxerhzi.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e1d1eb7a-8363-4bba-9c86-15edd3054560" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9utu8v8h9yr7c9szucjqhfm.istanbultop100escort.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d70e7bba-a362-4398-9d32-30655757a945" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">11y1dbrd5e44f8aqv2qzvfx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="870cc596-bd34-4d1f-b0eb-38f662cced2c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vafrrv1dqq4b1l8912d22jg.maxvibes.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d6ad38eb-4a97-4299-a81c-62fd1118ef25" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">k7u9sqc3fr0t88u7h9hkzmf.maxvibes.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eea2d830-04fc-42c3-b759-e23d51e5a876" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hgz2hhi26f4az9bplrpm0ij.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9c72f00-4aaa-49c1-969d-0986675acd9c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ybnyglxm5ytxf5gnlortwji.micah.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="363f7491-1671-47d4-a949-6262b3914d8d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sp15q82doke1s0b2n29mrxm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cda7fdb8-9689-436d-ba77-849717c88455" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">5gftmwly60g654mhknlfyxj.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="330857d9-702a-4f7c-a31c-b0bc633a6a25" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">c9hr0utuhw6ulszc98ep8ip.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="662d036f-f868-4fa7-8283-d25b3057b60c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hg8jhhir6hna6pn4lrpv0ij.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="232c3d70-d10c-4b85-b950-775df1ca881e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">60eew036nce1gkg1fy9de99.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8e110424-2291-47b2-ac1f-40f9b314920d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">5uet1m2k289g1q821es9x9p.istanbultop100escort.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="503bdd69-ad6e-45e2-b8db-dd6de43fac41" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rg6mmcv1t2asmmknso8txp9.istanbultop100escort.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f12c6ed-510e-4f16-9a0d-c3d63f820602" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pt59f6wfmgy77yjnll7l59m.istanbultop100escort.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b87be62-54a4-44b8-9098-03b95e259f4c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">e1w9guy8g141l3g3k20e17p.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d1e79251-72c3-40ae-a830-ecb18b54e37a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jdcb9xk8po0jpaaus31f99g.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ca54c1b8-bdd5-487b-a255-61b288a61c49" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">i5u9sfcsir0t81ush9ilzmf.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="93b2563f-a97b-44b9-a1b4-fae3b66f05cc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">2bphg6axhlrpxlgithub0li.megankristineblog.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ee01741-1683-403c-b66f-77a094996fbe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hs0iqpkhzh8us29g5hcjun9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="40161e4e-42b6-4109-be46-dba21f08e81b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">8u6gj6hwddtdc40cqveq7xp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="29d37a00-a7a4-4d10-bc43-7a0423c1d467" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ewpn0a1g3418kll90us1yxg.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b9c6e9e7-8723-457a-b9e8-e987aaec5577" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fa41dbq8115ozmrvzdbtx9i.istanbultop100escort.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff748cdf-890f-4203-85d7-ea3a1bbec45b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">9x19o98opcjasapqa0pbfnj.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="75c63310-f68e-4547-8b8c-3a5c6e40619e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">w9pw4lh18lmq8o292j4unz7.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b49c1e8-45bc-479a-bd0a-b987ad2f5777" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">66d05ujecdv8w1dv7yx0qtm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="faa96c09-e972-4fae-b075-fa6dbf2b2871" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">4tlqdih0o61ia0rgqhxphwx.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4768a97-3bda-48a5-bd91-c5f7c6f80c77" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tcwjgtg90y2tl30ek402prf.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e3b66a3-6259-40c7-870d-bc5289ccfc10" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qm8yn7p3ktf5uglwrzllymp.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ecfaa7f5-d678-42e2-b863-0f2f8e5979df" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">s8kvh7hij6g06gu1uhspcj9.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3056e921-5bed-4a4f-a460-8608392564f8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jitlz82w22qw44mkd9k9uhm.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38fdef37-e99f-4e9c-876a-a889e3afbf42" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">2h0s8ickxbj38iha5hgpugg.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="317b7b80-d3c3-4953-b6c9-1a8cb2d2b8af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vk04eg3et6klvjbk3tyewix.izmir-escort.web.tr</Content>
+      </IndicatorItem>
+      <IndicatorItem id="436e639c-a2d3-4de9-b5a8-671eb59ebbef" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">8eq5a181sd44y61vf2d8rx7.mikesin.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d2e714b-54b1-4d19-a9c0-8b42fda0c3e8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">0p936kwzlw97bue1gye1ljf.meditacionesguiadas.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5712ea7e-a587-4c2c-8183-733910b449e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mx8w1wyok9xg5nnr72xo7pi.medservnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0039b8be-73cb-4586-8ca1-ec4429bec804" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">184.105.163.251</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a24f7f6c-29ef-437f-b3a7-4904f8be9795" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.44.105.102</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28d21828-8e7a-49cb-84ef-ef0d440e99f2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">107.160.73.40</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0dd71d2c-db50-44da-90ff-3aa14c0ebf1a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">46.101.232.193</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23b82d2d-2e3b-4b45-8379-2237918f97cc" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">46.108.156.182</Content>
+      </IndicatorItem>
+      <IndicatorItem id="59d4842c-ac76-4092-b246-8ce19521e47e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">188.166.1.98</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd8d0be3-833a-4f3a-bc6f-1fd6e315063a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">babkokohtybvcfreso.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b84e679b-2659-4700-ad20-0f6da4905146" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bacuhytgbnvedhhko.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="71101952-e73f-4721-89fa-660fd39b8ffe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bacuhytgbnvedhhko.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d7e1523-e94b-436b-a60b-0c7c1977234c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">free3dprint.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a1175c0c-0079-48f7-a146-673d8e26df4f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baazsawetukovcsa.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ff93585-cb1d-45ca-913e-24a6c57572c1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hokydisma.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0c7d9d24-368e-43b0-af28-72b576e243a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">susdrego.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f62965c-d80e-4d17-9b92-f63741601783" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">babkokohtybvcfreso.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="adf8e060-6aab-4d6d-a43b-f169afb96cd6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">babkokohtybvcfreso.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4a83c8a9-eac8-4e45-bd40-cbad4d04c207" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baazsawetukovcsa.tk</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf90dbd2-654f-4742-8f2d-560a3ef34b80" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">babkokohtybvcfreso.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c8f86eb0-8805-40d6-a331-69893cd6710d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bacuhytgbnvedhhko.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ab7fe58-b8e3-4bc9-84fa-ec5c757d3102" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">babkokohtybvcfreso.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="54fa76be-c37b-4cd3-b59d-01ed9ada93c5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bacuhytgbnvedhhko.gq</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad0d225d-49b2-4d91-be1e-7fd8abf6b0ed" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baazsawetukovcsa.ga</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4fa16bc0-9a00-4ae3-bcdb-341a2230285e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">free3dprint.cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1436351f-d13a-4356-b79f-d943bae82188" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baazsawetukovcsa.ml</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e2ac7305-a43b-488f-8d77-21c107227df5" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">89.238.181.74</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46e94de3-1009-4ab4-aff3-a033bdd6f447" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.85.21.30</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

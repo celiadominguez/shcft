@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="ce9a52ab-dd65-4041-9390-8a3540614d53" last-modified="2016-07-10T09:36:45">
+  <short_description>Scanbox II</short_description>
+  <description>Scanbox II</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:45</authored_date>
+  <links>
+    <link rel="http://pwc.blogs.com/files/cto-tib-20150223-01a.pdf">http://pwc.blogs.com/files/cto-tib-20150223-01a.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/54ed25fb13432a130fcdc1ab">https://otx.alienvault.com/pulse/54ed25fb13432a130fcdc1ab</link>
+  </links>
+  <definition>
+    <Indicator id="94b94c7d-93f4-4e42-8538-3b79b4ec40b1" operator="OR">
+      <IndicatorItem id="6262aab5-5778-46b6-8eeb-8720a2e91bd1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">webmailgoogle.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4e02be3-8545-43ef-af7b-77b8d421aaf8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">googlecaches.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bb944f09-8722-4290-8dab-3d824546b8c0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">googlewebcache.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="25e3c5f4-86f3-4db7-af1b-c16fd114e194" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qoog1e.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e5ec430-c38b-45ab-92ce-957e5aec856d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">e8a8ffe39040fe36e95217b4e4f1316177d675ed</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55e3dddc-bf4f-4be9-be5f-1e33f6328d0c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">809959f390d5a49c8999ad6fff27fdc92ff1b2b0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="25e079f6-44a3-450d-9d79-32fb2877addf" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f1890cc9d6dc84021426834063394539414f68d8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ab75ca6-0b15-4209-b6d1-824bbf98fbbf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">us-mg6.mail.yahoo.mailaunch.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="25ac5fab-b7fd-42fa-9153-b7001142a6de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">news.foundationssl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5833fbe2-7181-47f5-90a3-06ec59cad4f0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">happynewyear.dns04.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e45f27cf-fa4c-43f9-8b1a-c3d3836d0a8c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">file.googlecaches.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="99042849-40c7-488b-8069-012a5bffafe3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">js.googlewebcache.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f78a44e7-f4be-4f8a-8869-f0b2d6b2d4ff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gtm.googlecaches.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="727f9f54-8ac7-4e1d-89c4-34cf760edde1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">owa.outlookssl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ef9ef17-8140-4822-ad9b-591818bc82ad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bak.mailaunch.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5af64973-9b3d-4525-8ba3-167aa8ea5e45" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">118.193.153.227</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a82a59e6-5898-47de-ac63-02a3bfafec8b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">174.121.122.73</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3f2fb709-20f8-4ac6-a124-b5802004f0f8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">88.80.190.133</Content>
+      </IndicatorItem>
+      <IndicatorItem id="50e9616b-8c8f-4c8b-a191-9529242919ca" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">118.193.153.221</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c16da56f-c4b1-4e1c-b4ff-35dca753d65d" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">204.152.199.43</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aae6d96a-bf9f-4dfc-8ef4-4b5afc44443e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">50.2.24.211</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6022b65e-c791-410d-b84d-dcfa7efb88c1" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.255.61.227</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d8ff12d-8de8-4d8b-b07f-1626c1ea15d8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">122.10.10.161</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6eb58766-0ecc-472e-aeab-3aeb47880c22" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">115.23.172.151</Content>
+      </IndicatorItem>
+      <IndicatorItem id="feca7457-ff69-492d-9abf-cf6846583f52" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ab58b6aa7dcc25d8f6e4b70a24e0ccede0d5f6129df02a9e61293c1d7d7640a2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="497c5508-5bc3-4fd3-b56c-5c79fcbde31b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">4639c30b3666cb11b3927d5579790a88bff68e8137f18241f4693e0d4539c608</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e913f934-f56e-47a0-9409-8314a8644a7e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3b8d7732de3b3c8823d241e7cd3185c4</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="0b682a74-18ff-4a59-8732-9104040d1582" last-modified="2016-07-10T09:27:29">
+  <short_description>BIFROSE for UNIX</short_description>
+  <description>BIFROSE for UNIX</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:29</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/threat-actors-behind-shrouded-crossbow-creates-bifrose-for-unix/">http://blog.trendmicro.com/trendlabs-security-intelligence/threat-actors-behind-shrouded-crossbow-creates-bifrose-for-unix/</link>
+    <link rel="https://otx.alienvault.com/pulse/56d700e84637f2499b616c59">https://otx.alienvault.com/pulse/56d700e84637f2499b616c59</link>
+  </links>
+  <definition>
+    <Indicator id="86bf7e0e-c606-430f-a9f2-f9796fa7f721" operator="OR">
+      <IndicatorItem id="14f4356a-4fde-4991-8e86-662d326168c7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">3d3bb509f307db97630c297bdb985c83d8a40951</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2c60c7ca-bb18-420a-a418-f8df3aae1e6a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">218be0da023e7798d323e19e950174f53860da15</Content>
+      </IndicatorItem>
+      <IndicatorItem id="84ea645e-0541-4e21-8491-831fa3c1b5ab" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5d8b228e3014b4eb579e380b3a1113dd8c0d999a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aac76303-366c-4cbb-801d-8b34fab10083" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.246.247.103</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02655a51-f60a-479e-8e4c-3fbee1d1622c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">202.133.245.251</Content>
+      </IndicatorItem>
+      <IndicatorItem id="32bb1afb-d624-4cfa-9e56-ca9aa2f3efbb" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">58.64.185.12</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="63a19066-f3a0-415e-a5ed-4612b267e357" last-modified="2016-07-10T09:27:50">
+  <short_description>Widespread Malspam Campaign Delivering Locky Ransomware</short_description>
+  <description>Widespread Malspam Campaign Delivering Locky Ransomware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:50</authored_date>
+  <links>
+    <link rel="https://blog.cyveillance.com/widespread-malspam-campaign-delivering-locky-ransomware/?utm_source=social&amp;amp;utm_medium=twitter&amp;amp;utm_content=2&amp;amp;utm_campaign=Locky">https://blog.cyveillance.com/widespread-malspam-campaign-delivering-locky-ransomware/?utm_source=social&amp;amp;utm_medium=twitter&amp;amp;utm_content=2&amp;amp;utm_campaign=Locky</link>
+    <link rel="https://otx.alienvault.com/pulse/56f5247d67db8c7e7162cfe3">https://otx.alienvault.com/pulse/56f5247d67db8c7e7162cfe3</link>
+  </links>
+  <definition>
+    <Indicator id="c0a558fe-7482-4bf4-b2a0-a0fe06fc4484" operator="OR">
+      <IndicatorItem id="75f2f061-b839-48ea-807d-c90d5b9a4823" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tkkykeqa.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7306dd92-fc3f-4fb1-881f-7ee3798b5292" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">njsywiywdkduqf.pw</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a26527a3-3606-4e60-960a-3f5a970cca86" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">iwwrrkudr.pw</Content>
+      </IndicatorItem>
+      <IndicatorItem id="92b1f4d3-44d2-4602-ac86-9a23a82169ec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rxomuatv.work</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fa7816c6-4ecf-48af-a99f-b4aaeb80be95" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gfjyfmpujgrmwnsge.click</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e39319a9-9c03-4894-9e52-f371d42b3dab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apahmkwd.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cf490255-f3e1-4bfd-9911-ba91c3badc6b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dctalnpaqouul.pl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2872cb9b-87e8-4393-8e89-b112092539f6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hgdfckemfh.su</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c3315d7-0566-4cc3-b7fa-42e8cd5e9614" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rhesnxtgafwsxlj.work</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c631c75c-9109-4ecd-b35a-60268980acf5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ctfikhkllrtos.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e500ba7e-d42e-4957-9259-62524282b619" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uoyhjglovheagq.click</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e4560ec-a106-4c2c-a58c-b6f25bb8e2eb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aqpsebjtrlhkqc.pw</Content>
+      </IndicatorItem>
+      <IndicatorItem id="62ff25f6-30dd-4989-b8d2-3531864ea8ee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xllxdsdb.su</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f2fe03b-c96a-4374-ad43-6fff63b96260" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kokinkmnjclb.pl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="093be1d1-b3cf-457e-afb4-3c389a3c3148" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">txscftg.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cdd5025b-dceb-401c-9d63-99ad96e30171" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pespmgllshllawl.pw</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e63bea4-58e9-4e5d-94e2-c28242076daf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qnwssjypbkg.pl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d07bb849-e7f0-4ac7-b410-7f579b5eb537" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">liyidvxt.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d1926949-a54f-4245-8f9e-ba0cdf44f63a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bwefjxmug.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ea289b3-ec72-4f4a-8661-34a7b5849141" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">angleeseng.com.sg</Content>
+      </IndicatorItem>
+      <IndicatorItem id="44d43a95-eff7-4f52-8eca-3d49f374364c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qbhaqxgt.xyz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="529cda22-9cee-48fe-bdf4-7bdbf1e2b1f8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tmmkjuy.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0b06e9a6-f7c6-4ee0-8f5f-c7ae314e9ebc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">edbfweandaenucdv.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e8b4a24-387c-4263-a05a-a967c16de8f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sjllohtye.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7a89a74-b2fa-45b9-b2e5-1bd7573a7120" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">iklhklchoysy.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d9d8fd4f-890b-420a-996d-af851ebd6c29" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">196893382e49b4d51d1ec82e3fa4a9c0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="75b68f63-db24-46d2-987d-2a3acc13a8e7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">eabc24136adbd001b760b0921ae34b3a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="26fa7bdf-b04e-4ab6-8e15-2a2bc1fb9a77" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d450a17f72724e558a629d5feeff3ecc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb71eb47-536a-4e9d-aee5-3a1e21daf591" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">acd788e3631943e41412c7a0d657ab67</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46bca814-a679-411c-9cb4-513fe5d6b6d7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5f166b5f7ba8b28bb3671fb03e59c41c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9d414904-ded1-4c05-ba52-de4e478ac5e3" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.9.103.191</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

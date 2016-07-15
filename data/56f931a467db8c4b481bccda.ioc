@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c76e3209-5265-432b-8b38-1803a2e43701" last-modified="2016-07-10T09:27:44">
+  <short_description>TREASUREHUNT: A CUSTOM POS MALWARE TOOL</short_description>
+  <description>TREASUREHUNT: A CUSTOM POS MALWARE TOOL</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:44</authored_date>
+  <links>
+    <link rel="https://www.fireeye.com/blog/threat-research/2016/03/treasurehunt_a_cust.html">https://www.fireeye.com/blog/threat-research/2016/03/treasurehunt_a_cust.html</link>
+    <link rel="https://otx.alienvault.com/pulse/56f931a467db8c4b481bccda">https://otx.alienvault.com/pulse/56f931a467db8c4b481bccda</link>
+  </links>
+  <definition>
+    <Indicator id="ec0bbcd3-ee35-4a38-ab13-432ba026a548" operator="OR">
+      <IndicatorItem id="4db79507-38a2-4228-9c30-057ce78534b0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">friltopyes.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="87ea2cc0-e5cd-4507-9776-c69fc51d2175" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cortykopl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="14d37e83-88df-4ad2-8bda-82278b40a472" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">seatrip888.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e86f576-7c4e-4600-a4df-fe94dee629ad" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">3sipiojt.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ccd8bc0-d2a7-4807-94d4-8d6f91848e90" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">millionjam.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f90aa1f0-3754-4379-92d4-0a98a85ffdf7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cec2810556c63e9c225afb6a5ca58bc1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bebdcb6e-2ff2-4852-ba7b-23074ce21366" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ea6248e4ddd080e60e6140ab0f8562e1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6c5e88c-909f-4d35-b5cb-cf611f4a664c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9f9c2e6072e0a233631d234bdcf1b293</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5099fdb7-8a99-4a9b-880f-67956e981155" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">070e9a317ee53ac3814eb86bc7d5bf49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06b041d4-08b4-4831-8a73-6fdaf8a8c723" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">21f99135f836fb4d3f4685d704a4460d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6733f290-d234-4679-b799-258ef90d9d13" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6a9348f582b2e121a5d9bff1e8f0935f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="722759c1-35f7-448c-bd9e-533c74aa4984" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cb75de605c171e36c8a593e337275d8f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6f0bbca-9bfd-421a-8ea7-251300c79497" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3e2003878b364b5d77790109f24c9137</Content>
+      </IndicatorItem>
+      <IndicatorItem id="acb018b0-85f1-4328-863d-bb3f376c0e21" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2dfddbc240cd6e320f69b172c1e3ce58</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7a15eb92-d197-47f7-b7f7-1945121e1c3a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">48692beb88058652115b5c447cd28589</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7550c8e5-906b-496b-86e5-c3a90a9e77fa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">logmeinrescue.us.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3b5d04e4-eb7f-4039-a233-ccefd084c4c4" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">179.43.160.34</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b2efb0d3-6682-4623-913f-a44baead32d0" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.232.29.83</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

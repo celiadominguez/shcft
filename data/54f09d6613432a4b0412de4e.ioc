@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="79187198-3f38-415d-b4ea-17f5ca79f4f9" last-modified="2016-07-10T09:36:43">
+  <short_description>Possible Anthem breach indicators</short_description>
+  <description>Possible Anthem breach indicators</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:43</authored_date>
+  <links>
+    <link rel="http://www.threatconnect.com/news/the-anthem-hack-all-roads-lead-to-china/">http://www.threatconnect.com/news/the-anthem-hack-all-roads-lead-to-china/</link>
+    <link rel="https://otx.alienvault.com/pulse/54f09d6613432a4b0412de4e">https://otx.alienvault.com/pulse/54f09d6613432a4b0412de4e</link>
+  </links>
+  <definition>
+    <Indicator id="e2e4f702-cb38-486c-8930-d4d07de5f29b" operator="OR">
+      <IndicatorItem id="8cbd247c-02e1-4f7a-bb7d-8935f2fc56fd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">outlookssl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30ce09ad-8b85-4011-8f2f-f4fbeeccd868" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">prennera.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="25a4acab-9a52-4240-96fc-ad973faa38af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sharepoint-vaeit.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a686934-e0bc-434a-a29f-99c7b7be4076" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">topsec2014.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="85d7df00-2477-451e-ad9f-b9e5b3584519" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">googlewebcache.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1eae6937-bc67-4a53-949c-ecfc9900ba2a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">we11point.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9ab64ae-5a3a-478d-839b-49845fb35c30" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">opm-learning.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="64e0c2ed-5e1b-4f60-9c14-e14419af7e71" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">images.googlewebcache.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f6db9d2e-4984-4801-8eac-52a3926625a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hrsolutions.we11point.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="97f1d650-dd47-4e26-aabd-331b731af6ff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">extcitrix.we11point.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e27f565-9e0c-4e2e-bea1-e7d9b2bb8fd4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">smtp.outlookssl.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="097da89b-b55f-4d3b-a13f-8aa6aeddd730" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.we11point.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f7b572b-2ad1-44c9-b278-9097f9556a8e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">142.91.76.134</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c408923b-27db-4b59-aa0b-575419ddd94a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">192.199.254.126</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fc20bbdd-e8cd-4628-b368-0cd8304d5954" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">topsec_2014@163.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="06c25748-16b6-4d94-86e2-bba99723b0ae" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">topsec2014@163.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b13e87e-e7ee-4e59-91d3-9ef09d658dc4" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">li2384826402@yahoo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a8b2d02f-b95c-499d-b203-cfa958a9be87" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0a9545f9fc7a6d8596cf07a59f400fd3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57ea8dbc-b184-4eba-90e6-0997ada6e519" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">230d8a7a60a07df28a291b13ddf3351f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5af06ebf-c5b3-4ae9-a0bf-a5c63b361e45" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">02fab24461956458d70aeed1a028eb9c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d3313865-5258-4e0b-b4b3-302b681f31d9" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">98721c78dfbf8a45d152a888c804427c</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

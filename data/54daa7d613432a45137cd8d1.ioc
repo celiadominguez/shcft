@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="5436fcb9-b368-46c2-87d2-c47d1873ce23" last-modified="2016-07-10T09:37:06">
+  <short_description>CrowdStrike Global Threat Intel Report 2014</short_description>
+  <description>CrowdStrike Global Threat Intel Report 2014</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:06</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/54daa7d613432a45137cd8d1">https://otx.alienvault.com/pulse/54daa7d613432a45137cd8d1</link>
+  </links>
+  <definition>
+    <Indicator id="9be7291a-ca15-45dd-b893-21d9fbf9ec31" operator="OR">
+      <IndicatorItem id="bf2d2827-7cfc-4fdd-b6cb-c35ffb3cd05e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">chromeupdate.authorizeddns.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="20617c2e-145d-4b40-80f7-024b98763d4b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">googlesupport.proxydns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="946e8d34-ee53-4ea6-bbd5-7dc8182320cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.verizon.proxydns.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aea2feda-6901-45bd-8f75-cd2f19b766fc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dns.dubkill.com.in</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9fdc540-9518-46db-965d-279d3b99976e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.gobackto.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e4798cd-bdab-494a-a227-93d274b41bd4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">newss.effers.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9ec72c75-2e89-405f-82a2-387850da6d2b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">oa.ameteksen.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="31911c93-8d96-46b4-8198-d48083743510" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gifas.assso.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="87de955f-0947-441f-a46e-2dd9393b720b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">203.135.134.243</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ede6ac60-b3d3-4b65-9157-cff3497c0cfa" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">202.181.133.237</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ea87241d-549c-4b8b-9920-34e307d9c072" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">223.29.248.9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e9a50c6-8589-4d27-a481-f4c2d8999b5e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">61.78.34.179</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2ab9fbc3-a3a7-4cb3-a44a-402f17f7a688" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">199.91.173.45</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

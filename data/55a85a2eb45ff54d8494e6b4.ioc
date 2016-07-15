@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c31d124c-67bf-4147-800d-4a677af55001" last-modified="2016-07-10T09:32:57">
+  <short_description>GamaPoS: The Andromeda Botnet Connection</short_description>
+  <description>GamaPoS: The Andromeda Botnet Connection</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:57</authored_date>
+  <links>
+    <link rel="http://documents.trendmicro.com/assets/GamaPOS_Technical_Brief.pdf">http://documents.trendmicro.com/assets/GamaPOS_Technical_Brief.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/55a85a2eb45ff54d8494e6b4">https://otx.alienvault.com/pulse/55a85a2eb45ff54d8494e6b4</link>
+  </links>
+  <definition>
+    <Indicator id="a8eb21cf-59ce-4537-b099-6ad5fdbac5ef" operator="OR">
+      <IndicatorItem id="20d8e7bb-b91c-4926-8607-af9965c318e4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">richdilly.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01737504-0c02-4171-bbdb-b966fa77b693" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">alexawork.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8381eae1-ab28-4147-b4dc-ae9b437f4853" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">andromike.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f9b0702e-5f22-43bf-b015-66f18c1d9b84" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cash-lord.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e4b73b2c-ea6f-4f86-bc15-c5cb58e4f9b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">paulcrabs.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="68552a7a-d534-415a-acd0-9eab6b641b0b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wwebapps-mpp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d42b949d-30b6-4818-8e3c-eb8d695acd62" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">andropaul.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e7982d2b-8338-42c9-ac9d-ac5ead03314b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">palevo-inc.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d3992770-b9f9-414c-baef-d22d4c869b50" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">androjose.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="142ebfc0-d81a-4617-af87-c73acaaa1e3a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eigh88.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ad5ca15-9ad7-4ded-9440-e4a61f510f09" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sarawork.io</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02029afb-06a5-4142-a191-99515afe8a83" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">chivas.io</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d94bcfed-e642-4720-8c73-02be40425a9b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">androkyle.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="601657ac-6071-40ae-a818-e1051d4ec2d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tradebby.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ebdf7d53-b319-4ee2-990b-8975b514c02e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">androryan.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4be33876-7938-440a-bfa0-29a273ba65fe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">top1ess.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1078e86a-03b6-47ba-98e3-a814e60e04e8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hamman.io</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38aaea85-8692-441f-882c-d6ec57405ace" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bybbaby.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb49ba2b-7a16-4c69-973f-c7ab23b47315" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">g-tr.io</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1644689a-0e15-4141-8252-950d04bb2092" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">80.242.123.144</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a15a872-f136-4322-b81a-c3a0aa2ba50b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pos-softwareupdate.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

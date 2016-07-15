@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d062244c-88ba-4556-8c22-7f3047e61bbd" last-modified="2016-07-10T09:33:52">
+  <short_description>Unusual Exploit Kit Targets Chinese Users,2</short_description>
+  <description>Unusual Exploit Kit Targets Chinese Users,2</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:52</authored_date>
+  <links>
+    <link rel="https://blog.malwarebytes.org/intelligence/2015/06/unusual-exploit-kit-targets-chinese-users-part-2/">https://blog.malwarebytes.org/intelligence/2015/06/unusual-exploit-kit-targets-chinese-users-part-2/</link>
+    <link rel="https://otx.alienvault.com/pulse/557b42aab45ff52fbf63f4a6">https://otx.alienvault.com/pulse/557b42aab45ff52fbf63f4a6</link>
+  </links>
+  <definition>
+    <Indicator id="fff3fbbe-bd59-4b13-8e36-8f8db6237c53" operator="OR">
+      <IndicatorItem id="94efd7ab-1587-4061-8d6d-360bee282473" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">55c447191d9566c7442e25c4caf0d2fe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36c81e40-2033-4a4e-9757-65bc0ca1af14" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4e8639378d7a302c7474b5e4406dd7b4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8a691589-0ea0-4bf2-8c01-14dc0f616d06" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5a454c795eccf94bf6213fcc4ee65e6d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="98385713-7f98-4323-a942-756ecdb75507" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d6ce4b6db8407ca80193ede96d812bb7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0461ced7-ec66-48b4-9c78-5ce0fa1cee50" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">101.99.68.22</Content>
+      </IndicatorItem>
+      <IndicatorItem id="40caa803-0d16-4dc5-b6b0-93aacbf06020" condition="contains">
+        <Context document="ProcessItem" search="ProcessItem/HandleList/Handle/Name" type="mir"/>
+        <Content type="string">Global\3672a9586a5f342b2ca070851e425db6</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

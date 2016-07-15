@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="4c1f7bca-1528-4682-99b0-b6ff87620ccf" last-modified="2016-07-10T09:31:12">
+  <short_description>SUCEFUL: Next Generation ATM Malware</short_description>
+  <description>SUCEFUL: Next Generation ATM Malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:12</authored_date>
+  <links>
+    <link rel="https://www.fireeye.com/blog/threat-research/2015/09/suceful_next_genera.html">https://www.fireeye.com/blog/threat-research/2015/09/suceful_next_genera.html</link>
+    <link rel="https://otx.alienvault.com/pulse/55f467d04637f26df7742efa">https://otx.alienvault.com/pulse/55f467d04637f26df7742efa</link>
+  </links>
+  <definition>
+    <Indicator id="f40743b0-35a0-42d1-acd8-74ced3f0b916" operator="OR">
+      <IndicatorItem id="728f232b-1146-485c-9b5a-0c585a21a47f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4bdd67ff852c221112337fecd0681eac</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9b57f77-77b6-4901-a35f-442b6eb0394c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f74755b92ffe04f97ac506960e6324bb</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

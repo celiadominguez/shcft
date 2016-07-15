@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="3aed2068-1aef-40ba-8ca7-13f30e9ca6fd" last-modified="2016-07-10T09:34:19">
+  <short_description>Unusual njRat campaign originating from Saudi Arabia</short_description>
+  <description>Unusual njRat campaign originating from Saudi Arabia</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:19</authored_date>
+  <links>
+    <link rel="http://blog.0x3a.com/post/120423677154/unusual-njrat-campaign-originating-from-saudi">http://blog.0x3a.com/post/120423677154/unusual-njrat-campaign-originating-from-saudi</link>
+    <link rel="https://otx.alienvault.com/pulse/556c9833b45ff50683003f8b">https://otx.alienvault.com/pulse/556c9833b45ff50683003f8b</link>
+  </links>
+  <definition>
+    <Indicator id="33602cc7-4bc1-4758-9d70-1b772a7c63dd" operator="OR">
+      <IndicatorItem id="e4f646fe-f43a-43ce-b1f3-94eb48526d1d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">eac07d10a5cc52c26b72bb43f2ffa30e6e8da7c2bb18c0786d756755ec99e832</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09de9372-6054-496e-ba88-1771cc01a794" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f67369ff8f2e78a09f5fe80a4ca58dadfda766a24775afcf0c793b47ca124cba</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7aeffe8-585f-450f-99ad-fc6726008b81" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">80e364d140162049f05cbb5bed17ad7348d2f9aff37d2281f83706c4af66be09</Content>
+      </IndicatorItem>
+      <IndicatorItem id="829fba05-cec5-4d57-bb69-ef0ceb70d65c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c50d60fced994896e0b2ad11cac798f9d10db4019fa08c977a2cf4042e6ab798</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3696467-9c60-46ce-8b1f-fe252e4de2ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">supportoffice.likescandy.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9a47b3d-eaac-46d8-b182-58e4ab1a8d5c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">svchost.homelinux.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48e7c2e9-7d4a-4d23-983b-f966db7d24da" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">188.51.198.199</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4465199c-3584-470e-9ead-9b002a5ce1ed" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">37.238.165.11</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3f8910e4-f9c7-4525-983e-a652457d00d9" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">188.55.84.43</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2d74a2a9-4e18-4581-a1fb-1c5f8737205a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">90.148.243.180</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

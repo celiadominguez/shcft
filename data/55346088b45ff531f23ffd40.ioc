@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="652102b8-455d-4497-b6e5-a04b990fbc0a" last-modified="2016-07-10T09:32:18">
+  <short_description>DragonOK Backdoor Malware Deployed Against Japanese Targets</short_description>
+  <description>DragonOK Backdoor Malware Deployed Against Japanese Targets</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:18</authored_date>
+  <links>
+    <link rel=""></link>
+    <link rel="https://otx.alienvault.com/pulse/55346088b45ff531f23ffd40">https://otx.alienvault.com/pulse/55346088b45ff531f23ffd40</link>
+  </links>
+  <definition>
+    <Indicator id="d160e698-287b-4b58-8acb-84135e130dc1" operator="OR">
+      <IndicatorItem id="5d8e936f-71d4-4532-ae8a-9cc9e126df8d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">227de988efdcf886bc0be7dc3df9f51a727664593de47352df31757853e42968</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77656d21-5106-47a9-8eef-b4a11ab2213f" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">64cbcb1f5b8a9d98b3543e3bf342e8c799e0f74f582a5eb0dc383abac7692f63</Content>
+      </IndicatorItem>
+      <IndicatorItem id="79c4b711-183e-4395-bffe-ff433f30ba06" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">287e29ca7b2177fdaa561a96284726ada636dbbdaadfdbeadf88164e625ed88e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42080569-ef16-47f4-944d-45cfa8291245" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e68b70eaaf45fa43e726a29ce956f0e6ea26ece51165a1989e22597aebba244f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7ac27a4-b8e4-48d4-94b8-fa59e3aa36a2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">35784ec1968d322092cb6826f7795f65eeb0b8365ac8c7d8756851c92acf31ae</Content>
+      </IndicatorItem>
+      <IndicatorItem id="26f0dc97-8418-4cb2-b332-9996fac4477e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">70ac649d31db748c4396a9a3f7a9c619c8d09e6400492ab3447520fb726083c4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="120956a6-f335-4f65-a6be-57e7745e819e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">0b97ced3fabb14dbffa641d9bd1cc9dd8c97eab9cb6160d43202ee078e017989</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5d5e9d9-959f-40f4-9092-b993956344bc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">6e95215a52e1cbf4a58cb24c91750151170ea3d59fa9dbfe566e33a2ffc04f4c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="647900ac-d992-4d52-8cb4-f33503396437" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">biosnews.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8aa74473-3c0e-46fb-bad5-df70b5956f40" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bbs.reweblink.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f5c1368f-e947-42f5-bcf5-86390f630585" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">new.hotpmsn.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ccf54aa-faf0-4fbe-aa31-4b32b72448c0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bbs.jpaols.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a1140cb2-e8e1-4213-9600-09c9586fd6ff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">https.reweblink.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19055d5f-4995-4ae4-a6a4-7d3aa11d88a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">http.tourecord.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89db0ef6-9df5-4f66-809a-9a99e9e4cf69" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">fc1a8359e0f4cb8d60920dc066b8b21c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="adf460c7-b85b-4a0a-9cb0-886e0c01db2d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">01234567890123456789012345678901</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc90c159-55c3-43ff-9a42-a68519090a76" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">aa8ac5ed26b9bf4f8d3bd1b2dcaa82f6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3945006-49c5-41a1-8985-31e42deb4319" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">07660815420f6d5b2dcc0f63434a6c60</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dd2a02aa-f460-4d34-ae20-e8410f77f305" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4890c2d546fa48a536b75b48b17de023</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35dfb19e-89cd-4718-88e3-62cdbaceeefd" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">103.20.193.62</Content>
+      </IndicatorItem>
+      <IndicatorItem id="891bb901-ffc1-4099-9f8f-21f7e5d3ab79" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">58.64.156.140</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="78192f26-c5fd-48c9-b26e-90365fdfd7f3" last-modified="2016-07-10T09:28:35">
+  <short_description>Russian bank employees got fake job offers in targeted attack</short_description>
+  <description>Russian bank employees got fake job offers in targeted attack</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:28:35</authored_date>
+  <links>
+    <link rel="http://www.symantec.com/connect/blogs/russian-bank-employees-received-fake-job-offers-targeted-email-attack">http://www.symantec.com/connect/blogs/russian-bank-employees-received-fake-job-offers-targeted-email-attack</link>
+    <link rel="https://otx.alienvault.com/pulse/56cb95eb67db8c5860d245d2">https://otx.alienvault.com/pulse/56cb95eb67db8c5860d245d2</link>
+  </links>
+  <definition>
+    <Indicator id="b9dd3b17-b817-4bd9-8ed3-c1d160bbd339" operator="OR">
+      <IndicatorItem id="f51f2175-c6c3-4903-9bf3-7aff46927fe5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">microsoft775.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="346f16e2-bb55-46a3-9b1a-db857f0c9d36" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">buhnews.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="069823aa-d666-4dfb-a891-043e22cd2560" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">newsbuh1c.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6921c52-60e0-4b44-94a8-d9fae1ec8ae9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">google997.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a28c2fd9-5922-4542-a986-703a36063bdf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">icq.chatovod.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f77c9925-1f58-497a-83d7-f997104f46d8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rss.sport-express.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1589652d-356e-4243-bad9-48d05a54e813" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">forum.ru-tracker.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="754e4932-6f6b-4ad7-be7d-a171c4004f0e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">buh.klerk.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16d118dd-6946-4f8c-8f97-523571345637" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">football.championat.biz</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1faffecd-82eb-4d20-9055-1ccea25f1baa" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bbac2e213bb8bafae6c6587a5bf477d3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="889f5c0d-7e18-4913-841e-5b171f16279f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f4ae5579930f20ccc41d1f8b1e417e87</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="ef91e1e8-f3a6-4cd4-b92e-cb21ce865215" last-modified="2016-07-10T09:30:49">
+  <short_description>New Android "Ghost Push" Variants</short_description>
+  <description>New Android "Ghost Push" Variants</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:49</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/new-ghost-push-variants-sport-guard-code-malware-creator-published-over-600-bad-android-apps/">http://blog.trendmicro.com/trendlabs-security-intelligence/new-ghost-push-variants-sport-guard-code-malware-creator-published-over-600-bad-android-apps/</link>
+    <link rel="https://otx.alienvault.com/pulse/560c3d234637f21ecf29b676">https://otx.alienvault.com/pulse/560c3d234637f21ecf29b676</link>
+  </links>
+  <definition>
+    <Indicator id="5828894e-c653-4a63-884c-3b7128519075" operator="OR">
+      <IndicatorItem id="d74618b5-71d1-49d7-b727-eab80e2790ce" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">b341bf8a492ce482c8b0fee925a8ceee80ad0efa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="74467aab-4953-4e28-a392-4a121441def6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0f0654f0de23c3efeae3a3cf8bcdd8346a8cf280</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0c837a46-7266-4787-ae1a-8632715dbd43" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c4c9df3a1ec5d46c2a7203f7e903d77cd8da97aa</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="eac7a3f5-be54-45fd-a2f8-6ffa0d1f0628" last-modified="2016-07-10T09:27:27">
+  <short_description>Godzilla Loader</short_description>
+  <description>Godzilla Loader</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:27</authored_date>
+  <links>
+    <link rel="http://www.kernelmode.info/forum/viewtopic.php?f=16&amp;amp;t=4327">http://www.kernelmode.info/forum/viewtopic.php?f=16&amp;amp;t=4327</link>
+    <link rel="https://otx.alienvault.com/pulse/57164116c1492d015c14ba0c">https://otx.alienvault.com/pulse/57164116c1492d015c14ba0c</link>
+  </links>
+  <definition>
+    <Indicator id="634a5e4c-9bc2-4101-8e84-904758b43410" operator="OR">
+      <IndicatorItem id="91aebfb2-023f-4f6b-a78c-089e88211227" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c96b7940f9dfedcb78dc95ee51836b642852da0008acaaa3f7260583648c0ba7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4c1e4c7-edb6-40b5-8623-2684133dc607" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">7a660c4adc0dafcdbeaba9977e08ea1c2e49b17bf2050dd142c28099ceb08ed6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6db88433-e70a-463f-b3f3-db1726e0d11d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">domenloaderggg.in</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

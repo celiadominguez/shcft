@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="32dc7155-e176-4bfd-bd12-2cb81555fe3b" last-modified="2016-07-10T09:34:22">
+  <short_description>Unusual Exploit Kit Targets Chinese Users</short_description>
+  <description>Unusual Exploit Kit Targets Chinese Users</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:22</authored_date>
+  <links>
+    <link rel="https://blog.malwarebytes.org/exploits-2/2015/05/unusual-exploit-kit-targets-chinese-users-part-1/">https://blog.malwarebytes.org/exploits-2/2015/05/unusual-exploit-kit-targets-chinese-users-part-1/</link>
+    <link rel="https://otx.alienvault.com/pulse/556766f8b45ff506ec003f8a">https://otx.alienvault.com/pulse/556766f8b45ff506ec003f8a</link>
+  </links>
+  <definition>
+    <Indicator id="0bf52cbe-66f3-42f0-abff-2a0eeeeba92a" operator="OR">
+      <IndicatorItem id="3e2df760-bb17-4aaf-8eb2-da0afe727e96" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4e8639378d7a302c7474b5e4406dd7b4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0856831c-ce8e-4e5d-9757-ed52cec2d3f2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">55c447191d9566c7442e25c4caf0d2fe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e285aecc-be89-4c46-b65c-f0326ebc547d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5a454c795eccf94bf6213fcc4ee65e6d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4e8ceea4-09a1-408a-b15d-92d112da9995" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">101.99.68.18</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff0dab5e-ff3e-4e4f-9b6f-6de05e63035a" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">202.172.54.119</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0964addb-ab28-4dae-9d96-5ea346a1a05b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">687a5f255128bd4a436cb56af697a21f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="efa0e3cd-3687-46db-9b5c-a64c47fd8d68" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3c6e819495919a3612d42f0d8e9afdd4</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

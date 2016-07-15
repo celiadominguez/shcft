@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="52b645e7-cda6-46c7-982d-a27e0637d529" last-modified="2016-07-10T09:30:05">
+  <short_description>CryptoWall v4 Emerges Days After Cyber Threat Alliance Report</short_description>
+  <description>CryptoWall v4 Emerges Days After Cyber Threat Alliance Report</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:05</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/11/cryptowall-v4-emerges-days-after-cyber-threat-alliance-report/">http://researchcenter.paloaltonetworks.com/2015/11/cryptowall-v4-emerges-days-after-cyber-threat-alliance-report/</link>
+    <link rel="https://otx.alienvault.com/pulse/563f74284637f2388aaf2581">https://otx.alienvault.com/pulse/563f74284637f2388aaf2581</link>
+  </links>
+  <definition>
+    <Indicator id="a1edc66a-e249-432b-89a6-b1e204823b01" operator="OR">
+      <IndicatorItem id="798e1d20-3ec6-4e58-a943-f62eb23ee5a5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">4ae64579fa0efd0be978c6797efe05d31517985b28ebd95dcadfacf3bb551f56</Content>
+      </IndicatorItem>
+      <IndicatorItem id="38191f66-e017-443c-8f78-160efa1e4037" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3509700469dfe290fa10f67490d763d14443ba7e571c974132bac0b385e69667</Content>
+      </IndicatorItem>
+      <IndicatorItem id="914eb1b0-e1a6-446a-af93-40a6f51b9a8e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">299b298b433d1cc130f699e2b5c2d1cb3c7e5eb6dd8a5c494a8c5022eafa9223</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7886259-8441-4a79-9544-71f6b5826b01" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3a73bb154506d8a9a3f4f658bac9a8b38d7590d296496e843503323d5f9b7801</Content>
+      </IndicatorItem>
+      <IndicatorItem id="60901561-44ed-41d0-83c4-bb150bb9287e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9bd0e36a9cc6a0754d695b27433fafba4f6c8ef82b71ccf20903d3d109e8e804</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b2127a45-0213-41b3-8fe2-74e8b2752720" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">2d04d2a43e1d5a6920a806d8086da9c47f90e1cd25aa99b95af182ee9e1960b3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="183dabb5-807e-4036-9a5c-790fa817f0b7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">41fa6b1f25ae106a1a1c1734e6018e7c10efb4e31e4851d8fdc1a028d0249d63</Content>
+      </IndicatorItem>
+      <IndicatorItem id="121e50cf-423c-4993-9b7a-f98716fd8463" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">bf352825a70685039401abde5daf1712fd968d6eee233ea72393cbc6faffe5a2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="818f3e7a-43ea-4be5-a02d-44e9025efad3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">dd64fb6df49a21bfc3f59ac25346beec05f1f9414de6584b4469a6085e7efdd2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="23efc5cd-813f-4854-b4a2-a8d27447cc5c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">4c2d28a7ed5cf44b3641a9f6a5dfedd97b420e720376cb986062580cbda5ad3d</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

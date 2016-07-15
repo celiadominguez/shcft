@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="eb2da6cf-7bbc-4d13-bc75-7de58767dd13" last-modified="2016-07-10T09:37:18">
+  <short_description>Malware spam: mereway kitchen</short_description>
+  <description>Malware spam: mereway kitchen</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:18</authored_date>
+  <links>
+    <link rel="http://blog.dynamoo.com/2015/01/this-rather-terse-spam-comes-with.html">http://blog.dynamoo.com/2015/01/this-rather-terse-spam-comes-with.html</link>
+    <link rel="https://otx.alienvault.com/pulse/54d5027011d408112979ce3a">https://otx.alienvault.com/pulse/54d5027011d408112979ce3a</link>
+  </links>
+  <definition>
+    <Indicator id="158318a3-2e3c-4109-a5df-a66f9b39aac7" operator="OR">
+      <IndicatorItem id="04c8da10-378a-4840-afb2-e246f7c7706b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.gmilitaru.home.ro</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

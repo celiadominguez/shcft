@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="b43d5b5c-70d9-41cf-be76-7a3474504369" last-modified="2016-07-10T09:26:43">
+  <short_description>Espionage toolkit targeting Central and Eastern Europe uncovered</short_description>
+  <description>Espionage toolkit targeting Central and Eastern Europe uncovered</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:26:43</authored_date>
+  <links>
+    <link rel="http://www.welivesecurity.com/2016/07/01/espionage-toolkit-targeting-central-eastern-europe-uncovered/">http://www.welivesecurity.com/2016/07/01/espionage-toolkit-targeting-central-eastern-europe-uncovered/</link>
+    <link rel="https://otx.alienvault.com/pulse/577734b17bfa310135fd9aa7">https://otx.alienvault.com/pulse/577734b17bfa310135fd9aa7</link>
+  </links>
+  <definition>
+    <Indicator id="6da27118-4fb5-47b5-8819-cb88faad40e2" operator="OR">
+      <IndicatorItem id="e46f093a-6122-448b-a64e-8bf492c1a1ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">09c56b14db3785033c8fdec41f7ea9497350edae</Content>
+      </IndicatorItem>
+      <IndicatorItem id="253f346a-d049-4ee4-aac1-830e8b81a445" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4b94e8a10c5bca43797283ecd24df24421e411d2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="abc65158-2f61-496e-a86a-15ec13c5918e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f2a1e4b58c9449776bd69f62a8f2ba7a72580da2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8ca5926d-166c-4622-97e5-8d9ca78102a9" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">1345b6189441cd1ed9036ef098adf12746ecf7cb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="61cbe2ef-39d8-46cd-8325-3a8e27b141dd" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d2e9eb26f3212d96e341e4cba7483ef46df8a1be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d70bfd2a-c206-44ea-b9da-2cd971d26bd4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5ddbdd3cf632f7325d6c261bcc516627d772381a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f090ff8-87b4-4832-ac66-18cdb1c0932b" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">15b956feee0fa42f89c67ca568a182c348e20ead</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46f7b6de-8036-4bfd-b7c0-c5d52e469d28" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">7f32cae8d6821fd50de571c40a8342acaf858541</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

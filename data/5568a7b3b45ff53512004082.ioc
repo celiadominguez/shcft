@@ -1,0 +1,1036 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="519b0631-4f5c-4e6d-a03e-4776e07c9989" last-modified="2016-07-10T09:34:20">
+  <short_description>Compromised Turkish Government Web site leads to malware</short_description>
+  <description>Compromised Turkish Government Web site leads to malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:20</authored_date>
+  <links>
+    <link rel="http://www.webroot.com/blog/2013/10/10/compromised-turkish-government-web-site-leads-malware/">http://www.webroot.com/blog/2013/10/10/compromised-turkish-government-web-site-leads-malware/</link>
+    <link rel="https://otx.alienvault.com/pulse/5568a7b3b45ff53512004082">https://otx.alienvault.com/pulse/5568a7b3b45ff53512004082</link>
+  </links>
+  <definition>
+    <Indicator id="a6510847-6773-4a5c-991e-b70060f343a5" operator="OR">
+      <IndicatorItem id="e5a38b61-1a7b-408f-9b37-3005970cd7f5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ohbkaa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b0216e04-68e8-4c5d-8334-7dfe8b63b1ce" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pclpth.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="16e9b062-7302-4cb8-b004-07af20688f64" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kzgxzl.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="97a35ca7-92ab-4a3d-b002-aad21c023c09" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kdnpyl.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19d415b5-66da-4c75-96e0-f4a82d2f45ee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qiyphd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7531782a-94f2-4a24-8dab-36e3b798e427" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ehczei.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="769475b3-0090-42b1-87c4-891f323e20e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rpkkwg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="adf1a590-a5c3-4e05-8ead-706bc2d751d2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mrfbya.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="355c9931-d1c5-413b-903a-ba0452262f6a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">skerub.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e8538ab1-ffe2-496b-b834-309584f4f2c2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nyrmal.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce1c8074-bbaf-42da-95ea-2fec74d7b535" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">idktia.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="023b5c74-e4f9-4f7e-b1af-608d88d21013" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ltkiyl.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="899ea7d3-5b38-45cb-88b2-ad544157fba8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cxhstg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af6fb7bb-2c24-4d45-b8ba-7165db66c20b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bboyhc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0ceab7b1-f216-45db-bca0-6d23c3cfa51f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tbsnpd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ead1ba88-89ce-4c77-b8a1-a3791fe2d8b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">umozea.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe8c1089-61fc-4249-be26-000ac7cdd062" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rdhotk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab53b15f-04f6-4d75-ad82-366014d24c6e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">grzqsl.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b415f37c-2a2a-4dca-a4f4-510508e8490a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xwoqlg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc25f091-3eb6-47f8-b019-b1d4b4a698b9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zezotl.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="226e1310-2cac-48b0-b6d3-b0c676f064de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tzhmce.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ff37ac1f-aeb2-4c05-8eab-aa18d8495a27" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ahmkfi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="efa0fd2d-b248-4e8f-bf47-9526b66b4918" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vahqvm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bfd4e2cb-294b-402d-86a0-dd9e9e84865f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aszhet.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f2c1cb45-9643-423a-adac-de6185056876" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cbiief.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="11479a15-e50d-4adb-8217-bdffbb7d1b61" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wuvwed.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56d42517-1a5c-4615-8367-a8de17bb10b3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ytpzyk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2029d143-4d69-4325-8396-6cc653d45576" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">amnrks.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8fc33866-d6d5-4d68-ad5f-c6dc22e3fb34" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ixtaxe.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e0ceaa5c-7435-4d9b-acc7-b98954dc3887" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uinzsi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4bbf33d2-0144-419b-9102-ac25fd53bbe1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rnhqli.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a9548fa6-5007-49c5-a2c1-d2648fb6a9ae" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ycecrc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4a5ce899-5b23-4c6c-88ae-15166aefcd6f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ofmakb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f1aaa98d-8e0f-4d08-a168-e9ab9e7c9a79" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qzwysm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="46c18716-70c3-4d93-ba10-48dce0fae21b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qpqaaa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8489782b-b787-4c5c-86fb-0bc7ca7dc26f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ldkfob.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="39b91413-2565-49ad-91ab-4222bc81d432" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lmstrc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17164bc1-19b4-4c33-a90c-4aabfe1390da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bbqnck.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d1675515-5993-4524-a494-c54719d99525" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">osorff.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4706e96d-8040-4ad7-9eed-a5e370bcaafd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">arlrda.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3170b4bc-21db-4f6b-bc68-c425e7a2207d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adasqo.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70cf5c34-2faa-49b9-b961-d08a1be90a4e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kgemze.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19820d3c-0179-44bb-8179-366529405f98" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">okrfnd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd2961d0-ff34-4409-9d3a-7aa7efa1003b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mpowxc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="649904c8-cad3-48b3-80c3-bc056cbcf037" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cctmcb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57a7c6b6-b1ed-440c-8847-e592e47f0c21" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cpialm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="71404c70-b6bd-4ea5-b0b6-498f0ed678ba" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bcpagg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="374002a0-ad44-41e0-b35f-3e2e64c8277e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gdvvnh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e32c2a8-16dc-4c0b-98e5-f99b383740d6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">voolph.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="adf9cea1-a2f9-42eb-bbf5-6b55897bd258" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ozoceh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d8413af2-a39f-4b9f-ae8f-ebdca40aae50" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tgxsqa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1efeed86-c39e-4ee9-83f9-2531763951a1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">egfppk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="667795eb-dbd5-42de-912a-e8b58ed52344" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uiicyk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6909084-693f-45d8-977b-0d5b0498f0b9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dfrtkm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6c6b2cd0-117f-4420-ba1d-6e32efb1260e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fwomva.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aed28645-834d-4712-9d0f-bb55e4fcb982" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">szigse.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3b0f4182-0a23-4e07-a758-7f8f279906cd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">khielk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e87d717-dac3-4d6c-98e4-bc8552d6e6d2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pgwtpk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6d71744b-4da4-4fe0-8cb4-6a403371f3ed" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lfnasf.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5e80729-b08d-4a92-9c82-5936b6114569" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">exylzm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d502790e-f586-4a57-b96c-5f2d5aee9617" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ndoiom.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab833de2-6696-4942-984d-8fdec34ecc41" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">iaiomc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c4220629-eedb-4d4c-a970-65ed4aae01a3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bqgrph.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="24f09e9d-5880-4901-a9ec-2694cf08f0a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bghuwg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3f03ed6f-169f-4e19-a552-502dd7c1c5d4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdqdqa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70bf5d38-720d-43d3-a694-4df67c8f361c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">utxzxf.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="124538c4-5841-4e35-b7ed-973b62156a2a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bbssok.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="385ff403-c2f7-4e54-8658-f3b02c160323" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ovutok.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5d1db5e5-7aca-4411-96c1-bb8adbf66008" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">flqfue.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a5d26dc4-3abb-4dc4-83da-16d223152d32" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qhuwnb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="750d56ae-00d1-4559-8c3b-eeacf10b1177" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ixlyeb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e088f121-a735-4094-a043-905299a30f68" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yzzorc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57f86275-8a56-4c44-9c99-3e7a4fd375db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bspzab.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9eb6713b-c2d6-48c1-838e-d5eb9aa975a6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lmepxk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="756e7dce-2622-4ab1-b72e-cae820ee2de7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">reewzi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bef32f35-6a1f-401a-8853-ee2466f70bc1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nixblh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="952022ba-2900-4f59-a835-8fc9a84b3774" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">arwbif.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="00de7ec9-f677-4548-a4a9-41bd6128a790" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dhgypg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fba607a5-0117-43ad-8408-07a29acb7995" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vmrusc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ba2594d-f1a7-41b9-80a4-334f2db55fd6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ufpzom.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30fec28a-92b3-4693-af6d-24f368decf93" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rbocmk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6107940a-c584-4b69-99d1-8f7720b0330c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gfdxxe.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5fe22505-9054-4290-982a-7890e43346d2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gyyfhg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de704128-a486-46ba-a781-ee9d8de3cf60" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dgplka.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0594823c-a860-4dc9-9a9a-447c10a75c34" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bayxwf.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="994d7964-8af6-435f-9958-c954e3bde95d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">acggdk.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b114c9fb-f1f0-4108-b92b-301e8b58f8fd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ygyzbn.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b78393e7-372e-4f95-a6b2-fb6e224fde3a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kovoqm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6048306-855b-4b86-9060-45d709b6239b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xytwqg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6950bee6-32a0-45d5-b990-964ac0e50b84" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hcdgdi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="37106fec-2cfa-44ce-bfb9-2f45a9873e33" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wqzegb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="411582c5-00ad-4565-a0b5-3034164db932" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vfcxac.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e87d28f3-f9a8-45be-ae2b-ac4a2bea88fa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">neqmxg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="077889f5-9dba-44db-a6fb-2edd373038b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">acuhpw.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0aab8c7e-14b2-42f6-9682-8c0071f35b9d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">svzuik.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="10700714-b7a8-4b53-806f-af66f82b8fc8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ruiyri.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5d61d18-c1f2-4c7b-9fd9-d9133ff5c1f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hdxoib.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="60683ac8-d5d6-476d-8edc-490aa362393c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">afvvkz.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="32fdb3a7-9191-4992-81d8-169fc3b4d056" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wfgwde.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7bb76cce-656e-49a7-be2d-73bd052c4502" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bzxypc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a3ce25ff-49d0-42d8-ae5b-11d0535694bf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yvugvm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2debf279-ad89-4c44-aa57-ee9e4d048db2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hfibni.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ba45d69-1e21-4e02-8d5e-43182a073bc7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hyqiel.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e85725b-bf3e-48da-9807-be730fbef49c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fixygm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5d9b6dd-5840-4809-81cd-c6dbfe330268" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kbpupk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="984ded75-6393-45d5-baa5-5f54e3fff8ff" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ygfbvd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a266e770-8888-4139-aff8-a6c579557a94" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bginbn.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e60ac011-234d-4658-8b43-fa28fa98ffa9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eacnmh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9ba4c665-2321-48bd-869c-8f430a9dc5d1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">grndie.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b2e68462-db73-4bae-b7e5-8de99fc74541" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qerohf.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8ed215b7-9e82-4a1f-850b-847f08882529" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xzckhb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="135d68ad-c461-4819-8d49-0806070e70c9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fgrgvg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7bce6225-5b86-480e-ba86-e08b4d435b58" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adybuq.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="513f856e-254d-4ce0-b60d-aa9c6eb4e1e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">arsrra.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56212092-7bde-4c81-9c32-6fc1cf4dd129" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lizxei.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21d8b556-f966-4c76-aceb-d309bc36a2ea" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">drwkxl.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4485afde-f8af-4fea-bdeb-9c7c2942a53a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apgmlf.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="45182831-619d-439a-b77e-60fe585a6674" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">atfvmk.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eff42f0a-2af7-40d0-9402-f0e1ee57450e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eviime.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f9a28bf0-17c5-4fcb-b8ca-368c11508eb2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hdwdub.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="27efa66e-80d6-4f96-a576-360cd0825b58" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ldstya.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7717c20-3192-4b2f-8cf6-135f2db9866c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">goqgwa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09a4d983-7026-4f19-89da-bdf871b67c6d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ofwclk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ece22565-ef0c-4653-a137-8201f4efa574" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dawrdk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af8aee11-f881-49de-af7c-d6e0ecb43a82" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ofslld.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b38bd5a-19ed-4751-b815-c345df3b031f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">egzbeb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="240fb4bc-61a6-41d6-9de6-68708c4be153" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bekpwa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="acfb9593-b6cc-4f08-a563-0b72b46dfea7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">abkwnb.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="004bbf11-04c6-4718-9a0f-c2a71ecceeef" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ynozfb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0aad7a9f-8984-48c1-a1b4-669f9d86a4fe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aspywb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b919e8c7-33ba-4676-b985-dc6410ab7899" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">agoylb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eae25e24-2cb6-461e-b18a-40b4cbc5d369" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">higsnb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="454a15f6-46c6-4d4f-a94b-e811195602dc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">olpwmm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c52251b5-942a-411d-8391-89b69413429c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">awdfcf.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c714dd28-7643-4c36-8755-d3b2ee958d9e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">baxtgm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17809b14-1a60-482d-a1f5-488657ddba77" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">akzoze.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be806785-431d-417f-9374-9ee122e8643c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pxrpgd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d275312c-f38b-4154-b116-cd5042ca96c0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sqhhzf.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="498aa8d9-ad9d-4bf1-a57d-2b5f43c2b08d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">codhgm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3cf87a4c-ea06-4369-bb7e-07aa8f293697" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cozeva.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5d5d7ef6-c3f0-453c-b963-fe36f69847b6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">faawtb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd7faeea-0efa-4d24-aa8e-d46da23c0c98" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gimgyd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35019709-aae9-4685-aa19-41030074c46a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ibbvod.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c69ef131-2a39-49d0-9f55-1bc245bd4765" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hyfcst.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b7182334-a926-4c1f-9923-7dcaf10c4ae1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yukbtc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0de0a396-2e10-49c0-9f58-8c978d4d8943" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rashmm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57fd9b92-d594-4027-b337-3771dacb9736" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">thkbga.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6fa125b6-639f-4f43-bf55-f06fdb208c0f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wvkswk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="31444799-847b-4b43-954d-861cdfd96d75" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ocbvak.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="711c40f2-0cc6-4200-9b00-c1682972f006" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">yyhflh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="22eb23b9-b4c1-42bc-823b-db0e707feb5b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aoimih.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b211df28-00d5-4fac-bf78-10e80befd873" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aixxap.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="335e85f1-92cc-4a6f-a91c-4d08aeb1a1d4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vxefwb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5104757b-0c41-4b39-8a17-4ef0af8b95e6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cflwwa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a58bcf2c-f767-409f-987c-491e6db1dc25" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zmglvi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c80a64e-fde9-4b76-bc54-18247f7193aa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xpirlb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f1a04560-a78e-45ad-8c2f-337ecef2b7f7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rkezqc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f026a0b4-4658-4d60-976d-996e16866ea9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kydwsh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bddb6fcb-fee8-4f6a-8887-dcde88b7898b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fccvll.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="899962b8-22d4-4336-999d-1945e7e4afc8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ilymre.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13e3052d-7dcf-4a37-9ecf-b9185f0a9baf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ywcure.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e3553ac-6eaf-41d8-bd8a-6dd240d2e3a4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rcteek.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="81f75e7a-dc95-4c24-a266-777c3c806df6" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ifltbm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13c11a0e-1e0a-4ece-b357-d4939a7b3512" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aiikit.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="33e5e8f1-97c6-4091-a727-1eaf31159ca3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">emsvmc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ef9a666-bf23-4ed3-a9dc-2ac0683233f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gnyylm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5a24b5b3-86ce-4de2-af88-f3a50b14c61e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">encoek.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a31d9f2c-9568-4b83-8e8b-b8872ed1e053" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">uikoui.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aa8df530-21f6-4552-86a0-d30719b49ef8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tesgdd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="78f9477a-5215-4455-a0fe-10c1dc22fe84" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bxogoi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8563b421-0228-496d-bbd4-780701f3df55" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mowcql.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34ec32b2-0825-4395-8da0-019f25e3fb4b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wbddce.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8a54a336-15be-4a66-a0b7-570f2c9d5d8a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">opxkcn.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="14d404eb-0bbe-4347-9597-54219cadb693" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">abnrog.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3573bad3-9e34-435f-a727-c2d659809356" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fwtihi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e1f848b-0203-4dfd-83e6-7e38ab768599" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">qssdac.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="931f38fc-25e1-4004-91a5-6374e1bc490e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">knafdb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d98b181d-33c5-455a-836d-d37ac5a3e7fe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">zviath.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30b597c0-0587-4bd1-a528-e29bbda832fc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">napyll.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0166dd34-002d-4c39-bae0-2e77d1c4f2ce" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">asksxw.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0b6b47bd-7e72-47d3-8abc-51d756208c02" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dlylah.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="70f68dde-5ad4-4b67-9827-3a5799b0b8cc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">amsbud.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c79de53-fcd1-43a2-a84d-11fdf5a4857d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vyeuvh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a2a46ab0-db10-4b93-9e1b-f2d633810863" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xzftum.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dc631db2-1337-47b8-9efb-9df8817049e7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xokmpd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e765fc67-86b1-4ac7-bfb1-95921d6ee628" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wxlqdn.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f1628f91-1b17-460c-abab-39c1a4b80def" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xdwnui.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9928b498-8ba1-4270-84b2-fba4e83ecf62" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mbcwtg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="49e0cfa1-8b00-4387-a805-36c3fca1bd76" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rimulh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57cb1db7-445e-4d6d-9115-28fd31fc30cd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">phnkvk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3150f44c-2eb6-4e68-9b4d-07b7719da326" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">oewgmh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe5c8d4a-1938-4e02-95a0-ba3478107546" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rqaakb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fe3efec5-7320-429f-9c35-b3a93054f7a2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ehicoi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="98df8cce-310e-49cd-aecb-8101b3b91c80" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ccsixk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b41abfc9-f939-436c-b98a-87639e2d4a3f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ozeqsi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="014f7517-8d3a-4fac-a155-76adcb96bb59" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">buubpl.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb6dc602-74f7-4eb9-a4f4-1bc2be2b2f74" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aqbrpz.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6d82f21f-8f6b-4587-a195-dd3c139d365f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">pzhtsh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="221dc67e-1761-4327-a837-6b2c333a698c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xufcgh.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8ab50013-0087-4a46-a070-49590d445eba" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hibfha.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="85f92e32-9876-4081-b393-46f3ddc3427f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hclhwm.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f5afda8-9e43-4334-b9b5-4c69d1f60cbb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">oicmkd.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="84f3cfb3-e7d2-4193-8ba9-9291ec5f0613" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sekbwa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="046d4d0e-a6a5-4f89-bbc2-f0a0e7dad183" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">phexhi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="091657f1-9588-4659-9735-8aefda5b6fd8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">xstbyb.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e6865222-a62b-4c3f-829c-651037c9dfcd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wnewca.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ddaf666-bef3-4f7f-a219-9c82d9883222" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bcrgwa.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36a6719a-ae91-47af-9768-b9732e4ec169" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aqxlke.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="142f68e4-c6b9-41a1-81b0-e1f44b748863" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ninwcc.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4ae51926-a3d9-4618-b05e-1724311c89cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">azcgrd.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ce2ce27-c130-4980-b6b4-d6afe89dc754" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">swscye.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d43960a3-0db9-443d-b331-f572275b4d86" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">svzyqg.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="22339ea9-da45-4687-8c4e-233dc22afe69" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dwtbek.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da70722e-1a97-4fd4-9d99-24a83da876ec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ybmwei.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="66dd0bbf-aa77-48ab-9b6d-0170427c359f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ttlqhi.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6906cc4c-9e1f-4e03-80c5-73e600720020" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wknqba.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d59908c6-6cca-4001-b0f5-3c2bd7141393" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">knwrhk.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bfc52c00-9958-4b95-8fd8-eb75583a45de" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ddznib.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="420a6951-7c9e-42f6-998c-bd5aec2400af" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kvnvek.best.volyn.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30af52a6-53ac-44da-a62f-926e1546c96f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">2ayrzwv.best.lt.ua</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d459275b-e3df-49f2-9b24-530f0ab4ac44" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c5fb893b401152e625565605d85a6b7d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab139167-40f5-4788-9cb2-ccb3a8d7d3d1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">540f19ff5350e08eff2c5c4bada1f01f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8cae37cd-8470-4ae2-b69f-55b76374d6d3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4aacf36cafbd8db3558f523ddc8c90e5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb16ae52-f06b-4725-b766-17cbe88288c2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">56aaea2b443ea8c9cea248e64d645305</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f818daf4-e874-4da9-b045-284d9960bd80" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">adc9cafbd4e2aa91e4aa75e10a948213</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2dfdc0c7-49f6-4c8c-aaa8-68204ac15659" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ab0d8f81b65e5288dd6004f2f20280fd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="61bea1e0-1653-473a-9191-3b88d848cd65" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4ce289a8e3b4dd374221d2b56f921f6d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6607fa21-5960-466f-b721-b1a18dc5b566" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">052ae7410594c5c0522afd89eccb85a7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5f6ac97a-0ffa-47f4-87db-e8316bab4532" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0a960df88c2d27d0d4cc27544011fbb0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2fd9b340-f4c7-4777-ade7-f05308d6ce4c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3dff37ee5d6e3a1bc6f37c58ac748821</Content>
+      </IndicatorItem>
+      <IndicatorItem id="11c5c6c4-838a-4a4e-a356-db3c7297fb77" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9325e2dddded560c2e7a214eb920f9ea</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a0ef5add-b92c-421e-83a8-e2e0026a81d4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">00bdd194328c2fe873260970da585d84</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5fa51813-6b50-4e66-ba3f-422c714967c3" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9577c1b005673e1406da41fb07e914bb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="666b70b4-2355-4754-b3c6-cb79dc56721a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">aa7dc576d1fe71f18374f9b4ae6869fa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f6673fc-a2f9-43df-aa9f-b8a87563bc8c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3ad96ccf8e7c5089b80232529ffe8f62</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a5910df5-9b16-42d1-a808-167def1ad19c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0e27df7a010338d554dba932b94cb11e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="21424f55-a467-44ff-a5b3-373c17d71a38" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8db8c55983125113e472d7dd6a47bd43</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f0827f51-da78-4fb8-ad12-93ba39918966" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e3f8456d5188fd03f202bfe112d3353d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="593e322f-02b2-489c-8992-437a55b455ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">10c32d95367bb9ab2928390ff8689a26</Content>
+      </IndicatorItem>
+      <IndicatorItem id="daa011ec-d03a-438a-9fb5-ffe0c36d2cf0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">a6e52ca88a4cd80eb39989090d246631</Content>
+      </IndicatorItem>
+      <IndicatorItem id="08f0b136-94c1-4ccc-9908-bbb72ecbf514" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7c4d4e56f1a9ceb096df49da42cc00ed</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02052070-0f12-4b57-856a-0a6bd2435596" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b60ca81cec260d44025c2b0374364272</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bb999022-931a-47e3-8ff8-1af8469eabf0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ddfac94608f8b6c0acfadc7a36323fe6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fceedbff-6b8b-4f09-bd2b-0bee30e566f0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b2a381fbc544fe69250ad287b55f435b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dacbec97-201a-4537-b145-6d4a4bcda621" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e1bda5b01d1ad8c0f48177cd6398b15f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a463ced3-7c3d-4303-aeee-f70e8364dce7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">39b59bda3c65989b9288f10789779e96</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9867be4c-49df-43f3-b9ad-d1dbfc4cde23" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9698be7d8551cb89a95ce285c84c46b1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5459d780-4fc3-4969-8ee9-8f309fc8ac3c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4e0bff23a95e8d02800fecbac184cd5f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6d954ab-a9a3-4126-9385-5363ffc34b39" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7d14dcfd00f364c788ba51c6c2fc6bdd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a3dffd43-79e1-41e3-82b8-f0ba7237ae82" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1f18b45b25dd50adf163d91481c851cf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="87c2a6d7-2fd9-43e7-8366-72d0f97d3d01" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">be8c528a6bff6668093e9aabe0634197</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a4b8087f-68c3-4105-a65d-cd34e90d17e8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">704c5b12247826cf111b1a0fc3678766</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bfad7b14-8443-49c2-a1ae-f8dc176b5d9f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">48bcc188a4d6a2c70ee495a7742b68b8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="31249a32-fd4c-4fd9-a05d-50ee3049f65c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">19e31123c1ccc072c257347bba220f0e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2c8f55c9-c8ad-4938-b7e6-70a2b9f8d02b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c0f3501b63935add01a6b4aa458a01b7</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

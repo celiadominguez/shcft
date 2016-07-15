@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="70c51cbe-55d4-4263-b52f-e27c6abe1a4b" last-modified="2016-07-10T09:34:06">
+  <short_description>Sandworm to Blacken: The SCADA Connection</short_description>
+  <description>Sandworm to Blacken: The SCADA Connection</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:06</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/sandworm-to-blacken-the-scada-connection/">http://blog.trendmicro.com/trendlabs-security-intelligence/sandworm-to-blacken-the-scada-connection/</link>
+    <link rel="https://otx.alienvault.com/pulse/5571dcf5b45ff55c70cfbb94">https://otx.alienvault.com/pulse/5571dcf5b45ff55c70cfbb94</link>
+  </links>
+  <definition>
+    <Indicator id="484924c4-f08f-4e5f-bce1-cb62ce546064" operator="OR">
+      <IndicatorItem id="d5097865-cf2c-4bc9-955e-a6a0d60f78f8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8313034e9ab391df83f6a4f242ec5f8d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="80508f61-1ab9-416b-aed1-9f1b63209eae" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">59e41a4cdf2a7d37ac343d0293c616b7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e80b0ce7-7de8-4c05-b50d-c0c5ff47751b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bdc7fafc26bee0e5e75b521a89b2746d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b37c4c1e-e508-44fd-b945-1157d57293f2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2f6582797bbc34e4df47ac25e363571d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b3d25b3d-934c-4574-b103-6baa1f59ccb9" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8a7c30a7a105bd62ee71214d268865e3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="86a2d93f-d9ce-4584-bbcf-46c89d27d62a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c931be9cd2c0bd896ebe98c9304fea9e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5238804a-e40b-48b1-8c8c-7b24f7ee014e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">330e8d23ab82e8a0ca6d166755408eb1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4b216a2a-5349-41b1-a219-81b3d0e3cde8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">94.185.85.122</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7a348db-5d29-4d52-ba51-d3530c038abd" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">oleh.tiahnybok@vosvoboda.info</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

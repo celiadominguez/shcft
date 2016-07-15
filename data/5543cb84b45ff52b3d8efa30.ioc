@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="061ce3cf-534d-430c-83cc-402d6641c21b" last-modified="2016-07-10T09:35:17">
+  <short_description>Winnti. More than just a game</short_description>
+  <description>Winnti. More than just a game</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:17</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/5543cb84b45ff52b3d8efa30">https://otx.alienvault.com/pulse/5543cb84b45ff52b3d8efa30</link>
+  </links>
+  <definition>
+    <Indicator id="cd333c79-bcab-411d-998f-423d1016c0b7" operator="OR">
+      <IndicatorItem id="970db14a-6d1d-4dd6-9263-09f77d81d8ea" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jp.xxoo.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a16a8aa-76f9-4a01-99d5-9227d3aef06d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cc.nexoncorp.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="17ec6599-223d-44a2-966d-27cd90a36076" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ca.zzsoft.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03be6c91-1e3e-4544-b13a-742b75b3df92" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lp.zzsoft.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="530822fd-b87d-4214-9c34-e658b74fe9d9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ftpd.9966.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb2babd4-96ef-426d-8f46-1916e56eaec2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fs.nhntech.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0376e057-b3b5-4648-be64-fe60fd5bd13a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sshd.8866.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3172eeee-7515-40de-8643-352544ff7393" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wi.gcgame.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5d030ee-4bd5-4d5c-ba38-12f59078ba73" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ap.nhntech.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ef78ce1-f2c4-4b57-ba66-db221743cf9b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eya.jcrsoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3245d22b-c072-4bbc-85ef-a2d58c093293" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">my.gasoft.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5e690951-9947-4d7c-8cf0-0860ad5586f4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">su.cjinternet.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="96e5afe3-16aa-4c58-bba7-ccd6df0dc255" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ad.jcrsoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="00984592-37ea-4080-b073-1b658accd793" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ka.jcrsoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="727c0971-800c-4cc2-87ef-f92b22dc19ca" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tcpiah.googleclick.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eaa2df3f-8887-420f-a347-773b2f6b782d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ka.zzsoft.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0cd227de-875a-4b52-bf11-af72e3eb67d8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ru.gcgame.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="20bbe4d3-f710-4d26-a8ac-c6949a9d4a72" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tcp.nhntech.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30dd72ae-1bb7-467b-9f9e-d1776cbc04c9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">newpic.dyndns.tv</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cfe44d30-7647-4bd5-a1b8-85997bd195e9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wm.nhntech.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a31faa89-6ac8-4ee2-814c-226b835b74ba" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vn.gcgame.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="353411e4-629c-40e1-b15c-a39bd1077faf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wm.myxxoo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e5198c54-2a28-4f1a-b6df-14f878b22b81" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kr.xxoo.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="78c08073-ea2c-41dc-b8f4-6a14309e7809" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jp.jcrsoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="156d8a44-7e12-4f7f-8b37-a1e0567942f8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rss.6600.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ee8c846-917b-46ef-963c-8065aa489e8c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wm.ibm-support.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7c9541e-8277-4bf7-9cd7-853bed88057f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">as.cjinternet.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e6f961e-97bb-4071-8f5b-4b0d2bb3f08a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kr.zzsoft.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48e36975-8e28-4a1c-ba8d-178f194c1c5f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rh.jcrsoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbc1eb20-26de-48ee-958c-6893857ea862" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kr.jcrsoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="66a586c9-2fa1-45d7-92d3-cfa4fbb4216c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">update.ddns.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7d8adfd3-f7c7-4250-9922-8f7c52428500" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">my.zzsoft.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="af7870c9-1e0d-4388-a62a-60bf2daddd4e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lp.apanku.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4659298c-d8f9-4bb6-b25f-9afb58f77183" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nd.jcrsoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5b7de995-d479-4858-aef9-d30b15e53b16" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">us.nhntech.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1a622b29-85aa-428e-a060-2021ca272ffe" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sn.jcrsoft.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4add34b4-aa03-45f5-b4f6-78401ce55623" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ftpd.6600.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4614c1c-88a3-4b27-ae1c-563573c21c3d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lp.gasoft.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e385e902-b877-4461-a626-852f409e79b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">docs.nhnclass.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="537f9cdd-75c9-41df-9d8d-210f63f65415" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">wzcc@cnkker.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ce5eecdc-5acf-49d9-bb02-c6a34b6c5c2c" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">apanku2009@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d1765a76-dfea-40f1-86bc-880e3d9adc90" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">evilsex@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b090f053-e5d9-4703-bb9e-8eb608d26b1d" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">whoismydns@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57b6f531-df36-48eb-8081-de31d4a2ff1a" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">jslee.jcr@gmail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="77812685-875b-4277-86ba-50ee83c715fb" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">googl3@live.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

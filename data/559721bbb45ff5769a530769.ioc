@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="70ef60c5-9a0b-4634-b332-c6846c95fed2" last-modified="2016-07-10T09:33:18">
+  <short_description>TorrentLocker Surges in the UK</short_description>
+  <description>TorrentLocker Surges in the UK</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:18</authored_date>
+  <links>
+    <link rel="http://blog.trendmicro.com/trendlabs-security-intelligence/torrentlocker-surges-in-the-uk-more-social-engineering-lures-seen/">http://blog.trendmicro.com/trendlabs-security-intelligence/torrentlocker-surges-in-the-uk-more-social-engineering-lures-seen/</link>
+    <link rel="https://otx.alienvault.com/pulse/559721bbb45ff5769a530769">https://otx.alienvault.com/pulse/559721bbb45ff5769a530769</link>
+  </links>
+  <definition>
+    <Indicator id="c5dbd1b3-83c1-46ec-a75e-e3f774c9b450" operator="OR">
+      <IndicatorItem id="6721a060-b0c8-49dd-b331-9941c65ab994" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">loawelis.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbe467c9-32eb-441d-9ebe-d3e9d77d309c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">imkosan.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="347f0b34-5587-42fc-9350-78f7968def88" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">golemerix.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e2236fe7-4e43-407c-b198-5ab216b0f903" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">driblokan.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="58c27e30-39ef-40a3-88c7-083f16f3e271" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">projawor.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9bdcb797-a226-48ba-a519-1c99199bdfa8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bareportex.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="032d0174-e853-4c6e-9d11-0045cb228c12" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kergoned.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="33465bb3-7bd3-46fa-99d0-09c62c51c28b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">klixoprend.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="104f657e-4955-4522-8124-7552550af10a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">krusperon.net</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

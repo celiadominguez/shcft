@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="79c3680b-98ed-4a38-8a71-a92d5f33faf5" last-modified="2016-07-10T09:31:26">
+  <short_description>Data-Stealing NionSpy File Infector</short_description>
+  <description>Data-Stealing NionSpy File Infector</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:31:26</authored_date>
+  <links>
+    <link rel=""></link>
+    <link rel="https://otx.alienvault.com/pulse/553468d3b45ff5362e3ffd3e">https://otx.alienvault.com/pulse/553468d3b45ff5362e3ffd3e</link>
+  </links>
+  <definition>
+    <Indicator id="f81a299c-e2d9-4b83-ba9d-93b728f16236" operator="OR">
+      <IndicatorItem id="e34adbaa-40c2-4ac2-a42f-35b7b27b4d9f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ftspbz.net46.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36216fc1-f871-4d0a-9637-7a6e4dca7c25" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nwoccs.zapto.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f8d66941-8456-457a-9277-24f29726f2cd" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7895e3bf8b614e4f4953295675f267eb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d5df49a-d065-4af6-8f50-ccd2f38fa347" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6fa6e2ea19b37fc500c0b08c828aacc2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a153efc7-4bfe-43cb-857c-bddfe5079cf7" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">9750018a94d020a3d16c91a9495a7ec0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0bd27162-e1c0-4e7d-88d0-943986a00aba" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1ccc528390573062ff2311fcfd555064</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8791a675-c839-442c-97ae-0e708b81f7a6" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b25c2d582734feb47c73e64b5e5c3c7e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e241c1b-8ba7-41b6-aee5-75e27112d5e1" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e9bbb8844768e4e98888c02bd8fe43d5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="96d7735d-6dd4-42e2-a473-68676742224e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">722d97e222a1264751870a7ccc10858b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f64c0dec-41cf-413f-b7ff-eb9af3a3628d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ad6af8bd5835d19cc7fdc4c62fdf02a1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c913d195-4781-4110-8f56-9ce5e4bea8b2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d7c20c6dbfca00cb1014adc25ad52274</Content>
+      </IndicatorItem>
+      <IndicatorItem id="34d2454d-32e3-4047-bb1b-2d8cffc1ae67" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">24a212895b66b5482d689184298fc7d6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f2dd114-9a17-465c-b6f6-f154d35f140c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d9e757fbc73568c09bcaa8bd0e47ad7d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f93f1699-f395-4a61-ac69-a9f577a7d371" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">04227bd0f50a0ee9db78ca8af290647a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="821ab5ae-19cf-43aa-8d86-0d281bb89fbb" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">37.139.15.65</Content>
+      </IndicatorItem>
+      <IndicatorItem id="009438f6-8c51-45aa-918a-ea55ad47d793" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">109.195.54.18</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56bc9949-2edd-4e2c-b1ab-44dc7458d250" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">85.214.252.4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="683e644e-6ea2-4417-89c9-f3d0582c24de" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">176.31.246.49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6dd9ff79-bdd2-442d-a9b3-44f7604034fe" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">178.62.233.140</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aa3dafad-19eb-44a1-89fb-2d8f0e3e0f6b" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">72.167.201.238</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab51e066-fd76-4852-bc01-4af47d83b4ff" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.46.36.35</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b1f08fe7-08ad-48c5-9151-4ab0f7d796a4" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">62.75.179.223</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

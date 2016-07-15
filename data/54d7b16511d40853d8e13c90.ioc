@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="c9aa9c3a-3b5e-4288-9582-6070a6866a6b" last-modified="2016-07-10T09:37:11">
+  <short_description>Assassins Creed Android app bundle with malware</short_description>
+  <description>Assassins Creed Android app bundle with malware</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:37:11</authored_date>
+  <links>
+    <link rel="http://0xicf.wordpress.com/2014/12/18/a-pirated-version-of-the-assassins-creed-application-for-android-is-bundled-with-malware/">http://0xicf.wordpress.com/2014/12/18/a-pirated-version-of-the-assassins-creed-application-for-android-is-bundled-with-malware/</link>
+    <link rel="https://otx.alienvault.com/pulse/54d7b16511d40853d8e13c90">https://otx.alienvault.com/pulse/54d7b16511d40853d8e13c90</link>
+  </links>
+  <definition>
+    <Indicator id="304d398e-d92f-4456-9317-a1646548a154" operator="OR">
+      <IndicatorItem id="11354407-25d3-4eab-8cb5-dbed98b6a360" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">googleapiserver.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cc4e1489-852e-4212-aa21-9a76d5b5390b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bnk7ihekqxp.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8f3ae207-f578-4153-9b94-9abd6cc00d70" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3e076979644672a0ef750a4c3226f553</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

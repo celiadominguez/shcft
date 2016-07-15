@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="50de162a-e24e-4ef7-9166-3d109739ad8f" last-modified="2016-07-10T09:34:59">
+  <short_description>RIG Exploit Kit - May 2015</short_description>
+  <description>RIG Exploit Kit - May 2015</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:34:59</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/554d0d22b45ff5406ad77953">https://otx.alienvault.com/pulse/554d0d22b45ff5406ad77953</link>
+  </links>
+  <definition>
+    <Indicator id="00ec9f2d-890c-47ef-a6ad-1fdfe294188c" operator="OR">
+      <IndicatorItem id="6d07768a-148d-4bcc-a963-bf003448603c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">andromike.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c9a5f2ff-00be-4335-8db5-d93527810dbb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">androjose.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="37ca036f-39ad-40d9-bd26-3658acf1bb24" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">free.bigdathletics.net</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

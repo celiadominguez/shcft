@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="198126c4-4719-4645-9b7e-1df8da6d5f51" last-modified="2016-07-10T09:33:15">
+  <short_description>Ding! Your RAT has been delivered</short_description>
+  <description>Ding! Your RAT has been delivered</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:15</authored_date>
+  <links>
+    <link rel="http://blogs.cisco.com/security/talos/darkkomet-rat-spam">http://blogs.cisco.com/security/talos/darkkomet-rat-spam</link>
+    <link rel="https://otx.alienvault.com/pulse/559dbc71b45ff57539530774">https://otx.alienvault.com/pulse/559dbc71b45ff57539530774</link>
+  </links>
+  <definition>
+    <Indicator id="87e03f4f-ce19-4eca-934e-db3fc9654d24" operator="OR">
+      <IndicatorItem id="3391c69e-ba91-4ad4-b08a-e9afe9296096" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">9b06bc6268a1cfd40ce4a9caf91a4f877cc2a093dc1b4c4f3dfea6d7aa968d1b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bc76bd31-871e-4d3f-84ad-728cf5b7b3bc" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f6ec79516633b2906fe097f35d91122342479907ab8775bba8f1757091c4bcec</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4253ba13-255f-4f97-a66c-00adacd549b1" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">70b522215375e5ee14540a7b47a5a337a2e173d401c7e0b2ff121861e78d08ae</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d6b5b5c1-9856-4a0c-a92e-f2b1457bf960" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">73bdef73667e27123d972b7d73038c47d04fbd62c5a667fcaa1017a2e66840bd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="124d85b9-255b-4acb-8617-64299a0988b6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">136862693e8d9463e20fa0c29ada0830949d2934912efe36bf262ead30670bce</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b500a10-9e24-4332-b8c4-50655acf3fa6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b4a8979e9014bbb88d315c041e578feaa78f04689b0ae3b0243a286522ac3ece</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c31425a4-8422-4b40-b8d4-4e2dc58e8e7e" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">23090f008a08ae0b9b8ef7d1dfada2a5ca0d2c31bd72158b479613c0ed29f7eb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eee9a14d-66e9-4704-a6a6-e80963ee2c2a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">05e101a81a15d20427de92ea2773f4480008dfabc92d385d0326eb66dc5c2618</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48c715ac-c8ef-4bc6-ba9b-bc9b1418c23d" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">f03f646dd7ffd6ce61e8521519e08234467f2fa9bf4187bcb0f1f8307e665c81</Content>
+      </IndicatorItem>
+      <IndicatorItem id="40480244-0a15-476a-815f-ef2934a33fd6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">64f5a4be0769007c2797e4908d739437d9a7ccd227b64e028e959d2695c8e06e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5aa24bc-f8ee-4f0f-b800-606349c8d742" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">03036fe853f5c99a527aeec29bc9a3c9016310f7f2164f666e794cadbeb2671d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="763f7c8a-71ab-452a-a74c-585e0f426e64" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">386186bb26d78b1f54875da5e115c682d2a5a72685bcba430448d44cba924372</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0d3ce72a-b7ec-4c8f-9b5c-d9bc5e120458" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">012bf0ab1ec60538c02a0c72020b4149e1349937920c6eab83116ef8f1b4094e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="edbfc220-3a33-4b06-88bd-28309ea36763" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">briach202.no-ip.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30c2cf2e-42bb-4781-90e6-7663669fb9fc" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">41.58.104.23</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f25f7de5-7fb9-4736-8d84-73bc0450a77d" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">41.58.219.175</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec945509-46ff-488c-9a70-ddccd20764ff" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">174.127.99.235</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5bb639fb-b9c3-4ac9-b63f-adffcb86598e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">216.38.2.212</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e3d85d4-79e1-468f-b65c-5b5bd86ca068" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">41.58.102.142</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f4a98fa-3766-4c87-93be-1b4feae0a291" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">216.38.2.195</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

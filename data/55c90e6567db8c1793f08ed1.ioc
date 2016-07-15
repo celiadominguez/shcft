@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="55b6bc32-a8bd-400c-a802-4ab5d1e6e934" last-modified="2016-07-10T09:32:02">
+  <short_description>South Korea NIS’s use of Hacking Team’s RCS</short_description>
+  <description>South Korea NIS’s use of Hacking Team’s RCS</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:32:02</authored_date>
+  <links>
+    <link rel="https://citizenlab.org/2015/08/what-we-know-about-the-south-korea-niss-use-of-hacking-teams-rcs/">https://citizenlab.org/2015/08/what-we-know-about-the-south-korea-niss-use-of-hacking-teams-rcs/</link>
+    <link rel="https://otx.alienvault.com/pulse/55c90e6567db8c1793f08ed1">https://otx.alienvault.com/pulse/55c90e6567db8c1793f08ed1</link>
+  </links>
+  <definition>
+    <Indicator id="c7a11d0e-2e67-4e69-8775-42eab3ddbf08" operator="OR">
+      <IndicatorItem id="1f9d4e09-bcac-4549-92cf-685e42de9399" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">21e8d495bca60edc3b64ac970f9a9fa896d0eadc6491452ea937d64849b1f4a0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5d24641-6d21-44e6-86e6-f701c0c707b3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">cbde6a113a54b8dcf122d9d879b7c21c8b03a89d792f49210bbe41e8466d121a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="700d7612-9ddb-4d93-a492-d9bb8237e50a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8793d6eda87163b04a3db9251ff89b7c8a66500a4ed475c7026b5fc9a4c8abe9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01b67c5b-c6d3-40e8-8157-46a6ea3486a4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">samsung-update.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43c1f0d2-fb9b-44df-be22-4e42d7d6d5b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">facebook-update.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e0832dc-5f4b-4be4-9a0b-65797b10d73c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">telegram-apps.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f237d3de-8c8b-4ece-a650-149ac67f9058" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">getnewandroid.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ee427568-055d-4d04-91d8-8ca071144814" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bijiaexhibition.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c8664dbe-f771-412e-880f-a82991a05436" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mytelkomsel.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7d01e9e-20b9-4cbb-ac0c-bbd44f1c4b6c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">play-mob.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ea465653-4c27-4bab-886a-9b381dbe886a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cdc-asia.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5efe5761-ef3f-41c9-927b-5c3dfed86f84" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">link.sexyhub.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7addabd9-973c-4e9a-8415-4065ad800497" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">update.indoorapps.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="68c5a389-f515-43e6-b31a-ef53dc0efd57" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">video.sexyhub.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9217b6f1-5139-4e9f-9ff0-60dc52cf23ac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">shrook.mooo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b7127da-21e9-4e5d-a230-25bc306c82df" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">secure.anyurl.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="08f643de-25be-42df-ba2a-c5bd8a5deffa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hulahope.mooo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bb454cf5-9e3f-4a3b-9b2c-834e11275560" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">free.dramakorea.asia</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

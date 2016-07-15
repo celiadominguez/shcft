@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="31855baa-5084-42ac-a29c-30843d7f80b3" last-modified="2016-07-10T09:35:13">
+  <short_description>PlugX Uses Legitimate Samsung Application for DLL Side-Loading</short_description>
+  <description>PlugX Uses Legitimate Samsung Application for DLL Side-Loading</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:35:13</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/05/plugx-uses-legitimate-samsung-application-for-dll-side-loading/">http://researchcenter.paloaltonetworks.com/2015/05/plugx-uses-legitimate-samsung-application-for-dll-side-loading/</link>
+    <link rel="https://otx.alienvault.com/pulse/5544b973b45ff539248efa15">https://otx.alienvault.com/pulse/5544b973b45ff539248efa15</link>
+  </links>
+  <definition>
+    <Indicator id="105cb0a5-9ebd-44d1-abb2-a9ce0a6632b3" operator="OR">
+      <IndicatorItem id="f72a3c42-f50f-4030-ab02-0b62b31cb094" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ftp.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4fb6bd2e-d7c4-4572-8a02-872525f523c7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">web.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19c1895b-7751-4941-aa85-4969bd6f9f67" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.hkchurch.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="79635b3e-8781-4f56-992a-de4a6841b772" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">istore.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5b080c2b-5eb1-49e4-b662-3663a9a54598" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">capser.zues.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8e302bf8-e5fc-4c72-9736-e6314b6d1185" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">auto.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aaf5af30-5e8b-4189-9c40-6a08494097df" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">scqf.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4504156f-155b-4618-b365-1c65f7b0c009" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fas2t.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4d4bb79c-f0dc-4e29-a84c-1231e2b3045b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">casper.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b56b1678-2ef7-4fdc-8d23-1fae690dfad3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fast2.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fb3c392e-3138-4b68-8aad-0cda2c775b13" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fast.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b904114-5439-4e6d-b671-183db3cca183" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ser.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="772f24a7-b998-413f-b31b-4b91fa6020e3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www1.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bef204de-a4ea-460d-8663-22a06582455c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rfa.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="995d815e-a2bc-4eaf-a981-01f69b59574e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">line.bacguarp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55d0651a-d003-4511-a951-4ca9a6a197a4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">be855efc2a5f7dcee98a7870e009747940a231f5389380a72565759ca6fdb68f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bd298bfa-ffa2-483b-936a-4e74a50792a8" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b560b974497bc64f68e6a1cebc6f137f73d6e2b282de9b6627a707ae7722fd7d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d1e23865-c1a4-4bd4-ada8-076570142519" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c97c3d53e9ac95ba01aa8bc85c6c8cb792b2d3dba68d7d8912e01f1e62645b71</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57ae67be-51d5-479a-ae21-3aa1bcbcfc06" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">968e62874d105132bb542e7a72f5416886ed23dc75e52a673e2d23ad905fecf6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0ac4a709-ac89-451e-8ea9-fcb8329e97ff" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">92c806d3a98ddced7f3790fcf33c77e573d46ca85a43403bf2c97670f68d05e3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f2bec46-a89a-42d3-a3dc-143a0a88f4b3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">94defa567302c753d9c4f7f3573270eff0b1e4a5d8ec6873887e680a93ed6ddb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03a37dc5-32cb-45c3-bddf-4d6d85812e34" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">423d1da057ac708c9ba2f9b1243fcbecd8772e0b06f87d011f6e1868393fe9f5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b882fa3-163d-453c-9e0c-533be0ce6441" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">57dba34482a0aa3ae2c092a40c709f7e5e5ba5c8a06202a6b1716fa1fdbd1a77</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b7383476-a506-4d33-9c72-933559c80d24" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">4ce325995895f1511f1f3abc15cf2124</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c3444cf3-89c2-4a65-976b-323b532346a4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3a70a7af3bd6fc92f76efaa6a14f3bf4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="787c1e53-4d90-4e31-bb23-3995f9d337c4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d4375582ff56ea9d15f0b0a012f35648</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ba28e363-7db3-4f96-afab-40cd3916a50e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">34759f8055257be08e02a4ddca74d3ec</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a90a15de-95f4-48da-ab8b-c51ed51ee0d4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">142c996adaea6de8ed611b36234dd22f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bdc15b15-9b64-4127-a08b-f055b76b2eeb" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d376f29dc8a1c6fd4b8849c9d57e3e03</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0b3119e9-278c-467d-9172-566e8d502819" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ec96ff2d06f8ece9d88622a62f6d2bf3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec4651c6-03b0-454e-81ad-ef8a95b72a11" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8de6e24ea641b97e75c822500729384c</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

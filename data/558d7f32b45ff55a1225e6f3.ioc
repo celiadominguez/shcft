@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="6f2ce125-67d4-4af1-8a02-ff8e2b7a701b" last-modified="2016-07-10T09:33:26">
+  <short_description>Sundown EK Spreads LuminosityLink RAT</short_description>
+  <description>Sundown EK Spreads LuminosityLink RAT</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:26</authored_date>
+  <links>
+    <link rel="https://www.proofpoint.com/us/threat-insight/post/Light-After-Dark">https://www.proofpoint.com/us/threat-insight/post/Light-After-Dark</link>
+    <link rel="https://otx.alienvault.com/pulse/558d7f32b45ff55a1225e6f3">https://otx.alienvault.com/pulse/558d7f32b45ff55a1225e6f3</link>
+  </links>
+  <definition>
+    <Indicator id="f2662cb1-7cbd-45b9-b9fe-78494b0282c1" operator="OR">
+      <IndicatorItem id="596b5b8f-ccbe-488e-904b-f2c5c873b38e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">serv.textme.pw</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3e26da20-c4d6-4e91-8760-55f0f888eb43" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">emenike.no-ip-biz</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

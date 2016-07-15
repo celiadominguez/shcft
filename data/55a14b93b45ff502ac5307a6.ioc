@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="a280dbec-8b07-416a-a27e-96c3a933af60" last-modified="2016-07-10T09:33:08">
+  <short_description>Angler EK and other Exploit Kits integrating latest Flash 0day</short_description>
+  <description>Angler EK and other Exploit Kits integrating latest Flash 0day</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:08</authored_date>
+  <links>
+    <link rel="http://malware.dontneedcoffee.com/2015/07/hackingteam-flash-0d-cve-2015-xxxx-and.html">http://malware.dontneedcoffee.com/2015/07/hackingteam-flash-0d-cve-2015-xxxx-and.html</link>
+    <link rel="http://www.symantec.com/connect/blogs/leaked-flash-zero-day-likely-be-exploited-attackers">http://www.symantec.com/connect/blogs/leaked-flash-zero-day-likely-be-exploited-attackers</link>
+    <link rel="https://blog.malwarebytes.org/exploits-2/2015/07/neutrino-ek-leverages-latest-flash-0day/">https://blog.malwarebytes.org/exploits-2/2015/07/neutrino-ek-leverages-latest-flash-0day/</link>
+    <link rel="https://otx.alienvault.com/pulse/55a14b93b45ff502ac5307a6">https://otx.alienvault.com/pulse/55a14b93b45ff502ac5307a6</link>
+  </links>
+  <definition>
+    <Indicator id="718d5658-3d02-4204-b99f-1ae13e5b2fbb" operator="OR">
+      <IndicatorItem id="907a0415-8966-43d1-8954-e3c260ecf7f9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">toimikunnan.pizzadrone.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b7fa9776-5ca5-4f57-bb9f-3de45e76c839" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">natantemqueicebarrier.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3edbdfa0-7f40-4fcb-aded-5cef7463dc5d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">depouilprehens.ppcreme.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7ef453c9-4375-4256-b4a0-e657d4a1cb01" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">exploreriezpiekuur.buystarstickets.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3f718d6-757c-40c9-ae86-b8f3cefeac1c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">deputait-unobservantly.pizzadrones.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a59a939f-b34b-4ef7-bff8-5775e2a14bfb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dcras1rueterpllekin.143-36.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36e71148-197b-46b4-833c-78894d85474c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lednumme-utcceunslavic.818house.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57e407f8-234c-4b15-8bae-cee00711c333" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">vasgekoop.pizzadrone.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ba3c7aaf-2dac-4f92-a73d-e2312b8eec04" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">enderezaaort-capitular.pizzadrone.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0c58b892-446a-4d6a-8778-e97b0d23921f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nuzzlestsubakia.7214whitehall.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56a7c08a-b72c-4988-a4c9-fb6db816ee73" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lauluryhmtdecrassage.kyle-johnson.me</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fad7fc0e-6dde-4004-abe5-e7658302e5d1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gospelairesongelukstoneel.rentaloo7.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5140e46e-a44b-40e1-a17d-9f1fb04d9357" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cjhbu.pizzadrone.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1259eda7-f99b-4530-a691-ba5dc1776234" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">loadlibrarysowizral.eco-worksusa.us</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d412108c-5028-4b85-83a2-8339232e7ab5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">okreslanyjachthorens.68ranchero.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7e62f6d6-217b-4364-ab90-6b52be146e16" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fumarases.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ace85334-7a4e-445f-9b99-1c3d5d9b39f7" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">beriliowysiadehemidrachm.buytexasrangerstickets.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3fecc765-025b-409f-aa72-a7bc4138b4a1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rotundumcuttingtorch.pizzadrones.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28963880-e641-4260-872d-44bf1fc27cc5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">lemmenlauluaberan.industrial-team.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b63b21cf-4e9c-4eec-acaf-683929356d41" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sondowacgereizter.provirility.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d6943e20-8407-4269-aa98-2d7ee471a409" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">westpeterborough.joegilbertforcongress.mobi</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c0c90e36-3358-435d-aff3-684b3146707b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">davonzumachenoseid.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a064f535-0a9b-44a1-a093-968eb7164da3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">minnekk-mirarono.pizzadrone.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5138d628-69a9-41d8-9063-35796fc0781c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">dampfkochtopf-bisambont.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1b9165df-5dfc-4d72-ba8b-1d4f6a50197f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adfectavissetmodifiais.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c7dc69f2-dbcd-4c57-b2d1-9cc6a6fc08bd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sherry0imagenes.818house.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1abdd66a-eccc-4376-a073-7c1fc97bb459" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mycodersrcbamboesfluitjie.buymaverickstickets.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e9716a09-7d60-4d5e-8fa1-d47821659195" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">retrtt.petalumacrossfit.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ded6e901-59a8-4564-aa12-e225b01cfe76" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cirogell-seitenlaenge.buydallasmavstickets.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7430cb4-c177-425d-a5f1-bdf1233d3ba3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gweducsaamkoek.buystarstickets.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da469feb-f889-4463-8e84-97ca57f9f7d4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nonstopf.805agents.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="edf38721-06b8-443e-869d-157804c1d8ee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">abstinentsteffleurons.dallascowboysattstadium.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5142fc86-6c85-4f30-a441-0d8df3a831a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">islama1ascendmmhrng.sexopium.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e948c0c-6adb-475e-8c98-dceab6a4384c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">melodieus1araoz.pizzadrone.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b5457ca1-43e5-4d17-88fc-9c3790c2dc5a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tlse-katakombes.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e84245ae-d95c-4cfe-8665-2dc73979797b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">outfold.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f03b89a-af1b-4967-b37c-d3d83b3c0cea" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">tragiek.dallasfamilyemail.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="14957add-41a8-4064-892b-e6809c803abd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">cryptofenianargentynse.pizzadrone.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5b90099-ad80-48f0-8846-b71ae64924b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">njwa.bighitticketcompany.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="22561e0c-5914-4c0f-86ab-a7f3705dc60b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">avlagteunatawaliwa.818house.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f18cbed7-987e-40af-b484-f0d6e54c4aaa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sloggiamosieviin.provirility.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6d255266-e58c-4a9f-aaaa-f839d6811b71" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">comissao.pizzadrone.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2fb9cb86-ae64-4f9a-af97-d51225f1e639" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">1ottens.tb-303.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem id="775ff20b-9eb0-4591-970b-03a2df95fb25" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">nackedei-pomarius.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6b01b12d-a9ae-4149-95ab-b7337239be4a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">panegyricizeloner.pizzadrone.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5a65b0af-e389-45cd-a036-fa758c28b3a4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">danblum-brylluppet.pizzadrones.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a8ce4b33-d2c4-4fc3-9833-49a79e90e7ac" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">hereinfu.pizzadrones.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da10f2b7-0261-498d-ad17-b164727e755f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gegooche.pizzadrones.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4846b75f-2172-452d-be54-9d51448420cf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">jivesrelataaktive.pizzadrone.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f6678ea-b932-4dc9-8aa8-dc201602d1f5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">botterpuckishnestdio.team-trevor.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6848cf03-2b60-4235-9504-8499c12fb0c1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">deducibly.ecotecbiotics.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03c27848-8e21-4215-9898-3b2c5b63c4bb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">eiswoolindustrialiserai.ecotecbiotics.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c1f90006-c73f-46aa-bdc5-ef3b5f9d8cfd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">kousoshutiedotusvlineiss.pizzadrones.nl</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02a710e9-d0e6-4cbc-a505-cff9a35f9833" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">strassoffreplough.team-trevor.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ec51839c-64b8-4419-9f5a-ce9878389629" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">houkuttelevahealthfo.pizzadrones.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f31dbfce-c6a3-4508-a9eb-480137c4b1f2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ueberwachtes.pizzadrone.be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4efb8e5a-76da-4549-920b-8c57e30445d5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">placeresdagelet.anniesintimates.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="41ef6113-15a3-4069-92a3-b3ec3f888c8e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2e67ccdd7d6dd80b248dc586cb2c4843</Content>
+      </IndicatorItem>
+      <IndicatorItem id="56b74976-e3cb-4ff8-8099-bd0809a2d998" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">195ce14e97761accda3d32dba0219f02</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7f165f39-cce4-4847-9124-b089cdd438ce" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">16ac6fc55ab027f64d50da928fea49ec</Content>
+      </IndicatorItem>
+      <IndicatorItem id="68abaf22-28e0-4bab-bfea-0f3900c1e391" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8731d5f453049e2df7e781d43fdcf0cb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d6c5b540-771b-47a1-84a7-6e68b14b9b0e" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">061c086a4da72ecaf5475c862f178f9d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b9c38e92-b588-4cd3-bf3e-aa8115a96f2a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6f64187b221b1b7d570fdd70900b8c17</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d2e59090-957d-4149-b71b-769aef44d0db" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">313cf1faaded7bbb406ea732c34217f4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="24242357-c025-4be8-bc47-12fb8219daf0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6d14ba5c9719624825fd34fe5c7b4297</Content>
+      </IndicatorItem>
+      <IndicatorItem id="427c9809-8adf-4a7c-beff-ac249e45cc24" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5b85fae87c02c00c0c78f70a87e9e920</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7a63a9d-e69d-4602-b271-55d1812bab35" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5efd70a7b9aecf388ae4d631db765d77</Content>
+      </IndicatorItem>
+      <IndicatorItem id="518c9fa0-c2b0-4ad2-bdd0-0c9408501857" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8adbb946d84f34013719a7d13fa4b437</Content>
+      </IndicatorItem>
+      <IndicatorItem id="432d87b6-dad0-4840-b1ae-28b6ac9db283" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bfc1801adf55818b7b08c5cc064abd0c</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

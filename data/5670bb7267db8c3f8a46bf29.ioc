@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="cec34ad5-4526-47f2-a514-e28612d6e829" last-modified="2016-07-10T09:29:32">
+  <short_description>iOS Trojan "Tiny"” Attacks Jailbroken Devices</short_description>
+  <description>iOS Trojan "Tiny"” Attacks Jailbroken Devices</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:29:32</authored_date>
+  <links>
+    <link rel="http://researchcenter.paloaltonetworks.com/2015/12/ios-trojan-tinyv-attacks-jailbroken-devices/">http://researchcenter.paloaltonetworks.com/2015/12/ios-trojan-tinyv-attacks-jailbroken-devices/</link>
+    <link rel="https://otx.alienvault.com/pulse/5670bb7267db8c3f8a46bf29">https://otx.alienvault.com/pulse/5670bb7267db8c3f8a46bf29</link>
+  </links>
+  <definition>
+    <Indicator id="0cd64697-102a-45e0-94c1-c5822a513df8" operator="OR">
+      <IndicatorItem id="aab11e4a-f3a1-47ad-a612-2806ed730c09" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">96f5698271c9b79e78a6f499bd74b4eb78d00f7247db5dcb3b65ba8ecbf4a098</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5ace551a-bd4c-474c-b305-4661d2d89c8a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c6ec85a4aedfdd543f1c20fdf1ed15923e257c9664fd8c5ea38826dd47c0322d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="13281323-9a8c-4d36-8701-c3371ec8cf51" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">09fb33e3fe30e99a993dbf834ea6085f46f60366a17964023eb184ee64247be9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1d51b7e5-324c-4035-b51b-de8081f237ec" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">bdb452b56b21d3537de252d612b2469c752b2a9f7e0cc0d45624bedf762cfc7b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4a597ffe-6428-42d4-8cce-89006330b1c5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b564a919ef7a7f64c5023cbae709a86201e3d78b1604b63296466448167aaba4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e87c3433-279e-43e1-af53-574b0b94ed91" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">4242b0055bc53125cef00f12320eaaebeb7c55eb54303b21e8a5f9e54cc7735e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fd85efdf-194a-476d-9569-db16c6b644ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wx.iosyy.me</Content>
+      </IndicatorItem>
+      <IndicatorItem id="25006596-ed61-41fa-8233-04e64c34cdbf" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">apt.appstt.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="1cb3d11b-edf5-4fb7-b7b6-65485feca01c" last-modified="2016-07-10T09:30:43">
+  <short_description>Kemoge: Another Mobile Malicious Adware Infecting Android</short_description>
+  <description>Kemoge: Another Mobile Malicious Adware Infecting Android</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:43</authored_date>
+  <links>
+    <link rel="https://www.fireeye.com/blog/threat-research/2015/10/kemoge_another_mobi.html">https://www.fireeye.com/blog/threat-research/2015/10/kemoge_another_mobi.html</link>
+    <link rel="https://otx.alienvault.com/pulse/5615349d67db8c47d4cea067">https://otx.alienvault.com/pulse/5615349d67db8c47d4cea067</link>
+  </links>
+  <definition>
+    <Indicator id="67c45c07-ae7f-4ae6-a1b5-24bae2c4b9e8" operator="OR">
+      <IndicatorItem id="b965e200-1be6-4d03-971d-f72ec7f5814a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">taosha.cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4be63698-bc21-40fa-8bc4-e16b4a8404a4" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ads.kemoge.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ab59a60-52b8-43cb-b2c5-ddb22f4602a3" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">adm.kemoge.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="35acc723-23c6-4045-ad51-24f6d5e61f5d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aps.kemoge.net</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f5fd185a-3dbc-48d5-b6aa-6e727c9eae49" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1be29a6622543f6f5063eda1d83a4e49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b4731d92-f417-45f5-9aa1-f9ad87b131ba" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">40b1dcbe5eca2d4cf3621059656aabb5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="76e0f6a2-52d8-4f6e-afaf-544fe41db3e2" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">abaf6cb1972d55702b559725983e134a</Content>
+      </IndicatorItem>
+      <IndicatorItem id="62de4fb2-0047-41dd-9647-3320adeb3fa5" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">162cb09e2eebd595eae2617cd3af1d0d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="da6e9445-f7d3-43d8-844c-c915956e9b11" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">7cd86d83d916dbd9b04d0e7e4f9ff6e8</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a6922d9f-2175-4381-897d-094e73865832" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">db563053762250a5cb4d0c10e0e3dbb0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b0ec0dc2-a25c-4d31-9322-8e88b3607841" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cec85188308644273332d00d633ab875</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7db7a8e1-e834-49c1-b662-fad93269b119" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">b36a751d72e2bdea80e7ff72b6fb3a41</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1dae38fd-3687-46f1-9a62-88e125cbe8c8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bf6dc2f78baed212f6aa4268da086e09</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cea988f1-c1d4-4b86-aa43-28e6112eeb4f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">aa31e77775f5ce3e85ebf3bdb09f590e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="985c21b5-70bb-4c4e-8f90-ebc5e839e035" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">efb917cb0cf09fc38b98500af61d30dc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9d1f2320-2ca2-4939-8dac-99b7a1e04c54" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">6fc29ab75d87a5b1e0dd792c5c68d738</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1fabed32-f4ff-42cc-abe3-2d00982a1923" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">0c67d0919e574a6876c73118260368ee</Content>
+      </IndicatorItem>
+      <IndicatorItem id="872b8c1c-d5db-4bde-bfb4-db8809377d39" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">2701de69ea6b57bbc827830660711ea2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f1c1c76-b319-4332-8262-71b8707ce539" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f1a16304e427b7f8657de8c3dfb1d33f</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

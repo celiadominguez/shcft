@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="66bfaaf2-9e38-46ae-8a28-3a6e08c81e7f" last-modified="2016-07-10T09:33:12">
+  <short_description>APT Group Wekby Leveraging Adobe Flash Exploit</short_description>
+  <description>APT Group Wekby Leveraging Adobe Flash Exploit</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:33:12</authored_date>
+  <links>
+    <link rel="http://www.volexity.com/blog/?p=158">http://www.volexity.com/blog/?p=158</link>
+    <link rel="https://otx.alienvault.com/pulse/559ea89ab45ff51847530768">https://otx.alienvault.com/pulse/559ea89ab45ff51847530768</link>
+  </links>
+  <definition>
+    <Indicator id="85c603f6-e319-4e84-ba67-e5b863dde98e" operator="OR">
+      <IndicatorItem id="e582a55e-15e8-4770-ad54-08ebd0a5df42" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">info.imly.org</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eab51a08-eb30-458e-8381-e5b0f37a3d2f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gmail.bkz88.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de8ddee9-1032-4a3a-8abf-2598759a644b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">cfbcb83f8515bd169afd0b22488b4430</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f25186e7-220d-4f4b-9be9-8ce8034b412a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">079a440bee0f86d8a59ebc5c4b523a07</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e40b8f00-27d2-4742-b16f-486418732b7a" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">7389e78cca58de6cb2cbe2b631d2fec259e9cdcc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cd5c0a29-d10a-4da1-b8f9-8cfbf3d3d031" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">959638ee177b51bda8701c10258b4956f8b1c367</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8651d05d-a29c-41fe-83d2-f5d12069799c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">223.25.233.248</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

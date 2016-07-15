@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="d55e63eb-c559-4a7e-9694-de07983d105e" last-modified="2016-07-10T09:36:28">
+  <short_description>Tibetan Uprising Day Malware Attacks</short_description>
+  <description>Tibetan Uprising Day Malware Attacks</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:36:28</authored_date>
+  <links>
+    <link rel="https://citizenlab.org/2015/03/tibetan-uprising-day-malware-attacks/">https://citizenlab.org/2015/03/tibetan-uprising-day-malware-attacks/</link>
+    <link rel="https://otx.alienvault.com/pulse/5503110213432a032311abe6">https://otx.alienvault.com/pulse/5503110213432a032311abe6</link>
+  </links>
+  <definition>
+    <Indicator id="97efc906-19d6-4a51-b359-41d5a869dbae" operator="OR">
+      <IndicatorItem id="fef8b9bf-af0e-4126-bdf5-b79b3963b241" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">602a762dca46f7639210e60c59f89a6e7a16391b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7935ff1a-ea2c-49a6-856c-8f3fb5275ea6" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">4ab039da14acf7d80fbb11034ef9ccc861c5ed24</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b3b616c-5315-43ff-a180-9fa1831c7e22" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">d9a74528bb56a841cea1fe5fa3e0c777a8e96402</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ed0a58a4-5985-4ad5-8363-663068baed20" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">johnsmith5382.thoughts.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4bef3b73-905c-49a2-ab3b-bb46e56b2400" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rukiyeangel.dyndns.pro</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b006cb47-91a3-4aac-b47d-2c885a552223" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">www.semamail.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d89af433-01ce-4748-9035-ac4794681b2b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">johnsmith152.typepad.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="089275d9-316b-4294-8330-bd9cb4730498" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">mynewshemm.wordpress.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57347f40-ec0c-47ea-b7be-ca373c0070b0" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">122.10.117.152</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e5593f08-44d8-4da7-b3c8-a7d675ae574f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">122.10.117.35</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4df90485-3018-48c1-9c60-33cd9905d0a2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">122.10.117.5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="242956a7-4001-4957-813c-d156af3b9947" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">23.27.127.200</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2d657237-d6cb-40b7-aeb5-f800b7568fdf" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">3de8fb09d79166f10f4a10aef1202c2cb45849943f224dc6c61df8d18435e064</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be5a0e0d-1644-48ad-a601-9243b08b8c49" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">ddfa44ebb181282e815e965a1c531c7e145128aa7306b508a563e10d5f9f03fb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ab4720b0-cd47-446b-981e-7c11c54ddbe3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">a264cec4096a04c47013d41dcddab9f99482f8f83d61e13be4bcf4614f79b7a0</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4a62a332-414e-40cb-8c82-de74e19386d3" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">e8f36317e29206d48bd0e6dd6570872122be44f82ca1de01aef373b3cdb2c0e1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e49959ba-4a44-49de-9c8c-1d09bc027315" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">50aebd2a1e3b8917d6c2b5e88c2e2999b2368fca550c548d0836aa57e35c463f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c2d1b3dd-cad7-4114-9384-c879e519717c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">de7058700f06c5310c26944b28203bc82035f9ff74021649db39a24470517fd1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="29f30084-b39b-4646-89af-1a96054e21fb" condition="contains">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">mike.fly@email.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d34b05f7-5135-45c6-b9c2-2d4a68212ab8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">72707089512762fce576e29a0472eb16</Content>
+      </IndicatorItem>
+      <IndicatorItem id="01c69a45-8f72-40ca-ac20-f80f568ec2eb" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d8ae44cd65f97654f066edbcb501d999</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0b83560d-5f7b-484d-82ae-f077c5c8a910" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">8346b50c3954b5c25bf13fcd281eb11a</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="1238e77b-b1e0-47df-8172-748398fca198" last-modified="2016-07-10T09:27:06">
+  <short_description>Indian organizations targeted in Suckfly attacks</short_description>
+  <description>Indian organizations targeted in Suckfly attacks</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:27:06</authored_date>
+  <links>
+    <link rel="http://www.symantec.com/connect/blogs/indian-organizations-targeted-suckfly-attacks">http://www.symantec.com/connect/blogs/indian-organizations-targeted-suckfly-attacks</link>
+    <link rel="https://otx.alienvault.com/pulse/573b4c60a714a63f8954547e">https://otx.alienvault.com/pulse/573b4c60a714a63f8954547e</link>
+  </links>
+  <definition>
+    <Indicator id="8724740c-c4ab-4253-a8dd-90c90d072dd3" operator="OR">
+      <IndicatorItem id="685f83f4-2757-45ed-8082-7184cec63819" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">b53a316a03b46758cb128e5045dab2717cb36e7b5eb1863ce2524d4f69bc2cab</Content>
+      </IndicatorItem>
+      <IndicatorItem id="76f0f4ce-6d86-4c3f-86bc-64bc18785016" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">47731c9d985ebc2bd7227fced3cc44c6d72e29b52f76fccbdaddd76cc3450706</Content>
+      </IndicatorItem>
+      <IndicatorItem id="00033299-a8ca-4ee0-8ef0-e9a11238ac83" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">c2022e1114b162e79e44d974fd310d53e1bbdd8cb4f217553c1227cafed78855</Content>
+      </IndicatorItem>
+      <IndicatorItem id="134e1a1c-a15a-48e3-83c8-2630bb2b8fe7" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">eaee2bf83cf90d35dab8a4711f7a5f2ebf9741007668f3746995f4564046fbdf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="496c23bf-c15c-40ec-bd89-3b8c7ab7dd72" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">8397a435f6fb8a7a9c50d62854223fe61b16bc5806f6f7c413a94d2c492b8c6e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="42fef7ea-7a27-47b4-90b1-c9f9c45bcf99" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fli.fedora-dns-update.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e2076fc8-efa8-429d-9b59-e99cabc700c1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ssl.microsoft-security-center.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a1cbd74-ec0b-4048-b49c-d0fdc084a995" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">bss.pvtcdn.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="22e6b1bd-e185-4758-bbb0-0a68df5e7f53" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">usv0503.iqservs-jp.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e0122ced-8c89-48a8-844f-2ca5b578b553" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ssl.2upgrades.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7468c403-0704-4510-8f93-e917a102b04f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">aux.robertstockdill.com</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>

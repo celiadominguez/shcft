@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="4b7ef7f9-1fa6-45d4-b883-2175eead8529" last-modified="2016-07-10T09:30:47">
+  <short_description>Quaverse RAT: Remote-Access-as-a-Service</short_description>
+  <description>Quaverse RAT: Remote-Access-as-a-Service</description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-07-10T09:30:47</authored_date>
+  <links>
+    <link rel="https://www.trustwave.com/Resources/SpiderLabs-Blog/Quaverse-RAT--Remote-Access-as-a-Service/">https://www.trustwave.com/Resources/SpiderLabs-Blog/Quaverse-RAT--Remote-Access-as-a-Service/</link>
+    <link rel="http://www.microsoft.com/security/portal/threat/encyclopedia/entry.aspx?name=TROJANDOWNLOADER:JAVA/OPENCONNECTION.QE">http://www.microsoft.com/security/portal/threat/encyclopedia/entry.aspx?name=TROJANDOWNLOADER:JAVA/OPENCONNECTION.QE</link>
+    <link rel="https://otx.alienvault.com/pulse/560d88594637f21ecf29db0b">https://otx.alienvault.com/pulse/560d88594637f21ecf29db0b</link>
+  </links>
+  <definition>
+    <Indicator id="f444c21c-be5e-41ab-b620-d7392e0e9f8b" operator="OR">
+      <IndicatorItem id="523ffd5b-af91-46da-b03d-42ac1bcc5a9c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">gtfoods.com.ru</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c34998ba-c5a5-428c-b45b-babc6dbe014f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">frecarn.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a0ef3744-0200-4a76-bd74-736c4765f118" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">soqda.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30048df7-2915-4488-a823-7635653bdd55" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">quaverse.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e03616a5-878c-4c3d-aa5d-ce2771b4bddd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">valtce.co</Content>
+      </IndicatorItem>
+      <IndicatorItem id="660ce4cc-c0cf-44ec-99e2-6c265ca19a45" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">bd7ccace0e871d27f622d33f30583bcb</Content>
+      </IndicatorItem>
+      <IndicatorItem id="923634d8-fa74-4c77-a4dd-91302170251b" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">1ced4663568ec6d54598976db312e376</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dcc323e9-a3b9-4b25-9d80-b1ec2593e031" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3f969420d063fc56aedab09b0ba80100</Content>
+      </IndicatorItem>
+      <IndicatorItem id="11c64694-ec7f-40b2-b873-8831ca89cb3c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5f70e1b5482f75747ee8bfdb3ef105e3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4edf3481-4233-41d6-a136-45b2d6b5017a" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">e26413e443ad6c8c6a9a5d833a0a5005</Content>
+      </IndicatorItem>
+      <IndicatorItem id="19f4aed4-3078-469a-8083-d1107719ff05" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">07e7f55f80e51119bc7f576baef25c89</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2a461303-a472-416f-bc42-b9748fd1307f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">22105f2cb8572d24f5c7c7f4b5ff707e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b004a608-d7d8-4752-a501-983df952677c" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">963b08af4211460033cdcaa59c5cc5b1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="20465458-46cb-4317-b04e-2d30c383aaa0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">3b9e1d8d56f0c4b772130de3efdd7afa</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7485b47d-fba0-4ffe-b67b-0b87cae3187f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">ade107891ccba3845641b2db4b47e622</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b9d52060-dab1-4cb1-9edf-83eb9550bb7f" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">c9c0ca26ef1c41c67e2f028bfa7e0f0d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0f7fa8fe-46de-41d7-9c03-46339ee868a4" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">aa604c6384a48bad3b2d58d927a385bd</Content>
+      </IndicatorItem>
+      <IndicatorItem id="73e2ebcc-f86e-4079-a08b-3d131d5b70c0" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">246de291b9e920a86635596c75d366ae</Content>
+      </IndicatorItem>
+      <IndicatorItem id="97bb3d47-6ad8-4474-8ed1-4f514b406a2d" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f46e73ae7a345c9d2d9e8ac557b00357</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e0d56bf-6b41-465e-83bf-2adeaf7c9b04" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">17756078acbdf8e87ae34209efddb1a8f5e01dd3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fa86d89f-7807-46fd-b1d9-208e72c1e663" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">178.62.3.250</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>
