@@ -27,9 +27,8 @@ class Indicator:
 
 class Evidence:
 
-    def __init__(self, id, value, condition):
-        """ Create a new ioc object """
-        self.search = type
+    def __init__(self, id):
+        pass
 pass
 
 

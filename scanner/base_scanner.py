@@ -10,7 +10,7 @@ class BaseScanner(object):
     registry = {}
     def register(cls):
         instance = cls()
-        cls.registry[instance.getFormat()] = instance
+        cls.registry[cls.__name__] = instance
         return cls
 
     def getRegister(self):

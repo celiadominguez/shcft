@@ -3812,3 +3812,1536 @@
 2016-07-10 14:57:20,005 INFO 
 2016-07-10 14:57:20,005 INFO 
 2016-07-10 14:57:20,005 INFO Program Terminated Normally
+2016-07-16 18:29:51,151 INFO 
+2016-07-16 18:29:51,178 INFO Welcome to SHCFT
+2016-07-16 18:29:51,179 INFO Version1.0
+2016-07-16 18:29:51,179 INFO Release Date: July 20, 2016
+2016-07-16 18:29:51,180 INFO System:  win32
+2016-07-16 18:29:51,180 INFO Version: 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:01:18) [MSC v.1900 32 bit (Intel)]
+2016-07-16 18:29:51,180 INFO Start to collect evidences of compromise
+2016-07-16 18:29:51,184 INFO IOC file: 546ce8eb11d40838dc6e43f1.ioc
+2016-07-16 18:29:51,210 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:35:45,403 INFO 
+2016-07-16 18:35:45,404 INFO Welcome to SHCFT
+2016-07-16 18:35:45,404 INFO Version1.0
+2016-07-16 18:35:45,405 INFO Release Date: July 20, 2016
+2016-07-16 18:35:45,405 INFO System:  win32
+2016-07-16 18:35:45,405 INFO Version: 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:01:18) [MSC v.1900 32 bit (Intel)]
+2016-07-16 18:35:45,406 INFO Start to collect evidences of compromise
+2016-07-16 18:35:45,409 INFO IOC file: 546ce8eb11d40838dc6e43f1.ioc
+2016-07-16 18:35:45,412 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,018 INFO 
+2016-07-16 18:36:22,019 INFO Welcome to SHCFT
+2016-07-16 18:36:22,019 INFO Version1.0
+2016-07-16 18:36:22,020 INFO Release Date: July 20, 2016
+2016-07-16 18:36:22,020 INFO System:  win32
+2016-07-16 18:36:22,020 INFO Version: 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:01:18) [MSC v.1900 32 bit (Intel)]
+2016-07-16 18:36:22,021 INFO Start to collect evidences of compromise
+2016-07-16 18:36:22,024 INFO IOC file: 546ce8eb11d40838dc6e43f1.ioc
+2016-07-16 18:36:22,028 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,058 INFO OpenIoc10Parser.parseEvidence finished on: 0.0297701358795166 seconds
+2016-07-16 18:36:22,059 INFO IOC file: 546cf5ba11d40839ea8821ca.ioc
+2016-07-16 18:36:22,103 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,113 INFO OpenIoc10Parser.parseEvidence finished on: 0.00911712646484375 seconds
+2016-07-16 18:36:22,113 INFO IOC file: 546e2e4f11d4083bc021c37d.ioc
+2016-07-16 18:36:22,136 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,158 INFO OpenIoc10Parser.parseEvidence finished on: 0.020513534545898438 seconds
+2016-07-16 18:36:22,159 INFO IOC file: 546fc7bf11d4083bc021c37f.ioc
+2016-07-16 18:36:22,175 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,195 INFO OpenIoc10Parser.parseEvidence finished on: 0.019702911376953125 seconds
+2016-07-16 18:36:22,195 INFO IOC file: 5473709d11d4083bc021c387.ioc
+2016-07-16 18:36:22,207 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,228 INFO OpenIoc10Parser.parseEvidence finished on: 0.019345998764038086 seconds
+2016-07-16 18:36:22,228 INFO IOC file: 547cb9c811d4083bc021c392.ioc
+2016-07-16 18:36:22,242 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,249 INFO OpenIoc10Parser.parseEvidence finished on: 0.006240129470825195 seconds
+2016-07-16 18:36:22,249 INFO IOC file: 547e0a9511d4080d5a98d83f.ioc
+2016-07-16 18:36:22,265 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,420 INFO OpenIoc10Parser.parseEvidence finished on: 0.15370488166809082 seconds
+2016-07-16 18:36:22,421 INFO IOC file: 5487367411d408320a370d67.ioc
+2016-07-16 18:36:22,433 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,437 INFO OpenIoc10Parser.parseEvidence finished on: 0.004003047943115234 seconds
+2016-07-16 18:36:22,438 INFO IOC file: 548885ef11d40843c065f6ee.ioc
+2016-07-16 18:36:22,452 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,471 INFO OpenIoc10Parser.parseEvidence finished on: 0.018324613571166992 seconds
+2016-07-16 18:36:22,471 INFO IOC file: 548886ed11d40843c065f6f0.ioc
+2016-07-16 18:36:22,477 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,484 INFO OpenIoc10Parser.parseEvidence finished on: 0.007231235504150391 seconds
+2016-07-16 18:36:22,485 INFO IOC file: 548b3f4d11d40843c065f6f2.ioc
+2016-07-16 18:36:22,495 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,528 INFO OpenIoc10Parser.parseEvidence finished on: 0.03278660774230957 seconds
+2016-07-16 18:36:22,529 INFO IOC file: 5494549c11d408634421e4de.ioc
+2016-07-16 18:36:22,542 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,574 INFO OpenIoc10Parser.parseEvidence finished on: 0.030858993530273438 seconds
+2016-07-16 18:36:22,574 INFO IOC file: 54948dda11d408634421e4e0.ioc
+2016-07-16 18:36:22,593 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,618 INFO OpenIoc10Parser.parseEvidence finished on: 0.02402019500732422 seconds
+2016-07-16 18:36:22,618 INFO IOC file: 5497d9af11d4080471a1a37c.ioc
+2016-07-16 18:36:22,636 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,650 INFO OpenIoc10Parser.parseEvidence finished on: 0.014230012893676758 seconds
+2016-07-16 18:36:22,650 INFO IOC file: 5497da5d11d4080471a1a37e.ioc
+2016-07-16 18:36:22,665 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,704 INFO OpenIoc10Parser.parseEvidence finished on: 0.03787422180175781 seconds
+2016-07-16 18:36:22,704 INFO IOC file: 54a12d6311d4080471a1a386.ioc
+2016-07-16 18:36:22,719 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,737 INFO OpenIoc10Parser.parseEvidence finished on: 0.017388105392456055 seconds
+2016-07-16 18:36:22,737 INFO IOC file: 54b6b08d11d4080471a1a38e.ioc
+2016-07-16 18:36:22,749 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,754 INFO OpenIoc10Parser.parseEvidence finished on: 0.005313396453857422 seconds
+2016-07-16 18:36:22,754 INFO IOC file: 54b6c01611d4080471a1a390.ioc
+2016-07-16 18:36:22,767 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,777 INFO OpenIoc10Parser.parseEvidence finished on: 0.009215593338012695 seconds
+2016-07-16 18:36:22,777 INFO IOC file: 54bd4b0411d4087235fb7130.ioc
+2016-07-16 18:36:22,789 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,792 INFO OpenIoc10Parser.parseEvidence finished on: 0.0031082630157470703 seconds
+2016-07-16 18:36:22,792 INFO IOC file: 54c7e17b11d4085eb82e0597.ioc
+2016-07-16 18:36:22,806 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,818 INFO OpenIoc10Parser.parseEvidence finished on: 0.012367010116577148 seconds
+2016-07-16 18:36:22,819 INFO IOC file: 54c7e1e811d4085eb82e0598.ioc
+2016-07-16 18:36:22,829 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,878 INFO OpenIoc10Parser.parseEvidence finished on: 0.049163818359375 seconds
+2016-07-16 18:36:22,880 INFO IOC file: 54cbf01511d4081fc5708fc4.ioc
+2016-07-16 18:36:22,884 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,888 INFO OpenIoc10Parser.parseEvidence finished on: 0.004126310348510742 seconds
+2016-07-16 18:36:22,888 INFO IOC file: 54cbf1ac11d4081fc5708fc5.ioc
+2016-07-16 18:36:22,904 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:22,913 INFO OpenIoc10Parser.parseEvidence finished on: 0.007100343704223633 seconds
+2016-07-16 18:36:22,913 INFO IOC file: 54cbfc7a11d4081fc5708fc6.ioc
+2016-07-16 18:36:22,928 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,000 INFO OpenIoc10Parser.parseEvidence finished on: 0.07259631156921387 seconds
+2016-07-16 18:36:23,001 INFO IOC file: 54d0489a11d4083acf970926.ioc
+2016-07-16 18:36:23,020 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,034 INFO OpenIoc10Parser.parseEvidence finished on: 0.01421356201171875 seconds
+2016-07-16 18:36:23,035 INFO IOC file: 54d10cb411d4083acf970927.ioc
+2016-07-16 18:36:23,070 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,073 INFO OpenIoc10Parser.parseEvidence finished on: 0.0021123886108398438 seconds
+2016-07-16 18:36:23,073 INFO IOC file: 54d10e3a11d4083acf970928.ioc
+2016-07-16 18:36:23,082 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,085 INFO OpenIoc10Parser.parseEvidence finished on: 0.0030052661895751953 seconds
+2016-07-16 18:36:23,085 INFO IOC file: 54d1106411d4083acf97092a.ioc
+2016-07-16 18:36:23,089 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,096 INFO OpenIoc10Parser.parseEvidence finished on: 0.007130146026611328 seconds
+2016-07-16 18:36:23,098 INFO IOC file: 54d113b711d4083acf97092c.ioc
+2016-07-16 18:36:23,110 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,115 INFO OpenIoc10Parser.parseEvidence finished on: 0.005120754241943359 seconds
+2016-07-16 18:36:23,115 INFO IOC file: 54d27b7511d408055d706473.ioc
+2016-07-16 18:36:23,119 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,124 INFO OpenIoc10Parser.parseEvidence finished on: 0.004998445510864258 seconds
+2016-07-16 18:36:23,124 INFO IOC file: 54d2c4c211d408167c9dea80.ioc
+2016-07-16 18:36:23,129 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,146 INFO OpenIoc10Parser.parseEvidence finished on: 0.016489505767822266 seconds
+2016-07-16 18:36:23,147 INFO IOC file: 54d3010411d408167c9dea81.ioc
+2016-07-16 18:36:23,158 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,164 INFO OpenIoc10Parser.parseEvidence finished on: 0.006219148635864258 seconds
+2016-07-16 18:36:23,165 INFO IOC file: 54d3019211d408167c9dea82.ioc
+2016-07-16 18:36:23,181 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,189 INFO OpenIoc10Parser.parseEvidence finished on: 0.0071773529052734375 seconds
+2016-07-16 18:36:23,190 INFO IOC file: 54d30ccc11d408167c9dea83.ioc
+2016-07-16 18:36:23,195 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,205 INFO OpenIoc10Parser.parseEvidence finished on: 0.008363723754882812 seconds
+2016-07-16 18:36:23,205 INFO IOC file: 54d3b42411d408167c9dea86.ioc
+2016-07-16 18:36:23,220 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,235 INFO OpenIoc10Parser.parseEvidence finished on: 0.014383077621459961 seconds
+2016-07-16 18:36:23,235 INFO IOC file: 54d5027011d408112979ce3a.ioc
+2016-07-16 18:36:23,244 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,247 INFO OpenIoc10Parser.parseEvidence finished on: 0.0021238327026367188 seconds
+2016-07-16 18:36:23,247 INFO IOC file: 54d548f911d4081e0c545af7.ioc
+2016-07-16 18:36:23,262 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,276 INFO OpenIoc10Parser.parseEvidence finished on: 0.01333761215209961 seconds
+2016-07-16 18:36:23,277 INFO IOC file: 54d65cc111d4081f74813649.ioc
+2016-07-16 18:36:23,281 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,285 INFO OpenIoc10Parser.parseEvidence finished on: 0.0029969215393066406 seconds
+2016-07-16 18:36:23,286 INFO IOC file: 54d7adee11d40853d8e13c8d.ioc
+2016-07-16 18:36:23,295 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,306 INFO OpenIoc10Parser.parseEvidence finished on: 0.009330511093139648 seconds
+2016-07-16 18:36:23,306 INFO IOC file: 54d7af3c11d40853d8e13c8e.ioc
+2016-07-16 18:36:23,315 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,320 INFO OpenIoc10Parser.parseEvidence finished on: 0.004063129425048828 seconds
+2016-07-16 18:36:23,320 INFO IOC file: 54d7b04c11d40853d8e13c8f.ioc
+2016-07-16 18:36:23,329 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,341 INFO OpenIoc10Parser.parseEvidence finished on: 0.012238025665283203 seconds
+2016-07-16 18:36:23,341 INFO IOC file: 54d7b16511d40853d8e13c90.ioc
+2016-07-16 18:36:23,348 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,351 INFO OpenIoc10Parser.parseEvidence finished on: 0.0030062198638916016 seconds
+2016-07-16 18:36:23,352 INFO IOC file: 54d9536811d4082156763b2f.ioc
+2016-07-16 18:36:23,366 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,392 INFO OpenIoc10Parser.parseEvidence finished on: 0.024572134017944336 seconds
+2016-07-16 18:36:23,392 INFO IOC file: 54d99f9811d4082833472e37.ioc
+2016-07-16 18:36:23,412 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,421 INFO OpenIoc10Parser.parseEvidence finished on: 0.007117033004760742 seconds
+2016-07-16 18:36:23,422 INFO IOC file: 54daa7d613432a45137cd8d1.ioc
+2016-07-16 18:36:23,426 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,434 INFO OpenIoc10Parser.parseEvidence finished on: 0.008230924606323242 seconds
+2016-07-16 18:36:23,435 INFO IOC file: 54daaa0813432a45137cd8d3.ioc
+2016-07-16 18:36:23,449 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,454 INFO OpenIoc10Parser.parseEvidence finished on: 0.00511932373046875 seconds
+2016-07-16 18:36:23,455 INFO IOC file: 54dae10413432a48948a23ad.ioc
+2016-07-16 18:36:23,472 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,526 INFO OpenIoc10Parser.parseEvidence finished on: 0.05298280715942383 seconds
+2016-07-16 18:36:23,527 INFO IOC file: 54db8dce13432a4bba167243.ioc
+2016-07-16 18:36:23,544 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,551 INFO OpenIoc10Parser.parseEvidence finished on: 0.007169961929321289 seconds
+2016-07-16 18:36:23,551 INFO IOC file: 54db933913432a4bba167244.ioc
+2016-07-16 18:36:23,562 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,567 INFO OpenIoc10Parser.parseEvidence finished on: 0.005114078521728516 seconds
+2016-07-16 18:36:23,568 INFO IOC file: 54db94d413432a4bba167245.ioc
+2016-07-16 18:36:23,589 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,599 INFO OpenIoc10Parser.parseEvidence finished on: 0.009338140487670898 seconds
+2016-07-16 18:36:23,600 INFO IOC file: 54dbe64713432a511777bea9.ioc
+2016-07-16 18:36:23,615 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,632 INFO OpenIoc10Parser.parseEvidence finished on: 0.017339229583740234 seconds
+2016-07-16 18:36:23,633 INFO IOC file: 54dc090813432a511777bead.ioc
+2016-07-16 18:36:23,651 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,661 INFO OpenIoc10Parser.parseEvidence finished on: 0.009288787841796875 seconds
+2016-07-16 18:36:23,662 INFO IOC file: 54dcd89613432a5a2bac32f2.ioc
+2016-07-16 18:36:23,667 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,675 INFO OpenIoc10Parser.parseEvidence finished on: 0.008277416229248047 seconds
+2016-07-16 18:36:23,675 INFO IOC file: 54dceb4f13432a5a4c19ee45.ioc
+2016-07-16 18:36:23,681 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,685 INFO OpenIoc10Parser.parseEvidence finished on: 0.004005908966064453 seconds
+2016-07-16 18:36:23,685 INFO IOC file: 54dd0b8a13432a71f80a5257.ioc
+2016-07-16 18:36:23,689 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,739 INFO OpenIoc10Parser.parseEvidence finished on: 0.050206661224365234 seconds
+2016-07-16 18:36:23,740 INFO IOC file: 54e7606d13432a13381b37f8.ioc
+2016-07-16 18:36:23,766 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,818 INFO OpenIoc10Parser.parseEvidence finished on: 0.051970481872558594 seconds
+2016-07-16 18:36:23,818 INFO IOC file: 54e7610d13432a12badec7e5.ioc
+2016-07-16 18:36:23,839 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:23,976 INFO OpenIoc10Parser.parseEvidence finished on: 0.13634681701660156 seconds
+2016-07-16 18:36:23,977 INFO IOC file: 54e7616013432a12badec7e6.ioc
+2016-07-16 18:36:23,990 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,076 INFO OpenIoc10Parser.parseEvidence finished on: 0.08443498611450195 seconds
+2016-07-16 18:36:24,077 INFO IOC file: 54e7650013432a12badec7e7.ioc
+2016-07-16 18:36:24,087 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,192 INFO OpenIoc10Parser.parseEvidence finished on: 0.10361576080322266 seconds
+2016-07-16 18:36:24,193 INFO IOC file: 54e76c9813432a1304b1a5c9.ioc
+2016-07-16 18:36:24,213 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,235 INFO OpenIoc10Parser.parseEvidence finished on: 0.021477222442626953 seconds
+2016-07-16 18:36:24,236 INFO IOC file: 54e7bb1013432a1304b1a5ca.ioc
+2016-07-16 18:36:24,240 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,378 INFO OpenIoc10Parser.parseEvidence finished on: 0.13749432563781738 seconds
+2016-07-16 18:36:24,378 INFO IOC file: 54e8028213432a12badec7eb.ioc
+2016-07-16 18:36:24,395 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,415 INFO OpenIoc10Parser.parseEvidence finished on: 0.0204923152923584 seconds
+2016-07-16 18:36:24,415 INFO IOC file: 54ed25fb13432a130fcdc1ab.ioc
+2016-07-16 18:36:24,440 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,454 INFO OpenIoc10Parser.parseEvidence finished on: 0.014331817626953125 seconds
+2016-07-16 18:36:24,455 INFO IOC file: 54ee63dc13432a12badec7ec.ioc
+2016-07-16 18:36:24,465 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,473 INFO OpenIoc10Parser.parseEvidence finished on: 0.00822591781616211 seconds
+2016-07-16 18:36:24,474 INFO IOC file: 54f09d6613432a4b0412de4e.ioc
+2016-07-16 18:36:24,495 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,510 INFO OpenIoc10Parser.parseEvidence finished on: 0.014334917068481445 seconds
+2016-07-16 18:36:24,510 INFO IOC file: 54f0a14313432a4b0412de4f.ioc
+2016-07-16 18:36:24,514 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,518 INFO OpenIoc10Parser.parseEvidence finished on: 0.0030050277709960938 seconds
+2016-07-16 18:36:24,519 INFO IOC file: 54f4805513432a5c18c1cf87.ioc
+2016-07-16 18:36:24,534 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,543 INFO OpenIoc10Parser.parseEvidence finished on: 0.008203506469726562 seconds
+2016-07-16 18:36:24,544 INFO IOC file: 54f51dd813432a7ab0187afa.ioc
+2016-07-16 18:36:24,547 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,551 INFO OpenIoc10Parser.parseEvidence finished on: 0.003124713897705078 seconds
+2016-07-16 18:36:24,551 INFO IOC file: 54f649b413432a7ab0187afb.ioc
+2016-07-16 18:36:24,562 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,568 INFO OpenIoc10Parser.parseEvidence finished on: 0.006113290786743164 seconds
+2016-07-16 18:36:24,568 INFO IOC file: 54f7475713432a7ab3105f1a.ioc
+2016-07-16 18:36:24,572 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,577 INFO OpenIoc10Parser.parseEvidence finished on: 0.005136013031005859 seconds
+2016-07-16 18:36:24,577 INFO IOC file: 54f7805313432a7aaf8755f7.ioc
+2016-07-16 18:36:24,586 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,600 INFO OpenIoc10Parser.parseEvidence finished on: 0.014206409454345703 seconds
+2016-07-16 18:36:24,600 INFO IOC file: 54fa039b13432a1659b26558.ioc
+2016-07-16 18:36:24,607 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,623 INFO OpenIoc10Parser.parseEvidence finished on: 0.015445947647094727 seconds
+2016-07-16 18:36:24,624 INFO IOC file: 54fe188913432a25c5fcab86.ioc
+2016-07-16 18:36:24,636 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,665 INFO OpenIoc10Parser.parseEvidence finished on: 0.028872013092041016 seconds
+2016-07-16 18:36:24,666 INFO IOC file: 55006e5d13432a032406d7b3.ioc
+2016-07-16 18:36:24,681 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,704 INFO OpenIoc10Parser.parseEvidence finished on: 0.021529436111450195 seconds
+2016-07-16 18:36:24,705 INFO IOC file: 5501f41813432a05ac424690.ioc
+2016-07-16 18:36:24,723 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,727 INFO OpenIoc10Parser.parseEvidence finished on: 0.003137826919555664 seconds
+2016-07-16 18:36:24,727 INFO IOC file: 5501f88313432a032227f917.ioc
+2016-07-16 18:36:24,731 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,736 INFO OpenIoc10Parser.parseEvidence finished on: 0.004110574722290039 seconds
+2016-07-16 18:36:24,736 INFO IOC file: 55024d3913432a05a47b5c1c.ioc
+2016-07-16 18:36:24,751 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,759 INFO OpenIoc10Parser.parseEvidence finished on: 0.008239030838012695 seconds
+2016-07-16 18:36:24,760 INFO IOC file: 5503110213432a032311abe6.ioc
+2016-07-16 18:36:24,768 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,789 INFO OpenIoc10Parser.parseEvidence finished on: 0.019753217697143555 seconds
+2016-07-16 18:36:24,790 INFO IOC file: 55033d4e13432a135890e089.ioc
+2016-07-16 18:36:24,794 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,798 INFO OpenIoc10Parser.parseEvidence finished on: 0.004123687744140625 seconds
+2016-07-16 18:36:24,798 INFO IOC file: 55075b2613432a2776f3cfcd.ioc
+2016-07-16 18:36:24,802 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,807 INFO OpenIoc10Parser.parseEvidence finished on: 0.005126953125 seconds
+2016-07-16 18:36:24,808 INFO IOC file: 55103f3713432a2d6f94db34.ioc
+2016-07-16 18:36:24,816 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,831 INFO OpenIoc10Parser.parseEvidence finished on: 0.014353036880493164 seconds
+2016-07-16 18:36:24,831 INFO IOC file: 551040db13432a2f9ef057a3.ioc
+2016-07-16 18:36:24,846 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,878 INFO OpenIoc10Parser.parseEvidence finished on: 0.03072214126586914 seconds
+2016-07-16 18:36:24,878 INFO IOC file: 5511966113432a4db2baad5a.ioc
+2016-07-16 18:36:24,882 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,885 INFO OpenIoc10Parser.parseEvidence finished on: 0.0020096302032470703 seconds
+2016-07-16 18:36:24,885 INFO IOC file: 551196f013432a4db389652c.ioc
+2016-07-16 18:36:24,889 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,896 INFO OpenIoc10Parser.parseEvidence finished on: 0.005193471908569336 seconds
+2016-07-16 18:36:24,896 INFO IOC file: 5515929c13432a4db1f1c1f0.ioc
+2016-07-16 18:36:24,914 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,923 INFO OpenIoc10Parser.parseEvidence finished on: 0.006401777267456055 seconds
+2016-07-16 18:36:24,923 INFO IOC file: 5515958d13432a4dac866822.ioc
+2016-07-16 18:36:24,935 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:24,956 INFO OpenIoc10Parser.parseEvidence finished on: 0.019416332244873047 seconds
+2016-07-16 18:36:24,957 INFO IOC file: 5519981e13432a15b794fcc9.ioc
+2016-07-16 18:36:24,974 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,003 INFO OpenIoc10Parser.parseEvidence finished on: 0.027858257293701172 seconds
+2016-07-16 18:36:25,004 INFO IOC file: 5519f7b713432a15b323afd2.ioc
+2016-07-16 18:36:25,022 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,030 INFO OpenIoc10Parser.parseEvidence finished on: 0.00816965103149414 seconds
+2016-07-16 18:36:25,030 INFO IOC file: 5519f87f13432a15b794fcca.ioc
+2016-07-16 18:36:25,034 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,041 INFO OpenIoc10Parser.parseEvidence finished on: 0.00711822509765625 seconds
+2016-07-16 18:36:25,041 INFO IOC file: 551ac68513432a38d14a0cbd.ioc
+2016-07-16 18:36:25,051 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,060 INFO OpenIoc10Parser.parseEvidence finished on: 0.009218454360961914 seconds
+2016-07-16 18:36:25,060 INFO IOC file: 551c69ae13432a3a21a6ebb8.ioc
+2016-07-16 18:36:25,066 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,074 INFO OpenIoc10Parser.parseEvidence finished on: 0.008121252059936523 seconds
+2016-07-16 18:36:25,074 INFO IOC file: 552000a213432a3a1f545b00.ioc
+2016-07-16 18:36:25,092 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,123 INFO OpenIoc10Parser.parseEvidence finished on: 0.029651403427124023 seconds
+2016-07-16 18:36:25,123 INFO IOC file: 5522ec0f13432a68f9b3d17a.ioc
+2016-07-16 18:36:25,127 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,130 INFO OpenIoc10Parser.parseEvidence finished on: 0.0021190643310546875 seconds
+2016-07-16 18:36:25,131 INFO IOC file: 552329e913432a68f9b3d17b.ioc
+2016-07-16 18:36:25,141 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,190 INFO OpenIoc10Parser.parseEvidence finished on: 0.04777693748474121 seconds
+2016-07-16 18:36:25,191 INFO IOC file: 5523332813432a68f9b3d17c.ioc
+2016-07-16 18:36:25,195 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,200 INFO OpenIoc10Parser.parseEvidence finished on: 0.004189252853393555 seconds
+2016-07-16 18:36:25,201 INFO IOC file: 5524271d13432a714ff499f1.ioc
+2016-07-16 18:36:25,204 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,210 INFO OpenIoc10Parser.parseEvidence finished on: 0.005121946334838867 seconds
+2016-07-16 18:36:25,211 INFO IOC file: 55246d9313432a055855fdc0.ioc
+2016-07-16 18:36:25,227 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,299 INFO OpenIoc10Parser.parseEvidence finished on: 0.07273054122924805 seconds
+2016-07-16 18:36:25,299 INFO IOC file: 5525528e13432a055e241313.ioc
+2016-07-16 18:36:25,304 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,370 INFO OpenIoc10Parser.parseEvidence finished on: 0.06416130065917969 seconds
+2016-07-16 18:36:25,371 INFO IOC file: 5526b69b13432a0f2efca29d.ioc
+2016-07-16 18:36:25,390 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,416 INFO OpenIoc10Parser.parseEvidence finished on: 0.02458024024963379 seconds
+2016-07-16 18:36:25,416 INFO IOC file: 5526ba3213432a0f48afdf60.ioc
+2016-07-16 18:36:25,426 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,440 INFO OpenIoc10Parser.parseEvidence finished on: 0.013407230377197266 seconds
+2016-07-16 18:36:25,441 INFO IOC file: 5528128813432a2101d757b9.ioc
+2016-07-16 18:36:25,445 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,454 INFO OpenIoc10Parser.parseEvidence finished on: 0.007142305374145508 seconds
+2016-07-16 18:36:25,455 INFO IOC file: 5528132f13432a2102724d34.ioc
+2016-07-16 18:36:25,460 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,465 INFO OpenIoc10Parser.parseEvidence finished on: 0.005181789398193359 seconds
+2016-07-16 18:36:25,465 INFO IOC file: 5533d2e4b45ff504e84a24fd.ioc
+2016-07-16 18:36:25,470 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,477 INFO OpenIoc10Parser.parseEvidence finished on: 0.0061740875244140625 seconds
+2016-07-16 18:36:25,477 INFO IOC file: 55345cb5b45ff52fa03ffd83.ioc
+2016-07-16 18:36:25,484 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,557 INFO OpenIoc10Parser.parseEvidence finished on: 0.0726327896118164 seconds
+2016-07-16 18:36:25,558 INFO IOC file: 55346088b45ff531f23ffd40.ioc
+2016-07-16 18:36:25,573 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,587 INFO OpenIoc10Parser.parseEvidence finished on: 0.013273954391479492 seconds
+2016-07-16 18:36:25,587 INFO IOC file: 55346248b45ff532d53ffd2d.ioc
+2016-07-16 18:36:25,608 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,627 INFO OpenIoc10Parser.parseEvidence finished on: 0.01858377456665039 seconds
+2016-07-16 18:36:25,627 INFO IOC file: 553465abb45ff534ba3ffd50.ioc
+2016-07-16 18:36:25,643 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,670 INFO OpenIoc10Parser.parseEvidence finished on: 0.02658367156982422 seconds
+2016-07-16 18:36:25,671 INFO IOC file: 553467b0b45ff535803ffd5c.ioc
+2016-07-16 18:36:25,676 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,764 INFO OpenIoc10Parser.parseEvidence finished on: 0.08767247200012207 seconds
+2016-07-16 18:36:25,765 INFO IOC file: 5534686cb45ff536023ffd31.ioc
+2016-07-16 18:36:25,771 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,781 INFO OpenIoc10Parser.parseEvidence finished on: 0.010263204574584961 seconds
+2016-07-16 18:36:25,782 INFO IOC file: 553468d3b45ff5362e3ffd3e.ioc
+2016-07-16 18:36:25,791 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,803 INFO OpenIoc10Parser.parseEvidence finished on: 0.012340068817138672 seconds
+2016-07-16 18:36:25,804 INFO IOC file: 55346998b45ff536633ffd3c.ioc
+2016-07-16 18:36:25,809 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,829 INFO OpenIoc10Parser.parseEvidence finished on: 0.019437551498413086 seconds
+2016-07-16 18:36:25,830 INFO IOC file: 55346a2eb45ff5369c3ffd2e.ioc
+2016-07-16 18:36:25,835 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,840 INFO OpenIoc10Parser.parseEvidence finished on: 0.0051462650299072266 seconds
+2016-07-16 18:36:25,840 INFO IOC file: 55346adeb45ff536ca3ffd2c.ioc
+2016-07-16 18:36:25,845 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,858 INFO OpenIoc10Parser.parseEvidence finished on: 0.013352632522583008 seconds
+2016-07-16 18:36:25,859 INFO IOC file: 55346ba9b45ff537293ffd7f.ioc
+2016-07-16 18:36:25,866 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,914 INFO OpenIoc10Parser.parseEvidence finished on: 0.04827547073364258 seconds
+2016-07-16 18:36:25,915 INFO IOC file: 5534726ab45ff539c79fe735.ioc
+2016-07-16 18:36:25,932 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,945 INFO OpenIoc10Parser.parseEvidence finished on: 0.013466358184814453 seconds
+2016-07-16 18:36:25,945 INFO IOC file: 553473bcb45ff53a349fe709.ioc
+2016-07-16 18:36:25,950 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:25,957 INFO OpenIoc10Parser.parseEvidence finished on: 0.007146120071411133 seconds
+2016-07-16 18:36:25,957 INFO IOC file: 55367639b45ff51548a4b58c.ioc
+2016-07-16 18:36:25,973 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,001 INFO OpenIoc10Parser.parseEvidence finished on: 0.027579784393310547 seconds
+2016-07-16 18:36:26,002 INFO IOC file: 5537d753b45ff549f2a4b57d.ioc
+2016-07-16 18:36:26,016 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,028 INFO OpenIoc10Parser.parseEvidence finished on: 0.01124429702758789 seconds
+2016-07-16 18:36:26,029 INFO IOC file: 5537d81ab45ff54a30a4b5b5.ioc
+2016-07-16 18:36:26,042 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,074 INFO OpenIoc10Parser.parseEvidence finished on: 0.031110286712646484 seconds
+2016-07-16 18:36:26,074 INFO IOC file: 55397f17b45ff5754b148b9b.ioc
+2016-07-16 18:36:26,089 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,169 INFO OpenIoc10Parser.parseEvidence finished on: 0.07894515991210938 seconds
+2016-07-16 18:36:26,170 INFO IOC file: 55397fb7b45ff57574148b11.ioc
+2016-07-16 18:36:26,174 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,178 INFO OpenIoc10Parser.parseEvidence finished on: 0.004062175750732422 seconds
+2016-07-16 18:36:26,179 INFO IOC file: 55398191b45ff57623148b9a.ioc
+2016-07-16 18:36:26,193 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,278 INFO OpenIoc10Parser.parseEvidence finished on: 0.08426833152770996 seconds
+2016-07-16 18:36:26,278 INFO IOC file: 553aaa60b45ff510d0148b1b.ioc
+2016-07-16 18:36:26,282 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,294 INFO OpenIoc10Parser.parseEvidence finished on: 0.009486198425292969 seconds
+2016-07-16 18:36:26,294 INFO IOC file: 553aab55b45ff5110a148b1a.ioc
+2016-07-16 18:36:26,308 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,315 INFO OpenIoc10Parser.parseEvidence finished on: 0.007128715515136719 seconds
+2016-07-16 18:36:26,316 INFO IOC file: 553aacacb45ff511c1148b17.ioc
+2016-07-16 18:36:26,321 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,329 INFO OpenIoc10Parser.parseEvidence finished on: 0.007324695587158203 seconds
+2016-07-16 18:36:26,329 INFO IOC file: 553ab37ab45ff51538148b1d.ioc
+2016-07-16 18:36:26,344 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,363 INFO OpenIoc10Parser.parseEvidence finished on: 0.017373085021972656 seconds
+2016-07-16 18:36:26,363 INFO IOC file: 553e18f9b45ff54b64148b45.ioc
+2016-07-16 18:36:26,375 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,401 INFO OpenIoc10Parser.parseEvidence finished on: 0.024452686309814453 seconds
+2016-07-16 18:36:26,402 INFO IOC file: 553e9b15b45ff55766148b3f.ioc
+2016-07-16 18:36:26,423 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,447 INFO OpenIoc10Parser.parseEvidence finished on: 0.02351093292236328 seconds
+2016-07-16 18:36:26,448 INFO IOC file: 553f3b85b45ff55d66148b16.ioc
+2016-07-16 18:36:26,452 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,457 INFO OpenIoc10Parser.parseEvidence finished on: 0.004109859466552734 seconds
+2016-07-16 18:36:26,457 INFO IOC file: 553f3c1bb45ff55db8148b1c.ioc
+2016-07-16 18:36:26,475 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,481 INFO OpenIoc10Parser.parseEvidence finished on: 0.006132602691650391 seconds
+2016-07-16 18:36:26,482 INFO IOC file: 553f3d57b45ff55dd6148b5e.ioc
+2016-07-16 18:36:26,486 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,534 INFO OpenIoc10Parser.parseEvidence finished on: 0.04801750183105469 seconds
+2016-07-16 18:36:26,535 INFO IOC file: 553f5ef1b45ff56224148b1e.ioc
+2016-07-16 18:36:26,539 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,553 INFO OpenIoc10Parser.parseEvidence finished on: 0.013480424880981445 seconds
+2016-07-16 18:36:26,553 INFO IOC file: 5541029cb45ff5029b148b7f.ioc
+2016-07-16 18:36:26,573 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,620 INFO OpenIoc10Parser.parseEvidence finished on: 0.04706120491027832 seconds
+2016-07-16 18:36:26,621 INFO IOC file: 55411961b45ff50340148b1a.ioc
+2016-07-16 18:36:26,625 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,634 INFO OpenIoc10Parser.parseEvidence finished on: 0.008143186569213867 seconds
+2016-07-16 18:36:26,634 INFO IOC file: 5541e0bab45ff50c5a148b43.ioc
+2016-07-16 18:36:26,671 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,700 INFO OpenIoc10Parser.parseEvidence finished on: 0.027332305908203125 seconds
+2016-07-16 18:36:26,700 INFO IOC file: 55425a6eb45ff5124e148b55.ioc
+2016-07-16 18:36:26,713 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,764 INFO OpenIoc10Parser.parseEvidence finished on: 0.05090618133544922 seconds
+2016-07-16 18:36:26,764 INFO IOC file: 5543a152b45ff52182148b2d.ioc
+2016-07-16 18:36:26,770 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,793 INFO OpenIoc10Parser.parseEvidence finished on: 0.021476030349731445 seconds
+2016-07-16 18:36:26,793 INFO IOC file: 5543b850b45ff525dd8efa19.ioc
+2016-07-16 18:36:26,798 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,810 INFO OpenIoc10Parser.parseEvidence finished on: 0.01236581802368164 seconds
+2016-07-16 18:36:26,811 INFO IOC file: 5543ca44b45ff52a648efa35.ioc
+2016-07-16 18:36:26,829 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,862 INFO OpenIoc10Parser.parseEvidence finished on: 0.031858205795288086 seconds
+2016-07-16 18:36:26,863 INFO IOC file: 5543cb84b45ff52b3d8efa30.ioc
+2016-07-16 18:36:26,867 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,890 INFO OpenIoc10Parser.parseEvidence finished on: 0.023532390594482422 seconds
+2016-07-16 18:36:26,890 INFO IOC file: 5543ccc4b45ff52b968efa12.ioc
+2016-07-16 18:36:26,907 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:26,922 INFO OpenIoc10Parser.parseEvidence finished on: 0.015352010726928711 seconds
+2016-07-16 18:36:26,923 INFO IOC file: 5544b973b45ff539248efa15.ioc
+2016-07-16 18:36:26,937 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,031 INFO OpenIoc10Parser.parseEvidence finished on: 0.0937964916229248 seconds
+2016-07-16 18:36:27,032 INFO IOC file: 5544c0d3b45ff53b128efa6b.ioc
+2016-07-16 18:36:27,052 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,087 INFO OpenIoc10Parser.parseEvidence finished on: 0.03480839729309082 seconds
+2016-07-16 18:36:27,088 INFO IOC file: 5544dd8eb45ff53fcd8efa0d.ioc
+2016-07-16 18:36:27,098 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,103 INFO OpenIoc10Parser.parseEvidence finished on: 0.005138874053955078 seconds
+2016-07-16 18:36:27,104 INFO IOC file: 5549706fb45ff57f70d77981.ioc
+2016-07-16 18:36:27,127 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,153 INFO OpenIoc10Parser.parseEvidence finished on: 0.026622772216796875 seconds
+2016-07-16 18:36:27,154 INFO IOC file: 5549710ab45ff57f86d77953.ioc
+2016-07-16 18:36:27,213 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,225 INFO OpenIoc10Parser.parseEvidence finished on: 0.012435197830200195 seconds
+2016-07-16 18:36:27,226 INFO IOC file: 55497269b45ff5016bd77951.ioc
+2016-07-16 18:36:27,296 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,305 INFO OpenIoc10Parser.parseEvidence finished on: 0.00900125503540039 seconds
+2016-07-16 18:36:27,305 INFO IOC file: 554a4723b45ff50cc4d77959.ioc
+2016-07-16 18:36:27,310 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,320 INFO OpenIoc10Parser.parseEvidence finished on: 0.00900888442993164 seconds
+2016-07-16 18:36:27,321 INFO IOC file: 554b8576b45ff51d4bd77956.ioc
+2016-07-16 18:36:27,325 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,332 INFO OpenIoc10Parser.parseEvidence finished on: 0.006005764007568359 seconds
+2016-07-16 18:36:27,333 INFO IOC file: 554d0729b45ff53f2bd77960.ioc
+2016-07-16 18:36:27,346 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,366 INFO OpenIoc10Parser.parseEvidence finished on: 0.018552064895629883 seconds
+2016-07-16 18:36:27,367 INFO IOC file: 554d0d22b45ff5406ad77953.ioc
+2016-07-16 18:36:27,371 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,374 INFO OpenIoc10Parser.parseEvidence finished on: 0.003003358840942383 seconds
+2016-07-16 18:36:27,374 INFO IOC file: 5550f28ab45ff56a45d77955.ioc
+2016-07-16 18:36:27,379 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,382 INFO OpenIoc10Parser.parseEvidence finished on: 0.003133058547973633 seconds
+2016-07-16 18:36:27,382 INFO IOC file: 55514058b45ff5730dd7796b.ioc
+2016-07-16 18:36:27,392 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,399 INFO OpenIoc10Parser.parseEvidence finished on: 0.006209135055541992 seconds
+2016-07-16 18:36:27,399 INFO IOC file: 555265f9b45ff51352d77954.ioc
+2016-07-16 18:36:27,403 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,407 INFO OpenIoc10Parser.parseEvidence finished on: 0.0030739307403564453 seconds
+2016-07-16 18:36:27,407 INFO IOC file: 555392b2b45ff53f95641977.ioc
+2016-07-16 18:36:27,411 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,414 INFO OpenIoc10Parser.parseEvidence finished on: 0.003129243850708008 seconds
+2016-07-16 18:36:27,415 INFO IOC file: 5553c139b45ff54306641997.ioc
+2016-07-16 18:36:27,436 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,459 INFO OpenIoc10Parser.parseEvidence finished on: 0.022593021392822266 seconds
+2016-07-16 18:36:27,460 INFO IOC file: 5553e5f3b45ff54908641972.ioc
+2016-07-16 18:36:27,464 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,468 INFO OpenIoc10Parser.parseEvidence finished on: 0.0041391849517822266 seconds
+2016-07-16 18:36:27,468 INFO IOC file: 5554c14cb45ff5570264199e.ioc
+2016-07-16 18:36:27,480 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,505 INFO OpenIoc10Parser.parseEvidence finished on: 0.025461435317993164 seconds
+2016-07-16 18:36:27,505 INFO IOC file: 5554d25fb45ff55e06641987.ioc
+2016-07-16 18:36:27,513 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,527 INFO OpenIoc10Parser.parseEvidence finished on: 0.01321554183959961 seconds
+2016-07-16 18:36:27,527 INFO IOC file: 55550891b45ff566ef6419a6.ioc
+2016-07-16 18:36:27,532 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,543 INFO OpenIoc10Parser.parseEvidence finished on: 0.011368513107299805 seconds
+2016-07-16 18:36:27,543 INFO IOC file: 55561c0cb45ff579dc64198e.ioc
+2016-07-16 18:36:27,551 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,562 INFO OpenIoc10Parser.parseEvidence finished on: 0.011234283447265625 seconds
+2016-07-16 18:36:27,562 INFO IOC file: 55561e6db45ff57afd641979.ioc
+2016-07-16 18:36:27,577 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,583 INFO OpenIoc10Parser.parseEvidence finished on: 0.005140781402587891 seconds
+2016-07-16 18:36:27,584 INFO IOC file: 55562243b45ff57c746419a4.ioc
+2016-07-16 18:36:27,601 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,635 INFO OpenIoc10Parser.parseEvidence finished on: 0.03465557098388672 seconds
+2016-07-16 18:36:27,635 INFO IOC file: 555a772bb45ff55497b42359.ioc
+2016-07-16 18:36:27,652 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,700 INFO OpenIoc10Parser.parseEvidence finished on: 0.047724246978759766 seconds
+2016-07-16 18:36:27,701 INFO IOC file: 555b6414b45ff5650e2e4e03.ioc
+2016-07-16 18:36:27,705 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,711 INFO OpenIoc10Parser.parseEvidence finished on: 0.0051805973052978516 seconds
+2016-07-16 18:36:27,712 INFO IOC file: 555b9f1db45ff5799ee5b43f.ioc
+2016-07-16 18:36:27,727 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,733 INFO OpenIoc10Parser.parseEvidence finished on: 0.005120277404785156 seconds
+2016-07-16 18:36:27,734 INFO IOC file: 555ba0cfb45ff57a1ae5b43d.ioc
+2016-07-16 18:36:27,739 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,756 INFO OpenIoc10Parser.parseEvidence finished on: 0.0176851749420166 seconds
+2016-07-16 18:36:27,758 INFO IOC file: 555ba143b45ff57a50e5b426.ioc
+2016-07-16 18:36:27,763 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,768 INFO OpenIoc10Parser.parseEvidence finished on: 0.0052340030670166016 seconds
+2016-07-16 18:36:27,769 INFO IOC file: 555be98eb45ff507dbe5b426.ioc
+2016-07-16 18:36:27,778 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,782 INFO OpenIoc10Parser.parseEvidence finished on: 0.004164218902587891 seconds
+2016-07-16 18:36:27,782 INFO IOC file: 555c00ddb45ff50c56e5b427.ioc
+2016-07-16 18:36:27,787 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,792 INFO OpenIoc10Parser.parseEvidence finished on: 0.004191875457763672 seconds
+2016-07-16 18:36:27,793 INFO IOC file: 555cc399b45ff5216fe5b426.ioc
+2016-07-16 18:36:27,797 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,803 INFO OpenIoc10Parser.parseEvidence finished on: 0.005179643630981445 seconds
+2016-07-16 18:36:27,803 INFO IOC file: 555d0e09b45ff55ef5e5b42b.ioc
+2016-07-16 18:36:27,808 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,812 INFO OpenIoc10Parser.parseEvidence finished on: 0.00413823127746582 seconds
+2016-07-16 18:36:27,813 INFO IOC file: 555dfd3cb45ff56bd6e5b473.ioc
+2016-07-16 18:36:27,827 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,872 INFO OpenIoc10Parser.parseEvidence finished on: 0.04566836357116699 seconds
+2016-07-16 18:36:27,873 INFO IOC file: 555e5ad4b45ff57a89e5b43c.ioc
+2016-07-16 18:36:27,892 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,902 INFO OpenIoc10Parser.parseEvidence finished on: 0.010263204574584961 seconds
+2016-07-16 18:36:27,903 INFO IOC file: 55648dc4b45ff53c71e5b434.ioc
+2016-07-16 18:36:27,907 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,916 INFO OpenIoc10Parser.parseEvidence finished on: 0.009100198745727539 seconds
+2016-07-16 18:36:27,917 INFO IOC file: 5564abe3b45ff53f21e5b42f.ioc
+2016-07-16 18:36:27,925 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,932 INFO OpenIoc10Parser.parseEvidence finished on: 0.006133556365966797 seconds
+2016-07-16 18:36:27,932 INFO IOC file: 5564c144b45ff54252e5b428.ioc
+2016-07-16 18:36:27,938 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,943 INFO OpenIoc10Parser.parseEvidence finished on: 0.004153728485107422 seconds
+2016-07-16 18:36:27,943 INFO IOC file: 5564c6d0b45ff54313e5b435.ioc
+2016-07-16 18:36:27,947 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,961 INFO OpenIoc10Parser.parseEvidence finished on: 0.013385534286499023 seconds
+2016-07-16 18:36:27,961 INFO IOC file: 5564c9edb45ff543aee5b437.ioc
+2016-07-16 18:36:27,968 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:27,978 INFO OpenIoc10Parser.parseEvidence finished on: 0.010326385498046875 seconds
+2016-07-16 18:36:27,979 INFO IOC file: 5564cb44b45ff543c5e5b456.ioc
+2016-07-16 18:36:27,989 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,012 INFO OpenIoc10Parser.parseEvidence finished on: 0.021447420120239258 seconds
+2016-07-16 18:36:28,013 INFO IOC file: 55653b1ab45ff54c8ee5b42c.ioc
+2016-07-16 18:36:28,017 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,020 INFO OpenIoc10Parser.parseEvidence finished on: 0.002000093460083008 seconds
+2016-07-16 18:36:28,021 INFO IOC file: 55665704b45ff56e7a003f8d.ioc
+2016-07-16 18:36:28,025 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,033 INFO OpenIoc10Parser.parseEvidence finished on: 0.008221626281738281 seconds
+2016-07-16 18:36:28,033 INFO IOC file: 5567543db45ff5037f003f9d.ioc
+2016-07-16 18:36:28,048 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,063 INFO OpenIoc10Parser.parseEvidence finished on: 0.015347719192504883 seconds
+2016-07-16 18:36:28,063 INFO IOC file: 556766f8b45ff506ec003f8a.ioc
+2016-07-16 18:36:28,067 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,072 INFO OpenIoc10Parser.parseEvidence finished on: 0.005122661590576172 seconds
+2016-07-16 18:36:28,072 INFO IOC file: 5568a7b3b45ff53512004082.ioc
+2016-07-16 18:36:28,091 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,228 INFO OpenIoc10Parser.parseEvidence finished on: 0.13576722145080566 seconds
+2016-07-16 18:36:28,229 INFO IOC file: 556c9833b45ff50683003f8b.ioc
+2016-07-16 18:36:28,307 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,321 INFO OpenIoc10Parser.parseEvidence finished on: 0.013427019119262695 seconds
+2016-07-16 18:36:28,321 INFO IOC file: 556cfd52b45ff53cabcfbb9c.ioc
+2016-07-16 18:36:28,326 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,338 INFO OpenIoc10Parser.parseEvidence finished on: 0.011258602142333984 seconds
+2016-07-16 18:36:28,338 INFO IOC file: 556cfdfab45ff53cf4cfbb8c.ioc
+2016-07-16 18:36:28,343 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,345 INFO OpenIoc10Parser.parseEvidence finished on: 0.002001523971557617 seconds
+2016-07-16 18:36:28,346 INFO IOC file: 556e06fcb45ff555a6cfbba1.ioc
+2016-07-16 18:36:28,353 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,366 INFO OpenIoc10Parser.parseEvidence finished on: 0.013215780258178711 seconds
+2016-07-16 18:36:28,367 INFO IOC file: 556f2f7eb45ff51810cfbb92.ioc
+2016-07-16 18:36:28,373 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,385 INFO OpenIoc10Parser.parseEvidence finished on: 0.010276079177856445 seconds
+2016-07-16 18:36:28,385 INFO IOC file: 556f303cb45ff5182ecfbb8c.ioc
+2016-07-16 18:36:28,389 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,394 INFO OpenIoc10Parser.parseEvidence finished on: 0.005145072937011719 seconds
+2016-07-16 18:36:28,395 INFO IOC file: 556f3cdcb45ff519c4cfbb91.ioc
+2016-07-16 18:36:28,407 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,427 INFO OpenIoc10Parser.parseEvidence finished on: 0.01961493492126465 seconds
+2016-07-16 18:36:28,428 INFO IOC file: 556f64deb45ff51f05cfbb9e.ioc
+2016-07-16 18:36:28,433 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,447 INFO OpenIoc10Parser.parseEvidence finished on: 0.013276100158691406 seconds
+2016-07-16 18:36:28,448 INFO IOC file: 5570a269b45ff534a5cfbb90.ioc
+2016-07-16 18:36:28,455 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,463 INFO OpenIoc10Parser.parseEvidence finished on: 0.008288383483886719 seconds
+2016-07-16 18:36:28,464 INFO IOC file: 5570e11bb45ff53d3bcfbd76.ioc
+2016-07-16 18:36:28,478 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,688 INFO OpenIoc10Parser.parseEvidence finished on: 0.210740327835083 seconds
+2016-07-16 18:36:28,689 INFO IOC file: 5571dbefb45ff55bdacfbb9b.ioc
+2016-07-16 18:36:28,720 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,728 INFO OpenIoc10Parser.parseEvidence finished on: 0.008231401443481445 seconds
+2016-07-16 18:36:28,729 INFO IOC file: 5571dcf5b45ff55c70cfbb94.ioc
+2016-07-16 18:36:28,734 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,740 INFO OpenIoc10Parser.parseEvidence finished on: 0.0061054229736328125 seconds
+2016-07-16 18:36:28,740 INFO IOC file: 5571eca9b45ff55f78cfbb93.ioc
+2016-07-16 18:36:28,744 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,752 INFO OpenIoc10Parser.parseEvidence finished on: 0.008112430572509766 seconds
+2016-07-16 18:36:28,753 INFO IOC file: 5571edaeb45ff55fbecfbb8d.ioc
+2016-07-16 18:36:28,772 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,777 INFO OpenIoc10Parser.parseEvidence finished on: 0.005311727523803711 seconds
+2016-07-16 18:36:28,778 INFO IOC file: 5571eed1b45ff5607ecfbb90.ioc
+2016-07-16 18:36:28,782 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,789 INFO OpenIoc10Parser.parseEvidence finished on: 0.006110668182373047 seconds
+2016-07-16 18:36:28,789 INFO IOC file: 5571fc8bb45ff562e4cfbb98.ioc
+2016-07-16 18:36:28,793 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,803 INFO OpenIoc10Parser.parseEvidence finished on: 0.008257389068603516 seconds
+2016-07-16 18:36:28,804 INFO IOC file: 5575c43fb45ff5141acfbb8d.ioc
+2016-07-16 18:36:28,815 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,819 INFO OpenIoc10Parser.parseEvidence finished on: 0.004138469696044922 seconds
+2016-07-16 18:36:28,819 INFO IOC file: 557644ddb45ff51ec5cfbba1.ioc
+2016-07-16 18:36:28,823 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,829 INFO OpenIoc10Parser.parseEvidence finished on: 0.006133317947387695 seconds
+2016-07-16 18:36:28,829 INFO IOC file: 55771a79b45ff5083aa1bb30.ioc
+2016-07-16 18:36:28,834 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,843 INFO OpenIoc10Parser.parseEvidence finished on: 0.008117914199829102 seconds
+2016-07-16 18:36:28,844 INFO IOC file: 557767dab45ff51386e51f58.ioc
+2016-07-16 18:36:28,855 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,874 INFO OpenIoc10Parser.parseEvidence finished on: 0.018368959426879883 seconds
+2016-07-16 18:36:28,874 INFO IOC file: 5578563fb45ff52bd6e51f4f.ioc
+2016-07-16 18:36:28,887 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,900 INFO OpenIoc10Parser.parseEvidence finished on: 0.012235164642333984 seconds
+2016-07-16 18:36:28,901 INFO IOC file: 5578aa85b45ff53782e51f71.ioc
+2016-07-16 18:36:28,912 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,938 INFO OpenIoc10Parser.parseEvidence finished on: 0.02664470672607422 seconds
+2016-07-16 18:36:28,938 INFO IOC file: 5578d509b45ff53cdfe51f3e.ioc
+2016-07-16 18:36:28,944 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,955 INFO OpenIoc10Parser.parseEvidence finished on: 0.011228561401367188 seconds
+2016-07-16 18:36:28,955 INFO IOC file: 557a0cc4b45ff5151c63f4aa.ioc
+2016-07-16 18:36:28,960 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,962 INFO OpenIoc10Parser.parseEvidence finished on: 0.002115964889526367 seconds
+2016-07-16 18:36:28,963 INFO IOC file: 557b02c7b45ff524cd63f4a7.ioc
+2016-07-16 18:36:28,967 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,970 INFO OpenIoc10Parser.parseEvidence finished on: 0.003007173538208008 seconds
+2016-07-16 18:36:28,970 INFO IOC file: 557b04afb45ff5256263f4b5.ioc
+2016-07-16 18:36:28,987 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:28,997 INFO OpenIoc10Parser.parseEvidence finished on: 0.01022791862487793 seconds
+2016-07-16 18:36:28,997 INFO IOC file: 557b42aab45ff52fbf63f4a6.ioc
+2016-07-16 18:36:29,001 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,009 INFO OpenIoc10Parser.parseEvidence finished on: 0.006246805191040039 seconds
+2016-07-16 18:36:29,009 INFO IOC file: 557b7ca6b45ff5450f63f4f5.ioc
+2016-07-16 18:36:29,026 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,065 INFO OpenIoc10Parser.parseEvidence finished on: 0.038846731185913086 seconds
+2016-07-16 18:36:29,066 INFO IOC file: 557f0d30b45ff543aa63f4f5.ioc
+2016-07-16 18:36:29,082 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,124 INFO OpenIoc10Parser.parseEvidence finished on: 0.04193711280822754 seconds
+2016-07-16 18:36:29,125 INFO IOC file: 557f2aacb45ff5481a63f4b5.ioc
+2016-07-16 18:36:29,134 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,145 INFO OpenIoc10Parser.parseEvidence finished on: 0.010137796401977539 seconds
+2016-07-16 18:36:29,147 INFO IOC file: 557f2c36b45ff5489763f4b1.ioc
+2016-07-16 18:36:29,151 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,172 INFO OpenIoc10Parser.parseEvidence finished on: 0.02167654037475586 seconds
+2016-07-16 18:36:29,172 INFO IOC file: 55804e57b45ff5663a25e753.ioc
+2016-07-16 18:36:29,189 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,269 INFO OpenIoc10Parser.parseEvidence finished on: 0.0798044204711914 seconds
+2016-07-16 18:36:29,270 INFO IOC file: 558072cab45ff5713625eae8.ioc
+2016-07-16 18:36:29,287 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,919 INFO OpenIoc10Parser.parseEvidence finished on: 0.6318635940551758 seconds
+2016-07-16 18:36:29,920 INFO IOC file: 5580740bb45ff571d525e6ee.ioc
+2016-07-16 18:36:29,925 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,927 INFO OpenIoc10Parser.parseEvidence finished on: 0.002004384994506836 seconds
+2016-07-16 18:36:29,928 INFO IOC file: 5580cbd1b45ff57c3925e6fa.ioc
+2016-07-16 18:36:29,952 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,957 INFO OpenIoc10Parser.parseEvidence finished on: 0.005106449127197266 seconds
+2016-07-16 18:36:29,958 INFO IOC file: 55819811b45ff50c9425e6f4.ioc
+2016-07-16 18:36:29,962 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:29,966 INFO OpenIoc10Parser.parseEvidence finished on: 0.004113674163818359 seconds
+2016-07-16 18:36:29,966 INFO IOC file: 5582c956b45ff53ff425e769.ioc
+2016-07-16 18:36:29,970 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,016 INFO OpenIoc10Parser.parseEvidence finished on: 0.04406619071960449 seconds
+2016-07-16 18:36:30,016 INFO IOC file: 55832237b45ff54d8325e732.ioc
+2016-07-16 18:36:30,021 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,064 INFO OpenIoc10Parser.parseEvidence finished on: 0.04300403594970703 seconds
+2016-07-16 18:36:30,064 INFO IOC file: 55887ec1b45ff53d6b25e6ef.ioc
+2016-07-16 18:36:30,070 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,075 INFO OpenIoc10Parser.parseEvidence finished on: 0.00517725944519043 seconds
+2016-07-16 18:36:30,076 INFO IOC file: 55898d6db45ff55df925e6f6.ioc
+2016-07-16 18:36:30,080 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,087 INFO OpenIoc10Parser.parseEvidence finished on: 0.007166147232055664 seconds
+2016-07-16 18:36:30,088 INFO IOC file: 5589ae46b45ff567cf25e6f5.ioc
+2016-07-16 18:36:30,096 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,103 INFO OpenIoc10Parser.parseEvidence finished on: 0.007128000259399414 seconds
+2016-07-16 18:36:30,103 INFO IOC file: 5589f402b45ff578e825e6f2.ioc
+2016-07-16 18:36:30,107 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,113 INFO OpenIoc10Parser.parseEvidence finished on: 0.005188941955566406 seconds
+2016-07-16 18:36:30,114 INFO IOC file: 558ade59b45ff518da25e72a.ioc
+2016-07-16 18:36:30,122 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,153 INFO OpenIoc10Parser.parseEvidence finished on: 0.030670881271362305 seconds
+2016-07-16 18:36:30,153 INFO IOC file: 558afc3ab45ff51e0325e6f1.ioc
+2016-07-16 18:36:30,158 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,163 INFO OpenIoc10Parser.parseEvidence finished on: 0.005116701126098633 seconds
+2016-07-16 18:36:30,164 INFO IOC file: 558b00acb45ff51f4b25e6fb.ioc
+2016-07-16 18:36:30,169 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,173 INFO OpenIoc10Parser.parseEvidence finished on: 0.004146575927734375 seconds
+2016-07-16 18:36:30,174 INFO IOC file: 558b04a6b45ff5201025e726.ioc
+2016-07-16 18:36:30,187 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,229 INFO OpenIoc10Parser.parseEvidence finished on: 0.04194164276123047 seconds
+2016-07-16 18:36:30,230 INFO IOC file: 558d7e7cb45ff559c025e6fd.ioc
+2016-07-16 18:36:30,236 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,260 INFO OpenIoc10Parser.parseEvidence finished on: 0.023624181747436523 seconds
+2016-07-16 18:36:30,261 INFO IOC file: 558d7f32b45ff55a1225e6f3.ioc
+2016-07-16 18:36:30,279 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,282 INFO OpenIoc10Parser.parseEvidence finished on: 0.0031189918518066406 seconds
+2016-07-16 18:36:30,282 INFO IOC file: 558d85f0b45ff55ccb25e6f4.ioc
+2016-07-16 18:36:30,287 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,295 INFO OpenIoc10Parser.parseEvidence finished on: 0.008296728134155273 seconds
+2016-07-16 18:36:30,295 INFO IOC file: 55918c3fb45ff55f8225e6f0.ioc
+2016-07-16 18:36:30,311 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,315 INFO OpenIoc10Parser.parseEvidence finished on: 0.003116607666015625 seconds
+2016-07-16 18:36:30,315 INFO IOC file: 5592c8bfb45ff5157d25e6f0.ioc
+2016-07-16 18:36:30,319 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,322 INFO OpenIoc10Parser.parseEvidence finished on: 0.003123760223388672 seconds
+2016-07-16 18:36:30,323 INFO IOC file: 5592f101b45ff51d2025e82a.ioc
+2016-07-16 18:36:30,340 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,505 INFO OpenIoc10Parser.parseEvidence finished on: 0.16229605674743652 seconds
+2016-07-16 18:36:30,506 INFO IOC file: 55941f40b45ff56e763cc4a9.ioc
+2016-07-16 18:36:30,510 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,516 INFO OpenIoc10Parser.parseEvidence finished on: 0.005003929138183594 seconds
+2016-07-16 18:36:30,516 INFO IOC file: 559721bbb45ff5769a530769.ioc
+2016-07-16 18:36:30,520 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,526 INFO OpenIoc10Parser.parseEvidence finished on: 0.0051860809326171875 seconds
+2016-07-16 18:36:30,527 INFO IOC file: 559dbc71b45ff57539530774.ioc
+2016-07-16 18:36:30,531 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,544 INFO OpenIoc10Parser.parseEvidence finished on: 0.013283967971801758 seconds
+2016-07-16 18:36:30,544 INFO IOC file: 559dbd25b45ff5759f530769.ioc
+2016-07-16 18:36:30,548 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,554 INFO OpenIoc10Parser.parseEvidence finished on: 0.005110740661621094 seconds
+2016-07-16 18:36:30,555 INFO IOC file: 559dc013b45ff576a5530782.ioc
+2016-07-16 18:36:30,570 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,589 INFO OpenIoc10Parser.parseEvidence finished on: 0.01932048797607422 seconds
+2016-07-16 18:36:30,589 INFO IOC file: 559ea89ab45ff51847530768.ioc
+2016-07-16 18:36:30,593 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,606 INFO OpenIoc10Parser.parseEvidence finished on: 0.012299299240112305 seconds
+2016-07-16 18:36:30,607 INFO IOC file: 55a14778b45ff501f0530765.ioc
+2016-07-16 18:36:30,612 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,618 INFO OpenIoc10Parser.parseEvidence finished on: 0.006242513656616211 seconds
+2016-07-16 18:36:30,618 INFO IOC file: 55a14803b45ff50226530765.ioc
+2016-07-16 18:36:30,623 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,626 INFO OpenIoc10Parser.parseEvidence finished on: 0.002001047134399414 seconds
+2016-07-16 18:36:30,626 INFO IOC file: 55a148f3b45ff50276530767.ioc
+2016-07-16 18:36:30,630 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,634 INFO OpenIoc10Parser.parseEvidence finished on: 0.004145145416259766 seconds
+2016-07-16 18:36:30,634 INFO IOC file: 55a14b93b45ff502ac5307a6.ioc
+2016-07-16 18:36:30,649 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,692 INFO OpenIoc10Parser.parseEvidence finished on: 0.04317164421081543 seconds
+2016-07-16 18:36:30,692 INFO IOC file: 55a54000b45ff540d394e6a4.ioc
+2016-07-16 18:36:30,697 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,704 INFO OpenIoc10Parser.parseEvidence finished on: 0.007165670394897461 seconds
+2016-07-16 18:36:30,705 INFO IOC file: 55a54124b45ff5420294e69e.ioc
+2016-07-16 18:36:30,720 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,723 INFO OpenIoc10Parser.parseEvidence finished on: 0.002992868423461914 seconds
+2016-07-16 18:36:30,724 INFO IOC file: 55a54256b45ff542da94e6a5.ioc
+2016-07-16 18:36:30,728 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,735 INFO OpenIoc10Parser.parseEvidence finished on: 0.0072383880615234375 seconds
+2016-07-16 18:36:30,735 INFO IOC file: 55a5854fb45ff5561d94e6c1.ioc
+2016-07-16 18:36:30,743 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,771 INFO OpenIoc10Parser.parseEvidence finished on: 0.02604961395263672 seconds
+2016-07-16 18:36:30,771 INFO IOC file: 55a5b4eeb45ff55fb194e69e.ioc
+2016-07-16 18:36:30,775 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,782 INFO OpenIoc10Parser.parseEvidence finished on: 0.006302595138549805 seconds
+2016-07-16 18:36:30,783 INFO IOC file: 55a68348b45ff5060894e6a4.ioc
+2016-07-16 18:36:30,787 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,796 INFO OpenIoc10Parser.parseEvidence finished on: 0.008177042007446289 seconds
+2016-07-16 18:36:30,797 INFO IOC file: 55a7cbb7b45ff51f5c94e6a2.ioc
+2016-07-16 18:36:30,801 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,806 INFO OpenIoc10Parser.parseEvidence finished on: 0.005152702331542969 seconds
+2016-07-16 18:36:30,806 INFO IOC file: 55a85a2eb45ff54d8494e6b4.ioc
+2016-07-16 18:36:30,815 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,828 INFO OpenIoc10Parser.parseEvidence finished on: 0.013249635696411133 seconds
+2016-07-16 18:36:30,828 INFO IOC file: 55ad1776b45ff520b694e69e.ioc
+2016-07-16 18:36:30,833 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,838 INFO OpenIoc10Parser.parseEvidence finished on: 0.005146503448486328 seconds
+2016-07-16 18:36:30,839 INFO IOC file: 55ad7d40b45ff5436994e6a8.ioc
+2016-07-16 18:36:30,859 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,879 INFO OpenIoc10Parser.parseEvidence finished on: 0.01944875717163086 seconds
+2016-07-16 18:36:30,881 INFO IOC file: 55ae6c82b45ff5081194e6b0.ioc
+2016-07-16 18:36:30,885 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,897 INFO OpenIoc10Parser.parseEvidence finished on: 0.011224746704101562 seconds
+2016-07-16 18:36:30,898 INFO IOC file: 55aec3dcb45ff53bb694e6b1.ioc
+2016-07-16 18:36:30,906 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,918 INFO OpenIoc10Parser.parseEvidence finished on: 0.011229753494262695 seconds
+2016-07-16 18:36:30,919 INFO IOC file: 55afcd22b45ff5798794e6a3.ioc
+2016-07-16 18:36:30,924 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,930 INFO OpenIoc10Parser.parseEvidence finished on: 0.006134986877441406 seconds
+2016-07-16 18:36:30,930 INFO IOC file: 55afcff3b45ff57d4094e6b3.ioc
+2016-07-16 18:36:30,943 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:30,960 INFO OpenIoc10Parser.parseEvidence finished on: 0.017682790756225586 seconds
+2016-07-16 18:36:30,961 INFO IOC file: 55b13b6ab45ff52d687ccc3c.ioc
+2016-07-16 18:36:30,976 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,002 INFO OpenIoc10Parser.parseEvidence finished on: 0.026575565338134766 seconds
+2016-07-16 18:36:31,002 INFO IOC file: 55b7829a4637f26f0cd78d15.ioc
+2016-07-16 18:36:31,007 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,016 INFO OpenIoc10Parser.parseEvidence finished on: 0.009228706359863281 seconds
+2016-07-16 18:36:31,016 INFO IOC file: 55b7888c4637f26f0dd78f9a.ioc
+2016-07-16 18:36:31,033 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,238 INFO OpenIoc10Parser.parseEvidence finished on: 0.20355582237243652 seconds
+2016-07-16 18:36:31,239 INFO IOC file: 55b8dd5d4637f20ecbb10fd6.ioc
+2016-07-16 18:36:31,244 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,250 INFO OpenIoc10Parser.parseEvidence finished on: 0.0051457881927490234 seconds
+2016-07-16 18:36:31,251 INFO IOC file: 55ba31a767db8c6f0af579d4.ioc
+2016-07-16 18:36:31,301 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,387 INFO OpenIoc10Parser.parseEvidence finished on: 0.08421444892883301 seconds
+2016-07-16 18:36:31,388 INFO IOC file: 55ba81ce67db8c6f0af57dfe.ioc
+2016-07-16 18:36:31,407 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,413 INFO OpenIoc10Parser.parseEvidence finished on: 0.0051805973052978516 seconds
+2016-07-16 18:36:31,413 INFO IOC file: 55bb9a424637f238607a9e95.ioc
+2016-07-16 18:36:31,446 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,765 INFO OpenIoc10Parser.parseEvidence finished on: 0.31815648078918457 seconds
+2016-07-16 18:36:31,766 INFO IOC file: 55bf905067db8c60ec18294c.ioc
+2016-07-16 18:36:31,770 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,777 INFO OpenIoc10Parser.parseEvidence finished on: 0.0072269439697265625 seconds
+2016-07-16 18:36:31,777 INFO IOC file: 55c00fc94637f20b68c0fdde.ioc
+2016-07-16 18:36:31,803 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,832 INFO OpenIoc10Parser.parseEvidence finished on: 0.02861952781677246 seconds
+2016-07-16 18:36:31,832 INFO IOC file: 55c0dcf067db8c60ec182ea3.ioc
+2016-07-16 18:36:31,838 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,844 INFO OpenIoc10Parser.parseEvidence finished on: 0.0063076019287109375 seconds
+2016-07-16 18:36:31,845 INFO IOC file: 55c0df854637f20b68c10306.ioc
+2016-07-16 18:36:31,849 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,864 INFO OpenIoc10Parser.parseEvidence finished on: 0.015301942825317383 seconds
+2016-07-16 18:36:31,864 INFO IOC file: 55c11d0d4637f20b68c108c2.ioc
+2016-07-16 18:36:31,877 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,892 INFO OpenIoc10Parser.parseEvidence finished on: 0.01533651351928711 seconds
+2016-07-16 18:36:31,892 INFO IOC file: 55c2746b67db8c1793f0800c.ioc
+2016-07-16 18:36:31,897 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:31,908 INFO OpenIoc10Parser.parseEvidence finished on: 0.010362386703491211 seconds
+2016-07-16 18:36:31,908 INFO IOC file: 55c278f84637f212fdb4ba1b.ioc
+2016-07-16 18:36:31,925 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,023 INFO OpenIoc10Parser.parseEvidence finished on: 0.09584593772888184 seconds
+2016-07-16 18:36:32,023 INFO IOC file: 55c8f15867db8c1793f08831.ioc
+2016-07-16 18:36:32,027 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,032 INFO OpenIoc10Parser.parseEvidence finished on: 0.004124879837036133 seconds
+2016-07-16 18:36:32,033 INFO IOC file: 55c8f2de4637f212fcb4be98.ioc
+2016-07-16 18:36:32,037 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,058 INFO OpenIoc10Parser.parseEvidence finished on: 0.01931285858154297 seconds
+2016-07-16 18:36:32,058 INFO IOC file: 55c90e6567db8c1793f08ed1.ioc
+2016-07-16 18:36:32,072 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,083 INFO OpenIoc10Parser.parseEvidence finished on: 0.010276317596435547 seconds
+2016-07-16 18:36:32,084 INFO IOC file: 55c912f367db8c1794f07e1d.ioc
+2016-07-16 18:36:32,101 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,124 INFO OpenIoc10Parser.parseEvidence finished on: 0.022449016571044922 seconds
+2016-07-16 18:36:32,125 INFO IOC file: 55c91e824637f212fdb4c01d.ioc
+2016-07-16 18:36:32,131 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,135 INFO OpenIoc10Parser.parseEvidence finished on: 0.003083467483520508 seconds
+2016-07-16 18:36:32,136 INFO IOC file: 55c93a3067db8c1793f0961c.ioc
+2016-07-16 18:36:32,141 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,222 INFO OpenIoc10Parser.parseEvidence finished on: 0.08141326904296875 seconds
+2016-07-16 18:36:32,222 INFO IOC file: 55cbd7f64637f20b6e54ae54.ioc
+2016-07-16 18:36:32,245 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,582 INFO OpenIoc10Parser.parseEvidence finished on: 0.3368065357208252 seconds
+2016-07-16 18:36:32,583 INFO IOC file: 55ccc95c4637f20b6e54b7c6.ioc
+2016-07-16 18:36:32,587 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,594 INFO OpenIoc10Parser.parseEvidence finished on: 0.0061533451080322266 seconds
+2016-07-16 18:36:32,594 INFO IOC file: 55ce368d4637f20b6e54c447.ioc
+2016-07-16 18:36:32,598 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,601 INFO OpenIoc10Parser.parseEvidence finished on: 0.003107309341430664 seconds
+2016-07-16 18:36:32,601 INFO IOC file: 55d2226f4637f2170e1bcd73.ioc
+2016-07-16 18:36:32,605 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,610 INFO OpenIoc10Parser.parseEvidence finished on: 0.004108428955078125 seconds
+2016-07-16 18:36:32,610 INFO IOC file: 55d254ef4637f2170e1bd6df.ioc
+2016-07-16 18:36:32,636 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,763 INFO OpenIoc10Parser.parseEvidence finished on: 0.12613582611083984 seconds
+2016-07-16 18:36:32,764 INFO IOC file: 55d39fdc4637f226f73908e4.ioc
+2016-07-16 18:36:32,768 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,772 INFO OpenIoc10Parser.parseEvidence finished on: 0.0041162967681884766 seconds
+2016-07-16 18:36:32,773 INFO IOC file: 55d4b57c4637f226f7391342.ioc
+2016-07-16 18:36:32,791 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:32,947 INFO OpenIoc10Parser.parseEvidence finished on: 0.15640878677368164 seconds
+2016-07-16 18:36:32,947 INFO IOC file: 55d4be3b67db8c37b0a34f75.ioc
+2016-07-16 18:36:32,998 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,003 INFO OpenIoc10Parser.parseEvidence finished on: 0.00411677360534668 seconds
+2016-07-16 18:36:33,003 INFO IOC file: 55d61a554637f26859c182d8.ioc
+2016-07-16 18:36:33,007 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,020 INFO OpenIoc10Parser.parseEvidence finished on: 0.012193679809570312 seconds
+2016-07-16 18:36:33,020 INFO IOC file: 55d660414637f26859c18be8.ioc
+2016-07-16 18:36:33,033 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,046 INFO OpenIoc10Parser.parseEvidence finished on: 0.011253118515014648 seconds
+2016-07-16 18:36:33,047 INFO IOC file: 55d6657667db8c7bb9cb5af6.ioc
+2016-07-16 18:36:33,071 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,624 INFO OpenIoc10Parser.parseEvidence finished on: 0.5513870716094971 seconds
+2016-07-16 18:36:33,624 INFO IOC file: 55d775fd67db8c7bb9cb63fb.ioc
+2016-07-16 18:36:33,630 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,641 INFO OpenIoc10Parser.parseEvidence finished on: 0.010006427764892578 seconds
+2016-07-16 18:36:33,642 INFO IOC file: 55d79cc967db8c7bb8cb5a72.ioc
+2016-07-16 18:36:33,646 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,652 INFO OpenIoc10Parser.parseEvidence finished on: 0.004006624221801758 seconds
+2016-07-16 18:36:33,652 INFO IOC file: 55db51554637f21c54c19363.ioc
+2016-07-16 18:36:33,657 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,672 INFO OpenIoc10Parser.parseEvidence finished on: 0.015002012252807617 seconds
+2016-07-16 18:36:33,673 INFO IOC file: 55dbbc8c67db8c7bb8cb68c4.ioc
+2016-07-16 18:36:33,678 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,686 INFO OpenIoc10Parser.parseEvidence finished on: 0.0069353580474853516 seconds
+2016-07-16 18:36:33,687 INFO IOC file: 55dc965c67db8c7bb8cb72e5.ioc
+2016-07-16 18:36:33,716 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,738 INFO OpenIoc10Parser.parseEvidence finished on: 0.021649599075317383 seconds
+2016-07-16 18:36:33,739 INFO IOC file: 55dccc2f67db8c7bb8cb7cdd.ioc
+2016-07-16 18:36:33,744 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,753 INFO OpenIoc10Parser.parseEvidence finished on: 0.0073261260986328125 seconds
+2016-07-16 18:36:33,753 INFO IOC file: 55df30f04637f21c54c1a2b2.ioc
+2016-07-16 18:36:33,758 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,770 INFO OpenIoc10Parser.parseEvidence finished on: 0.011363744735717773 seconds
+2016-07-16 18:36:33,770 INFO IOC file: 55df3d1167db8c7bb8cb8da8.ioc
+2016-07-16 18:36:33,785 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,790 INFO OpenIoc10Parser.parseEvidence finished on: 0.005173206329345703 seconds
+2016-07-16 18:36:33,790 INFO IOC file: 55dfc30067db8c7bb8cb9865.ioc
+2016-07-16 18:36:33,795 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:33,800 INFO OpenIoc10Parser.parseEvidence finished on: 0.005175352096557617 seconds
+2016-07-16 18:36:33,801 INFO IOC file: 55dfc68967db8c7bb9cb72b9.ioc
+2016-07-16 18:36:33,841 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,272 INFO OpenIoc10Parser.parseEvidence finished on: 0.4300119876861572 seconds
+2016-07-16 18:36:34,273 INFO IOC file: 55e4266b4637f21c54c1afe5.ioc
+2016-07-16 18:36:34,282 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,295 INFO OpenIoc10Parser.parseEvidence finished on: 0.012281417846679688 seconds
+2016-07-16 18:36:34,296 INFO IOC file: 55e557fa4637f21c54c1bb0d.ioc
+2016-07-16 18:36:34,323 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,341 INFO OpenIoc10Parser.parseEvidence finished on: 0.016564130783081055 seconds
+2016-07-16 18:36:34,342 INFO IOC file: 55e6bfb14637f22cb605746e.ioc
+2016-07-16 18:36:34,348 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,360 INFO OpenIoc10Parser.parseEvidence finished on: 0.01143789291381836 seconds
+2016-07-16 18:36:34,361 INFO IOC file: 55ed61d667db8c6fb3515d9a.ioc
+2016-07-16 18:36:34,373 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,414 INFO OpenIoc10Parser.parseEvidence finished on: 0.04021859169006348 seconds
+2016-07-16 18:36:34,414 INFO IOC file: 55eedc264637f26df8742a70.ioc
+2016-07-16 18:36:34,438 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,515 INFO OpenIoc10Parser.parseEvidence finished on: 0.07581019401550293 seconds
+2016-07-16 18:36:34,516 INFO IOC file: 55ef44824637f26df8743747.ioc
+2016-07-16 18:36:34,586 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,646 INFO OpenIoc10Parser.parseEvidence finished on: 0.058907270431518555 seconds
+2016-07-16 18:36:34,646 INFO IOC file: 55f08e374637f26df8744429.ioc
+2016-07-16 18:36:34,664 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,763 INFO OpenIoc10Parser.parseEvidence finished on: 0.0976407527923584 seconds
+2016-07-16 18:36:34,764 INFO IOC file: 55f467d04637f26df7742efa.ioc
+2016-07-16 18:36:34,783 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,788 INFO OpenIoc10Parser.parseEvidence finished on: 0.005242586135864258 seconds
+2016-07-16 18:36:34,789 INFO IOC file: 55f6ea724637f26df7743d97.ioc
+2016-07-16 18:36:34,803 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,823 INFO OpenIoc10Parser.parseEvidence finished on: 0.020833730697631836 seconds
+2016-07-16 18:36:34,824 INFO IOC file: 55f9910967db8c6fb35179bd.ioc
+2016-07-16 18:36:34,841 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,882 INFO OpenIoc10Parser.parseEvidence finished on: 0.0401456356048584 seconds
+2016-07-16 18:36:34,883 INFO IOC file: 55f9d9b74637f26df7745066.ioc
+2016-07-16 18:36:34,898 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:34,907 INFO OpenIoc10Parser.parseEvidence finished on: 0.0072078704833984375 seconds
+2016-07-16 18:36:34,907 INFO IOC file: 55fae83567db8c6fb3518bcd.ioc
+2016-07-16 18:36:34,925 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,183 INFO OpenIoc10Parser.parseEvidence finished on: 0.2574198246002197 seconds
+2016-07-16 18:36:35,184 INFO IOC file: 55faedf367db8c6fb35199ea.ioc
+2016-07-16 18:36:35,197 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,204 INFO OpenIoc10Parser.parseEvidence finished on: 0.0061304569244384766 seconds
+2016-07-16 18:36:35,205 INFO IOC file: 55faf3014637f26df8745a74.ioc
+2016-07-16 18:36:35,225 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,266 INFO OpenIoc10Parser.parseEvidence finished on: 0.0400235652923584 seconds
+2016-07-16 18:36:35,266 INFO IOC file: 55fb63784637f26df874689c.ioc
+2016-07-16 18:36:35,272 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,281 INFO OpenIoc10Parser.parseEvidence finished on: 0.00931549072265625 seconds
+2016-07-16 18:36:35,282 INFO IOC file: 56016f4567db8c6fb351ac5c.ioc
+2016-07-16 18:36:35,306 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,325 INFO OpenIoc10Parser.parseEvidence finished on: 0.018424034118652344 seconds
+2016-07-16 18:36:35,326 INFO IOC file: 5601b6c967db8c6fb351bbca.ioc
+2016-07-16 18:36:35,338 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,351 INFO OpenIoc10Parser.parseEvidence finished on: 0.012373208999633789 seconds
+2016-07-16 18:36:35,352 INFO IOC file: 5603307467db8c47d4cdeab6.ioc
+2016-07-16 18:36:35,358 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,369 INFO OpenIoc10Parser.parseEvidence finished on: 0.010219573974609375 seconds
+2016-07-16 18:36:35,369 INFO IOC file: 56043c0667db8c47d4cdfacb.ioc
+2016-07-16 18:36:35,374 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,380 INFO OpenIoc10Parser.parseEvidence finished on: 0.005135059356689453 seconds
+2016-07-16 18:36:35,380 INFO IOC file: 56048efa4637f21ecf296f8b.ioc
+2016-07-16 18:36:35,384 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,389 INFO OpenIoc10Parser.parseEvidence finished on: 0.0049991607666015625 seconds
+2016-07-16 18:36:35,389 INFO IOC file: 560960b64637f21ecf2984d0.ioc
+2016-07-16 18:36:35,401 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,410 INFO OpenIoc10Parser.parseEvidence finished on: 0.009098291397094727 seconds
+2016-07-16 18:36:35,411 INFO IOC file: 5609918267db8c47d3cdeae8.ioc
+2016-07-16 18:36:35,425 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,490 INFO OpenIoc10Parser.parseEvidence finished on: 0.06333446502685547 seconds
+2016-07-16 18:36:35,491 INFO IOC file: 5609d6b44637f21ecf299518.ioc
+2016-07-16 18:36:35,495 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,502 INFO OpenIoc10Parser.parseEvidence finished on: 0.007406949996948242 seconds
+2016-07-16 18:36:35,502 INFO IOC file: 560c025f67db8c47d4ce1a20.ioc
+2016-07-16 18:36:35,506 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,512 INFO OpenIoc10Parser.parseEvidence finished on: 0.005125284194946289 seconds
+2016-07-16 18:36:35,513 INFO IOC file: 560c150e67db8c47d4ce2b14.ioc
+2016-07-16 18:36:35,528 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,538 INFO OpenIoc10Parser.parseEvidence finished on: 0.009282112121582031 seconds
+2016-07-16 18:36:35,538 INFO IOC file: 560c3d234637f21ecf29b676.ioc
+2016-07-16 18:36:35,542 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,547 INFO OpenIoc10Parser.parseEvidence finished on: 0.0041217803955078125 seconds
+2016-07-16 18:36:35,547 INFO IOC file: 560c68bd4637f21ecf29c9b3.ioc
+2016-07-16 18:36:35,589 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,908 INFO OpenIoc10Parser.parseEvidence finished on: 0.31967687606811523 seconds
+2016-07-16 18:36:35,909 INFO IOC file: 560d88594637f21ecf29db0b.ioc
+2016-07-16 18:36:35,913 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,926 INFO OpenIoc10Parser.parseEvidence finished on: 0.012238740921020508 seconds
+2016-07-16 18:36:35,927 INFO IOC file: 560ec97267db8c47d4ce3dec.ioc
+2016-07-16 18:36:35,947 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,951 INFO OpenIoc10Parser.parseEvidence finished on: 0.003001689910888672 seconds
+2016-07-16 18:36:35,952 INFO IOC file: 5611f4094637f21ecf29fb6b.ioc
+2016-07-16 18:36:35,960 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:35,986 INFO OpenIoc10Parser.parseEvidence finished on: 0.0255279541015625 seconds
+2016-07-16 18:36:35,987 INFO IOC file: 5615349d67db8c47d4cea067.ioc
+2016-07-16 18:36:35,991 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,002 INFO OpenIoc10Parser.parseEvidence finished on: 0.010214090347290039 seconds
+2016-07-16 18:36:36,003 INFO IOC file: 5615a6c767db8c47d3ce082c.ioc
+2016-07-16 18:36:36,011 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,033 INFO OpenIoc10Parser.parseEvidence finished on: 0.02244710922241211 seconds
+2016-07-16 18:36:36,034 INFO IOC file: 5617f51367db8c47d4ceb615.ioc
+2016-07-16 18:36:36,038 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,045 INFO OpenIoc10Parser.parseEvidence finished on: 0.005188703536987305 seconds
+2016-07-16 18:36:36,045 INFO IOC file: 561c07c367db8c47d4cecb95.ioc
+2016-07-16 18:36:36,051 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,095 INFO OpenIoc10Parser.parseEvidence finished on: 0.04422140121459961 seconds
+2016-07-16 18:36:36,095 INFO IOC file: 561d1c2c67db8c47d4ceddfa.ioc
+2016-07-16 18:36:36,100 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,116 INFO OpenIoc10Parser.parseEvidence finished on: 0.014339208602905273 seconds
+2016-07-16 18:36:36,117 INFO IOC file: 561d268c67db8c47d4cef036.ioc
+2016-07-16 18:36:36,121 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,127 INFO OpenIoc10Parser.parseEvidence finished on: 0.006176948547363281 seconds
+2016-07-16 18:36:36,128 INFO IOC file: 561d36af4637f21ecf2a7ace.ioc
+2016-07-16 18:36:36,132 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,139 INFO OpenIoc10Parser.parseEvidence finished on: 0.005132436752319336 seconds
+2016-07-16 18:36:36,139 INFO IOC file: 561fd2904637f21ecf2a9717.ioc
+2016-07-16 18:36:36,150 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,168 INFO OpenIoc10Parser.parseEvidence finished on: 0.01849675178527832 seconds
+2016-07-16 18:36:36,169 INFO IOC file: 5621208f4637f21ecf2aac36.ioc
+2016-07-16 18:36:36,198 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,216 INFO OpenIoc10Parser.parseEvidence finished on: 0.017005443572998047 seconds
+2016-07-16 18:36:36,217 INFO IOC file: 562542474637f21ecf2acbf7.ioc
+2016-07-16 18:36:36,222 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,226 INFO OpenIoc10Parser.parseEvidence finished on: 0.0031251907348632812 seconds
+2016-07-16 18:36:36,226 INFO IOC file: 5626932167db8c47d3ce1b96.ioc
+2016-07-16 18:36:36,237 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,257 INFO OpenIoc10Parser.parseEvidence finished on: 0.020386219024658203 seconds
+2016-07-16 18:36:36,257 INFO IOC file: 56269f564637f21ecf2ae127.ioc
+2016-07-16 18:36:36,261 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,269 INFO OpenIoc10Parser.parseEvidence finished on: 0.006100177764892578 seconds
+2016-07-16 18:36:36,269 INFO IOC file: 5627b08e4637f21ecf2af4f2.ioc
+2016-07-16 18:36:36,273 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,283 INFO OpenIoc10Parser.parseEvidence finished on: 0.008113384246826172 seconds
+2016-07-16 18:36:36,283 INFO IOC file: 5627d2064637f21ecf2b0983.ioc
+2016-07-16 18:36:36,299 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,345 INFO OpenIoc10Parser.parseEvidence finished on: 0.046120405197143555 seconds
+2016-07-16 18:36:36,345 INFO IOC file: 5628319e4637f21ecf2b1d79.ioc
+2016-07-16 18:36:36,351 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,403 INFO OpenIoc10Parser.parseEvidence finished on: 0.05088925361633301 seconds
+2016-07-16 18:36:36,403 INFO IOC file: 562e5e2f4637f2189130da69.ioc
+2016-07-16 18:36:36,408 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,415 INFO OpenIoc10Parser.parseEvidence finished on: 0.0061037540435791016 seconds
+2016-07-16 18:36:36,416 INFO IOC file: 562f923267db8c2a9a183228.ioc
+2016-07-16 18:36:36,426 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,468 INFO OpenIoc10Parser.parseEvidence finished on: 0.04200100898742676 seconds
+2016-07-16 18:36:36,469 INFO IOC file: 562fcef84637f2189130f2b8.ioc
+2016-07-16 18:36:36,474 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,481 INFO OpenIoc10Parser.parseEvidence finished on: 0.007120609283447266 seconds
+2016-07-16 18:36:36,481 INFO IOC file: 5630e05e67db8c2a9a1848e2.ioc
+2016-07-16 18:36:36,485 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,499 INFO OpenIoc10Parser.parseEvidence finished on: 0.013337850570678711 seconds
+2016-07-16 18:36:36,499 INFO IOC file: 5630fcbb4637f21891310b40.ioc
+2016-07-16 18:36:36,503 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,510 INFO OpenIoc10Parser.parseEvidence finished on: 0.006121397018432617 seconds
+2016-07-16 18:36:36,511 INFO IOC file: 563285f24637f2388aae9c22.ioc
+2016-07-16 18:36:36,527 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,542 INFO OpenIoc10Parser.parseEvidence finished on: 0.01439213752746582 seconds
+2016-07-16 18:36:36,542 INFO IOC file: 56379b6967db8c7a156a7f52.ioc
+2016-07-16 18:36:36,546 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,555 INFO OpenIoc10Parser.parseEvidence finished on: 0.008270025253295898 seconds
+2016-07-16 18:36:36,555 INFO IOC file: 5638f0af4637f2388aaec770.ioc
+2016-07-16 18:36:36,559 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,565 INFO OpenIoc10Parser.parseEvidence finished on: 0.005101442337036133 seconds
+2016-07-16 18:36:36,565 INFO IOC file: 5638f23a4637f2388aaed240.ioc
+2016-07-16 18:36:36,587 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,900 INFO OpenIoc10Parser.parseEvidence finished on: 0.31217193603515625 seconds
+2016-07-16 18:36:36,901 INFO IOC file: 563f74284637f2388aaf2581.ioc
+2016-07-16 18:36:36,925 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,934 INFO OpenIoc10Parser.parseEvidence finished on: 0.00922250747680664 seconds
+2016-07-16 18:36:36,935 INFO IOC file: 563f75934637f2388aaf2ce7.ioc
+2016-07-16 18:36:36,939 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,954 INFO OpenIoc10Parser.parseEvidence finished on: 0.014368772506713867 seconds
+2016-07-16 18:36:36,954 INFO IOC file: 5640ae8167db8c7a156abaa1.ioc
+2016-07-16 18:36:36,962 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:36,969 INFO OpenIoc10Parser.parseEvidence finished on: 0.007125377655029297 seconds
+2016-07-16 18:36:36,970 INFO IOC file: 5640d95e67db8c7a156aeaaa.ioc
+2016-07-16 18:36:36,985 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,089 INFO OpenIoc10Parser.parseEvidence finished on: 0.10413432121276855 seconds
+2016-07-16 18:36:37,090 INFO IOC file: 564247cc4637f2388aaf84a0.ioc
+2016-07-16 18:36:37,096 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,115 INFO OpenIoc10Parser.parseEvidence finished on: 0.019444942474365234 seconds
+2016-07-16 18:36:37,115 INFO IOC file: 564ba8c367db8c7a166a79b3.ioc
+2016-07-16 18:36:37,130 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,151 INFO OpenIoc10Parser.parseEvidence finished on: 0.01939678192138672 seconds
+2016-07-16 18:36:37,151 INFO IOC file: 564bb06667db8c7a156ba467.ioc
+2016-07-16 18:36:37,156 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,163 INFO OpenIoc10Parser.parseEvidence finished on: 0.0071260929107666016 seconds
+2016-07-16 18:36:37,163 INFO IOC file: 564ce8824637f2388aafcc00.ioc
+2016-07-16 18:36:37,167 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,173 INFO OpenIoc10Parser.parseEvidence finished on: 0.005127668380737305 seconds
+2016-07-16 18:36:37,174 INFO IOC file: 564deefa67db8c7a156bdfa3.ioc
+2016-07-16 18:36:37,182 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,190 INFO OpenIoc10Parser.parseEvidence finished on: 0.007978677749633789 seconds
+2016-07-16 18:36:37,190 INFO IOC file: 564e4a6b67db8c7a156c1235.ioc
+2016-07-16 18:36:37,204 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,211 INFO OpenIoc10Parser.parseEvidence finished on: 0.006244659423828125 seconds
+2016-07-16 18:36:37,212 INFO IOC file: 565372a04637f2388baefeb7.ioc
+2016-07-16 18:36:37,226 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,250 INFO OpenIoc10Parser.parseEvidence finished on: 0.02345442771911621 seconds
+2016-07-16 18:36:37,250 INFO IOC file: 5655fd0b4637f2388ab00581.ioc
+2016-07-16 18:36:37,254 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,259 INFO OpenIoc10Parser.parseEvidence finished on: 0.004141807556152344 seconds
+2016-07-16 18:36:37,260 INFO IOC file: 565622074637f2388baf343c.ioc
+2016-07-16 18:36:37,276 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,324 INFO OpenIoc10Parser.parseEvidence finished on: 0.04867196083068848 seconds
+2016-07-16 18:36:37,326 INFO IOC file: 565da1074637f2388baf6a89.ioc
+2016-07-16 18:36:37,330 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,340 INFO OpenIoc10Parser.parseEvidence finished on: 0.009219646453857422 seconds
+2016-07-16 18:36:37,341 INFO IOC file: 565da40d4637f2388ab046e9.ioc
+2016-07-16 18:36:37,345 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,352 INFO OpenIoc10Parser.parseEvidence finished on: 0.006103515625 seconds
+2016-07-16 18:36:37,352 INFO IOC file: 56606c974637f2388ab0972e.ioc
+2016-07-16 18:36:37,366 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,374 INFO OpenIoc10Parser.parseEvidence finished on: 0.008257865905761719 seconds
+2016-07-16 18:36:37,375 INFO IOC file: 5661bfdf67db8c0fd9afe1ac.ioc
+2016-07-16 18:36:37,379 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,389 INFO OpenIoc10Parser.parseEvidence finished on: 0.009216070175170898 seconds
+2016-07-16 18:36:37,389 INFO IOC file: 5665a41667db8c0fd9b01bc7.ioc
+2016-07-16 18:36:37,395 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,407 INFO OpenIoc10Parser.parseEvidence finished on: 0.012328863143920898 seconds
+2016-07-16 18:36:37,407 INFO IOC file: 5667d30a67db8c0fd9b05c3a.ioc
+2016-07-16 18:36:37,423 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,451 INFO OpenIoc10Parser.parseEvidence finished on: 0.02699732780456543 seconds
+2016-07-16 18:36:37,451 INFO IOC file: 5668afc267db8c0fd9b09778.ioc
+2016-07-16 18:36:37,456 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,462 INFO OpenIoc10Parser.parseEvidence finished on: 0.005170583724975586 seconds
+2016-07-16 18:36:37,463 INFO IOC file: 5668e4be67db8c0fd9b0d193.ioc
+2016-07-16 18:36:37,477 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,505 INFO OpenIoc10Parser.parseEvidence finished on: 0.026574373245239258 seconds
+2016-07-16 18:36:37,505 INFO IOC file: 5669bf754637f27ede869f79.ioc
+2016-07-16 18:36:37,510 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,515 INFO OpenIoc10Parser.parseEvidence finished on: 0.0051233768463134766 seconds
+2016-07-16 18:36:37,516 INFO IOC file: 5669c0f867db8c0fd9b10c10.ioc
+2016-07-16 18:36:37,525 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,539 INFO OpenIoc10Parser.parseEvidence finished on: 0.013335227966308594 seconds
+2016-07-16 18:36:37,540 INFO IOC file: 566b0d5d67db8c0fd9b14d9c.ioc
+2016-07-16 18:36:37,545 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,549 INFO OpenIoc10Parser.parseEvidence finished on: 0.004099130630493164 seconds
+2016-07-16 18:36:37,549 INFO IOC file: 566f52a64637f25637cfbddf.ioc
+2016-07-16 18:36:37,582 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,599 INFO OpenIoc10Parser.parseEvidence finished on: 0.017332077026367188 seconds
+2016-07-16 18:36:37,600 INFO IOC file: 5670695967db8c3f8a4682f0.ioc
+2016-07-16 18:36:37,604 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,615 INFO OpenIoc10Parser.parseEvidence finished on: 0.009209632873535156 seconds
+2016-07-16 18:36:37,616 INFO IOC file: 5670bb7267db8c3f8a46bf29.ioc
+2016-07-16 18:36:37,620 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,626 INFO OpenIoc10Parser.parseEvidence finished on: 0.006247520446777344 seconds
+2016-07-16 18:36:37,626 INFO IOC file: 5671dc9667db8c3f8b467f1d.ioc
+2016-07-16 18:36:37,631 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,640 INFO OpenIoc10Parser.parseEvidence finished on: 0.009130477905273438 seconds
+2016-07-16 18:36:37,641 INFO IOC file: 5672e4854637f25637d003aa.ioc
+2016-07-16 18:36:37,645 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,648 INFO OpenIoc10Parser.parseEvidence finished on: 0.0021424293518066406 seconds
+2016-07-16 18:36:37,649 INFO IOC file: 5674426c4637f25637d044fc.ioc
+2016-07-16 18:36:37,668 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,870 INFO OpenIoc10Parser.parseEvidence finished on: 0.20075464248657227 seconds
+2016-07-16 18:36:37,871 INFO IOC file: 567455bd67db8c3f8a470752.ioc
+2016-07-16 18:36:37,875 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,881 INFO OpenIoc10Parser.parseEvidence finished on: 0.006149768829345703 seconds
+2016-07-16 18:36:37,882 INFO IOC file: 56747dfa4637f25637d08132.ioc
+2016-07-16 18:36:37,905 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,914 INFO OpenIoc10Parser.parseEvidence finished on: 0.009270668029785156 seconds
+2016-07-16 18:36:37,915 INFO IOC file: 567a83d067db8c417529da1c.ioc
+2016-07-16 18:36:37,919 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,925 INFO OpenIoc10Parser.parseEvidence finished on: 0.005118608474731445 seconds
+2016-07-16 18:36:37,926 INFO IOC file: 567af83c4637f21e1c24d4ba.ioc
+2016-07-16 18:36:37,941 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,963 INFO OpenIoc10Parser.parseEvidence finished on: 0.021587371826171875 seconds
+2016-07-16 18:36:37,963 INFO IOC file: 567b9ac74637f21e1c24d655.ioc
+2016-07-16 18:36:37,967 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:37,984 INFO OpenIoc10Parser.parseEvidence finished on: 0.015253782272338867 seconds
+2016-07-16 18:36:37,984 INFO IOC file: 568e917967db8c057c6fc800.ioc
+2016-07-16 18:36:38,000 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,109 INFO OpenIoc10Parser.parseEvidence finished on: 0.10812950134277344 seconds
+2016-07-16 18:36:38,109 INFO IOC file: 56939fda67db8c057d6fbf5a.ioc
+2016-07-16 18:36:38,187 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,199 INFO OpenIoc10Parser.parseEvidence finished on: 0.011224508285522461 seconds
+2016-07-16 18:36:38,199 INFO IOC file: 56965d2b67db8c057c6fd8cb.ioc
+2016-07-16 18:36:38,203 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,206 INFO OpenIoc10Parser.parseEvidence finished on: 0.0021996498107910156 seconds
+2016-07-16 18:36:38,206 INFO IOC file: 56965d5a4637f2624bcdd0ab.ioc
+2016-07-16 18:36:38,210 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,216 INFO OpenIoc10Parser.parseEvidence finished on: 0.004109859466552734 seconds
+2016-07-16 18:36:38,216 INFO IOC file: 56965f594637f2624bcdd0c7.ioc
+2016-07-16 18:36:38,230 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,244 INFO OpenIoc10Parser.parseEvidence finished on: 0.014319181442260742 seconds
+2016-07-16 18:36:38,244 INFO IOC file: 569d2f284637f2624bcdda88.ioc
+2016-07-16 18:36:38,248 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,253 INFO OpenIoc10Parser.parseEvidence finished on: 0.00412750244140625 seconds
+2016-07-16 18:36:38,254 INFO IOC file: 569d38d74637f2624bcddaa8.ioc
+2016-07-16 18:36:38,259 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,273 INFO OpenIoc10Parser.parseEvidence finished on: 0.014210700988769531 seconds
+2016-07-16 18:36:38,274 INFO IOC file: 56a1157f4637f24bb848c949.ioc
+2016-07-16 18:36:38,282 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,288 INFO OpenIoc10Parser.parseEvidence finished on: 0.0061190128326416016 seconds
+2016-07-16 18:36:38,289 INFO IOC file: 56a1675d67db8c363a969271.ioc
+2016-07-16 18:36:38,292 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,308 INFO OpenIoc10Parser.parseEvidence finished on: 0.014345169067382812 seconds
+2016-07-16 18:36:38,309 INFO IOC file: 56a3cbf84637f23551f3be3c.ioc
+2016-07-16 18:36:38,320 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,342 INFO OpenIoc10Parser.parseEvidence finished on: 0.02256608009338379 seconds
+2016-07-16 18:36:38,343 INFO IOC file: 56a5aa2867db8c6aafe00d3f.ioc
+2016-07-16 18:36:38,364 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,460 INFO OpenIoc10Parser.parseEvidence finished on: 0.0952296257019043 seconds
+2016-07-16 18:36:38,461 INFO IOC file: 56a651b74637f23550f3bf0a.ioc
+2016-07-16 18:36:38,465 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,472 INFO OpenIoc10Parser.parseEvidence finished on: 0.006143808364868164 seconds
+2016-07-16 18:36:38,473 INFO IOC file: 56aa300d4637f23550f3c2ee.ioc
+2016-07-16 18:36:38,489 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,493 INFO OpenIoc10Parser.parseEvidence finished on: 0.0031349658966064453 seconds
+2016-07-16 18:36:38,494 INFO IOC file: 56aa6c6e67db8c6aaee02399.ioc
+2016-07-16 18:36:38,498 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,533 INFO OpenIoc10Parser.parseEvidence finished on: 0.034702301025390625 seconds
+2016-07-16 18:36:38,534 INFO IOC file: 56ab83c24637f23550f3c508.ioc
+2016-07-16 18:36:38,538 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,540 INFO OpenIoc10Parser.parseEvidence finished on: 0.0020012855529785156 seconds
+2016-07-16 18:36:38,540 INFO IOC file: 56ab8f6767db8c6aaee02b6f.ioc
+2016-07-16 18:36:38,560 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,564 INFO OpenIoc10Parser.parseEvidence finished on: 0.0041179656982421875 seconds
+2016-07-16 18:36:38,565 INFO IOC file: 56b27e6367db8c168ff1b1d2.ioc
+2016-07-16 18:36:38,590 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,630 INFO OpenIoc10Parser.parseEvidence finished on: 0.03981828689575195 seconds
+2016-07-16 18:36:38,631 INFO IOC file: 56b3efdf67db8c168ff1b31e.ioc
+2016-07-16 18:36:38,636 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,642 INFO OpenIoc10Parser.parseEvidence finished on: 0.0061779022216796875 seconds
+2016-07-16 18:36:38,642 INFO IOC file: 56b4c4744637f20e8bbeab06.ioc
+2016-07-16 18:36:38,654 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,673 INFO OpenIoc10Parser.parseEvidence finished on: 0.017427682876586914 seconds
+2016-07-16 18:36:38,674 INFO IOC file: 56b842264637f20e8bbeaf12.ioc
+2016-07-16 18:36:38,679 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,692 INFO OpenIoc10Parser.parseEvidence finished on: 0.011373281478881836 seconds
+2016-07-16 18:36:38,692 INFO IOC file: 56bc576f67db8c71ba073a17.ioc
+2016-07-16 18:36:38,696 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,737 INFO OpenIoc10Parser.parseEvidence finished on: 0.03975200653076172 seconds
+2016-07-16 18:36:38,738 INFO IOC file: 56bc57cd4637f25d9365dcc8.ioc
+2016-07-16 18:36:38,742 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,747 INFO OpenIoc10Parser.parseEvidence finished on: 0.0051419734954833984 seconds
+2016-07-16 18:36:38,747 INFO IOC file: 56bda3614637f25d9365df7c.ioc
+2016-07-16 18:36:38,763 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,800 INFO OpenIoc10Parser.parseEvidence finished on: 0.03717994689941406 seconds
+2016-07-16 18:36:38,801 INFO IOC file: 56bf1ccd67db8c71b90741d5.ioc
+2016-07-16 18:36:38,805 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,813 INFO OpenIoc10Parser.parseEvidence finished on: 0.007119655609130859 seconds
+2016-07-16 18:36:38,813 INFO IOC file: 56c3ac584637f26ad04e3dca.ioc
+2016-07-16 18:36:38,817 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,821 INFO OpenIoc10Parser.parseEvidence finished on: 0.00400996208190918 seconds
+2016-07-16 18:36:38,822 INFO IOC file: 56c3ccf667db8c1250174688.ioc
+2016-07-16 18:36:38,838 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,954 INFO OpenIoc10Parser.parseEvidence finished on: 0.1146540641784668 seconds
+2016-07-16 18:36:38,954 INFO IOC file: 56c6541867db8c125017a17f.ioc
+2016-07-16 18:36:38,959 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:38,965 INFO OpenIoc10Parser.parseEvidence finished on: 0.006217479705810547 seconds
+2016-07-16 18:36:38,965 INFO IOC file: 56c66a8567db8c125017a44c.ioc
+2016-07-16 18:36:38,986 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:39,001 INFO OpenIoc10Parser.parseEvidence finished on: 0.015311479568481445 seconds
+2016-07-16 18:36:39,001 INFO IOC file: 56c789ff4637f26ad04e9d39.ioc
+2016-07-16 18:36:39,005 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:39,020 INFO OpenIoc10Parser.parseEvidence finished on: 0.013266801834106445 seconds
+2016-07-16 18:36:39,020 INFO IOC file: 56ca196567db8c585fd20e58.ioc
+2016-07-16 18:36:39,024 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:39,027 INFO OpenIoc10Parser.parseEvidence finished on: 0.003138303756713867 seconds
+2016-07-16 18:36:39,027 INFO IOC file: 56ca30fe4637f2757a16023b.ioc
+2016-07-16 18:36:39,036 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:39,042 INFO OpenIoc10Parser.parseEvidence finished on: 0.0051500797271728516 seconds
+2016-07-16 18:36:39,042 INFO IOC file: 56cb40804637f2757a160afe.ioc
+2016-07-16 18:36:39,047 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:39,089 INFO OpenIoc10Parser.parseEvidence finished on: 0.04011130332946777 seconds
+2016-07-16 18:36:39,090 INFO IOC file: 56cb95eb67db8c5860d245d2.ioc
+2016-07-16 18:36:39,094 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:39,102 INFO OpenIoc10Parser.parseEvidence finished on: 0.007120847702026367 seconds
+2016-07-16 18:36:39,102 INFO IOC file: 56cc9cef67db8c5860d25aef.ioc
+2016-07-16 18:36:39,121 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:39,215 INFO OpenIoc10Parser.parseEvidence finished on: 0.0939779281616211 seconds
+2016-07-16 18:36:39,216 INFO IOC file: 56cdb0a04637f275671672f3.ioc
+2016-07-16 18:36:39,221 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:39,234 INFO OpenIoc10Parser.parseEvidence finished on: 0.012467384338378906 seconds
+2016-07-16 18:36:39,235 INFO IOC file: 56cdb68f4637f27567167dce.ioc
+2016-07-16 18:36:39,264 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:40,905 INFO OpenIoc10Parser.parseEvidence finished on: 1.6412513256072998 seconds
+2016-07-16 18:36:40,906 INFO IOC file: 56d47460aef921516b8200e5.ioc
+2016-07-16 18:36:40,910 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:40,922 INFO OpenIoc10Parser.parseEvidence finished on: 0.010272026062011719 seconds
+2016-07-16 18:36:40,923 INFO IOC file: 56d475fc67db8c4808308157.ioc
+2016-07-16 18:36:40,950 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:41,000 INFO OpenIoc10Parser.parseEvidence finished on: 0.049054861068725586 seconds
+2016-07-16 18:36:41,001 INFO IOC file: 56d4820467db8c4808308188.ioc
+2016-07-16 18:36:41,018 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:41,041 INFO OpenIoc10Parser.parseEvidence finished on: 0.023020505905151367 seconds
+2016-07-16 18:36:41,042 INFO IOC file: 56d5aa08aef921042823c1f4.ioc
+2016-07-16 18:36:41,047 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:41,057 INFO OpenIoc10Parser.parseEvidence finished on: 0.009008169174194336 seconds
+2016-07-16 18:36:41,057 INFO IOC file: 56d5c4854637f2499b616afd.ioc
+2016-07-16 18:36:41,083 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,056 INFO OpenIoc10Parser.parseEvidence finished on: 0.9729864597320557 seconds
+2016-07-16 18:36:42,057 INFO IOC file: 56d700e84637f2499b616c59.ioc
+2016-07-16 18:36:42,061 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,067 INFO OpenIoc10Parser.parseEvidence finished on: 0.0050585269927978516 seconds
+2016-07-16 18:36:42,068 INFO IOC file: 56d85f2b67db8c4087b16a2e.ioc
+2016-07-16 18:36:42,093 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,101 INFO OpenIoc10Parser.parseEvidence finished on: 0.008243560791015625 seconds
+2016-07-16 18:36:42,102 INFO IOC file: 56d88f4a4637f2499b616f21.ioc
+2016-07-16 18:36:42,124 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,128 INFO OpenIoc10Parser.parseEvidence finished on: 0.004132509231567383 seconds
+2016-07-16 18:36:42,129 INFO IOC file: 56da48264637f2499b6171ec.ioc
+2016-07-16 18:36:42,146 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,150 INFO OpenIoc10Parser.parseEvidence finished on: 0.0041730403900146484 seconds
+2016-07-16 18:36:42,150 INFO IOC file: 56dd33c24637f2499b6173e0.ioc
+2016-07-16 18:36:42,155 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,166 INFO OpenIoc10Parser.parseEvidence finished on: 0.011302709579467773 seconds
+2016-07-16 18:36:42,166 INFO IOC file: 56e1d26f4637f24cb4258a4b.ioc
+2016-07-16 18:36:42,184 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,210 INFO OpenIoc10Parser.parseEvidence finished on: 0.02657318115234375 seconds
+2016-07-16 18:36:42,211 INFO IOC file: 56e33e0667db8c4088b18322.ioc
+2016-07-16 18:36:42,216 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,231 INFO OpenIoc10Parser.parseEvidence finished on: 0.013265371322631836 seconds
+2016-07-16 18:36:42,231 INFO IOC file: 56e6e736aef921042823dd1b.ioc
+2016-07-16 18:36:42,235 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,239 INFO OpenIoc10Parser.parseEvidence finished on: 0.0041255950927734375 seconds
+2016-07-16 18:36:42,240 INFO IOC file: 56e71ff467db8c4088b184fe.ioc
+2016-07-16 18:36:42,253 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,276 INFO OpenIoc10Parser.parseEvidence finished on: 0.022618770599365234 seconds
+2016-07-16 18:36:42,276 INFO IOC file: 56e96f904637f2285c708f55.ioc
+2016-07-16 18:36:42,290 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,316 INFO OpenIoc10Parser.parseEvidence finished on: 0.02489781379699707 seconds
+2016-07-16 18:36:42,316 INFO IOC file: 56f052b4aef9214b1550ba7c.ioc
+2016-07-16 18:36:42,321 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,338 INFO OpenIoc10Parser.parseEvidence finished on: 0.016711950302124023 seconds
+2016-07-16 18:36:42,338 INFO IOC file: 56f0591967db8c5ce98c27f3.ioc
+2016-07-16 18:36:42,343 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,350 INFO OpenIoc10Parser.parseEvidence finished on: 0.00735783576965332 seconds
+2016-07-16 18:36:42,351 INFO IOC file: 56f060cdaef9214b1550ba87.ioc
+2016-07-16 18:36:42,355 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,361 INFO OpenIoc10Parser.parseEvidence finished on: 0.006171464920043945 seconds
+2016-07-16 18:36:42,362 INFO IOC file: 56f276234637f219435e0687.ioc
+2016-07-16 18:36:42,365 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,373 INFO OpenIoc10Parser.parseEvidence finished on: 0.006173610687255859 seconds
+2016-07-16 18:36:42,374 INFO IOC file: 56f2f6ca4637f23a0c0f3dfb.ioc
+2016-07-16 18:36:42,377 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,382 INFO OpenIoc10Parser.parseEvidence finished on: 0.004166603088378906 seconds
+2016-07-16 18:36:42,382 INFO IOC file: 56f3c9ab4637f23a0c0f3fb4.ioc
+2016-07-16 18:36:42,387 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,395 INFO OpenIoc10Parser.parseEvidence finished on: 0.008293628692626953 seconds
+2016-07-16 18:36:42,396 INFO IOC file: 56f40d3e67db8c7e7162ce28.ioc
+2016-07-16 18:36:42,401 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,431 INFO OpenIoc10Parser.parseEvidence finished on: 0.02803516387939453 seconds
+2016-07-16 18:36:42,431 INFO IOC file: 56f5247d67db8c7e7162cfe3.ioc
+2016-07-16 18:36:42,448 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,470 INFO OpenIoc10Parser.parseEvidence finished on: 0.02215576171875 seconds
+2016-07-16 18:36:42,471 INFO IOC file: 56f541e0aef92167c443e85a.ioc
+2016-07-16 18:36:42,476 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,479 INFO OpenIoc10Parser.parseEvidence finished on: 0.0030574798583984375 seconds
+2016-07-16 18:36:42,479 INFO IOC file: 56f548124637f23a0c0f415b.ioc
+2016-07-16 18:36:42,483 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,487 INFO OpenIoc10Parser.parseEvidence finished on: 0.0032117366790771484 seconds
+2016-07-16 18:36:42,487 INFO IOC file: 56f5484a67db8c7e7162d00f.ioc
+2016-07-16 18:36:42,501 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,506 INFO OpenIoc10Parser.parseEvidence finished on: 0.0030167102813720703 seconds
+2016-07-16 18:36:42,506 INFO IOC file: 56f931a467db8c4b481bccda.ioc
+2016-07-16 18:36:42,510 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,520 INFO OpenIoc10Parser.parseEvidence finished on: 0.010376930236816406 seconds
+2016-07-16 18:36:42,520 INFO IOC file: 56fa56b9aef92133b75de7a6.ioc
+2016-07-16 18:36:42,538 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,672 INFO OpenIoc10Parser.parseEvidence finished on: 0.13366174697875977 seconds
+2016-07-16 18:36:42,672 INFO IOC file: 56fa95614637f207cbccedc5.ioc
+2016-07-16 18:36:42,690 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,707 INFO OpenIoc10Parser.parseEvidence finished on: 0.017403364181518555 seconds
+2016-07-16 18:36:42,708 INFO IOC file: 5704699f4637f207cbcd1597.ioc
+2016-07-16 18:36:42,712 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,726 INFO OpenIoc10Parser.parseEvidence finished on: 0.012373924255371094 seconds
+2016-07-16 18:36:42,727 INFO IOC file: 57057abe67db8c4b471bd8b8.ioc
+2016-07-16 18:36:42,731 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,736 INFO OpenIoc10Parser.parseEvidence finished on: 0.005144596099853516 seconds
+2016-07-16 18:36:42,737 INFO IOC file: 5707d68267db8c4b471bdacf.ioc
+2016-07-16 18:36:42,742 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,748 INFO OpenIoc10Parser.parseEvidence finished on: 0.005158901214599609 seconds
+2016-07-16 18:36:42,748 INFO IOC file: 570d1313aef92133b75e16b2.ioc
+2016-07-16 18:36:42,766 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,838 INFO OpenIoc10Parser.parseEvidence finished on: 0.07188606262207031 seconds
+2016-07-16 18:36:42,839 INFO IOC file: 5714ed088ae898015bfbccbb.ioc
+2016-07-16 18:36:42,859 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,870 INFO OpenIoc10Parser.parseEvidence finished on: 0.01123356819152832 seconds
+2016-07-16 18:36:42,870 INFO IOC file: 57164116c1492d015c14ba0c.ioc
+2016-07-16 18:36:42,875 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,880 INFO OpenIoc10Parser.parseEvidence finished on: 0.004180908203125 seconds
+2016-07-16 18:36:42,880 INFO IOC file: 571797ba0ebaa4015af210fd.ioc
+2016-07-16 18:36:42,885 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,890 INFO OpenIoc10Parser.parseEvidence finished on: 0.0042438507080078125 seconds
+2016-07-16 18:36:42,891 INFO IOC file: 5718f302271307015c192371.ioc
+2016-07-16 18:36:42,895 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,900 INFO OpenIoc10Parser.parseEvidence finished on: 0.00513148307800293 seconds
+2016-07-16 18:36:42,901 INFO IOC file: 571931ffc1492d015b14bb6a.ioc
+2016-07-16 18:36:42,913 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,920 INFO OpenIoc10Parser.parseEvidence finished on: 0.0061647891998291016 seconds
+2016-07-16 18:36:42,921 INFO IOC file: 5719bb640ebaa4015af2140a.ioc
+2016-07-16 18:36:42,926 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,933 INFO OpenIoc10Parser.parseEvidence finished on: 0.007123231887817383 seconds
+2016-07-16 18:36:42,933 INFO IOC file: 571e2e2a3c4c3e015e93c2ca.ioc
+2016-07-16 18:36:42,938 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,945 INFO OpenIoc10Parser.parseEvidence finished on: 0.007294416427612305 seconds
+2016-07-16 18:36:42,945 INFO IOC file: 571e439f3c4c3e015d93c441.ioc
+2016-07-16 18:36:42,949 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,955 INFO OpenIoc10Parser.parseEvidence finished on: 0.005110263824462891 seconds
+2016-07-16 18:36:42,956 INFO IOC file: 571fd32d3c4c3e015d93c9aa.ioc
+2016-07-16 18:36:42,961 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,966 INFO OpenIoc10Parser.parseEvidence finished on: 0.005044698715209961 seconds
+2016-07-16 18:36:42,966 INFO IOC file: 57204e9b3c4c3e015d93cb12.ioc
+2016-07-16 18:36:42,970 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,978 INFO OpenIoc10Parser.parseEvidence finished on: 0.00833749771118164 seconds
+2016-07-16 18:36:42,979 INFO IOC file: 5720f4da3c4c3e015d93cc02.ioc
+2016-07-16 18:36:42,984 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:42,997 INFO OpenIoc10Parser.parseEvidence finished on: 0.012447357177734375 seconds
+2016-07-16 18:36:42,998 INFO IOC file: 572282123bf5c70168538bc2.ioc
+2016-07-16 18:36:43,013 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,025 INFO OpenIoc10Parser.parseEvidence finished on: 0.011231184005737305 seconds
+2016-07-16 18:36:43,026 INFO IOC file: 572a446a7b3d46015f794df6.ioc
+2016-07-16 18:36:43,031 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,038 INFO OpenIoc10Parser.parseEvidence finished on: 0.007285356521606445 seconds
+2016-07-16 18:36:43,038 INFO IOC file: 572ff4e47740f10161c79daf.ioc
+2016-07-16 18:36:43,043 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,049 INFO OpenIoc10Parser.parseEvidence finished on: 0.004996061325073242 seconds
+2016-07-16 18:36:43,049 INFO IOC file: 5732066a55ba42015e6b47ef.ioc
+2016-07-16 18:36:43,053 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,056 INFO OpenIoc10Parser.parseEvidence finished on: 0.0031337738037109375 seconds
+2016-07-16 18:36:43,056 INFO IOC file: 5735fcea1116a0011fccb371.ioc
+2016-07-16 18:36:43,060 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,068 INFO OpenIoc10Parser.parseEvidence finished on: 0.007131099700927734 seconds
+2016-07-16 18:36:43,068 INFO IOC file: 573b4c60a714a63f8954547e.ioc
+2016-07-16 18:36:43,082 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,089 INFO OpenIoc10Parser.parseEvidence finished on: 0.0071299076080322266 seconds
+2016-07-16 18:36:43,090 INFO IOC file: 573c81b91116a040ceccfbc8.ioc
+2016-07-16 18:36:43,108 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,405 INFO OpenIoc10Parser.parseEvidence finished on: 0.2973754405975342 seconds
+2016-07-16 18:36:43,405 INFO IOC file: 573ce6b195aca8011f44a597.ioc
+2016-07-16 18:36:43,410 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,419 INFO OpenIoc10Parser.parseEvidence finished on: 0.007112741470336914 seconds
+2016-07-16 18:36:43,419 INFO IOC file: 573f54462841540131cbbec9.ioc
+2016-07-16 18:36:43,423 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,432 INFO OpenIoc10Parser.parseEvidence finished on: 0.007909536361694336 seconds
+2016-07-16 18:36:43,433 INFO IOC file: 573fac68bc818b01320aea0e.ioc
+2016-07-16 18:36:43,458 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,470 INFO OpenIoc10Parser.parseEvidence finished on: 0.012219905853271484 seconds
+2016-07-16 18:36:43,471 INFO IOC file: 574283870353fb0131f05259.ioc
+2016-07-16 18:36:43,475 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,493 INFO OpenIoc10Parser.parseEvidence finished on: 0.0173187255859375 seconds
+2016-07-16 18:36:43,493 INFO IOC file: 57438fa40353fb0131f053b7.ioc
+2016-07-16 18:36:43,508 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,512 INFO OpenIoc10Parser.parseEvidence finished on: 0.0031392574310302734 seconds
+2016-07-16 18:36:43,512 INFO IOC file: 5756b9746eb8c60134a9e203.ioc
+2016-07-16 18:36:43,525 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,541 INFO OpenIoc10Parser.parseEvidence finished on: 0.01528787612915039 seconds
+2016-07-16 18:36:43,541 INFO IOC file: 5758c4e8377bbb01340e895d.ioc
+2016-07-16 18:36:43,545 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,555 INFO OpenIoc10Parser.parseEvidence finished on: 0.008240938186645508 seconds
+2016-07-16 18:36:43,556 INFO IOC file: 5759741f78e335013763cea0.ioc
+2016-07-16 18:36:43,563 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,599 INFO OpenIoc10Parser.parseEvidence finished on: 0.034819841384887695 seconds
+2016-07-16 18:36:43,599 INFO IOC file: 5760336e2957b90134ede223.ioc
+2016-07-16 18:36:43,603 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,613 INFO OpenIoc10Parser.parseEvidence finished on: 0.00919651985168457 seconds
+2016-07-16 18:36:43,614 INFO IOC file: 57616f7b5804b00134147bda.ioc
+2016-07-16 18:36:43,623 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,635 INFO OpenIoc10Parser.parseEvidence finished on: 0.010258197784423828 seconds
+2016-07-16 18:36:43,636 INFO IOC file: 576453a7f15dc60134d27471.ioc
+2016-07-16 18:36:43,640 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,648 INFO OpenIoc10Parser.parseEvidence finished on: 0.00811624526977539 seconds
+2016-07-16 18:36:43,648 INFO IOC file: 576ad190f9467301352cdbfb.ioc
+2016-07-16 18:36:43,661 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,677 INFO OpenIoc10Parser.parseEvidence finished on: 0.015345573425292969 seconds
+2016-07-16 18:36:43,677 INFO IOC file: 576c874cf9467301352ce742.ioc
+2016-07-16 18:36:43,681 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,688 INFO OpenIoc10Parser.parseEvidence finished on: 0.006058692932128906 seconds
+2016-07-16 18:36:43,689 INFO IOC file: 576da1ebf9467301352ce785.ioc
+2016-07-16 18:36:43,694 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,704 INFO OpenIoc10Parser.parseEvidence finished on: 0.00974726676940918 seconds
+2016-07-16 18:36:43,704 INFO IOC file: 57730086761b82013ab782cf.ioc
+2016-07-16 18:36:43,716 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,759 INFO OpenIoc10Parser.parseEvidence finished on: 0.04195594787597656 seconds
+2016-07-16 18:36:43,759 INFO IOC file: 57743e0a3e6b290134874c97.ioc
+2016-07-16 18:36:43,763 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,771 INFO OpenIoc10Parser.parseEvidence finished on: 0.007292747497558594 seconds
+2016-07-16 18:36:43,771 INFO IOC file: 577734b17bfa310135fd9aa7.ioc
+2016-07-16 18:36:43,780 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:43,787 INFO OpenIoc10Parser.parseEvidence finished on: 0.004999876022338867 seconds
+2016-07-16 18:36:43,787 INFO IOC file: 577802869664e60135ab92e0.ioc
+2016-07-16 18:36:43,807 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:44,137 INFO OpenIoc10Parser.parseEvidence finished on: 0.3298962116241455 seconds
+2016-07-16 18:36:44,138 INFO IOC file: 577c802c52c9260135acd45f.ioc
+2016-07-16 18:36:44,142 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:44,147 INFO OpenIoc10Parser.parseEvidence finished on: 0.0040433406829833984 seconds
+2016-07-16 18:36:44,148 INFO IOC file: 577eda97b16acc013569a1aa.ioc
+2016-07-16 18:36:44,172 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:44,204 INFO OpenIoc10Parser.parseEvidence finished on: 0.03168630599975586 seconds
+2016-07-16 18:36:44,205 INFO IOC file: 577ee8b1b999b3013c6f2bbf.ioc
+2016-07-16 18:36:44,209 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:44,225 INFO OpenIoc10Parser.parseEvidence finished on: 0.016633033752441406 seconds
+2016-07-16 18:36:44,225 INFO IOC file: 577f0291b999b3013c6f2bd1.ioc
+2016-07-16 18:36:44,231 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:44,236 INFO OpenIoc10Parser.parseEvidence finished on: 0.005105733871459961 seconds
+2016-07-16 18:36:44,237 INFO IOC file: 57813babb16acc013569c0f2.ioc
+2016-07-16 18:36:44,249 INFO OpenIoc10Parser.parseEvidence
+2016-07-16 18:36:44,282 INFO OpenIoc10Parser.parseEvidence finished on: 0.03260445594787598 seconds
+2016-07-16 18:36:44,283 INFO OTXRecovery finished on: 22.261779069900513 seconds
+2016-07-16 18:36:44,283 INFO Elapsed Time: 22.266908645629883 seconds
+2016-07-16 18:36:44,284 INFO 
+2016-07-16 18:36:44,284 INFO 
+2016-07-16 18:36:44,284 INFO Program Terminated Normally

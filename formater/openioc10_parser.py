@@ -22,7 +22,7 @@ class OpenIoc10Parser(IOCParser):
         for item in itemlist:
             indicator = item.attributes['id'].value
             evidence = Evidence(indicator)
-            evidences_to_return.put(evidence)
+            evidences_to_return.append(evidence)
 
         # Trace the end time and calculate the duration
         endTime = time.time() - startTime
