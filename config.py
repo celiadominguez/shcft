@@ -4,7 +4,7 @@ VERSION = '1.0'
 RELEASE_DATE = "July 20, 2016"
 
 LOG_FILE = 'SHCFT.log'
-DATA_PATH = '.\data'
+DATA_PATH = "./data/"
 
 # Your MISP's settings
 MISP_URL = 'https://misppriv.circl.lu'

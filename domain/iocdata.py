@@ -74,9 +74,18 @@ class Result(object):
     def incidentsByType(self, type, incidents):
         self.incidentsByType[type] = incidents
 
+    @property
+    def platforms(self):
+        return self._platforms
+
+    @platforms.setter
+    def platforms(self, value):
+        self._platforms = value
+
     def increateIncidents(self):
         self.incidents =  self.incidents + 1
 
     def getIncidents(self):
         return self.incidents
+
 pass

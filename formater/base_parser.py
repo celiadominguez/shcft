@@ -4,6 +4,7 @@ from enum import Enum
 class Format(Enum):
     OPENIOC_10="openioc1.0"
     OPENIOC_11="openioc1.1"
+    STIX="stix"
     pass
 
 class IOCParser(object):

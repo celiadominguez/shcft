@@ -5,15 +5,12 @@ from recovery.base_recovery import IOCRecovery
 
 
 class IOCRecoveryFactory:
-    factories = {}
-    def addFactory(id, shapeFactory):
-        IOCRecoveryFactory.factories.put[id] = shapeFactory
-    addFactory = staticmethod(addFactory)
+
     # A Template Method:
-    def createShape(id):
+    def createRecovery(id):
         registry = IOCRecovery().getRegister()
         return registry.get(id)
-    createShape = staticmethod(createShape)
+    createRecovery= staticmethod(createRecovery)
 
 
 def recoveryFactoryNames():

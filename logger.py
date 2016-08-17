@@ -11,8 +11,7 @@ DEFAULT_LEVEL = logging.DEBUG
 
 class Singleton(object):
     """
-    Singleton interface:
-    http://www.python.org/download/releases/2.2.3/descrintro/#__new__
+    Singleton interface
     """
     def __new__(cls, *args, **kwds):
         it = cls.__dict__.get("__it__")
@@ -31,7 +30,7 @@ class LoggerManager(Singleton):
     Handles all logging files.
     """
     def init(self, loggerName=DEFAULT_LOGGER_NAME, logFile=DEFAULT_FILE_NAME, level=DEFAULT_LEVEL, noLogFile=DEFAULT_NO_LOG_FILE, format=DEFAULT_FORMAT):
-        logging.basicConfig(filename=logFile, format=format)
+        logging.basicConfig(filename=logFile, format=format, filemode='w')
         self.logger = logging.getLogger(loggerName)
         self.logger.setLevel(level)
         rhandler = None
