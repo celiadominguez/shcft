@@ -12,9 +12,10 @@ from logger import Logger
 
 from config import *
 
-#from scanner.ioc_scanner import EvidenceScanner
+from scanner.ioc_scanner import EvidenceScanner
 from recovery.recovery_factory import *
-from domain.iocdata import Result
+from domain.iocdata import AnalysisResult
+from report.result_report import PDFReport
 
 
 def usage():
@@ -54,19 +55,29 @@ if __name__ == '__main__':
 
 
     # Analyze forensic data from host system
-    result = Result(time.time())
+    result = AnalysisResult(time.time())
+
+    # Get data indicators
 
     #scanner = EvidenceScanner(args.d)
     #evidences = scanner.scan()
 
-    # Process  forensic analysis of indicators
+    # Process forensic analysis of indicators
     #IndicatorAnalizer()
 
     # Generate a report containing detailed scan result
-    #ReportGenerator()
+    result.endTime = time.time()
+    result = AnalysisResult(time.strftime('%H:%M:%S'));
+    result.totalIocCount = '15'
+    result.status = 'CORRECTO'
+    result.endTime = time.strftime('%H:%M:%S')
+    result.date = time.strftime('%d - %B - %Y')
+
+    report = PDFReport()
+    report.generateReport(result)
 
     # Record the end time and calculate the duration
-    endTime =  time.time() - startTime
+    endTime = time.time() - startTime
     logger.info('Elapsed Time: ' + str(endTime) + ' seconds')
     logger.info('')
 

@@ -15,7 +15,7 @@ class IocStorage(object):
         self.format = format
         self.logger = Logger()
 
-    def get_all_ioc(self, format='xml',):
+    def get_all_ioc(self, format='xml'):
         """
             Prepare the headers of the session
             :param format: force the type of the expect output

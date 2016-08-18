@@ -1,5 +1,5 @@
 
-class IocObject:
+class Indicator:
     """ IocObject class represents a file with indicators of compromise data
 
      Attributes:
@@ -8,33 +8,40 @@ class IocObject:
 
       """
 
-    def __init__(self, format, id):
+    def __init__(self, id, description, condition, evidences, indicator):
         """ Create a new ioc object """
-        self.format = format
         self.id = id
+        self.description = description
+        self.condition = condition
+        self.evidences = evidences
+        self.indicator = indicator
 
-
-class Indicator:
+class Incident:
     """ Indicator class represents a indicators of compromise data
 
          Attributes:
             id: The indicator identification
           """
 
-    def __init__(self, id):
+    def __init__(self, indicator, evidences):
         """ Create a new ioc object """
-        self.id = id
+        self.indicator = indicator
+        self.evidences = evidences
 
 class Evidence:
 
-    def __init__(self, id, value, condition):
+    def __init__(self, id, type, condition, content, value):
         """ Create a new ioc object """
-        self.search = type
+        self.id = id
+        self.type = type
+        self.condition = condition
+        self.content = content
+        self.value = value
 pass
 
 
 
-class Result(object):
+class AnalysisResult(object):
 
     def __init__(self, startTime):
         self.startTime = startTime
@@ -43,36 +50,36 @@ class Result(object):
 
     @property
     def endTime(self):
-        return self.endTime
+        return self._endTime
 
     @endTime.setter
     def endTime(self, value):
-        self.endTime = value
+        self._endTime = value
 
     @property
     def totalIocCount(self):
-        return self.totalIocCount
+        return self._totalIocCount
 
 
     @totalIocCount.setter
     def totalIocCount(self, value):
-        self.totalIocCount = value
+        self._totalIocCount = value
 
     @property
     def status(self):
-        return self.status
+        return self._status
 
     @status.setter
     def status(self, value):
-        self.status = value
+        self._status = value
 
     @property
     def incidentsByType(self, type):
-        return self.incidentsByType[type]
+        return self._incidentsByType[type]
 
     @status.setter
     def incidentsByType(self, type, incidents):
-        self.incidentsByType[type] = incidents
+        self._incidentsByType[type] = incidents
 
     @property
     def platforms(self):
