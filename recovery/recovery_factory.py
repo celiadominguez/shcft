@@ -10,7 +10,7 @@ class IOCRecoveryFactory:
     def createRecovery(id):
         registry = IOCRecovery().getRegister()
         return registry.get(id)
-    createRecovery= staticmethod(createRecovery)
+    createRecovery = staticmethod(createRecovery)
 
 
 def recoveryFactoryNames():

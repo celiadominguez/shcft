@@ -1,13 +1,15 @@
 
 from reportlab.pdfgen import canvas
-from reportlab.lib.units import inch, cm
-from reportlab.pdfgen import canvas
-from reportlab.lib.units import inch, cm
-from reportlab.lib.pagesizes import A4
-from domain.iocdata import AnalysisResult
 from reportlab.platypus import (SimpleDocTemplate, PageBreak, Image, Spacer,Paragraph, Table, TableStyle)
-from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
+#Librerias reportlab a usar:
+from reportlab.platypus import (BaseDocTemplate, PageTemplate,
+NextPageTemplate, PageBreak, Frame, FrameBreak, Flowable, Paragraph,
+Image, Spacer)
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER, TA_JUSTIFY
+from reportlab.lib.pagesizes import A4, landscape
+from reportlab.lib.units import inch
 import time
 
 DEFAULT_REPORT_NAME = "shcft_result.pdf"
@@ -33,106 +35,181 @@ class Report(object):
         pass
 
 
+class IOCDocTemplate(SimpleDocTemplate):
+
+    def __init__(self, filename, **kw):
+        """create a document template bound to a filename (see class documentation for keyword arguments)"""
+        if "results" in kw:
+            self.results = kw["results"]
+            kw.pop("results")
+            super(IOCDocTemplate, self).__init__(filename, **kw)
+        else:
+           raise ValueError("Invalid argument results")
+
+    pass
+
+    def header(self, canvas, doc):
+        canvas.saveState()
+        canvas.setFont('Times-Roman', 9)
+        canvas.drawString(inch, A4[1] - 50, TITLE_MSG)
+        canvas.line(inch, A4[1] - 60, A4[0] - 65, A4[1] - 60)
+        canvas.restoreState()
+
+    def footer(self, canvas, doc):
+        canvas.saveState()
+        canvas.setFont('Times-Roman', 9)
+        canvas.drawString(inch, 0.75 * inch, "Página %d" % doc.page)
+        canvas.restoreState()
+
+    def summary(self, canvas, doc):
+        canvas.saveState()
+
+        # LOGO
+        canvas.drawImage(LOGO_FILE, 50, 720, 70, 70)
+
+        # TITLE
+        titleTxt = canvas.beginText()
+        titleTxt.setTextOrigin(150, 765)
+        titleTxt.setFont('Times-Bold', 15)
+        titleTxt.textLines(TITLE_MSG)
+        canvas.drawText(titleTxt)
+
+        # SUBTITLE
+        subtitleTxt = canvas.beginText()
+        subtitleTxt.setTextOrigin(250, 740)
+        subtitleTxt.setFont('Times-Roman', 12)
+        subtitleTxt.textLines(SUBTITLE_MSG)
+        canvas.drawText(subtitleTxt)
+
+        # SUMMARY
+        summaryTxt = canvas.beginText()
+        summaryTxt.setTextOrigin(50, 670)
+        summaryTxt.setFont('Times-Bold', 14)
+        summaryTxt.textLines(SUMMARY_MSG)
+        canvas.drawText(summaryTxt)
+        canvas.line(50, 665, 550, 665)  # Separator
+
+        # Start date
+        analisysDateTxt = canvas.beginText()
+        analisysDateTxt.setTextOrigin(60, 645)
+        analisysDateTxt.setFont('Times-Roman', 10)
+        analisysDateTxt.textLines(ANALISYS_DATE_MSG.format(self.results.date))
+        canvas.drawText(analisysDateTxt)
+
+        # Start time
+        startTimeTxt = canvas.beginText()
+        startTimeTxt.setTextOrigin(60, 630)
+        startTimeTxt.setFont('Times-Roman', 10)
+        startTimeTxt.textLines( START_TIME_MSG.format(self.results.startTime))
+        canvas.drawText(startTimeTxt)
+
+        # End time
+        endTimeTxt = canvas.beginText()
+        endTimeTxt.setTextOrigin(60, 615)
+        endTimeTxt.setFont('Times-Roman', 10)
+        endTimeTxt.textLines( END_TIME_MSG.format( self.results.endTime))
+        canvas.drawText(endTimeTxt)
+
+        # Total IOCs
+        totalIOCTxt = canvas.beginText()
+        totalIOCTxt.setTextOrigin(60, 600)
+        totalIOCTxt.setFont('Times-Roman', 10)
+        totalIOCTxt.textLines(TOTAL_IOC_MSG.format(self.results.totalIocCount))
+        canvas.drawText(totalIOCTxt)
+
+        # Final Status
+        finalStatusTxt = canvas.beginText()
+        finalStatusTxt.setTextOrigin(60, 585)
+        finalStatusTxt.setFont('Times-Roman', 10)
+        finalStatusTxt.textLines(FINAL_STATUS_MSG.format( self.results.status) )
+        canvas.drawText(finalStatusTxt)
+
+        # RESULTS
+        resultsTxt = canvas.beginText()
+        resultsTxt.setTextOrigin(50, 550)
+        resultsTxt.setFont('Times-Bold', 14)
+        resultsTxt.textLines(RESULTS_MSG)
+        canvas.drawText(resultsTxt)
+        canvas.line(50, 545, 550, 545)  # Separtor
+
+        # Results description
+        resultDescTxt = canvas.beginText()
+        resultDescTxt.setTextOrigin(60, 525)
+        resultDescTxt.setFont('Times-Roman', 10)
+        resultDescTxt.textLines(RESULT_DESC_MSG)
+        canvas.drawText(resultDescTxt)
+pass
+
 class PDFReport(Report):
 
     def generateReport(self, results):
 
-        c = canvas.Canvas(DEFAULT_REPORT_NAME)
-        story = []
-
-        # LOGO
-        c.drawImage(LOGO_FILE, 50, 720, 70, 70)
-
-        # TITLE
-        titleTxt = c.beginText()
-        titleTxt.setTextOrigin(150,765)
-        titleTxt.setFont('Times-Bold',15)
-        titleTxt.textLines(TITLE_MSG)
-        c.drawText(titleTxt)
-
-        # SUBTITLE
-        subtitleTxt = c.beginText()
-        subtitleTxt.setTextOrigin(250, 740)
-        subtitleTxt.setFont('Times-Roman', 12)
-        subtitleTxt.textLines(SUBTITLE_MSG)
-        c.drawText(subtitleTxt)
-
-        # SUMMARY
-        summaryTxt = c.beginText()
-        summaryTxt.setTextOrigin(50, 670)
-        summaryTxt.setFont('Times-Bold', 14)
-        summaryTxt.textLines(SUMMARY_MSG)
-        c.drawText(summaryTxt)
-        c.line(50,665,550,665) # Separator
-
-        # Start date
-        analisysDateTxt = c.beginText()
-        analisysDateTxt.setTextOrigin(60, 645)
-        analisysDateTxt.setFont('Times-Roman', 10)
-        analisysDateTxt.textLines(ANALISYS_DATE_MSG.format(results.date))
-        c.drawText(analisysDateTxt)
-
-        # Start time
-        startTimeTxt = c.beginText()
-        startTimeTxt.setTextOrigin(60, 630)
-        startTimeTxt.setFont('Times-Roman', 10)
-        startTimeTxt.textLines( START_TIME_MSG.format(results.startTime))
-        c.drawText(startTimeTxt)
-
-        # End time
-        endTimeTxt = c.beginText()
-        endTimeTxt.setTextOrigin(60, 615)
-        endTimeTxt.setFont('Times-Roman', 10)
-        endTimeTxt.textLines( END_TIME_MSG.format( results.endTime))
-        c.drawText(endTimeTxt)
-
-        # Total IOCs
-        totalIOCTxt = c.beginText()
-        totalIOCTxt.setTextOrigin(60, 600)
-        totalIOCTxt.setFont('Times-Roman', 10)
-        totalIOCTxt.textLines(TOTAL_IOC_MSG.format(results.totalIocCount))
-        c.drawText(totalIOCTxt)
-
-        # Final Status
-        finalStatusTxt = c.beginText()
-        finalStatusTxt.setTextOrigin(60, 585)
-        finalStatusTxt.setFont('Times-Roman', 10)
-        finalStatusTxt.textLines(FINAL_STATUS_MSG.format( results.status) )
-        c.drawText(finalStatusTxt)
-
-        # RESULTS
-        resultsTxt = c.beginText()
-        resultsTxt.setTextOrigin(50, 550)
-        resultsTxt.setFont('Times-Bold', 14)
-        resultsTxt.textLines(RESULTS_MSG)
-        c.drawText(resultsTxt)
-        c.line(50, 545, 550, 545) # Separtor
-
-        # Results description
-        resultDescTxt = c.beginText()
-        resultDescTxt.setTextOrigin(60, 525)
-        resultDescTxt.setFont('Times-Roman', 10)
-        resultDescTxt.textLines(RESULT_DESC_MSG)
-        c.drawText(resultDescTxt)
-
         #Pintamos la tabla con sus contenidos
+        doc = IOCDocTemplate(DEFAULT_REPORT_NAME, pagesize=A4, results=results)
 
-        datos = (
-            ('Nombre','Tipo','valor'),
-            ('The Scarab attack group','DnsEntryItem','www.service.authorizeddns.net')
+        doc.addPageTemplates(
+            [
+                PageTemplate(id='summary',
+                             frames=[Frame(doc.leftMargin, doc.bottomMargin, doc.width, 200)],
+                             onPage=doc.summary, onPageEnd=doc.footer),
+
+                PageTemplate(id='content',
+                             frames=[Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height)],
+                             onPageEnd=doc.footer, onPage=doc.header),
+            ]
         )
-        tabla = Table (data = datos,
-                        style  = [
-                       ('GRID',(0,0),(-1,-1),0.5,colors.grey),
-                       ('BOX',(0,0),(-1,-1),2,colors.black),
-                       ('BACKGROUND', (0, 0), (-1, 0), colors.pink),
-                       ]
 
-                       )
-        story.append(tabla)
-        story.append(Spacer(0, 15))
+        table_data = [Table([
+            ['Indicador de Compromiso', 'Tipo de Evidencia', 'Valor'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+            ['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'],
+        ],
+            style=TableStyle([
+                ('ALIGN', (1, 1), (2, 2), 'RIGHT'),
+                ('VALIGN', (-1, 0), (-1, 0), 'MIDDLE'),
+                ('VALIGN', (0, 0), (1, 0), 'TOP'),
+            ])
+        )
+        ]
 
-        c.showPage()
-        c.save()
+        doc.build(table_data)
     pass
-

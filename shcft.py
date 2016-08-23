@@ -4,18 +4,18 @@
 # Author: C. Dominguez
 #
 
+import argparse
 import logging
 import sys
 import time
-import argparse
-from logger import Logger
 
 from config import *
-
-from scanner.ioc_scanner import EvidenceScanner
+from domain.ioc_data import AnalysisResult
+from domain.ioc_handler import *
+from logger import Logger
 from recovery.recovery_factory import *
-from domain.iocdata import AnalysisResult
 from report.result_report import PDFReport
+from scanner.scanner_factory import *
 
 
 def usage():
@@ -58,9 +58,15 @@ if __name__ == '__main__':
     result = AnalysisResult(time.time())
 
     # Get data indicators
+    handler = IocHandler(args.d)
+    indicators = handler.extractIndicatorOfCompromise()
 
-    #scanner = EvidenceScanner(args.d)
-    #evidences = scanner.scan()
+    # Scan evidences
+    logger.info('Start to scan evidences')
+    scanners = [EvidenceScannerFactory.createScanner(i)
+              for i in EvidenceScannerFactory.scannerFactoryNames()]
+    for scanner in scanners:
+        scanner.process(indicators)
 
     # Process forensic analysis of indicators
     #IndicatorAnalizer()

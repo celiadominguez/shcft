@@ -5,16 +5,45 @@ class Indicator:
      Attributes:
         format: A string representing the IOC file format.
         id: The indicator identification.
-
       """
 
-    def __init__(self, id, description, condition, evidences, indicator):
+    def __init__(self, id, format):
         """ Create a new ioc object """
         self.id = id
-        self.description = description
-        self.condition = condition
-        self.evidences = evidences
-        self.indicator = indicator
+        self.format = format
+
+    @property
+    def description(self):
+        return self._description
+
+    @description.setter
+    def description(self, value):
+        self._description = value
+
+    @property
+    def operator(self):
+        return self._operator
+
+    @operator.setter
+    def operator(self, value):
+        self._operator = value
+
+    @property
+    def evidences(self):
+        return self._evidences
+
+    @evidences.setter
+    def evidences(self, value):
+        self._evidences = value
+
+    @property
+    def indicator(self):
+        return self._indicator
+
+    @indicator.setter
+    def indicator(self, value):
+        self._indicator = value
+
 
 class Incident:
     """ Indicator class represents a indicators of compromise data
@@ -30,13 +59,49 @@ class Incident:
 
 class Evidence:
 
-    def __init__(self, id, type, condition, content, value):
-        """ Create a new ioc object """
-        self.id = id
-        self.type = type
-        self.condition = condition
-        self.content = content
-        self.value = value
+    def __init__(self):
+        pass
+
+    @property
+    def id(self):
+        return self._id
+
+    @id.setter
+    def id(self, value):
+        self._id = value
+
+    @property
+    def type(self):
+        return self._type
+
+    @type.setter
+    def type(self, value):
+        self._type = value
+
+    @property
+    def condition(self):
+        return self._condition
+
+    @condition.setter
+    def condition(self, value):
+        self._condition = value
+
+    @property
+    def content(self):
+        return self._content
+
+    @content.setter
+    def content(self, value):
+        self._content = value
+
+    @property
+    def value(self):
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        self._value = value
+
 pass
 
 

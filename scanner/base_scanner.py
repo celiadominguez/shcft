@@ -10,18 +10,17 @@ class BaseScanner(object):
     registry = {}
     def register(cls):
         instance = cls()
-        cls.registry[instance.getFormat()] = instance
+        cls.registry[instance.getEvidenteType()] = instance
         return cls
 
     def getRegister(self):
         return self.registry
-
     pass
 
-    def process(self, result, **kwargs):
+    def process(self, indicators, **kwargs):
         pass
 
-    def scanEvidences(self, result, **kwargs):
+    def scanEvidences(self, indicators, **kwargs):
         path = kwargs.get("path")
 
         # Start scanner
@@ -30,10 +29,10 @@ class BaseScanner(object):
         # Record the Starting Time
         startTime = time.time()
 
-        self.process(self, kwargs)
+        self.process(self, indicators, kwargs)
 
         # Trace the end time and calculate the duration
         endTime = time.time() - startTime
         logger.info(self.__class__ + ' - Scanner finished on: ' + str(endTime) + ' seconds')
 
-        return result
+        return
