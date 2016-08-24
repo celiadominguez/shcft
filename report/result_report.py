@@ -1,16 +1,7 @@
 
-from reportlab.pdfgen import canvas
-from reportlab.platypus import (SimpleDocTemplate, PageBreak, Image, Spacer,Paragraph, Table, TableStyle)
-from reportlab.lib import colors
-#Librerias reportlab a usar:
-from reportlab.platypus import (BaseDocTemplate, PageTemplate,
-NextPageTemplate, PageBreak, Frame, FrameBreak, Flowable, Paragraph,
-Image, Spacer)
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER, TA_JUSTIFY
-from reportlab.lib.pagesizes import A4, landscape
+from reportlab.platypus import (SimpleDocTemplate, PageTemplate,Frame, Table, TableStyle)
+from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import inch
-import time
 
 DEFAULT_REPORT_NAME = "shcft_result.pdf"
 LOGO_FILE = "./report/logo.jpg"
