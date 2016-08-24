@@ -1,0 +1,66 @@
+<stix:STIX_Package id="ibm:Feed-8fd316e6116f842453a87785ea29a9ec" timestamp="2016-08-17T18:26:29.113Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2" xmlns:ttp="http://stix.mitre.org/TTP-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:AddressObject="http://cybox.mitre.org/objects#AddressObject-2" xmlns:URIObject="http://cybox.mitre.org/objects#URIObject-2" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:et="http://stix.mitre.org/ExploitTarget-1" xmlns:COA="http://stix.mitre.org/CourseOfAction-1" xmlns:ibm="http://xforce.ibmcloud.com/" xmlns:tlp="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" version="1.1.1" xsi:schemaLocation="http://cybox.mitre.org/objects#URIObject-2 http://cybox.mitre.org/XMLSchema/objects/URI/1.2/URI_Object.xsd http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.2.0/stix_default_vocabularies.xsd http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.2/stix_core.xsd http://stix.mitre.org/Indicator-2 http://stix.mitre.org/XMLSchema/indicator/2.2/indicator.xsd http://cybox.mitre.org/objects#AddressObject-2 http://cybox.mitre.org/XMLSchema/objects/Address/2.1/Address_Object.xsd http://stix.mitre.org/ExploitTarget-1 http://stix.mitre.org/XMLSchema/exploit_target/1.2/exploit_target.xsd http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.2/ttp.xsd http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.2/stix_common.xsd http://cybox.mitre.org/cybox-2 http://stix.mitre.org/XMLSchema/extensions/marking/tlp/1.1.1/tlp_marking.xsd">
+	<stix:STIX_Header>
+		<stix:Title>hacking group Fallaga_Team</stix:Title>
+		<stix:Description>Analysis of Defacement Page
+
+
+~ # curl -I http://www.rutlandbuildingservices.co.uk/tmp/index.html
+HTTP/1.1 200 OK
+Date: Sun, 15 May 2016 16:31:59 GMT
+Server: Apache
+Last-Modified: Wed, 11 May 2016 18:00:23 GMT
+ETag: &amp;quot;3443f15-4aa-53294d0d336b6&amp;quot;
+Accept-Ranges: bytes
+Content-Length: 1194
+Connection: close
+Content-Type: text/html
+
+
+Links
+
+
+	Twitter: https://twitter.com/fallaga_team
+	List of Defaced Sites: http://www.z0n3.org/hacker/?s=1&amp;amp;user=Fadi%20Tnx
+
+		</stix:Description>
+		<stix:Handling>
+			<marking:Marking>
+				<marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+				<marking:Marking_Structure xsi:type="tlp:TLPMarkingStructureType" color="WHITE"/>
+			</marking:Marking>
+		</stix:Handling>
+		<stix:Information_Source>
+			<stixCommon:Identity>
+				<stixCommon:Name>8fd316e6116f842453a87785ea29a9ec</stixCommon:Name>
+			</stixCommon:Identity>
+			<stixCommon:Contributing_Sources>
+				<stixCommon:Source>
+					<stixCommon:Identity>
+						<stixCommon:Name>[G]</stixCommon:Name>
+					</stixCommon:Identity>
+				</stixCommon:Source>
+			</stixCommon:Contributing_Sources>
+			<stixCommon:Time>
+				<cyboxCommon:Produced_Time>2016-05-15T16:42:29.011Z</cyboxCommon:Produced_Time>
+			</stixCommon:Time>
+		</stix:Information_Source>
+	</stix:STIX_Header>
+	<stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+		<cybox:Observable id="ibm:Observable-8fd316e6116f842453a87785ea536d7e">
+			<cybox:Title>XFE Observable for http://www.rutlandbuildingservices.co.uk/tmp/index.html</cybox:Title>
+			<cybox:Description>XFE Observable for http://www.rutlandbuildingservices.co.uk/tmp/index.html</cybox:Description>
+			<cybox:Object id="ibm:Object-8fd316e6116f842453a87785ea536d7e">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>http://www.rutlandbuildingservices.co.uk/tmp/index.html</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+	</stix:Observables>
+	<stix:Indicators>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-9f5cfde2-6874-85d7-5883-7d02aaf9e4b9" timestamp="2016-08-17T18:26:29.121Z">
+			<indicator:Title>Contained in XFE Collection hacking group Fallaga_Team</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;hacking group Fallaga_Team&apos;. https://exchange.xforce.ibmcloud.com/collection/8fd316e6116f842453a87785ea29a9ec</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-8fd316e6116f842453a87785ea536d7e"/>
+		</stix:Indicator>
+	</stix:Indicators>
+</stix:STIX_Package>

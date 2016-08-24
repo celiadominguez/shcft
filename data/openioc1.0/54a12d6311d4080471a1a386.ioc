@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="659c207c-9d5b-44dd-bae9-2a1f5bd373f3" last-modified="2016-08-17T18:21:50">
+  <short_description></short_description>
+  <description></description>
+  <keywords/>
+  <authored_by>AlienVault - Alienvault OTX</authored_by>
+  <authored_date>2016-08-17T18:21:50</authored_date>
+  <links>
+    <link rel="https://www.hackcon.org/wp-content/uploads/2015/02/Foredrag01.pdf">https://www.hackcon.org/wp-content/uploads/2015/02/Foredrag01.pdf</link>
+    <link rel="https://otx.alienvault.com/pulse/54a12d6311d4080471a1a386">https://otx.alienvault.com/pulse/54a12d6311d4080471a1a386</link>
+  </links>
+  <definition>
+    <Indicator id="501835c7-2c00-4a20-b887-f88f1f16ea08" operator="OR">
+      <IndicatorItem id="605b8359-0677-43b2-9380-eb4fe5d6d9ab" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">f68a0a3784a7edfc60ad9333ec209cbf</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bdb17f17-5d4c-4baa-a01a-7840a4047ae8" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">d0c3f4c9896d41a7c42737134ffb4c2e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03a932a9-1f54-4ee7-9114-04c4726bee51" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">83.170.33.80</Content>
+      </IndicatorItem>
+      <IndicatorItem id="08657f4c-344b-4446-a7ed-b8db9c45f165" condition="contains">
+        <Context document="RegistryItem" search="RegistryItem/Value" type="mir" />
+        <Content type="string">.exe</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f3c185c3-0541-4159-9366-a4f17b76f23d" condition="is">
+        <Context document="FileItem" search="FileItem/FileName" type="mir" />
+        <Content type="string">STREAM.SYS</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7319a6f7-9b42-4c9f-a5ca-aa988b21d8ad" condition="contains">
+        <Context document="Network" search="Network/DNS" type="mir" />
+        <Content type="string">http://download.symantec-sync.com/images/pagerr</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>
