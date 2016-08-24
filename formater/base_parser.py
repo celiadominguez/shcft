@@ -17,6 +17,7 @@ class EvidenceType(Enum):
     HASM_SHA="SHA"
     HOST="HOST"
     REMOTE_IP="REMOTE_IP"
+    FILE_NAME="FILE_NAME"
 
     @staticmethod
     def getTypes():

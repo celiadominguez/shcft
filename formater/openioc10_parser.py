@@ -9,6 +9,13 @@ import os
 @IOCParser.register
 class OpenIoc10Parser(IOCParser):
 
+
+    def getChildrenByTagName(self, node, tag_name):
+        for child in node.childNodes:
+            if child.nodeName == tag_name:
+                return child.firstChild.nodeValue
+        return None
+
     def parseIndicator(self, iocFile, iocFileName):
         # Record the Starting Time
         startTime = time.time()
@@ -23,9 +30,9 @@ class OpenIoc10Parser(IOCParser):
             logger.info("Ignore IOC file {}".format(iocFile))
         else:
             # Principal Indicator
-            id = os.path.splitext(iocFileName)
+            id = os.path.splitext(iocFileName)[0]
             indicator = Indicator(id, self.getFormat())
-            description = self.__getChildrenByTagName__( xmldoc._get_firstChild(), "description")
+            description = self.getChildrenByTagName( xmldoc._get_firstChild(), "description")
             indicator.description = description
             indicator_to_return.append(indicator)
 
@@ -38,10 +45,6 @@ class OpenIoc10Parser(IOCParser):
 
         return indicator_to_return
 
-    def __getChildrenByTagName__(self, node, tag_name):
-        for child in node.childNodes:
-            if child.localName == tag_name:
-                yield child
 
 
     def __getChildrenEvidences__(self, node):
@@ -51,9 +54,19 @@ class OpenIoc10Parser(IOCParser):
             evidence = Evidence()
             evidence.id = item.attributes['id'].value
             evidence.condition = item.attributes['condition'].value
-            evidence.content = item.getElementsByTagName("Context")[0].attributes['search'].value
-            evidence.value = item.getElementsByTagName("Content")[0].data
-            evidence.type = self.__getEvidenceType__(evidence.content)
+            context = item.getElementsByTagName("Context")
+            if context is not None:
+                evidence.context = context[0].attributes['search'].value
+            else:
+                raise ValueError("Invalid Context data")
+
+            content = item.getElementsByTagName("Content")
+            if content is not None:
+                evidence.value = content[0].childNodes[0].data
+                evidence.type = self.__getEvidenceType__(evidence.value)
+            else:
+                raise ValueError("Invalid Content data")
+
             evidences_to_return.append(evidence)
 
         return evidences_to_return
