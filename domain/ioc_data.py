@@ -1,3 +1,5 @@
+from enum import Enum
+
 
 class Indicator:
     """ IocObject class represents a file with indicators of compromise data
@@ -11,6 +13,11 @@ class Indicator:
         """ Create a new ioc object """
         self.id = id
         self.format = format
+        self._evidences = None
+        self._description = None
+        self._operator = None
+        self._children = None
+        self._parent = None
 
     @property
     def description(self):
@@ -37,29 +44,29 @@ class Indicator:
         self._evidences = value
 
     @property
-    def indicator(self):
-        return self._indicator
+    def children(self):
+        return self._children
 
-    @indicator.setter
-    def indicator(self, value):
-        self._indicator = value
+    @children.setter
+    def children(self, value):
+        self._children = value
 
+    @property
+    def parent(self):
+        return self._parent
 
-class Incident:
-    """ Indicator class represents a indicators of compromise data
-
-         Attributes:
-            id: The indicator identification
-          """
-
-    def __init__(self, indicator, evidences):
-        """ Create a new ioc object """
-        self.indicator = indicator
-        self.evidences = evidences
+    @parent.setter
+    def parent(self, value):
+        self._parent = value
 
 class Evidence:
 
     def __init__(self):
+        self._id = None
+        self._type = None
+        self._condition = None
+        self._content = None
+        self._value = None
         pass
 
     @property
@@ -105,13 +112,35 @@ class Evidence:
 pass
 
 
+class Incident:
+    def __init__(self, indicator, evidences):
+        self.indicator = indicator
+        self.evidences = evidences
 
 class AnalysisResult(object):
 
-    def __init__(self, startTime):
-        self.startTime = startTime
-        self.incidents = 0
+    class Status(Enum):
+        SUCCESS = "SUCESS"
+        DETECTED_VULNERABILITIES = "DETECTED VULNERABILITIES"
         pass
+
+    def __init__(self, startTime=None):
+        self._startTime = startTime
+        self.incidents = 0
+        self._endTime = None
+        self._totalIocCount = None
+        self._status = None
+        self._incidents = None
+        self._platforms = None
+        pass
+
+    @property
+    def startTime(self):
+        return self._startTime
+
+    @startTime.setter
+    def startTime(self, value):
+        self._startTime = value
 
     @property
     def endTime(self):
@@ -124,7 +153,6 @@ class AnalysisResult(object):
     @property
     def totalIocCount(self):
         return self._totalIocCount
-
 
     @totalIocCount.setter
     def totalIocCount(self, value):
@@ -139,12 +167,12 @@ class AnalysisResult(object):
         self._status = value
 
     @property
-    def incidentsByType(self, type):
-        return self._incidentsByType[type]
+    def incidents(self, incidents):
+        return self._incidents
 
-    @status.setter
-    def incidentsByType(self, type, incidents):
-        self._incidentsByType[type] = incidents
+    @incidents.setter
+    def incidents(self, incidents):
+        self._incidents = incidents
 
     @property
     def platforms(self):

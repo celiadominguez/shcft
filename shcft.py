@@ -8,7 +8,9 @@ import argparse
 import logging
 import sys
 import time
+from datetime import datetime, timezone
 
+from analysis.ioc_analysis import IOCAnalysis
 from config import *
 from domain.ioc_data import AnalysisResult
 from domain.ioc_handler import *
@@ -55,7 +57,7 @@ if __name__ == '__main__':
 
 
     # Analyze forensic data from host system
-    result = AnalysisResult(time.time())
+    result = AnalysisResult( datetime.now() )
 
     # Get data indicators
     handler = IocHandler(args.d)
@@ -69,16 +71,9 @@ if __name__ == '__main__':
         scanner.process(indicators)
 
     # Process forensic analysis of indicators
-    #IndicatorAnalizer()
+    IOCAnalysis.analyzeIndicatorsOfCompromise(indicators, result)
 
-    # Generate a report containing detailed scan result
-    result.endTime = time.time()
-    result = AnalysisResult(time.strftime('%H:%M:%S'));
-    result.totalIocCount = '15'
-    result.status = 'CORRECTO'
-    result.endTime = time.strftime('%H:%M:%S')
-    result.date = time.strftime('%d - %B - %Y')
-
+    # Generate a report containing detailed scan results
     report = PDFReport()
     report.generateReport(result)
 

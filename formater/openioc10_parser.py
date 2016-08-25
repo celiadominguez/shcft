@@ -13,7 +13,10 @@ class OpenIoc10Parser(IOCParser):
     def getChildrenByTagName(self, node, tag_name):
         for child in node.childNodes:
             if child.nodeName == tag_name:
-                return child.firstChild.nodeValue
+                if child.firstChild != None:
+                    return child.firstChild.nodeValue
+                else:
+                    return ""
         return None
 
     def parseIndicator(self, iocFile, iocFileName):
@@ -31,17 +34,21 @@ class OpenIoc10Parser(IOCParser):
         else:
             # Principal Indicator
             id = os.path.splitext(iocFileName)[0]
-            indicator = Indicator(id, self.getFormat())
+            parent_indicator = Indicator(id, self.getFormat())
             description = self.getChildrenByTagName( xmldoc._get_firstChild(), "description")
-            indicator.description = description
-            indicator_to_return.append(indicator)
+            parent_indicator.description = description
+            indicator_to_return.append(parent_indicator)
 
-            itemlist = xmldoc.getElementsByTagName('Indicator')
+            children_indicators = []
+            itemlist = xmldoc._get_firstChild().getElementsByTagName("Indicator")
             for item in itemlist:
-                indicator = Indicator(item.attributes['id'].value, self.getFormat())
-                indicator.operator = item.attributes['operator'].value
-                indicator.evidences = self.__getChildrenEvidences__(item)
-                indicator_to_return.append(indicator)
+                children_indicator = Indicator(item.attributes['id'].value, self.getFormat())
+                children_indicator.operator = item.attributes['operator'].value
+                children_indicator.evidences = self.__getChildrenEvidences__(item)
+                children_indicator.parent = parent_indicator
+                children_indicators.append(children_indicator)
+
+            parent_indicator.children = children_indicators
 
         return indicator_to_return
 
@@ -57,13 +64,13 @@ class OpenIoc10Parser(IOCParser):
             context = item.getElementsByTagName("Context")
             if context is not None:
                 evidence.context = context[0].attributes['search'].value
+                evidence.type = self.__getEvidenceType__(evidence.context)
             else:
                 raise ValueError("Invalid Context data")
 
             content = item.getElementsByTagName("Content")
             if content is not None:
                 evidence.value = content[0].childNodes[0].data
-                evidence.type = self.__getEvidenceType__(evidence.value)
             else:
                 raise ValueError("Invalid Content data")
 

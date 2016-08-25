@@ -93,17 +93,19 @@ class IocHandler(object):
             iocDB = IocHandler(self.data_path + "/" + format.value + "/")
             try:
                 all_iocs = iocDB.get_all_ioc(format)
+
             except InvalidDataPath:
                 logger.info("Ignore IOC format {}".format(format.value))
-                break
+                continue
+
 
             logger.info("Getting IOC files with format: " + format.value)
             parser = IOCParserFactory.createParser(format)
 
             for iocFileName in all_iocs:
                 iocFile = iocDB.get_ioc_file(iocFileName)
-                indicator = parser.parseIndicator(iocFile, iocFileName)
-                indicators_to_return.append(indicator)
+                indicators = parser.parseIndicator(iocFile, iocFileName)
+                indicators_to_return = indicators_to_return + indicators
 
         # Trace the end time and calculate the duration
         endTime = time.time() - startTime

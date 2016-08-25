@@ -1,4 +1,4 @@
-from formater.base_parser import EvidenceType
+from formater.base_parser import EvidenceType, Format
 from scanner.base_scanner import BaseScanner
 
 @BaseScanner.register
