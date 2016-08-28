@@ -67,6 +67,8 @@ class Evidence:
         self._condition = None
         self._content = None
         self._value = None
+        self._value = None
+        self._compromised = False
         pass
 
     @property
@@ -109,6 +111,14 @@ class Evidence:
     def value(self, value):
         self._value = value
 
+    @property
+    def compromised(self):
+        return self._compromised
+
+    @compromised.setter
+    def compromised(self, compromised):
+        self._compromised = compromised
+
 pass
 
 
@@ -126,11 +136,10 @@ class AnalysisResult(object):
 
     def __init__(self, startTime=None):
         self._startTime = startTime
-        self.incidents = 0
         self._endTime = None
         self._totalIocCount = None
         self._status = None
-        self._incidents = None
+        self._incidents = []
         self._platforms = None
         pass
 
@@ -167,7 +176,7 @@ class AnalysisResult(object):
         self._status = value
 
     @property
-    def incidents(self, incidents):
+    def incidents(self):
         return self._incidents
 
     @incidents.setter
@@ -182,10 +191,5 @@ class AnalysisResult(object):
     def platforms(self, value):
         self._platforms = value
 
-    def increateIncidents(self):
-        self.incidents =  self.incidents + 1
-
-    def getIncidents(self):
-        return self.incidents
 
 pass

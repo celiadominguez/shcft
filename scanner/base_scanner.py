@@ -36,3 +36,4 @@ class BaseScanner(object):
         logger.info(self.__class__ + ' - Scanner finished on: ' + str(endTime) + ' seconds')
 
         return
+

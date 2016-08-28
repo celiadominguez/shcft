@@ -16,9 +16,6 @@ class IOCAnalysis():
         incidents = []
         for indicator in indicators:
 
-            if isinstance(indicator, list):
-                indicator = indicator
-
             # Recursive validation
             IOCAnalysis.evalueIndicator(indicator, incidents)
 
@@ -32,7 +29,8 @@ class IOCAnalysis():
         evidences = []
         if indicator.evidences != None:
             for evidence in indicator.evidences:
-                evidences.append(evidence)
+                if evidence.compromised == True:
+                    evidences.append(evidence)
 
             # Create incident if exists vunerability evidences
             if evidences.__sizeof__() > 0:

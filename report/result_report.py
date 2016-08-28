@@ -152,6 +152,11 @@ class PDFReport(Report):
         )
 
         table_data = [ ['Indicador de Compromiso', 'Tipo de Evidencia', 'Valor'] ]
+        for incident in results.incidents:
+            for evidence in incident.evidences:
+                table_data.append([incident.indicator.id, evidence.context, evidence.value])
+
+        # FIX: only for test, delete then
         for _ in " " * 10:
             table_data.append(['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'])
 

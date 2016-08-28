@@ -88,6 +88,8 @@ class OpenIoc10Parser(IOCParser):
             return EvidenceType.REMOTE_IP
         elif search == "DnsEntryItem/Host":
             return EvidenceType.HOST
+        elif search == "FileItem/FileName":
+            return EvidenceType.FILE_NAME
 
     @staticmethod
     def getFormat():
