@@ -1,7 +1,13 @@
 
-from reportlab.platypus import (SimpleDocTemplate, PageTemplate,Frame, Table, TableStyle)
+from reportlab.platypus import (SimpleDocTemplate, PageTemplate,Frame, Table, TableStyle, PageBreak, Spacer, Paragraph)
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import inch
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib import colors
+from reportlab.platypus import (BaseDocTemplate, PageTemplate,
+                                NextPageTemplate, PageBreak, Frame, FrameBreak, Flowable, Paragraph,
+                                Image, Spacer)
+from reportlab.lib.enums import (TA_CENTER, TA_LEFT)
 
 DEFAULT_REPORT_NAME = "shcft_result.pdf"
 LOGO_FILE = "./report/logo.jpg"
@@ -16,7 +22,7 @@ TOTAL_IOC_MSG = "IOCs analizados: {:d}"
 FINAL_STATUS_MSG = "Resultado del análisis: {}"
 RESULTS_MSG = "Resultados del análisis"
 RESULT_DESC_MSG = "Indicadores de compromiso detectados durante el proceso de análisis."
-PAGE_MSG = "Página %d"
+PAGE_MSG = "Página {:d}"
 
 class Report(object):
 
@@ -50,7 +56,7 @@ class IOCDocTemplate(SimpleDocTemplate):
     def footer(self, canvas, doc):
         canvas.saveState()
         canvas.setFont('Times-Roman', 9)
-        canvas.drawString(inch, 0.75 * inch, PAGE_MSG % doc.page)
+        canvas.drawString(inch, 0.75 * inch, PAGE_MSG.format(doc.page) )
         canvas.restoreState()
 
     def summary(self, canvas, doc):
@@ -142,32 +148,51 @@ class PDFReport(Report):
         doc.addPageTemplates(
             [
                 PageTemplate(id='summary',
-                             frames=[Frame(doc.leftMargin, doc.bottomMargin, doc.width, 100)],
+                             frames=[Frame(doc.leftMargin, doc.bottomMargin, doc.width, 425)],
                              onPage=doc.summary, onPageEnd=doc.footer),
 
                 PageTemplate(id='content',
                              frames=[Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height)],
-                             onPageEnd=doc.footer, onPage=doc.header),
+                             onPage=doc.header, onPageEnd=doc.footer),
+
             ]
         )
 
-        table_data = [ ['Indicador de Compromiso', 'Tipo de Evidencia', 'Valor'] ]
+        estiloHoja = getSampleStyleSheet()
+
+        # Estilos de la tabla para cabeceras y datos
+        thead = estiloHoja["BodyText"]
+        thead.fontSize = 7
+
+        table_data = [ ['INDICADOR DE COMPROMISO', 'TIPO DE EVIDENCIA', 'VALOR', 'PRUEBA'] ]
         for incident in results.incidents:
             for evidence in incident.evidences:
-                table_data.append([incident.indicator.id, evidence.context, evidence.value])
+                table_data.append([Paragraph(incident.indicator.id,thead), Paragraph(evidence.context,thead), Paragraph(evidence.value,thead)])
+
+
+
 
         # FIX: only for test, delete then
-        for _ in " " * 10:
-            table_data.append(['The Scarab attack group', 'DnsEntryItem', 'www.service.authorizeddns.net'])
+        for _ in " " * 100:
+            table_data.append([Paragraph('The Scarab aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaattack group', thead), 'DnsEntryItem', 'www.service.authorizeddns.net'])
+            table_data.append(['2c00-4a20-b887-f88f1f16ea08', 'FileItem/FileName', 'helpers.py', 'G:\TFG\TFG Celia Domínguez\Python\samples'])
+            table_data.append(['2c00-4a20-b887-f88f1f16ea08', 'FileItem/Md5sum', '9b600508b1f9dd1ac1c79398de46fb29', 'G:\TFG\TFG Celia Domínguez\Python\samples'])
 
-        table_report = [Table( table_data,
-            style = TableStyle([
-                ('ALIGN', (1, 1), (2, 2), 'RIGHT'),
-                ('VALIGN', (-1, 0), (-1, 0), 'MIDDLE'),
-                ('VALIGN', (0, 0), (1, 0), 'TOP'),
-            ])
-        )
-        ]
+
+        table_report=[]
+        table_report.append(NextPageTemplate('summary'))
+        table_report.append(NextPageTemplate('content'))
+        table_report.append(Table(table_data, colWidths=[110, 80, 150, 190],
+                              style=TableStyle([
+                                  ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
+                                  ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+                                  ('SIZE', (0, 0), (-1, -1), 7),
+                                  ('GRID', (0, 0), (-1, -1), 0.5, colors.black),
+                                  ('BOX', (0, 0), (-1, -1), 1, colors.black),
+                                  ('BACKGROUND', (0, 0), (-1, 0), colors.lavender),
+                              ])
+                              )
+                            )
 
         doc.build(table_report)
     pass
