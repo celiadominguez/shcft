@@ -1,0 +1,557 @@
+<stix:STIX_Package id="ibm:Feed-00ac73fcdb7110fee692edb3f185814e" timestamp="2016-08-17T18:25:45.998Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2" xmlns:ttp="http://stix.mitre.org/TTP-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:AddressObject="http://cybox.mitre.org/objects#AddressObject-2" xmlns:URIObject="http://cybox.mitre.org/objects#URIObject-2" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:et="http://stix.mitre.org/ExploitTarget-1" xmlns:COA="http://stix.mitre.org/CourseOfAction-1" xmlns:ibm="http://xforce.ibmcloud.com/" xmlns:tlp="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" version="1.1.1" xsi:schemaLocation="http://cybox.mitre.org/objects#URIObject-2 http://cybox.mitre.org/XMLSchema/objects/URI/1.2/URI_Object.xsd http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.2.0/stix_default_vocabularies.xsd http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.2/stix_core.xsd http://stix.mitre.org/Indicator-2 http://stix.mitre.org/XMLSchema/indicator/2.2/indicator.xsd http://cybox.mitre.org/objects#AddressObject-2 http://cybox.mitre.org/XMLSchema/objects/Address/2.1/Address_Object.xsd http://stix.mitre.org/ExploitTarget-1 http://stix.mitre.org/XMLSchema/exploit_target/1.2/exploit_target.xsd http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.2/ttp.xsd http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.2/stix_common.xsd http://cybox.mitre.org/cybox-2 http://stix.mitre.org/XMLSchema/extensions/marking/tlp/1.1.1/tlp_marking.xsd">
+	<stix:STIX_Header>
+		<stix:Title>FastPOS Malware</stix:Title>
+		<stix:Description>Timeframe
+
+
+	Attacks are ongoing at the beginning of June, 2016.
+	FastPOS attacks were first identified in June, 2015.
+
+
+The most notable thing about FastPOS is the speed with which it exfiltrates data it captures, thus its name. FastPOS does not encrypt exfiltration traffic, so standard Data Leakage Prevention (DLP) techniques can detect exfiltration attempts. Trend Micro reports observing infections of small and medium sized businesses (SMBs) as well as enterprises. This may be associated with direct infections over virtual network computing (VNC), in the cases of branch offices with open VNC access (see Behaviors, below).
+
+Earlier versions of FastPOS required the user to accept a UAC prompt to run as administrator. Later versions do not require administrator access, avoiding the UAC popup. Both versions, though, will pop up an &amp;quot;Installation Complete&amp;quot; message box, and the infection is not complete until the user dismisses the dialog with the OK button.
+
+FastPOS keeps keylog data in memory to reduce chances of detection and forensic analysis. It also performs a variety of checks on the captured credit card data before sending it to the CnC server, attempting to validate that it&apos;s actually a credit card number, and that it has specific characteristics, such as &amp;quot;International Interchange OK&amp;quot;.
+
+The actor offers stolen credit card data for sale ranging from US$10 to US$40 per card number, depending on the nationality of the issuing bank. The countries most affected are Taiwan, Japan, Hong Kong, Brazil, France, and the US.
+
+Identifiers
+
+
+	FastPOS (Trend Micro)
+
+
+Known Campaigns
+
+
+	Attacks on enterprises as well as SMBs, in the Far East, Europe, South and North America.
+
+
+Behaviors
+
+
+	Sometimes uses compromised web sites as download locations for the malware.
+	Sometimes uses web-based, real-time file sharing services as download locations for the malware.
+	Sometimes directly installs the malware using virtual network computing (VNC), apparently after stealing appropriate credentials.
+	Credential theft.
+	Scrapes memory for credit card track data.
+	Also performs keylogging.
+	Self updating.
+	Delivers keylog data to the CnC server as soon as the user presses the Enter key.
+	Delivers scraped credit card data to the CnC server as soon as it passes validation.
+	Exfiltrates with HTTP GET requests. The server does not respond to these HTTP transactions. This also leaves the exfiltration data behind in the caches and web browsing history on infected endpoints, but FastPOS tries to delete those traces.
+
+
+References
+
+
+	FastPOS: Quick and Easy Credit Card Theft (PDF, Trend Micro)
+
+		</stix:Description>
+		<stix:Handling>
+			<marking:Marking>
+				<marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+				<marking:Marking_Structure xsi:type="tlp:TLPMarkingStructureType" color="WHITE"/>
+			</marking:Marking>
+		</stix:Handling>
+		<stix:Information_Source>
+			<stixCommon:Identity>
+				<stixCommon:Name>00ac73fcdb7110fee692edb3f185814e</stixCommon:Name>
+			</stixCommon:Identity>
+			<stixCommon:Contributing_Sources>
+				<stixCommon:Source>
+					<stixCommon:Identity>
+						<stixCommon:Name>Doug Franklin</stixCommon:Name>
+					</stixCommon:Identity>
+				</stixCommon:Source>
+			</stixCommon:Contributing_Sources>
+			<stixCommon:Time>
+				<cyboxCommon:Produced_Time>2016-06-08T16:33:51.419Z</cyboxCommon:Produced_Time>
+			</stixCommon:Time>
+		</stix:Information_Source>
+	</stix:STIX_Header>
+	<stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+		<cybox:Observable id="ibm:Observable-49eac360b20ec7de4d49be91cee71caa">
+			<cybox:Title>XFE Observable for aquaspa-oi.re</cybox:Title>
+			<cybox:Description>XFE Observable for aquaspa-oi.re</cybox:Description>
+			<cybox:Object id="ibm:Object-49eac360b20ec7de4d49be91cee71caa">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>aquaspa-oi.re</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-49eac360b20ec7de4d49be91ceeb5b4a">
+			<cybox:Title>XFE Observable for blank.pw</cybox:Title>
+			<cybox:Description>XFE Observable for blank.pw</cybox:Description>
+			<cybox:Object id="ibm:Object-49eac360b20ec7de4d49be91ceeb5b4a">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>blank.pw</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a1395f856">
+			<cybox:Title>XFE Observable for 7EFC1618B74F1110D0481B434086DD08F2E75211</cybox:Title>
+			<cybox:Description>XFE Observable for 7EFC1618B74F1110D0481B434086DD08F2E75211</cybox:Description>
+			<cybox:Object id="ibm:Object-662889b0-0953-ea88-e204-82831c995179">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">7EFC1618B74F1110D0481B434086DD08F2E75211</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a1396195d">
+			<cybox:Title>XFE Observable for 8292DE8A2F7D5FC288B734A78868E8A18453581D</cybox:Title>
+			<cybox:Description>XFE Observable for 8292DE8A2F7D5FC288B734A78868E8A18453581D</cybox:Description>
+			<cybox:Object id="ibm:Object-9ff74297-1367-dab6-dd56-3878067bbbb1">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">8292DE8A2F7D5FC288B734A78868E8A18453581D</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a139674c2">
+			<cybox:Title>XFE Observable for A5384A2A6F3099912F3C6E5F6646C07AD7B3963B</cybox:Title>
+			<cybox:Description>XFE Observable for A5384A2A6F3099912F3C6E5F6646C07AD7B3963B</cybox:Description>
+			<cybox:Object id="ibm:Object-cae115b9-b15f-59ee-0026-725e65905e6e">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">A5384A2A6F3099912F3C6E5F6646C07AD7B3963B</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a13976d13">
+			<cybox:Title>XFE Observable for B56465347F234B9DDF07D153A9B493D0FFE54AE2</cybox:Title>
+			<cybox:Description>XFE Observable for B56465347F234B9DDF07D153A9B493D0FFE54AE2</cybox:Description>
+			<cybox:Object id="ibm:Object-4d7671a9-4183-54e7-655a-44cef79ef13f">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">B56465347F234B9DDF07D153A9B493D0FFE54AE2</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a139805a9">
+			<cybox:Title>XFE Observable for F3FE5173600EE853FE01EB8D82A36230EF5068F9</cybox:Title>
+			<cybox:Description>XFE Observable for F3FE5173600EE853FE01EB8D82A36230EF5068F9</cybox:Description>
+			<cybox:Object id="ibm:Object-3eb1fef6-1fe3-f2a2-3e5f-db87aa212539">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">F3FE5173600EE853FE01EB8D82A36230EF5068F9</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a13c3fc8b">
+			<cybox:Title>XFE Observable for 8.100.156.107</cybox:Title>
+			<cybox:Description>XFE Observable for 8.100.156.107</cybox:Description>
+			<cybox:Object id="ibm:Object-c2b80f41-cc73-81dc-b2e0-c6e59517eb11">
+				<cybox:Properties xsi:type="AddressObject:AddressObjectType" category="ipv4-addr">
+					<AddressObject:Address_Value>8.100.156.107</AddressObject:Address_Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a13da141a">
+			<cybox:Title>XFE Observable for http://103.195.185.94/legacy/cdosys.php?comdlg64=</cybox:Title>
+			<cybox:Description>XFE Observable for http://103.195.185.94/legacy/cdosys.php?comdlg64=</cybox:Description>
+			<cybox:Object id="ibm:Object-76b092faec3246e33391528a13da141a">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>http://103.195.185.94/legacy/cdosys.php?comdlg64=</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a13e26b56">
+			<cybox:Title>XFE Observable for http://5.100.156.107/star/cdosys.php?comdlg64=</cybox:Title>
+			<cybox:Description>XFE Observable for http://5.100.156.107/star/cdosys.php?comdlg64=</cybox:Description>
+			<cybox:Object id="ibm:Object-76b092faec3246e33391528a13e26b56">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>http://5.100.156.107/star/cdosys.php?comdlg64=</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-76b092faec3246e33391528a13ef87d7">
+			<cybox:Title>XFE Observable for http://blank.pw/Neo/cdosys.php?comdlg64=statuslog</cybox:Title>
+			<cybox:Description>XFE Observable for http://blank.pw/Neo/cdosys.php?comdlg64=statuslog</cybox:Description>
+			<cybox:Object id="ibm:Object-76b092faec3246e33391528a13ef87d7">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>http://blank.pw/Neo/cdosys.php?comdlg64=statuslog</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-96c6d53b9150cb13b2ef77864608c903">
+			<cybox:Title>XFE Observable for 01CDB9F7935434DF31196660A7542E0B46BCF480</cybox:Title>
+			<cybox:Description>XFE Observable for 01CDB9F7935434DF31196660A7542E0B46BCF480</cybox:Description>
+			<cybox:Object id="ibm:Object-e0bc0222-cc44-4999-1fc0-9b35c9f45cca">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">01CDB9F7935434DF31196660A7542E0B46BCF480</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-96c6d53b9150cb13b2ef778646090311">
+			<cybox:Title>XFE Observable for 299FABBEAA110F7E817D81861D8EDC7FF19A2415</cybox:Title>
+			<cybox:Description>XFE Observable for 299FABBEAA110F7E817D81861D8EDC7FF19A2415</cybox:Description>
+			<cybox:Object id="ibm:Object-60228699-f132-f44b-ab31-fdfc6b87ab4f">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">299FABBEAA110F7E817D81861D8EDC7FF19A2415</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-96c6d53b9150cb13b2ef778646094361">
+			<cybox:Title>XFE Observable for 7C29A9822C6F498B2B4E632F5FCBB4B7DAA25A7A</cybox:Title>
+			<cybox:Description>XFE Observable for 7C29A9822C6F498B2B4E632F5FCBB4B7DAA25A7A</cybox:Description>
+			<cybox:Object id="ibm:Object-c1cc0237-b7e3-fc24-6025-44377c3a17da">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">7C29A9822C6F498B2B4E632F5FCBB4B7DAA25A7A</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-96c6d53b9150cb13b2ef77864609d1fb">
+			<cybox:Title>XFE Observable for 9526438E93621A44325163C4DDA22B142C7721DC</cybox:Title>
+			<cybox:Description>XFE Observable for 9526438E93621A44325163C4DDA22B142C7721DC</cybox:Description>
+			<cybox:Object id="ibm:Object-38160374-fe2d-5752-bf8f-af753252fb48">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">9526438E93621A44325163C4DDA22B142C7721DC</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-96c6d53b9150cb13b2ef7786460a03a1">
+			<cybox:Title>XFE Observable for 9E7A22BFED0BC9F88673F204BBCF9D4B1DC1AB21</cybox:Title>
+			<cybox:Description>XFE Observable for 9E7A22BFED0BC9F88673F204BBCF9D4B1DC1AB21</cybox:Description>
+			<cybox:Object id="ibm:Object-0e13b9dc-9b3a-7654-60b5-16eb9834f01b">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">9E7A22BFED0BC9F88673F204BBCF9D4B1DC1AB21</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-96c6d53b9150cb13b2ef77864649ca6a">
+			<cybox:Title>XFE Observable for http://103.195.185.94/berg/cdosys.php?comdlg64=</cybox:Title>
+			<cybox:Description>XFE Observable for http://103.195.185.94/berg/cdosys.php?comdlg64=</cybox:Description>
+			<cybox:Object id="ibm:Object-96c6d53b9150cb13b2ef77864649ca6a">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>http://103.195.185.94/berg/cdosys.php?comdlg64=</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-96c6d53b9150cb13b2ef7786465a6b4b">
+			<cybox:Title>XFE Observable for http://8.100.156.107/star/cdosys.php?comdlg64=</cybox:Title>
+			<cybox:Description>XFE Observable for http://8.100.156.107/star/cdosys.php?comdlg64=</cybox:Description>
+			<cybox:Object id="ibm:Object-96c6d53b9150cb13b2ef7786465a6b4b">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>http://8.100.156.107/star/cdosys.php?comdlg64=</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-96c6d53b9150cb13b2ef7786465f4e9a">
+			<cybox:Title>XFE Observable for http://aquaspa-oi.re/data/cdosys.php?comdlg64=</cybox:Title>
+			<cybox:Description>XFE Observable for http://aquaspa-oi.re/data/cdosys.php?comdlg64=</cybox:Description>
+			<cybox:Object id="ibm:Object-96c6d53b9150cb13b2ef7786465f4e9a">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>http://aquaspa-oi.re/data/cdosys.php?comdlg64=</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-fa88990e26e4738abc116a22de55af35">
+			<cybox:Title>XFE Observable for F4074FDDCD9491B72B94908A813564754F68F4ED</cybox:Title>
+			<cybox:Description>XFE Observable for F4074FDDCD9491B72B94908A813564754F68F4ED</cybox:Description>
+			<cybox:Object id="ibm:Object-5e74e22a-ee52-60e5-95dc-1e820fc6a8af">
+				<cybox:Properties xsi:type="FileObj:FileObjectType">
+					<FileObj:Hashes>
+						<cyboxCommon:Hash>
+							<cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+							<cyboxCommon:Simple_Hash_Value condition="Equals">F4074FDDCD9491B72B94908A813564754F68F4ED</cyboxCommon:Simple_Hash_Value>
+						</cyboxCommon:Hash>
+					</FileObj:Hashes>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-fa88990e26e4738abc116a22de724c16">
+			<cybox:Title>XFE Observable for 103.195.185.94</cybox:Title>
+			<cybox:Description>XFE Observable for 103.195.185.94</cybox:Description>
+			<cybox:Object id="ibm:Object-dfcc199e-7889-eb4c-d157-0f23080fabe1">
+				<cybox:Properties xsi:type="AddressObject:AddressObjectType" category="ipv4-addr">
+					<AddressObject:Address_Value>103.195.185.94</AddressObject:Address_Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-fa88990e26e4738abc116a22de779337">
+			<cybox:Title>XFE Observable for 148.251.8.173</cybox:Title>
+			<cybox:Description>XFE Observable for 148.251.8.173</cybox:Description>
+			<cybox:Object id="ibm:Object-41d1ecb7-21a2-e536-1f2d-3680c6750b2d">
+				<cybox:Properties xsi:type="AddressObject:AddressObjectType" category="ipv4-addr">
+					<AddressObject:Address_Value>148.251.8.173</AddressObject:Address_Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-fa88990e26e4738abc116a22de7fe76c">
+			<cybox:Title>XFE Observable for 5.100.156.107</cybox:Title>
+			<cybox:Description>XFE Observable for 5.100.156.107</cybox:Description>
+			<cybox:Object id="ibm:Object-e612b76b-514a-9f28-20ab-eedba001cf09">
+				<cybox:Properties xsi:type="AddressObject:AddressObjectType" category="ipv4-addr">
+					<AddressObject:Address_Value>5.100.156.107</AddressObject:Address_Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+		<cybox:Observable id="ibm:Observable-fa88990e26e4738abc116a22de9eab41">
+			<cybox:Title>XFE Observable for http://148.251.8.173/data/cdosys.php?comdlg64=</cybox:Title>
+			<cybox:Description>XFE Observable for http://148.251.8.173/data/cdosys.php?comdlg64=</cybox:Description>
+			<cybox:Object id="ibm:Object-fa88990e26e4738abc116a22de9eab41">
+				<cybox:Properties xsi:type="URIObject:URIObjectType" type="URL">
+					<URIObject:Value>http://148.251.8.173/data/cdosys.php?comdlg64=</URIObject:Value>
+				</cybox:Properties>
+			</cybox:Object>
+		</cybox:Observable>
+	</stix:Observables>
+	<stix:Indicators>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-05bd102160dd487b8814148fdb1f4de2" timestamp="2016-08-17T18:25:46.019Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a1395f856"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-3f67c95625ef10f456b8ea4cf8d6eb45" timestamp="2016-08-17T18:25:46.020Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a1396195d"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-6b52fd83a3bd183fd953b2869941b562" timestamp="2016-08-17T18:25:46.020Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a139674c2"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-3632eaa8403282a3a9701638e4c5e2a2" timestamp="2016-08-17T18:25:46.020Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a13976d13"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-fdcfe31f72bce67ec72ee613d75f8475" timestamp="2016-08-17T18:25:46.025Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a139805a9"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-971da4a96cd3781fb4573cfb027fdfbe" timestamp="2016-08-17T18:25:46.026Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef77864608c903"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-f47d56fd252646897633c33c9a2f30cf" timestamp="2016-08-17T18:25:46.026Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef778646090311"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-9bd590ffe4e205c92e09773d035339f6" timestamp="2016-08-17T18:25:46.026Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef778646094361"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-9973d78f43e0e487de6f2362c0651577" timestamp="2016-08-17T18:25:46.026Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef77864609d1fb"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-20ff13ea5364c2532e5a07ab87a28707" timestamp="2016-08-17T18:25:46.026Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef7786460a03a1"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-431be591141d3ab6a0a580444cf8f927" timestamp="2016-08-17T18:25:46.027Z">
+			<indicator:Title>Malware risk unknown</indicator:Title>
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.0">File Hash Watchlist</indicator:Type>
+			<indicator:Observable idref="ibm:Observable-fa88990e26e4738abc116a22de55af35"/>
+			<indicator:Confidence>
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">Unknown</stixCommon:Value>
+			</indicator:Confidence>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-a7b642a4-15a1-45ec-3903-0783e7fa97cb" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-49eac360b20ec7de4d49be91cee71caa"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-2791c0d2-5f47-164d-da8b-d4f3ba622cd2" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-49eac360b20ec7de4d49be91ceeb5b4a"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-052f346c-f0f5-d76a-96b7-084d7e5dcce7" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a1395f856"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-b117d40e-0af3-7c7d-cca3-49a067122f2b" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a1396195d"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-bcec4b2d-ca74-bdae-0c33-1c748c796934" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a139674c2"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-95743d75-8565-6861-4ac3-a0ddee9d56f5" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a13976d13"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-9540144a-3027-d304-f405-84e1db72685d" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a139805a9"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-bb7ef3d7-861e-38cc-2e19-2108a2ef48ed" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a13c3fc8b"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-7969df26-d2b2-215a-1fdb-b893dfbca56f" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a13da141a"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-e061bda4-8a86-c817-89f6-6f8077191684" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a13e26b56"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-3859aa9c-d89e-9f69-8529-a9ed09f61ff7" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-76b092faec3246e33391528a13ef87d7"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-ddaae817-bbfe-bc10-3ad3-10ebd946555c" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef77864608c903"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-f7340195-a87c-016e-158e-1c4dfaebd01c" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef778646090311"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-82eb62c3-78ab-3bf9-5359-04aa431ee432" timestamp="2016-08-17T18:25:46.028Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef778646094361"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-6835ae1d-d29d-826d-e08d-32e362b10d8d" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef77864609d1fb"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-036b0414-cae3-514d-f538-6a4e2e84746f" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef7786460a03a1"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-fcf6cec6-ae0b-7e75-20e3-5325c98f5a4b" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef77864649ca6a"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-e36eca6e-7cd3-c85a-839a-9f8717fb506c" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef7786465a6b4b"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-106790ac-ca15-b8d1-adf2-c674d34bd4e5" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-96c6d53b9150cb13b2ef7786465f4e9a"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-ed0106c5-4eb0-593c-1aaa-f4c0bc2440a4" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-fa88990e26e4738abc116a22de55af35"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-c348fbd3-43f1-19c7-dc0e-412d926f7390" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-fa88990e26e4738abc116a22de724c16"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-eef0240a-ab1f-7ede-6f05-97e39d339084" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-fa88990e26e4738abc116a22de779337"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-3e1a03b0-29ee-7353-dc06-a7d181ae7bc5" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-fa88990e26e4738abc116a22de7fe76c"/>
+		</stix:Indicator>
+		<stix:Indicator xsi:type="indicator:IndicatorType" id="ibm:Indicator-e391858f-5250-b024-f32e-4f60c4e23027" timestamp="2016-08-17T18:25:46.029Z">
+			<indicator:Title>Contained in XFE Collection FastPOS Malware</indicator:Title>
+			<indicator:Description>The referenced observable is contained in the X-Force Exchange Collection with title &apos;FastPOS Malware&apos;. https://exchange.xforce.ibmcloud.com/collection/00ac73fcdb7110fee692edb3f185814e</indicator:Description>
+			<indicator:Observable idref="ibm:Observable-fa88990e26e4738abc116a22de9eab41"/>
+		</stix:Indicator>
+	</stix:Indicators>
+</stix:STIX_Package>
