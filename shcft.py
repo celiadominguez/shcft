@@ -17,8 +17,7 @@ from domain.ioc_handler import *
 from logger import Logger
 from recovery.recovery_factory import *
 from report.result_report import PDFReport
-from scanner.scanner_factory import *
-
+from scanner.file_scanner import FileScanner
 
 def usage():
 	print ("Usage:\n\tshcft.py [first_run|check_new]")
@@ -65,10 +64,12 @@ if __name__ == '__main__':
 
     # Scan evidences
     logger.info('Start to scan evidences')
-    scanners = [EvidenceScannerFactory.createScanner(i)
-              for i in EvidenceScannerFactory.scannerFactoryNames()]
-    for scanner in scanners:
-        scanner.process(indicators)
+    fileScanner = FileScanner()
+    fileScanner.scanEvidences(indicators, 'G:\\TFG\\TFG Celia Domínguez\\Python\\samples\\')
+    # scanners = [EvidenceScannerFactory.createScanner(i)
+    #           for i in EvidenceScannerFactory.scannerFactoryNames()]
+    # for scanner in scanners:
+    #     scanner.process(indicators)
 
     # Process forensic analysis of indicators
     IOCAnalysis.analyzeIndicatorsOfCompromise(indicators, result)

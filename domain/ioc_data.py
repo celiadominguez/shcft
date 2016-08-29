@@ -69,6 +69,7 @@ class Evidence:
         self._value = None
         self._value = None
         self._compromised = False
+        self._proof = []
         pass
 
     @property
@@ -118,6 +119,16 @@ class Evidence:
     @compromised.setter
     def compromised(self, compromised):
         self._compromised = compromised
+
+    @property
+    def proof(self):
+        return self._proof
+
+
+    @proof.setter
+    def proof(self, proof):
+        self._proof = proof
+
 
 pass
 

@@ -1,34 +1,25 @@
-from formater.base_parser import EvidenceType, Format
+
 from logger import Logger
-from scanner.base_scanner import BaseScanner
 import scandir
 import os
 import traceback
-from scanner.filename_scanner import FileNameScanner
 
+class FileScanner():
 
-@BaseScanner.register
-class FileScanner(BaseScanner):
     def __init__(self):
         pass
 
-    @staticmethod
-    def getEvidenteType():
-        return EvidenceType.FILE_NAME
+    registry = []
+    def register(cls):
+        cls.registry.append( cls() )  # Instance new subclass
+        return cls
 
-    def process(self, indicators, **kwargs):
-        path = kwargs.get("path")
+    def scanEvidences(self, indicators, path ):
 
         # Every type of FileScaner
-        filenameScanner = FileNameScanner(indicators)
-        #md5Scanner = MD5Scanner(indicators)
-
-        path = 'G:\\TFG\\TFG Celia Domínguez\\Python\\samples\\'
-
-        if kwargs is None or 'path' not in kwargs :
-            raise TypeError("Missing keyword arguments" % 'path')
-
-        path = kwargs['path']
+        types = FileScanner.__subclasses__()
+        for scanner in self.registry:
+            scanner.loadEvidences(indicators)
 
         logger = Logger()
         logger.warn("Scanning path: %s" % path)
@@ -43,11 +34,21 @@ class FileScanner(BaseScanner):
                     # Get the file and path
                     filePath = os.path.join(root, filename)
 
-                    # Print files
-                    logger.debug("[SCANNING] %s" % filename)
+                    # Verify that the path is valid
+                    if os.path.exists(filePath):
 
-                    # Check evidence
-                    filenameScanner.checkEvidences(filename)
+                        # Verify that the path is not a symbolic link
+                        if not os.path.islink(filePath):
+
+                            # Verify that the file is real
+                            if os.path.isfile(filePath):
+
+                                # Print files
+                                logger.debug("[SCANNING] %s" % filePath)
+
+                                # Check evidence
+                                for scanner in self.registry:
+                                    scanner.checkEvidences(filePath)
 
                 except Exception:
                     logger = Logger()
