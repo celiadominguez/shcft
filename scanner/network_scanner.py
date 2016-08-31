@@ -14,13 +14,14 @@ class NetworkScanner():
         cls.registry.append( cls() )  # Instance new subclass
         return cls
 
-    def scanEvidences(self, indicators, path ):
-
-        # Every type of FileScaner
-        types = NetworkScanner.__subclasses__()
-        for scanner in self.registry:
-            scanner.loadEvidences(indicators)
+    def scanEvidences(self, indicators ):
 
         logger = Logger()
-        logger.warn("Scanning network")
+        logger.debug("Scanning network...")
+
+        # Every type of NetworkScanner
+        types = NetworkScanner.__subclasses__()
+        for scanner in self.registry:
+            scanner.loadNetworkData()
+            scanner.checkEvidences(indicators)
 

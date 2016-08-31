@@ -109,7 +109,7 @@ class IocHandler(object):
 
         # Trace the end time and calculate the duration
         endTime = time.time() - startTime
-        logger.info('Extract ({}) IOCs finished on: {} seconds'.format(indicators_to_return.__sizeof__(), str(endTime)))
+        logger.info('Extract ({}) IOCs finished on: {} seconds'.format(indicators_to_return.__len__(), str(endTime)))
 
         return indicators_to_return
 pass

@@ -50,36 +50,38 @@ class STIXParser(IOCParser):
             object = item.getElementsByTagName("cybox:Object")[0]
             property = object.getElementsByTagName("cybox:Properties")[0]
             type = property.attributes['xsi:type'].value
-            evidence.type = self.__getEvidenceType__(object, type)
-            evidence.value = self.__getEvidenceValue__(object, evidence.type)
+            self.__getEvidenceData__(object, type, evidence)
 
             evidences_to_return.append(evidence)
 
         return evidences_to_return
 
-    def __getEvidenceType__(self, object, type):
+    def __getEvidenceData__(self, object, type, evidence):
+        # File Hash value
         if type == "FileObj:FileObjectType":
             hash = object.getElementsByTagName("FileObj:Hashes")
             if hash != None:
+                # Type
                 hash_type = hash[0].getElementsByTagName("cyboxCommon:Type")[0]
                 if hash_type.firstChild.nodeValue == "MD5":
-                    return EvidenceType.HASH_MD5
+                    evidence.type = EvidenceType.HASH_MD5
+                # Value
+                hash_value = object.getElementsByTagName("cyboxCommon:Simple_Hash_Value")[0]
+                if hash_value.firstChild != None:
+                    evidence.value = hash_value.firstChild.nodeValue
+                # Context
+                evidence.context = hash[0].nodeName
+        # Host ip address
         elif type == "AddressObject:AddressObjectType":
             attributes = object.getElementsByTagName("cybox:Properties")[0].attributes
-            if "type" in attributes:
-                subtype = attributes['type'].value
+            if "category" in attributes:
+                subtype = attributes['category'].value
                 if subtype != None and subtype == "ipv4-addr":
-                    return EvidenceType.REMOTE_IP
-
-    def __getEvidenceValue__(self, object, type):
-        if type == EvidenceType.HASH_MD5:
-            hash_value = object.getElementsByTagName("cyboxCommon:Simple_Hash_Value")[0]
-            if hash_value.firstChild != None:
-                return hash_value.firstChild.nodeValue
-        elif type == EvidenceType.REMOTE_IP:
-            add_value = object.getElementsByTagName("AddressObject:Address_Value")[0]
-            if add_value.firstChild != None:
-                return add_value.firstChild.nodeValue
+                    evidence.type = EvidenceType.HOST
+                add_value = object.getElementsByTagName("AddressObject:Address_Value")[0]
+                if add_value.firstChild != None:
+                    evidence.value = add_value.firstChild.nodeValue
+                evidence.context = subtype
 
     @staticmethod
     def getFormat():

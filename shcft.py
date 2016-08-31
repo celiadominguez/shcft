@@ -18,6 +18,8 @@ from logger import Logger
 from recovery.recovery_factory import *
 from report.result_report import PDFReport
 from scanner.file_scanner import FileScanner
+from scanner.network_scanner import NetworkScanner
+
 
 def usage():
 	print ("Usage:\n\tshcft.py [first_run|check_new]")
@@ -66,10 +68,9 @@ if __name__ == '__main__':
     logger.info('Start to scan evidences')
     fileScanner = FileScanner()
     fileScanner.scanEvidences(indicators, 'G:\\TFG\\TFG Celia Domínguez\\Python\\samples\\')
-    # scanners = [EvidenceScannerFactory.createScanner(i)
-    #           for i in EvidenceScannerFactory.scannerFactoryNames()]
-    # for scanner in scanners:
-    #     scanner.process(indicators)
+
+    networkScanner = NetworkScanner()
+    networkScanner.scanEvidences(indicators)
 
     # Process forensic analysis of indicators
     IOCAnalysis.analyzeIndicatorsOfCompromise(indicators, result)

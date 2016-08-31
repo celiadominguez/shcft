@@ -3,7 +3,6 @@ import traceback
 from formater.base_parser import EvidenceType
 from logger import Logger
 import hashlib
-import os
 from scanner.file_scanner import FileScanner
 
 @FileScanner.register
@@ -36,7 +35,7 @@ class MD5Scanner(FileScanner):
                 logger.warn("Hash md5 MATCH: %s" % filePath)
                 evidence = self.evidences[hashValue]
                 evidence.compromised = True
-            evidence.proof.append(filePath)
+                evidence.proof.append(filePath)
 
         except Exception:
             traceback.print_exc()

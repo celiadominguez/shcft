@@ -22,7 +22,7 @@ class FileScanner():
             scanner.loadEvidences(indicators)
 
         logger = Logger()
-        logger.warn("Scanning path: %s" % path)
+        logger.debug("Scanning path: %s" % path)
 
         # Start to scan path
         for root, directories, files in scandir.walk(path, followlinks=False):
@@ -44,7 +44,7 @@ class FileScanner():
                             if os.path.isfile(filePath):
 
                                 # Print files
-                                logger.debug("[SCANNING] %s" % filePath)
+                                #logger.debug("[SCANNING] %s" % filePath)
 
                                 # Check evidence
                                 for scanner in self.registry:

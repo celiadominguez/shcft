@@ -164,25 +164,21 @@ class PDFReport(Report):
         thead = estiloHoja["BodyText"]
         thead.fontSize = 7
 
-        table_data = [ ['INDICADOR DE COMPROMISO', 'TIPO DE EVIDENCIA', 'VALOR', 'PRUEBA'] ]
+        table_data = [ ['INDICADOR DE COMPROMISO', 'FORMATO', 'TIPO DE EVIDENCIA', 'VALOR', 'PRUEBA'] ]
         for incident in results.incidents:
             for evidence in incident.evidences:
-                table_data.append([Paragraph(incident.indicator.id,thead), Paragraph(evidence.context,thead), Paragraph(evidence.value,thead)])
+                table_data.append([Paragraph(self.__prettyPrint__(incident.indicator.id),thead),
+                                   Paragraph(self.__prettyPrint__(incident.indicator.format.value),thead),
+                                   Paragraph(self.__prettyPrint__(evidence.context),thead),
+                                   Paragraph(self.__prettyPrint__(evidence.value),thead),
+                                   Paragraph(self.__prettyPrint__(evidence.proof),thead)])
 
-
-
-
-        # FIX: only for test, delete then
-        for _ in " " * 100:
-            table_data.append([Paragraph('The Scarab aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaattack group', thead), 'DnsEntryItem', 'www.service.authorizeddns.net'])
-            table_data.append(['2c00-4a20-b887-f88f1f16ea08', 'FileItem/FileName', 'helpers.py', 'G:\TFG\TFG Celia Domínguez\Python\samples'])
-            table_data.append(['2c00-4a20-b887-f88f1f16ea08', 'FileItem/Md5sum', '9b600508b1f9dd1ac1c79398de46fb29', 'G:\TFG\TFG Celia Domínguez\Python\samples'])
 
 
         table_report=[]
         table_report.append(NextPageTemplate('summary'))
         table_report.append(NextPageTemplate('content'))
-        table_report.append(Table(table_data, colWidths=[110, 80, 150, 190],
+        table_report.append(Table(table_data, colWidths=[120, 50, 75, 120, 180],
                               style=TableStyle([
                                   ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
                                   ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
@@ -195,4 +191,18 @@ class PDFReport(Report):
                             )
 
         doc.build(table_report)
+
+    def __prettyPrint__(self, text):
+        result = ""
+        if text is not None:
+            if isinstance(text, list):
+                for item in text:
+                    result += str(item).replace('\n','<br />\n')
+            elif isinstance(text, dict):
+                for key in text.keys():
+                    result.join(text[key].strip())
+            else:
+                result = text.strip()
+        return result
     pass
+

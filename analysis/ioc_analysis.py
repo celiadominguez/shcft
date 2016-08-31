@@ -9,17 +9,19 @@ class IOCAnalysis():
     @staticmethod
     def analyzeIndicatorsOfCompromise(indicators, results):
         results.totalIocCount = indicators.__len__()
-        results.status = AnalysisResult.Status.DETECTED_VULNERABILITIES
         results.endTime = datetime.now()
 
         # Analyze results
         incidents = []
         for indicator in indicators:
-
             # Recursive validation
             IOCAnalysis.evalueIndicator(indicator, incidents)
-
         results.incidents = incidents
+
+        if incidents.__len__() > 0:
+            results.status = AnalysisResult.Status.DETECTED_VULNERABILITIES
+        else:
+            results.status = AnalysisResult.Status.SUCCESS
 
         pass
 
@@ -33,7 +35,7 @@ class IOCAnalysis():
                     evidences.append(evidence)
 
             # Create incident if exists vunerability evidences
-            if evidences.__sizeof__() > 0:
+            if evidences.__len__() > 0:
                 incident = Incident(indicator, evidences)
                 incidents.append(incident)
 
