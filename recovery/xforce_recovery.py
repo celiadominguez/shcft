@@ -8,6 +8,8 @@ import time
 import os
 from pandas.io.json import json_normalize
 
+KEY_NAME = "XFORCE_KEY"
+PASS_NAME = "XFORCE_PASS"
 XFORCE_KEY = "<YOUR XFORCE API KEY>"
 XFORCE_PASS = "<YOUR XFORCE PASSWORD>"
 XFORCE_GET_URL = "https://api.xforce.ibmcloud.com/casefiles/{0}/stix"
@@ -17,13 +19,20 @@ XFORCE_USR_AGT = 'Mozilla 5.0'
 @IOCRecovery.register
 class XForceRecovery(IOCRecovery):
 
-    def recoverIOC(self, data_path):
+    def recoverIOC(self, data_path, api_keys):
         logger = Logger()
         logger.info("XForceRecovery.recoverIOC")
         # Record the Starting Time
         startTime = time.time()
 
         dataPath = data_path + "/" + Format.STIX.value + "/"
+
+        key = XFORCE_KEY
+        password = XFORCE_PASS
+        if KEY_NAME in api_keys:
+            key = api_keys[KEY_NAME]
+        if PASS_NAME in api_keys:
+            password = api_keys[PASS_NAME]
 
         # Create data dir
         if not os.path.exists(dataPath):
@@ -32,7 +41,7 @@ class XForceRecovery(IOCRecovery):
         # Gets all public Collections that you are able to see.
         params = {}
 
-        author = str(base64.b64encode(bytes('%s:%s' % (XFORCE_KEY, XFORCE_PASS), 'utf-8')), 'ascii').strip()
+        author = str(base64.b64encode(bytes('%s:%s' % (key, password), 'utf-8')), 'ascii').strip()
         headers = {"Authorization": "Basic " + author,
                    "Accept": "application/json"}
         logger.info("Request - %s " % XFORCE_PUBLIC_URL )

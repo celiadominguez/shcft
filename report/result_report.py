@@ -173,8 +173,6 @@ class PDFReport(Report):
                                    Paragraph(self.__prettyPrint__(evidence.value),thead),
                                    Paragraph(self.__prettyPrint__(evidence.proof),thead)])
 
-
-
         table_report=[]
         table_report.append(NextPageTemplate('summary'))
         table_report.append(NextPageTemplate('content'))

@@ -7,8 +7,9 @@
 import argparse
 import logging
 import sys
-import time
-from datetime import datetime, timezone
+from datetime import datetime
+import json
+from reportlab.lib import yaml
 
 from analysis.ioc_analysis import IOCAnalysis
 from config import *
@@ -22,7 +23,7 @@ from scanner.network_scanner import NetworkScanner
 
 
 def usage():
-	print ("Usage:\n\tshcft.py [first_run|check_new]")
+	print ("Usage:\n\tshcft.py [options]")
 	sys.exit(0)
 
 # ------------ MAIN SCRIPT STARTS HERE -----------------
@@ -31,13 +32,13 @@ if __name__ == '__main__':
 
     # Parse Arguments
     parser = argparse.ArgumentParser(description='SHCFT - Sherlock Holmes Computer Forensic Tools')
-    parser.add_argument('-d', help='Specify the root path for store Threat Intelligence', metavar='directory', default=DATA_PATH)
+    parser.add_argument('-d', help='Specify the root path for store Threat Intelligence', metavar='data_directory', default=DATA_PATH)
+    parser.add_argument('-path', help='Specify the root path to scan on forensic analysis', metavar='path_directory', default=SCAN_PATH)
     parser.add_argument('-l', help='Log file', metavar='Log File', default=LOG_FILE)
     parser.add_argument('-level', help='Activate logger level for output', metavar='Log Level', default=logging.DEBUG)
     parser.add_argument('--nolog', help='Don\'t write a local log file', action='store_true', default=False)
-    parser.add_argument('--norecover', help='Don\'t recover ioc files', action='store_true', default=True)
-    parser.add_argument('-u', help='Your MISP\'s url', metavar='URL', default=MISP_URL)
-    parser.add_argument('-k', help='The MISP auth key can be found on the MISP web interface under the automation section', metavar='MISP API key', default=MISP_KEY)
+    parser.add_argument('--norecover', help='Don\'t recover ioc files', action='store_true', default=False)
+    parser.add_argument('-k', help="The APY KEYS used by platform receivers {['OTX_KEY': <API key>], ['XFORCE_KEY':<API_KEY>], ['XFORCE_PASS': <API_PASS>]} ", metavar='API KEYS', default='', type=str)
 
     args = parser.parse_args()
     # Record the Starting Time
@@ -47,14 +48,23 @@ if __name__ == '__main__':
     logger = Logger(logFile=args.l, noLogFile=args.nolog, level=args.level)
     logger.print_welcome()
 
-    # Retrieves IOCs from MISP and stores them in appropriate format
+
+    # Retrieves IOCs from platforms and stores them in appropriate format
     if not args.norecover:
+        # Parsing api keys
+        keys = {}
+        for arg in str(args.k).split(','):
+            key, val = arg.split(':')[0], arg.split(':')[1]
+            keys[key] = val
+        print(keys)
+
+        # Invoke to recovery
         logger.info('Start recovering iocs from platforms')
         recoveries = [IOCRecoveryFactory.createRecovery(i)
               for i in recoveryFactoryNames()]
 
         for recovery in recoveries:
-            recovery.recoverIOC(args.d)
+            recovery.recoverIOC(args.d, keys)
 
 
     # Analyze forensic data from host system
@@ -67,7 +77,7 @@ if __name__ == '__main__':
     # Scan evidences
     logger.info('Start to scan evidences')
     fileScanner = FileScanner()
-    fileScanner.scanEvidences(indicators, 'G:\\TFG\\TFG Celia Domínguez\\Python\\samples\\')
+    fileScanner.scanEvidences(indicators, args.path)
 
     networkScanner = NetworkScanner()
     networkScanner.scanEvidences(indicators)

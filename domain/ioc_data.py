@@ -141,7 +141,7 @@ class Incident:
 class AnalysisResult(object):
 
     class Status(Enum):
-        SUCCESS = "SUCESS"
+        SUCCESS = "SUCCESS"
         DETECTED_VULNERABILITIES = "DETECTED VULNERABILITIES"
         pass
 

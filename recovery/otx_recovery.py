@@ -9,6 +9,7 @@ import time
 import json
 import os
 
+KEY_NAME = "OTX_KEY"
 OTX_KEY = "<YOUR OTX API KEY>"
 OTX_GET_URL = "https://otx.alienvault.com/otxapi/pulses/{0}/export"
 OTX_USR_AGT = 'OTX Python SDK/1.1'
@@ -16,7 +17,7 @@ OTX_USR_AGT = 'OTX Python SDK/1.1'
 @IOCRecovery.register
 class OTXRecovery(IOCRecovery):
 
-    def recoverIOC(self, data_path):
+    def recoverIOC(self, data_path, api_keys):
         logger = Logger()
         logger.info("OTXRecovery.recoverIOC")
         # Record the Starting Time
@@ -24,11 +25,15 @@ class OTXRecovery(IOCRecovery):
 
         dataPath = data_path + "/" + Format.OPENIOC_10.value + "/"
 
+        key = OTX_KEY
+        if KEY_NAME in api_keys:
+            key = api_keys[KEY_NAME]
+
         # Create data dir
         if not os.path.exists(dataPath):
             os.makedirs(dataPath)
 
-        otx = OTXv2(OTX_KEY)
+        otx = OTXv2(key)
         pulses = otx.getall()
         logger.info("Download complete - %s events received" % len(pulses) )
 
@@ -39,7 +44,7 @@ class OTXRecovery(IOCRecovery):
             file_name = dataPath + n.id[0] + ".ioc"
 
             # HTTP Request
-            headers = {'X-OTX-API-KEY': OTX_KEY, 'User-Agent': OTX_USR_AGT, "Content-Type": "application/json"}
+            headers = {'X-OTX-API-KEY': key, 'User-Agent': OTX_USR_AGT, "Content-Type": "application/json"}
             data = {}
             params = {'format': Format.OPENIOC_10.value}
             response = requests.post(url, params=params, data=json.dumps(data), headers=headers)

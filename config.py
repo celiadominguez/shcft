@@ -5,6 +5,7 @@ RELEASE_DATE = "July 20, 2016"
 
 LOG_FILE = 'SHCFT.log'
 DATA_PATH = "./data/"
+SCAN_PATH = "."
 
 # Your MISP's settings
 MISP_URL = 'https://misppriv.circl.lu'
